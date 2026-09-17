@@ -8449,11 +8449,11 @@
               "level_str": "Lv.300"
             },
             {
-              "name": "지옥석 조각",
+              "name": "지옥석",
               "qty": 25,
-              "boss": "암흑 망령",
-              "level": 280,
-              "level_str": "Lv.280"
+              "boss": "용암 화산-채광",
+              "level": 0,
+              "level_str": "채광"
             }
           ]
         },
@@ -9884,11 +9884,11 @@
               "level_str": "Lv.300"
             },
             {
-              "name": "지옥석 조각",
+              "name": "지옥석",
               "qty": 25,
-              "boss": "암흑 망령",
-              "level": 280,
-              "level_str": "Lv.280"
+              "boss": "용암 화산-채광",
+              "level": 0,
+              "level_str": "채광"
             }
           ]
         },
@@ -10309,9 +10309,9 @@
             {
               "name": "현빙",
               "qty": 12,
-              "boss": "눈사람",
-              "level": 320,
-              "level_str": "Lv.320"
+              "boss": "운설산-채광",
+              "level": 0,
+              "level_str": "채광"
             }
           ]
         },
@@ -11615,9 +11615,9 @@
             {
               "name": "현빙",
               "qty": 12,
-              "boss": "눈사람",
-              "level": 320,
-              "level_str": "Lv.320"
+              "boss": "운설산-채광",
+              "level": 0,
+              "level_str": "채광"
             }
           ]
         },
@@ -13199,8 +13199,339 @@
         },
         {
           "category": "투구",
-          "name": "봉황 화염",
-          "materials": []
+          "name": "화염 군주 투구",
+          "materials": [
+            {
+              "name": "묘지기의 터번",
+              "qty": 1,
+              "boss": "조합템",
+              "level": 380,
+              "level_str": "Lv.380"
+            },
+            {
+              "name": "성스러운 악마 투구",
+              "qty": 1,
+              "boss": "조합템",
+              "level": 0,
+              "level_str": ""
+            },
+            {
+              "name": "유적 금속 조각",
+              "qty": 1,
+              "boss": "TitonX-4060",
+              "level": 380,
+              "level_str": "Lv.380"
+            },
+            {
+              "name": "신비한 혈호박",
+              "qty": 1,
+              "boss": "봉인된 피의 선조 스토릭",
+              "level": 380,
+              "level_str": "Lv.380"
+            },
+            {
+              "name": "영혼 정수",
+              "qty": 1,
+              "boss": "봉인된 영혼의 족쇄",
+              "level": 380,
+              "level_str": "Lv.380"
+            },
+            {
+              "name": "독무의 결정",
+              "qty": 1,
+              "boss": "역병의 근원 마이어스",
+              "level": 360,
+              "level_str": "Lv.360"
+            },
+            {
+              "name": "그림자 결정",
+              "qty": 1,
+              "boss": "망령 메르켈",
+              "level": 360,
+              "level_str": "Lv.360"
+            }
+          ]
+        },
+        {
+          "category": "투구",
+          "name": "묘지기의 터번",
+          "materials": [
+            {
+              "name": "죽음의 두건",
+              "qty": 1,
+              "boss": "조합템",
+              "level": 360,
+              "level_str": "Lv.360"
+            },
+            {
+              "name": "죽음의 그림자",
+              "qty": 1,
+              "boss": "언데드 군주",
+              "level": 360,
+              "level_str": "Lv.360"
+            },
+            {
+              "name": "그림자의 사지",
+              "qty": 1,
+              "boss": "망령 메르켈",
+              "level": 360,
+              "level_str": "Lv.360"
+            },
+            {
+              "name": "영혼 포식의 피",
+              "qty": 1,
+              "boss": "제7마왕 모르페우스",
+              "level": 340,
+              "level_str": "Lv.340"
+            },
+            {
+              "name": "파괴된 원혼의 뼈",
+              "qty": 1,
+              "boss": "영혼의 수확자 타나토스",
+              "level": 340,
+              "level_str": "Lv.340"
+            },
+            {
+              "name": "영혼 결정",
+              "qty": 1,
+              "boss": "죽음의 리치",
+              "level": 320,
+              "level_str": "Lv.320"
+            },
+            {
+              "name": "서리 보석",
+              "qty": 1,
+              "boss": "설원 엘프",
+              "level": 200,
+              "level_str": "Lv.200"
+            }
+          ]
+        },
+        {
+          "category": "투구",
+          "name": "죽음의 두건",
+          "materials": [
+            {
+              "name": "망자의 두건",
+              "qty": 1,
+              "boss": "조합템",
+              "level": 340,
+              "level_str": "Lv.340"
+            },
+            {
+              "name": "지옥의 정수",
+              "qty": 1,
+              "boss": "제7마왕 모르페우스",
+              "level": 340,
+              "level_str": "Lv.340"
+            },
+            {
+              "name": "파괴된 원혼의 뼈",
+              "qty": 1,
+              "boss": "영혼의 수확자 타나토스",
+              "level": 340,
+              "level_str": "Lv.340"
+            },
+            {
+              "name": "푸른 바람의 호박",
+              "qty": 1,
+              "boss": "심해의 마녀 바쉬",
+              "level": 320,
+              "level_str": "Lv.320"
+            },
+            {
+              "name": "망자의 육신",
+              "qty": 1,
+              "boss": "어둠의 백작 데셀록",
+              "level": 300,
+              "level_str": "Lv.300"
+            },
+            {
+              "name": "어둠의 마혈",
+              "qty": 1,
+              "boss": "피의 시체",
+              "level": 320,
+              "level_str": "Lv.320"
+            }
+          ]
+        },
+        {
+          "category": "투구",
+          "name": "망자의 두건",
+          "materials": [
+            {
+              "name": "살육 두건",
+              "qty": 1,
+              "boss": "영혼 포식자",
+              "level": 320,
+              "level_str": "Lv.320"
+            },
+            {
+              "name": "사령의 인광 가루",
+              "qty": 1,
+              "boss": "죽음의 리치",
+              "level": 320,
+              "level_str": "Lv.320"
+            },
+            {
+              "name": "영혼 결정",
+              "qty": 1,
+              "boss": "죽음의 리치",
+              "level": 320,
+              "level_str": "Lv.320"
+            },
+            {
+              "name": "마도서",
+              "qty": 1,
+              "boss": "저주받은 인형 마리안느",
+              "level": 300,
+              "level_str": "Lv.300"
+            }
+          ]
+        },
+        {
+          "category": "투구",
+          "name": "성스러운 악마 투구",
+          "materials": [
+            {
+              "name": "악몽 투구[전설]",
+              "qty": 1,
+              "boss": "조합템",
+              "level": 360,
+              "level_str": "Lv.360"
+            },
+            {
+              "name": "암흑 결정",
+              "qty": 1,
+              "boss": "언데드 군주",
+              "level": 360,
+              "level_str": "Lv.360"
+            },
+            {
+              "name": "타락한 마나핵",
+              "qty": 1,
+              "boss": "역병의 근원 마이어스",
+              "level": 360,
+              "level_str": "Lv.360"
+            },
+            {
+              "name": "영혼 포식의 피",
+              "qty": 1,
+              "boss": "제7마왕 모르페우스",
+              "level": 340,
+              "level_str": "Lv.340"
+            },
+            {
+              "name": "자비의 성광 조각",
+              "qty": 1,
+              "boss": "전쟁의 천사 임페리우스",
+              "level": 340,
+              "level_str": "Lv.340"
+            },
+            {
+              "name": "영혼 결정",
+              "qty": 1,
+              "boss": "죽음의 리치",
+              "level": 320,
+              "level_str": "Lv.320"
+            },
+            {
+              "name": "고대 마나석",
+              "qty": 1,
+              "boss": "대지 수호자 로샨",
+              "level": 260,
+              "level_str": "Lv.260"
+            }
+          ]
+        },
+        {
+          "category": "투구",
+          "name": "악몽 투구[전설]",
+          "materials": [
+            {
+              "name": "악몽 투구[에픽]",
+              "qty": 1,
+              "boss": "조합템",
+              "level": 340,
+              "level_str": "Lv.340"
+            },
+            {
+              "name": "망자의 촉수",
+              "qty": 1,
+              "boss": "영혼의 수확자 타나토스",
+              "level": 340,
+              "level_str": "Lv.340"
+            },
+            {
+              "name": "지옥의 정수",
+              "qty": 1,
+              "boss": "제7마왕 모르페우스",
+              "level": 340,
+              "level_str": "Lv.340"
+            },
+            {
+              "name": "회오리의 핵",
+              "qty": 1,
+              "boss": "광풍의 실프",
+              "level": 320,
+              "level_str": "Lv.320"
+            },
+            {
+              "name": "사령의 인광 가루",
+              "qty": 1,
+              "boss": "죽음의 리치",
+              "level": 320,
+              "level_str": "Lv.320"
+            },
+            {
+              "name": "화염의 심장",
+              "qty": 1,
+              "boss": "화염 거인",
+              "level": 320,
+              "level_str": "Lv.320"
+            }
+          ]
+        },
+        {
+          "category": "투구",
+          "name": "악몽 투구[에픽]",
+          "materials": [
+            {
+              "name": "지옥 투구",
+              "qty": 1,
+              "boss": "지옥의 문지기",
+              "level": 320,
+              "level_str": "Lv.320"
+            },
+            {
+              "name": "겨울 빙모",
+              "qty": 1,
+              "boss": "눈사람",
+              "level": 320,
+              "level_str": "Lv.320"
+            },
+            {
+              "name": "살육 두건",
+              "qty": 1,
+              "boss": "영혼 포식자",
+              "level": 300,
+              "level_str": "Lv.300"
+            },
+            {
+              "name": "사령의 인광 가루",
+              "qty": 1,
+              "boss": "죽음의 리치",
+              "level": 320,
+              "level_str": "Lv.320"
+            },
+            {
+              "name": "화염의 심장",
+              "qty": 1,
+              "boss": "화염 거인",
+              "level": 320,
+              "level_str": "Lv.320"
+            }
+          ]
         },
         {
           "category": "장신구",
@@ -13715,18 +14046,212 @@
               "level_str": "Lv.300"
             },
             {
-              "name": "지옥석 조각",
+              "name": "지옥석",
               "qty": 25,
-              "boss": "암흑 망령",
-              "level": 280,
-              "level_str": "Lv.280"
+              "boss": "용암 화산-채광",
+              "level": 0,
+              "level_str": "채광"
             }
           ]
         },
         {
           "category": "마나석",
-          "name": "내면의 심연석",
-          "materials": []
+          "name": "심연의 마나석",
+          "materials": [
+            {
+              "name": "고대의 악몽-낙성",
+              "qty": 1,
+              "boss": "봉인된 파멸의 힘 카시아르",
+              "level": 380,
+              "level_str": "Lv.380"
+            },
+            {
+              "name": "지옥불-성스러운 악마의 화염 반지",
+              "qty": 1,
+              "boss": "조합템",
+              "level": 0,
+              "level_str": ""
+            },
+            {
+              "name": "동력 핵",
+              "qty": 1,
+              "boss": "TitonX-4060",
+              "level": 380,
+              "level_str": "Lv.380"
+            },
+            {
+              "name": "타락한 피의 발톱",
+              "qty": 1,
+              "boss": "봉인된 피의 선조 스토릭",
+              "level": 380,
+              "level_str": "Lv.380"
+            },
+            {
+              "name": "파멸의 재",
+              "qty": 1,
+              "boss": "봉인된 파멸의 힘 카시아르",
+              "level": 380,
+              "level_str": "Lv.380"
+            },
+            {
+              "name": "영혼 포식의 피",
+              "qty": 1,
+              "boss": "제7마왕 모르페우스",
+              "level": 340,
+              "level_str": "Lv.340"
+            },
+            {
+              "name": "독무의 결정",
+              "qty": 1,
+              "boss": "역병의 근원 마이어스",
+              "level": 360,
+              "level_str": "Lv.360"
+            }
+          ]
+        },
+        {
+          "category": "마나석",
+          "name": "지옥불-성스러운 악마의 화염 반지",
+          "materials": [
+            {
+              "name": "아즈모단-마왕의 반지",
+              "qty": 1,
+              "boss": "조합템",
+              "level": 360,
+              "level_str": "Lv.360"
+            },
+            {
+              "name": "혼돈의 혈정",
+              "qty": 1,
+              "boss": "제5마왕 아노시스",
+              "level": 360,
+              "level_str": "Lv.360"
+            },
+            {
+              "name": "불씨의 핵",
+              "qty": 1,
+              "boss": "광염의 만샤",
+              "level": 360,
+              "level_str": "Lv.360"
+            },
+            {
+              "name": "타락한 마나핵",
+              "qty": 1,
+              "boss": "역병의 근원 마이어스",
+              "level": 360,
+              "level_str": "Lv.360"
+            },
+            {
+              "name": "지옥의 정수",
+              "qty": 1,
+              "boss": "제7마왕 모르페우스",
+              "level": 340,
+              "level_str": "Lv.340"
+            },
+            {
+              "name": "성스러운 결정",
+              "qty": 1,
+              "boss": "전쟁의 천사 임페리우스",
+              "level": 340,
+              "level_str": "Lv.340"
+            }
+          ]
+        },
+        {
+          "category": "마나석",
+          "name": "아즈모단-마왕의 반지",
+          "materials": [
+            {
+              "name": "지옥 지배자의 반지",
+              "qty": 1,
+              "boss": "조합템",
+              "level": 340,
+              "level_str": "Lv.340"
+            },
+            {
+              "name": "파괴된 원혼의 뼈",
+              "qty": 1,
+              "boss": "영혼의 수확자 타나토스",
+              "level": 340,
+              "level_str": "Lv.340"
+            },
+            {
+              "name": "멸세의 화염깃",
+              "qty": 1,
+              "boss": "작열하는 용 이그니르",
+              "level": 340,
+              "level_str": "Lv.340"
+            },
+            {
+              "name": "뒤틀린 결정",
+              "qty": 1,
+              "boss": "제7마왕 모르페우스",
+              "level": 340,
+              "level_str": "Lv.340"
+            },
+            {
+              "name": "망자의 육신",
+              "qty": 1,
+              "boss": "어둠의 백작 데셀록",
+              "level": 300,
+              "level_str": "Lv.300"
+            },
+            {
+              "name": "뒤틀린 피의 깃털",
+              "qty": 1,
+              "boss": "피의 시체",
+              "level": 320,
+              "level_str": "Lv.320"
+            }
+          ]
+        },
+        {
+          "category": "마나석",
+          "name": "지옥 지배자의 반지",
+          "materials": [
+            {
+              "name": "암흑 반지",
+              "qty": 1,
+              "boss": "제9마왕 아즈모단",
+              "level": 320,
+              "level_str": "Lv.320"
+            },
+            {
+              "name": "악마의 비늘",
+              "qty": 1,
+              "boss": "지옥의 문지기",
+              "level": 320,
+              "level_str": "Lv.320"
+            },
+            {
+              "name": "세라프의 깃털",
+              "qty": 1,
+              "boss": "성역의 대사제",
+              "level": 320,
+              "level_str": "Lv.320"
+            },
+            {
+              "name": "암흑의 원한",
+              "qty": 1,
+              "boss": "암흑 망령",
+              "level": 280,
+              "level_str": "Lv.280"
+            },
+            {
+              "name": "암흑별 철",
+              "qty": 1,
+              "boss": "지옥 악마",
+              "level": 320,
+              "level_str": "Lv.320"
+            },
+            {
+              "name": "명계의 녹",
+              "qty": 1,
+              "boss": "제9마왕 아즈모단",
+              "level": 320,
+              "level_str": "Lv.320"
+            }
+          ]
         }
       ],
       "recipe_map": {
@@ -14183,10 +14708,341 @@
             }
           ]
         },
-        "봉황 화염": {
+        "화염 군주 투구": {
           "category": "투구",
-          "name": "봉황 화염",
-          "materials": []
+          "name": "화염 군주 투구",
+          "materials": [
+            {
+              "name": "묘지기의 터번",
+              "qty": 1,
+              "boss": "조합템",
+              "level": 380,
+              "level_str": "Lv.380"
+            },
+            {
+              "name": "성스러운 악마 투구",
+              "qty": 1,
+              "boss": "조합템",
+              "level": 0,
+              "level_str": ""
+            },
+            {
+              "name": "유적 금속 조각",
+              "qty": 1,
+              "boss": "TitonX-4060",
+              "level": 380,
+              "level_str": "Lv.380"
+            },
+            {
+              "name": "신비한 혈호박",
+              "qty": 1,
+              "boss": "봉인된 피의 선조 스토릭",
+              "level": 380,
+              "level_str": "Lv.380"
+            },
+            {
+              "name": "영혼 정수",
+              "qty": 1,
+              "boss": "봉인된 영혼의 족쇄",
+              "level": 380,
+              "level_str": "Lv.380"
+            },
+            {
+              "name": "독무의 결정",
+              "qty": 1,
+              "boss": "역병의 근원 마이어스",
+              "level": 360,
+              "level_str": "Lv.360"
+            },
+            {
+              "name": "그림자 결정",
+              "qty": 1,
+              "boss": "망령 메르켈",
+              "level": 360,
+              "level_str": "Lv.360"
+            }
+          ]
+        },
+        "묘지기의 터번": {
+          "category": "투구",
+          "name": "묘지기의 터번",
+          "materials": [
+            {
+              "name": "죽음의 두건",
+              "qty": 1,
+              "boss": "조합템",
+              "level": 360,
+              "level_str": "Lv.360"
+            },
+            {
+              "name": "죽음의 그림자",
+              "qty": 1,
+              "boss": "언데드 군주",
+              "level": 360,
+              "level_str": "Lv.360"
+            },
+            {
+              "name": "그림자의 사지",
+              "qty": 1,
+              "boss": "망령 메르켈",
+              "level": 360,
+              "level_str": "Lv.360"
+            },
+            {
+              "name": "영혼 포식의 피",
+              "qty": 1,
+              "boss": "제7마왕 모르페우스",
+              "level": 340,
+              "level_str": "Lv.340"
+            },
+            {
+              "name": "파괴된 원혼의 뼈",
+              "qty": 1,
+              "boss": "영혼의 수확자 타나토스",
+              "level": 340,
+              "level_str": "Lv.340"
+            },
+            {
+              "name": "영혼 결정",
+              "qty": 1,
+              "boss": "죽음의 리치",
+              "level": 320,
+              "level_str": "Lv.320"
+            },
+            {
+              "name": "서리 보석",
+              "qty": 1,
+              "boss": "설원 엘프",
+              "level": 200,
+              "level_str": "Lv.200"
+            }
+          ]
+        },
+        "죽음의 두건": {
+          "category": "투구",
+          "name": "죽음의 두건",
+          "materials": [
+            {
+              "name": "망자의 두건",
+              "qty": 1,
+              "boss": "조합템",
+              "level": 340,
+              "level_str": "Lv.340"
+            },
+            {
+              "name": "지옥의 정수",
+              "qty": 1,
+              "boss": "제7마왕 모르페우스",
+              "level": 340,
+              "level_str": "Lv.340"
+            },
+            {
+              "name": "파괴된 원혼의 뼈",
+              "qty": 1,
+              "boss": "영혼의 수확자 타나토스",
+              "level": 340,
+              "level_str": "Lv.340"
+            },
+            {
+              "name": "푸른 바람의 호박",
+              "qty": 1,
+              "boss": "심해의 마녀 바쉬",
+              "level": 320,
+              "level_str": "Lv.320"
+            },
+            {
+              "name": "망자의 육신",
+              "qty": 1,
+              "boss": "어둠의 백작 데셀록",
+              "level": 300,
+              "level_str": "Lv.300"
+            },
+            {
+              "name": "어둠의 마혈",
+              "qty": 1,
+              "boss": "피의 시체",
+              "level": 320,
+              "level_str": "Lv.320"
+            }
+          ]
+        },
+        "망자의 두건": {
+          "category": "투구",
+          "name": "망자의 두건",
+          "materials": [
+            {
+              "name": "살육 두건",
+              "qty": 1,
+              "boss": "영혼 포식자",
+              "level": 320,
+              "level_str": "Lv.320"
+            },
+            {
+              "name": "사령의 인광 가루",
+              "qty": 1,
+              "boss": "죽음의 리치",
+              "level": 320,
+              "level_str": "Lv.320"
+            },
+            {
+              "name": "영혼 결정",
+              "qty": 1,
+              "boss": "죽음의 리치",
+              "level": 320,
+              "level_str": "Lv.320"
+            },
+            {
+              "name": "마도서",
+              "qty": 1,
+              "boss": "저주받은 인형 마리안느",
+              "level": 300,
+              "level_str": "Lv.300"
+            }
+          ]
+        },
+        "성스러운 악마 투구": {
+          "category": "투구",
+          "name": "성스러운 악마 투구",
+          "materials": [
+            {
+              "name": "악몽 투구[전설]",
+              "qty": 1,
+              "boss": "조합템",
+              "level": 360,
+              "level_str": "Lv.360"
+            },
+            {
+              "name": "암흑 결정",
+              "qty": 1,
+              "boss": "언데드 군주",
+              "level": 360,
+              "level_str": "Lv.360"
+            },
+            {
+              "name": "타락한 마나핵",
+              "qty": 1,
+              "boss": "역병의 근원 마이어스",
+              "level": 360,
+              "level_str": "Lv.360"
+            },
+            {
+              "name": "영혼 포식의 피",
+              "qty": 1,
+              "boss": "제7마왕 모르페우스",
+              "level": 340,
+              "level_str": "Lv.340"
+            },
+            {
+              "name": "자비의 성광 조각",
+              "qty": 1,
+              "boss": "전쟁의 천사 임페리우스",
+              "level": 340,
+              "level_str": "Lv.340"
+            },
+            {
+              "name": "영혼 결정",
+              "qty": 1,
+              "boss": "죽음의 리치",
+              "level": 320,
+              "level_str": "Lv.320"
+            },
+            {
+              "name": "고대 마나석",
+              "qty": 1,
+              "boss": "대지 수호자 로샨",
+              "level": 260,
+              "level_str": "Lv.260"
+            }
+          ]
+        },
+        "악몽 투구[전설]": {
+          "category": "투구",
+          "name": "악몽 투구[전설]",
+          "materials": [
+            {
+              "name": "악몽 투구[에픽]",
+              "qty": 1,
+              "boss": "조합템",
+              "level": 340,
+              "level_str": "Lv.340"
+            },
+            {
+              "name": "망자의 촉수",
+              "qty": 1,
+              "boss": "영혼의 수확자 타나토스",
+              "level": 340,
+              "level_str": "Lv.340"
+            },
+            {
+              "name": "지옥의 정수",
+              "qty": 1,
+              "boss": "제7마왕 모르페우스",
+              "level": 340,
+              "level_str": "Lv.340"
+            },
+            {
+              "name": "회오리의 핵",
+              "qty": 1,
+              "boss": "광풍의 실프",
+              "level": 320,
+              "level_str": "Lv.320"
+            },
+            {
+              "name": "사령의 인광 가루",
+              "qty": 1,
+              "boss": "죽음의 리치",
+              "level": 320,
+              "level_str": "Lv.320"
+            },
+            {
+              "name": "화염의 심장",
+              "qty": 1,
+              "boss": "화염 거인",
+              "level": 320,
+              "level_str": "Lv.320"
+            }
+          ]
+        },
+        "악몽 투구[에픽]": {
+          "category": "투구",
+          "name": "악몽 투구[에픽]",
+          "materials": [
+            {
+              "name": "지옥 투구",
+              "qty": 1,
+              "boss": "지옥의 문지기",
+              "level": 320,
+              "level_str": "Lv.320"
+            },
+            {
+              "name": "겨울 빙모",
+              "qty": 1,
+              "boss": "눈사람",
+              "level": 320,
+              "level_str": "Lv.320"
+            },
+            {
+              "name": "살육 두건",
+              "qty": 1,
+              "boss": "영혼 포식자",
+              "level": 300,
+              "level_str": "Lv.300"
+            },
+            {
+              "name": "사령의 인광 가루",
+              "qty": 1,
+              "boss": "죽음의 리치",
+              "level": 320,
+              "level_str": "Lv.320"
+            },
+            {
+              "name": "화염의 심장",
+              "qty": 1,
+              "boss": "화염 거인",
+              "level": 320,
+              "level_str": "Lv.320"
+            }
+          ]
         },
         "영원의 모래시계": {
           "category": "장신구",
@@ -14701,18 +15557,212 @@
               "level_str": "Lv.300"
             },
             {
-              "name": "지옥석 조각",
+              "name": "지옥석",
               "qty": 25,
-              "boss": "암흑 망령",
-              "level": 280,
-              "level_str": "Lv.280"
+              "boss": "용암 화산-채광",
+              "level": 0,
+              "level_str": "채광"
             }
           ]
         },
-        "내면의 심연석": {
+        "심연의 마나석": {
           "category": "마나석",
-          "name": "내면의 심연석",
-          "materials": []
+          "name": "심연의 마나석",
+          "materials": [
+            {
+              "name": "고대의 악몽-낙성",
+              "qty": 1,
+              "boss": "봉인된 파멸의 힘 카시아르",
+              "level": 380,
+              "level_str": "Lv.380"
+            },
+            {
+              "name": "지옥불-성스러운 악마의 화염 반지",
+              "qty": 1,
+              "boss": "조합템",
+              "level": 0,
+              "level_str": ""
+            },
+            {
+              "name": "동력 핵",
+              "qty": 1,
+              "boss": "TitonX-4060",
+              "level": 380,
+              "level_str": "Lv.380"
+            },
+            {
+              "name": "타락한 피의 발톱",
+              "qty": 1,
+              "boss": "봉인된 피의 선조 스토릭",
+              "level": 380,
+              "level_str": "Lv.380"
+            },
+            {
+              "name": "파멸의 재",
+              "qty": 1,
+              "boss": "봉인된 파멸의 힘 카시아르",
+              "level": 380,
+              "level_str": "Lv.380"
+            },
+            {
+              "name": "영혼 포식의 피",
+              "qty": 1,
+              "boss": "제7마왕 모르페우스",
+              "level": 340,
+              "level_str": "Lv.340"
+            },
+            {
+              "name": "독무의 결정",
+              "qty": 1,
+              "boss": "역병의 근원 마이어스",
+              "level": 360,
+              "level_str": "Lv.360"
+            }
+          ]
+        },
+        "지옥불-성스러운 악마의 화염 반지": {
+          "category": "마나석",
+          "name": "지옥불-성스러운 악마의 화염 반지",
+          "materials": [
+            {
+              "name": "아즈모단-마왕의 반지",
+              "qty": 1,
+              "boss": "조합템",
+              "level": 360,
+              "level_str": "Lv.360"
+            },
+            {
+              "name": "혼돈의 혈정",
+              "qty": 1,
+              "boss": "제5마왕 아노시스",
+              "level": 360,
+              "level_str": "Lv.360"
+            },
+            {
+              "name": "불씨의 핵",
+              "qty": 1,
+              "boss": "광염의 만샤",
+              "level": 360,
+              "level_str": "Lv.360"
+            },
+            {
+              "name": "타락한 마나핵",
+              "qty": 1,
+              "boss": "역병의 근원 마이어스",
+              "level": 360,
+              "level_str": "Lv.360"
+            },
+            {
+              "name": "지옥의 정수",
+              "qty": 1,
+              "boss": "제7마왕 모르페우스",
+              "level": 340,
+              "level_str": "Lv.340"
+            },
+            {
+              "name": "성스러운 결정",
+              "qty": 1,
+              "boss": "전쟁의 천사 임페리우스",
+              "level": 340,
+              "level_str": "Lv.340"
+            }
+          ]
+        },
+        "아즈모단-마왕의 반지": {
+          "category": "마나석",
+          "name": "아즈모단-마왕의 반지",
+          "materials": [
+            {
+              "name": "지옥 지배자의 반지",
+              "qty": 1,
+              "boss": "조합템",
+              "level": 340,
+              "level_str": "Lv.340"
+            },
+            {
+              "name": "파괴된 원혼의 뼈",
+              "qty": 1,
+              "boss": "영혼의 수확자 타나토스",
+              "level": 340,
+              "level_str": "Lv.340"
+            },
+            {
+              "name": "멸세의 화염깃",
+              "qty": 1,
+              "boss": "작열하는 용 이그니르",
+              "level": 340,
+              "level_str": "Lv.340"
+            },
+            {
+              "name": "뒤틀린 결정",
+              "qty": 1,
+              "boss": "제7마왕 모르페우스",
+              "level": 340,
+              "level_str": "Lv.340"
+            },
+            {
+              "name": "망자의 육신",
+              "qty": 1,
+              "boss": "어둠의 백작 데셀록",
+              "level": 300,
+              "level_str": "Lv.300"
+            },
+            {
+              "name": "뒤틀린 피의 깃털",
+              "qty": 1,
+              "boss": "피의 시체",
+              "level": 320,
+              "level_str": "Lv.320"
+            }
+          ]
+        },
+        "지옥 지배자의 반지": {
+          "category": "마나석",
+          "name": "지옥 지배자의 반지",
+          "materials": [
+            {
+              "name": "암흑 반지",
+              "qty": 1,
+              "boss": "제9마왕 아즈모단",
+              "level": 320,
+              "level_str": "Lv.320"
+            },
+            {
+              "name": "악마의 비늘",
+              "qty": 1,
+              "boss": "지옥의 문지기",
+              "level": 320,
+              "level_str": "Lv.320"
+            },
+            {
+              "name": "세라프의 깃털",
+              "qty": 1,
+              "boss": "성역의 대사제",
+              "level": 320,
+              "level_str": "Lv.320"
+            },
+            {
+              "name": "암흑의 원한",
+              "qty": 1,
+              "boss": "암흑 망령",
+              "level": 280,
+              "level_str": "Lv.280"
+            },
+            {
+              "name": "암흑별 철",
+              "qty": 1,
+              "boss": "지옥 악마",
+              "level": 320,
+              "level_str": "Lv.320"
+            },
+            {
+              "name": "명계의 녹",
+              "qty": 1,
+              "boss": "제9마왕 아즈모단",
+              "level": 320,
+              "level_str": "Lv.320"
+            }
+          ]
         }
       },
       "gear_slots": {
@@ -14723,7 +15773,7 @@
           "심연의 화염 갑옷"
         ],
         "투구": [
-          "봉황 화염"
+          "화염 군주 투구"
         ],
         "장신구": [
           "영원의 모래시계"
@@ -14732,12 +15782,34 @@
           "백금 용왕의 날개"
         ],
         "마나석": [
-          "내면의 심연석"
+          "심연의 마나석"
         ]
       }
     }
   },
   "bosses": [
+    {
+      "name": "용암 화산-채광",
+      "level": 0,
+      "level_str": "채광",
+      "drops": [
+        {
+          "name": "지옥석",
+          "type": "재료"
+        }
+      ]
+    },
+    {
+      "name": "운설산-채광",
+      "level": 0,
+      "level_str": "채광",
+      "drops": [
+        {
+          "name": "현빙",
+          "type": "재료"
+        }
+      ]
+    },
     {
       "name": "훈련 교관 우사로",
       "level": 160,
@@ -15109,10 +16181,6 @@
         },
         {
           "name": "설인 가죽",
-          "type": "재료"
-        },
-        {
-          "name": "현빙",
           "type": "재료"
         }
       ]

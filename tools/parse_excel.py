@@ -47,7 +47,6 @@ ALIAS_MAP = {
     "만샤의 영혼 햇불": "만샤의 영혼 횃불",
     "혼돈의 결정": "혼돈의 혈정",
     "성령의 조각": "성령석 조각",
-    "지옥석": "지옥석 조각",
     "지옥볼의 핵": "지옥불의 핵",
     "파천의뇌석": "파천의 뇌석",
     "빅옹의 결정": "빙옥의 결정",
@@ -146,16 +145,27 @@ def parse_excel(file_path):
             # Fallback drops for materials omitted in Boss sheet
             item_to_boss["이그닐의 심장"] = {"boss": "작열하는 용 이그니르", "level": 340}
             item_to_boss["이그니르의 심장"] = {"boss": "작열하는 용 이그니르", "level": 340}
-            item_to_boss["현빙"] = {"boss": "눈사람", "level": 320}
+            item_to_boss["현빙"] = {"boss": "운설산-채광", "level": 0}
+            item_to_boss["지옥석"] = {"boss": "용암 화산-채광", "level": 0}
 
             if "작열하는 용 이그니르" in boss_map:
                 existing_drops = [d["name"] for d in boss_map["작열하는 용 이그니르"]["drops"]]
                 if "이그니르의 심장" not in existing_drops and "이그닐의 심장" not in existing_drops:
                     boss_map["작열하는 용 이그니르"]["drops"].append({"name": "이그니르의 심장", "type": "재료"})
-            if "눈사람" in boss_map:
-                existing_drops = [d["name"] for d in boss_map["눈사람"]["drops"]]
-                if "현빙" not in existing_drops:
-                    boss_map["눈사람"]["drops"].append({"name": "현빙", "type": "재료"})
+            if "운설산-채광" not in boss_map:
+                boss_map["운설산-채광"] = {
+                    "name": "운설산-채광",
+                    "level": 0,
+                    "level_str": "채광",
+                    "drops": [{"name": "현빙", "type": "재료"}]
+                }
+            if "용암 화산-채광" not in boss_map:
+                boss_map["용암 화산-채광"] = {
+                    "name": "용암 화산-채광",
+                    "level": 0,
+                    "level_str": "채광",
+                    "drops": [{"name": "지옥석", "type": "재료"}]
+                }
 
             game_data["bosses"] = sorted(list(boss_map.values()), key=lambda x: (x["level"], x["name"]))
             boss_level_lookup = {b["name"]: b["level"] for b in game_data["bosses"]}
@@ -255,12 +265,15 @@ def parse_excel(file_path):
                     if b_lvl > 0:
                         lvl = str(b_lvl)
 
+                level_int = int(lvl) if lvl.isdigit() else 0
+                level_str = f"Lv.{lvl}" if (lvl.isdigit() and int(lvl) > 0) else ("채광" if ("채광" in boss or "채굴" in boss) else "")
+
                 current_recipe["materials"].append({
                     "name": mat,
                     "qty": q_val,
                     "boss": boss if boss else "조합템",
-                    "level": int(lvl) if lvl.isdigit() else 0,
-                    "level_str": f"Lv.{lvl}" if lvl else ""
+                    "level": level_int,
+                    "level_str": level_str
                 })
 
         recipe_map = {r["name"]: r for r in recipes}

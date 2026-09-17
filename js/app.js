@@ -41,7 +41,6 @@
     "만샤의 영혼 햇불": "만샤의 영혼 횃불",
     "혼돈의 결정": "혼돈의 혈정",
     "성령의 조각": "성령석 조각",
-    "지옥석": "지옥석 조각",
     "지옥볼의 핵": "지옥불의 핵",
     "파천의뇌석": "파천의 뇌석",
     "빅옹의 결정": "빙옥의 결정",
@@ -560,10 +559,11 @@
           }
         }
 
-        // Fallback mappings for unlisted drops
+        // Fallback mappings for unlisted drops & mining spots
         if (!itemToBoss["이그니르의 심장"]) itemToBoss["이그니르의 심장"] = { boss: "작열하는 용 이그니르", level: 340 };
         if (!itemToBoss["이그닐의 심장"]) itemToBoss["이그닐의 심장"] = { boss: "작열하는 용 이그니르", level: 340 };
-        if (!itemToBoss["현빙"]) itemToBoss["현빙"] = { boss: "눈사람", level: 320 };
+        if (!itemToBoss["현빙"]) itemToBoss["현빙"] = { boss: "운설산-채광", level: 0 };
+        if (!itemToBoss["지옥석"]) itemToBoss["지옥석"] = { boss: "용암 화산-채광", level: 0 };
 
         if (bossMap["작열하는 용 이그니르"]) {
           const drops = bossMap["작열하는 용 이그니르"].drops.map(d => d.name);
@@ -571,11 +571,21 @@
             bossMap["작열하는 용 이그니르"].drops.push({ name: "이그니르의 심장", type: "재료" });
           }
         }
-        if (bossMap["눈사람"]) {
-          const drops = bossMap["눈사람"].drops.map(d => d.name);
-          if (!drops.includes("현빙")) {
-            bossMap["눈사람"].drops.push({ name: "현빙", type: "재료" });
-          }
+        if (!bossMap["운설산-채광"]) {
+          bossMap["운설산-채광"] = {
+            name: "운설산-채광",
+            level: 0,
+            level_str: "채광",
+            drops: [{ name: "현빙", type: "재료" }]
+          };
+        }
+        if (!bossMap["용암 화산-채광"]) {
+          bossMap["용암 화산-채광"] = {
+            name: "용암 화산-채광",
+            level: 0,
+            level_str: "채광",
+            drops: [{ name: "지옥석", type: "재료" }]
+          };
         }
 
         result.bosses = Object.values(bossMap).sort((a, b) => a.level - b.level);
@@ -675,12 +685,15 @@
             lvl = String(bossLevelLookup[finalBoss]);
           }
 
+          const lvlNum = lvl ? parseInt(lvl) : 0;
+          const lvlStr = (lvl && lvlNum > 0) ? `Lv.${lvl}` : ((finalBoss && (finalBoss.includes("채광") || finalBoss.includes("채굴"))) ? "채광" : "");
+
           currentRecipe.materials.push({
             name: finalMat,
             qty: qVal,
             boss: finalBoss || "조합템",
-            level: lvl ? parseInt(lvl) : 0,
-            level_str: lvl ? `Lv.${lvl}` : ""
+            level: lvlNum,
+            level_str: lvlStr
           });
         }
       }
@@ -1012,7 +1025,8 @@
       if (mat.boss && mat.boss !== "조합템") {
         const bossBadge = document.createElement("span");
         bossBadge.className = "badge-boss";
-        bossBadge.textContent = `👹 ${mat.boss}`;
+        const icon = (mat.boss.includes("채광") || mat.boss.includes("채굴")) ? "⛏️ " : "👹 ";
+        bossBadge.textContent = `${icon}${mat.boss}`;
         itemBox.appendChild(bossBadge);
       }
 
@@ -1083,7 +1097,7 @@
           <span class="item-name">${m.name} x${m.qty || 1}</span>
           ${isSubRecipe 
             ? '<span class="badge-craft">조합템</span>'
-            : `<span class="badge-boss">${m.boss}</span> ${m.level_str ? `<span class="badge-level">${m.level_str}</span>` : ''}`
+            : `<span class="badge-boss">${(m.boss && (m.boss.includes("채광") || m.boss.includes("채굴"))) ? "⛏️ " : ""}${m.boss}</span> ${m.level_str ? `<span class="badge-level">${m.level_str}</span>` : ''}`
           }
         `;
 
@@ -1220,7 +1234,7 @@
       if (!levelGroups[lvl]) {
         levelGroups[lvl] = {
           level: lvl,
-          level_str: l.level_str || (lvl > 0 ? `Lv.${lvl}` : "일반"),
+          level_str: l.level_str || (lvl > 0 ? `Lv.${lvl}` : "채광 / 일반"),
           materials: {}
         };
       }
@@ -1328,7 +1342,7 @@
         top.innerHTML = `
           <div style="display: flex; align-items: center; gap: 6px; min-width: 0; flex: 1;">
             <span class="side-mat-name" title="${m.name}">${m.name}</span>
-            <span class="side-mat-boss-tag">👹 ${m.boss}</span>
+            <span class="side-mat-boss-tag">${(m.boss && (m.boss.includes("채광") || m.boss.includes("채굴"))) ? "⛏️ " : "👹 "}${m.boss}</span>
           </div>
           <div class="side-stepper">
             <button class="btn-side-step minus" title="1개 취소">-1</button>
@@ -1472,7 +1486,7 @@
 
       card.innerHTML = `
         <div class="boss-route-header">
-          <h4 class="boss-route-title">👹 ${bData.boss_name}</h4>
+          <h4 class="boss-route-title">${(bData.boss_name && (bData.boss_name.includes("채광") || bData.boss_name.includes("채굴"))) ? "⛏️ " : "👹 "}${bData.boss_name}</h4>
           ${bData.level_str ? `<span class="boss-level-pill">${bData.level_str}</span>` : ""}
         </div>
       `;
