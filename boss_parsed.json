@@ -1,0 +1,1270 @@
+{
+  "header": [
+    "보스이름",
+    "레벨",
+    "아이템 이름",
+    "종류"
+  ],
+  "items": [
+    {
+      "boss_name": "화염 거인",
+      "level": "320",
+      "item_name": "용암 대포",
+      "category": "아이템"
+    },
+    {
+      "boss_name": "화염 거인",
+      "level": "320",
+      "item_name": "분쇄 권갑",
+      "category": "아이템"
+    },
+    {
+      "boss_name": "화염 거인",
+      "level": "320",
+      "item_name": "화염의 산탄총",
+      "category": "아이템"
+    },
+    {
+      "boss_name": "화염 거인",
+      "level": "320",
+      "item_name": "성스러운 화염 갑옷",
+      "category": "아이템"
+    },
+    {
+      "boss_name": "화염 거인",
+      "level": "320",
+      "item_name": "용융된 핵",
+      "category": "아이템"
+    },
+    {
+      "boss_name": "화염 거인",
+      "level": "320",
+      "item_name": "끓어오르는 수정 가루",
+      "category": "재료"
+    },
+    {
+      "boss_name": "화염 거인",
+      "level": "320",
+      "item_name": "화염의 심장",
+      "category": "재료"
+    },
+    {
+      "boss_name": "용암 화염수",
+      "level": "320",
+      "item_name": "성화 지팡이",
+      "category": "아이템"
+    },
+    {
+      "boss_name": "용암 화염수",
+      "level": "320",
+      "item_name": "용암 비늘",
+      "category": "아이템"
+    },
+    {
+      "boss_name": "용암 화염수",
+      "level": "320",
+      "item_name": "작열하는 태양의 의복",
+      "category": "아이템"
+    },
+    {
+      "boss_name": "용암 화염수",
+      "level": "320",
+      "item_name": "용암 폭발석",
+      "category": "아이템"
+    },
+    {
+      "boss_name": "용암 화염수",
+      "level": "320",
+      "item_name": "고대의 비전",
+      "category": "재료"
+    },
+    {
+      "boss_name": "용암 화염수",
+      "level": "320",
+      "item_name": "폭염 결정의 정수",
+      "category": "재료"
+    },
+    {
+      "boss_name": "화염계의 군주 이프리트",
+      "level": "400",
+      "item_name": "지고의 화염-이프리트",
+      "category": "아이템"
+    },
+    {
+      "boss_name": "화염계의 군주 이프리트",
+      "level": "400",
+      "item_name": "혼돈의 핵",
+      "category": "재료"
+    },
+    {
+      "boss_name": "화염계의 군주 이프리트",
+      "level": "400",
+      "item_name": "화염 영역의 근원",
+      "category": "재료"
+    },
+    {
+      "boss_name": "화염계의 군주 이프리트",
+      "level": "400",
+      "item_name": "영겁의 심염",
+      "category": "재료"
+    },
+    {
+      "boss_name": "화염의 폭군 갈라무드",
+      "level": "340",
+      "item_name": "분쇄자",
+      "category": "아이템"
+    },
+    {
+      "boss_name": "화염의 폭군 갈라무드",
+      "level": "340",
+      "item_name": "폭발의 칼날",
+      "category": "아이템"
+    },
+    {
+      "boss_name": "화염의 폭군 갈라무드",
+      "level": "340",
+      "item_name": "초월 합금 갑옷",
+      "category": "아이템"
+    },
+    {
+      "boss_name": "화염의 폭군 갈라무드",
+      "level": "340",
+      "item_name": "우주의 축복",
+      "category": "아이템"
+    },
+    {
+      "boss_name": "화염의 폭군 갈라무드",
+      "level": "340",
+      "item_name": "지옥불의 핵",
+      "category": "재료"
+    },
+    {
+      "boss_name": "화염의 폭군 갈라무드",
+      "level": "340",
+      "item_name": "점염마의 피",
+      "category": "재료"
+    },
+    {
+      "boss_name": "작열하는 용 이그니르",
+      "level": "340",
+      "item_name": "용의 격노-용혼 홀",
+      "category": "아이템"
+    },
+    {
+      "boss_name": "작열하는 용 이그니르",
+      "level": "340",
+      "item_name": "용의 격노-용혼 갑옷",
+      "category": "아이템"
+    },
+    {
+      "boss_name": "작열하는 용 이그니르",
+      "level": "340",
+      "item_name": "용의 격노-용혼 반지",
+      "category": "아이템"
+    },
+    {
+      "boss_name": "작열하는 용 이그니르",
+      "level": "340",
+      "item_name": "용의 격노-용왕의 뿔 왕관",
+      "category": "아이템"
+    },
+    {
+      "boss_name": "작열하는 용 이그니르",
+      "level": "340",
+      "item_name": "용숨결 호박",
+      "category": "재료"
+    },
+    {
+      "boss_name": "작열하는 용 이그니르",
+      "level": "340",
+      "item_name": "열세의 화염깃",
+      "category": "재료"
+    },
+    {
+      "boss_name": "나가 왕실 장군",
+      "level": "280",
+      "item_name": "천둥의 격노",
+      "category": "아이템"
+    },
+    {
+      "boss_name": "나가 왕실 장군",
+      "level": "280",
+      "item_name": "뇌전 분쇄자",
+      "category": "아이템"
+    },
+    {
+      "boss_name": "나가 왕실 장군",
+      "level": "280",
+      "item_name": "번개 지팡이",
+      "category": "아이템"
+    },
+    {
+      "boss_name": "나가 왕실 장군",
+      "level": "280",
+      "item_name": "아다만타이트",
+      "category": "재료"
+    },
+    {
+      "boss_name": "심해 거인 레비아탄",
+      "level": "260",
+      "item_name": "해일-파도 지팡이",
+      "category": "아이템"
+    },
+    {
+      "boss_name": "심해 거인 레비아탄",
+      "level": "260",
+      "item_name": "창해의 전투 갑옷",
+      "category": "아이템"
+    },
+    {
+      "boss_name": "심해 거인 레비아탄",
+      "level": "260",
+      "item_name": "바다의 가면",
+      "category": "아이템"
+    },
+    {
+      "boss_name": "심해 거인 레비아탄",
+      "level": "260",
+      "item_name": "물의 축복",
+      "category": "아이템"
+    },
+    {
+      "boss_name": "심해 거인 레비아탄",
+      "level": "260",
+      "item_name": "물의 정수",
+      "category": "재료"
+    },
+    {
+      "boss_name": "심해의 마녀 바쉬",
+      "level": "320",
+      "item_name": "악마의 바다 심연-격노의 활",
+      "category": "아이템"
+    },
+    {
+      "boss_name": "심해의 마녀 바쉬",
+      "level": "320",
+      "item_name": "뇌전의 격노 홀",
+      "category": "아이템"
+    },
+    {
+      "boss_name": "심해의 마녀 바쉬",
+      "level": "320",
+      "item_name": "폭풍의 눈",
+      "category": "아이템"
+    },
+    {
+      "boss_name": "심해의 마녀 바쉬",
+      "level": "320",
+      "item_name": "파도소환사의 뿔피리",
+      "category": "아이템"
+    },
+    {
+      "boss_name": "심해의 마녀 바쉬",
+      "level": "320",
+      "item_name": "심해 악마 갑옷",
+      "category": "아이템"
+    },
+    {
+      "boss_name": "심해의 마녀 바쉬",
+      "level": "320",
+      "item_name": "폭풍의 문장",
+      "category": "재료"
+    },
+    {
+      "boss_name": "심해의 마녀 바쉬",
+      "level": "320",
+      "item_name": "정화의 모래",
+      "category": "재료"
+    },
+    {
+      "boss_name": "심해의 마녀 바쉬",
+      "level": "320",
+      "item_name": "푸른 바람의 호박",
+      "category": "재료"
+    },
+    {
+      "boss_name": "광풍의 실프",
+      "level": "320",
+      "item_name": "바람 문장",
+      "category": "아이템"
+    },
+    {
+      "boss_name": "광풍의 실프",
+      "level": "320",
+      "item_name": "폭풍 활",
+      "category": "아이템"
+    },
+    {
+      "boss_name": "광풍의 실프",
+      "level": "320",
+      "item_name": "뇌전의 성물",
+      "category": "아이템"
+    },
+    {
+      "boss_name": "광풍의 실프",
+      "level": "320",
+      "item_name": "바람 반지",
+      "category": "아이템"
+    },
+    {
+      "boss_name": "광풍의 실프",
+      "level": "320",
+      "item_name": "회오리의 핵",
+      "category": "재료"
+    },
+    {
+      "boss_name": "광풍의 실프",
+      "level": "320",
+      "item_name": "뇌전의 문양",
+      "category": "재료"
+    },
+    {
+      "boss_name": "훈련 교관 우사로",
+      "level": "160",
+      "item_name": "군용 갑옷",
+      "category": "아이템"
+    },
+    {
+      "boss_name": "훈련 교관 우사로",
+      "level": "160",
+      "item_name": "군용 투구",
+      "category": "아이템"
+    },
+    {
+      "boss_name": "훈련 교관 우사로",
+      "level": "160",
+      "item_name": "군용 장검",
+      "category": "아이템"
+    },
+    {
+      "boss_name": "훈련 교관 우사로",
+      "level": "160",
+      "item_name": "군용 활",
+      "category": "아이템"
+    },
+    {
+      "boss_name": "훈련 교관 우사로",
+      "level": "160",
+      "item_name": "군용 지팡이",
+      "category": "아이템"
+    },
+    {
+      "boss_name": "훈련 교관 우사로",
+      "level": "160",
+      "item_name": "우잘록의 반지",
+      "category": "아이템"
+    },
+    {
+      "boss_name": "훈련 교관 우사로",
+      "level": "160",
+      "item_name": "강철 조각",
+      "category": "재료"
+    },
+    {
+      "boss_name": "저주받은 인형 마리안느",
+      "level": "300",
+      "item_name": "마법 장갑",
+      "category": "아이템"
+    },
+    {
+      "boss_name": "저주받은 인형 마리안느",
+      "level": "300",
+      "item_name": "비전 지팡이",
+      "category": "아이템"
+    },
+    {
+      "boss_name": "저주받은 인형 마리안느",
+      "level": "300",
+      "item_name": "비전 두건",
+      "category": "아이템"
+    },
+    {
+      "boss_name": "저주받은 인형 마리안느",
+      "level": "300",
+      "item_name": "비전 로브",
+      "category": "아이템"
+    },
+    {
+      "boss_name": "저주받은 인형 마리안느",
+      "level": "300",
+      "item_name": "비밀의 서적",
+      "category": "아이템"
+    },
+    {
+      "boss_name": "저주받은 인형 마리안느",
+      "level": "300",
+      "item_name": "마도서",
+      "category": "재료"
+    },
+    {
+      "boss_name": "저주받은 인형 마리안느",
+      "level": "300",
+      "item_name": "암흑의 회한",
+      "category": "재료"
+    },
+    {
+      "boss_name": "별의정령 알갈론",
+      "level": "340",
+      "item_name": "별빛의 지팡이",
+      "category": "아이템"
+    },
+    {
+      "boss_name": "별의정령 알갈론",
+      "level": "340",
+      "item_name": "별 파괴자",
+      "category": "아이템"
+    },
+    {
+      "boss_name": "별의정령 알갈론",
+      "level": "340",
+      "item_name": "행성 수호자",
+      "category": "아이템"
+    },
+    {
+      "boss_name": "별의정령 알갈론",
+      "level": "340",
+      "item_name": "행성 추적자",
+      "category": "아이템"
+    },
+    {
+      "boss_name": "별의정령 알갈론",
+      "level": "340",
+      "item_name": "북극성의 기도",
+      "category": "아이템"
+    },
+    {
+      "boss_name": "별의정령 알갈론",
+      "level": "340",
+      "item_name": "별의 파편",
+      "category": "재료"
+    },
+    {
+      "boss_name": "별의정령 알갈론",
+      "level": "340",
+      "item_name": "은하의 모래",
+      "category": "재료"
+    },
+    {
+      "boss_name": "수호자 노렌",
+      "level": "340",
+      "item_name": "생명의 반지",
+      "category": "아이템"
+    },
+    {
+      "boss_name": "수호자 노렌",
+      "level": "340",
+      "item_name": "정교한 로브",
+      "category": "아이템"
+    },
+    {
+      "boss_name": "수호자 노렌",
+      "level": "340",
+      "item_name": "에메랄드 왕관",
+      "category": "아이템"
+    },
+    {
+      "boss_name": "수호자 노렌",
+      "level": "340",
+      "item_name": "생명석",
+      "category": "아이템"
+    },
+    {
+      "boss_name": "수호자 노렌",
+      "level": "340",
+      "item_name": "생명의 싹",
+      "category": "재료"
+    },
+    {
+      "boss_name": "수호자 노렌",
+      "level": "340",
+      "item_name": "자연의 씨앗",
+      "category": "재료"
+    },
+    {
+      "boss_name": "암흑 망령",
+      "level": "280",
+      "item_name": "환영 활",
+      "category": "아이템"
+    },
+    {
+      "boss_name": "암흑 망령",
+      "level": "280",
+      "item_name": "폭파자",
+      "category": "아이템"
+    },
+    {
+      "boss_name": "암흑 망령",
+      "level": "280",
+      "item_name": "죄악의 눈",
+      "category": "아이템"
+    },
+    {
+      "boss_name": "암흑 망령",
+      "level": "280",
+      "item_name": "지옥석 조각",
+      "category": "아이템"
+    },
+    {
+      "boss_name": "암흑 망령",
+      "level": "280",
+      "item_name": "암흑의 원한",
+      "category": "재료"
+    },
+    {
+      "boss_name": "피의 시체",
+      "level": "320",
+      "item_name": "붉은 피의 뼈 칼날",
+      "category": "아이템"
+    },
+    {
+      "boss_name": "피의 시체",
+      "level": "320",
+      "item_name": "살육의 송곳니",
+      "category": "아이템"
+    },
+    {
+      "boss_name": "피의 시체",
+      "level": "320",
+      "item_name": "영혼 장송-피의 로브",
+      "category": "아이템"
+    },
+    {
+      "boss_name": "피의 시체",
+      "level": "320",
+      "item_name": "흡혈귀의 송곳니",
+      "category": "아이템"
+    },
+    {
+      "boss_name": "피의 시체",
+      "level": "320",
+      "item_name": "피의 결정",
+      "category": "아이템"
+    },
+    {
+      "boss_name": "피의 시체",
+      "level": "320",
+      "item_name": "뒤틀린 피의 깃털",
+      "category": "재료"
+    },
+    {
+      "boss_name": "피의 시체",
+      "level": "320",
+      "item_name": "어둠의 마혈",
+      "category": "재료"
+    },
+    {
+      "boss_name": "죽음의 리치",
+      "level": "320",
+      "item_name": "망자의 영혼 활",
+      "category": "아이템"
+    },
+    {
+      "boss_name": "죽음의 리치",
+      "level": "320",
+      "item_name": "영혼목 지팡이",
+      "category": "아이템"
+    },
+    {
+      "boss_name": "죽음의 리치",
+      "level": "320",
+      "item_name": "영혼목 갑옷",
+      "category": "아이템"
+    },
+    {
+      "boss_name": "죽음의 리치",
+      "level": "320",
+      "item_name": "피의 반지",
+      "category": "아이템"
+    },
+    {
+      "boss_name": "죽음의 리치",
+      "level": "320",
+      "item_name": "사령의 인광 가루",
+      "category": "재료"
+    },
+    {
+      "boss_name": "죽음의 리치",
+      "level": "320",
+      "item_name": "명계의 침향목",
+      "category": "재료"
+    },
+    {
+      "boss_name": "죽음의 리치",
+      "level": "320",
+      "item_name": "영혼 결정",
+      "category": "재료"
+    },
+    {
+      "boss_name": "언데드 군주",
+      "level": "360",
+      "item_name": "쇄혼검",
+      "category": "아이템"
+    },
+    {
+      "boss_name": "언데드 군주",
+      "level": "360",
+      "item_name": "지옥의 성배",
+      "category": "아이템"
+    },
+    {
+      "boss_name": "언데드 군주",
+      "level": "360",
+      "item_name": "암흑 결정",
+      "category": "재료"
+    },
+    {
+      "boss_name": "언데드 군주",
+      "level": "360",
+      "item_name": "죽음의 정수",
+      "category": "재료"
+    },
+    {
+      "boss_name": "언데드 군주",
+      "level": "360",
+      "item_name": "죽음의 그림자",
+      "category": "재료"
+    },
+    {
+      "boss_name": "역병의 근원 마이어스",
+      "level": "360",
+      "item_name": "모든 역병의 근원-맹독검",
+      "category": "아이템"
+    },
+    {
+      "boss_name": "역병의 근원 마이어스",
+      "level": "360",
+      "item_name": "모든 역병의 근원-오염된 심장",
+      "category": "아이템"
+    },
+    {
+      "boss_name": "역병의 근원 마이어스",
+      "level": "360",
+      "item_name": "타락한 마나핵",
+      "category": "재료"
+    },
+    {
+      "boss_name": "역병의 근원 마이어스",
+      "level": "360",
+      "item_name": "독무의 결정",
+      "category": "재료"
+    },
+    {
+      "boss_name": "영혼의 수확자 타나토스",
+      "level": "340",
+      "item_name": "죽음의 심판-운명의 낫",
+      "category": "아이템"
+    },
+    {
+      "boss_name": "영혼의 수확자 타나토스",
+      "level": "340",
+      "item_name": "악마 심연-죽음의 전투 갑옷",
+      "category": "아이템"
+    },
+    {
+      "boss_name": "영혼의 수확자 타나토스",
+      "level": "340",
+      "item_name": "암흑 불멸의 영혼 의복",
+      "category": "아이템"
+    },
+    {
+      "boss_name": "영혼의 수확자 타나토스",
+      "level": "340",
+      "item_name": "어둠-타락의 심장",
+      "category": "아이템"
+    },
+    {
+      "boss_name": "영혼의 수확자 타나토스",
+      "level": "340",
+      "item_name": "망자의 촉수",
+      "category": "재료"
+    },
+    {
+      "boss_name": "영혼의 수확자 타나토스",
+      "level": "340",
+      "item_name": "파괴된 원혼의 뼈",
+      "category": "재료"
+    },
+    {
+      "boss_name": "눈사람",
+      "level": "320",
+      "item_name": "얼음 송곳니 검",
+      "category": "아이템"
+    },
+    {
+      "boss_name": "눈사람",
+      "level": "320",
+      "item_name": "겨울 사냥꾼",
+      "category": "아이템"
+    },
+    {
+      "boss_name": "눈사람",
+      "level": "320",
+      "item_name": "설원 로브",
+      "category": "아이템"
+    },
+    {
+      "boss_name": "눈사람",
+      "level": "320",
+      "item_name": "결울 빙모",
+      "category": "아이템"
+    },
+    {
+      "boss_name": "눈사람",
+      "level": "320",
+      "item_name": "겨울 결정",
+      "category": "아이템"
+    },
+    {
+      "boss_name": "눈사람",
+      "level": "320",
+      "item_name": "마나의 뿔",
+      "category": "재료"
+    },
+    {
+      "boss_name": "눈사람",
+      "level": "320",
+      "item_name": "설인 가죽",
+      "category": "재료"
+    },
+    {
+      "boss_name": "설원 엘프",
+      "level": "200",
+      "item_name": "얼어붙은 석궁",
+      "category": "아이템"
+    },
+    {
+      "boss_name": "설원 엘프",
+      "level": "200",
+      "item_name": "겨울 홀",
+      "category": "아이템"
+    },
+    {
+      "boss_name": "설원 엘프",
+      "level": "200",
+      "item_name": "서리 갑옷",
+      "category": "아이템"
+    },
+    {
+      "boss_name": "설원 엘프",
+      "level": "200",
+      "item_name": "얼음 망토",
+      "category": "아이템"
+    },
+    {
+      "boss_name": "설원 엘프",
+      "level": "200",
+      "item_name": "설원 반지",
+      "category": "아이템"
+    },
+    {
+      "boss_name": "설원 엘프",
+      "level": "200",
+      "item_name": "성령석 조각",
+      "category": "아이템"
+    },
+    {
+      "boss_name": "설원 엘프",
+      "level": "200",
+      "item_name": "서리 보석",
+      "category": "재료"
+    },
+    {
+      "boss_name": "산타클로스",
+      "level": "240",
+      "item_name": "크리스마스 드레스",
+      "category": "아이템"
+    },
+    {
+      "boss_name": "산타클로스",
+      "level": "240",
+      "item_name": "크리스마스 모자",
+      "category": "아이템"
+    },
+    {
+      "boss_name": "산타클로스",
+      "level": "240",
+      "item_name": "크리스마스 선물 상자",
+      "category": "아이템"
+    },
+    {
+      "boss_name": "산타클로스",
+      "level": "240",
+      "item_name": "시간 반지",
+      "category": "아이템"
+    },
+    {
+      "boss_name": "산타클로스",
+      "level": "240",
+      "item_name": "성스러운 조각",
+      "category": "재료"
+    },
+    {
+      "boss_name": "산타클로스",
+      "level": "240",
+      "item_name": "성광의 천",
+      "category": "재료"
+    },
+    {
+      "boss_name": "빙하의 죽음 벌레",
+      "level": "320",
+      "item_name": "빙하 죽음 검",
+      "category": "아이템"
+    },
+    {
+      "boss_name": "빙하의 죽음 벌레",
+      "level": "320",
+      "item_name": "빙하 죽음 총",
+      "category": "아이템"
+    },
+    {
+      "boss_name": "빙하의 죽음 벌레",
+      "level": "320",
+      "item_name": "빙하 죽음 발톱",
+      "category": "아이템"
+    },
+    {
+      "boss_name": "빙하의 죽음 벌레",
+      "level": "320",
+      "item_name": "빙하 죽음 갑옷",
+      "category": "아이템"
+    },
+    {
+      "boss_name": "빙하의 죽음 벌레",
+      "level": "320",
+      "item_name": "빙하 망령 반지",
+      "category": "아이템"
+    },
+    {
+      "boss_name": "빙하의 죽음 벌레",
+      "level": "320",
+      "item_name": "마충의 유해",
+      "category": "재료"
+    },
+    {
+      "boss_name": "빙하의 죽음 벌레",
+      "level": "320",
+      "item_name": "빙옥의 결정",
+      "category": "재료"
+    },
+    {
+      "boss_name": "성역의 대사제",
+      "level": "320",
+      "item_name": "성스러운 검",
+      "category": "아이템"
+    },
+    {
+      "boss_name": "성역의 대사제",
+      "level": "320",
+      "item_name": "성서",
+      "category": "아이템"
+    },
+    {
+      "boss_name": "성역의 대사제",
+      "level": "320",
+      "item_name": "성령의 비약",
+      "category": "아이템"
+    },
+    {
+      "boss_name": "성역의 대사제",
+      "level": "320",
+      "item_name": "성스러운 투구",
+      "category": "아이템"
+    },
+    {
+      "boss_name": "성역의 대사제",
+      "level": "320",
+      "item_name": "부활석",
+      "category": "아이템"
+    },
+    {
+      "boss_name": "성역의 대사제",
+      "level": "320",
+      "item_name": "세라프의 깃털",
+      "category": "재료"
+    },
+    {
+      "boss_name": "성역의 대사제",
+      "level": "320",
+      "item_name": "빛의 문장 조각",
+      "category": "재료"
+    },
+    {
+      "boss_name": "성역의 대사제",
+      "level": "320",
+      "item_name": "신앙의 핵",
+      "category": "재료"
+    },
+    {
+      "boss_name": "전쟁의 천사 임페리우스",
+      "level": "340",
+      "item_name": "성스러운 빛의 심판-타오르는 창",
+      "category": "아이템"
+    },
+    {
+      "boss_name": "전쟁의 천사 임페리우스",
+      "level": "340",
+      "item_name": "성스러운 갑옷",
+      "category": "아이템"
+    },
+    {
+      "boss_name": "전쟁의 천사 임페리우스",
+      "level": "340",
+      "item_name": "천상의 지팡이",
+      "category": "아이템"
+    },
+    {
+      "boss_name": "전쟁의 천사 임페리우스",
+      "level": "340",
+      "item_name": "천상의 투구",
+      "category": "아이템"
+    },
+    {
+      "boss_name": "전쟁의 천사 임페리우스",
+      "level": "340",
+      "item_name": "천상의 징표",
+      "category": "아이템"
+    },
+    {
+      "boss_name": "전쟁의 천사 임페리우스",
+      "level": "340",
+      "item_name": "복음의 조각",
+      "category": "재료"
+    },
+    {
+      "boss_name": "전쟁의 천사 임페리우스",
+      "level": "340",
+      "item_name": "성스러운 결정",
+      "category": "재료"
+    },
+    {
+      "boss_name": "전쟁의 천사 임페리우스",
+      "level": "340",
+      "item_name": "자비의 성광 조각",
+      "category": "재료"
+    },
+    {
+      "boss_name": "지옥 악마",
+      "level": "320",
+      "item_name": "지옥 지팡이",
+      "category": "아이템"
+    },
+    {
+      "boss_name": "지옥 악마",
+      "level": "320",
+      "item_name": "마귀의 심장",
+      "category": "아이템"
+    },
+    {
+      "boss_name": "지옥 악마",
+      "level": "320",
+      "item_name": "암흑별 철",
+      "category": "재료"
+    },
+    {
+      "boss_name": "제5마왕 아노시스",
+      "level": "360",
+      "item_name": "악마의 속삭임",
+      "category": "아이템"
+    },
+    {
+      "boss_name": "제5마왕 아노시스",
+      "level": "360",
+      "item_name": "악마의 유혹",
+      "category": "아이템"
+    },
+    {
+      "boss_name": "제5마왕 아노시스",
+      "level": "360",
+      "item_name": "심연 악마 가면",
+      "category": "아이템"
+    },
+    {
+      "boss_name": "제5마왕 아노시스",
+      "level": "360",
+      "item_name": "혼돈의 혈정",
+      "category": "재료"
+    },
+    {
+      "boss_name": "제5마왕 아노시스",
+      "level": "360",
+      "item_name": "암흑의 핵",
+      "category": "재료"
+    },
+    {
+      "boss_name": "지옥 수호자",
+      "level": "320",
+      "item_name": "지옥 투구",
+      "category": "아이템"
+    },
+    {
+      "boss_name": "지옥 수호자",
+      "level": "320",
+      "item_name": "지옥 갑옷",
+      "category": "아이템"
+    },
+    {
+      "boss_name": "지옥 수호자",
+      "level": "320",
+      "item_name": "지옥의 반지",
+      "category": "아이템"
+    },
+    {
+      "boss_name": "지옥 수호자",
+      "level": "320",
+      "item_name": "악마의 비늘",
+      "category": "재료"
+    },
+    {
+      "boss_name": "지옥 수호자",
+      "level": "320",
+      "item_name": "지옥의 마안",
+      "category": "재료"
+    },
+    {
+      "boss_name": "제9마왕 아즈모단",
+      "level": "320",
+      "item_name": "원죄의 칼날",
+      "category": "아이템"
+    },
+    {
+      "boss_name": "제9마왕 아즈모단",
+      "level": "320",
+      "item_name": "망령 법의",
+      "category": "아이템"
+    },
+    {
+      "boss_name": "제9마왕 아즈모단",
+      "level": "320",
+      "item_name": "암흑 반지",
+      "category": "아이템"
+    },
+    {
+      "boss_name": "제9마왕 아즈모단",
+      "level": "320",
+      "item_name": "명계의 녹",
+      "category": "재료"
+    },
+    {
+      "boss_name": "제9마왕 아즈모단",
+      "level": "320",
+      "item_name": "암흑 악몽의 타액",
+      "category": "재료"
+    },
+    {
+      "boss_name": "제7마왕 모르페우스",
+      "level": "340",
+      "item_name": "심연의 도끼",
+      "category": "아이템"
+    },
+    {
+      "boss_name": "제7마왕 모르페우스",
+      "level": "340",
+      "item_name": "암살자",
+      "category": "아이템"
+    },
+    {
+      "boss_name": "제7마왕 모르페우스",
+      "level": "340",
+      "item_name": "타락한 자",
+      "category": "아이템"
+    },
+    {
+      "boss_name": "제7마왕 모르페우스",
+      "level": "340",
+      "item_name": "탐욕의 의지",
+      "category": "아이템"
+    },
+    {
+      "boss_name": "제7마왕 모르페우스",
+      "level": "340",
+      "item_name": "지옥의 정수",
+      "category": "재료"
+    },
+    {
+      "boss_name": "제7마왕 모르페우스",
+      "level": "340",
+      "item_name": "뒤틀린 결정",
+      "category": "재료"
+    },
+    {
+      "boss_name": "제7마왕 모르페우스",
+      "level": "340",
+      "item_name": "영혼 포식의 피",
+      "category": "재료"
+    },
+    {
+      "boss_name": "봉인된 파괴의 힘",
+      "level": "380",
+      "item_name": "고대의 악몽-파괴의 검",
+      "category": "아이템"
+    },
+    {
+      "boss_name": "봉인된 파괴의 힘",
+      "level": "380",
+      "item_name": "고대의 악몽-낙성",
+      "category": "아이템"
+    },
+    {
+      "boss_name": "봉인된 파괴의 힘",
+      "level": "380",
+      "item_name": "고대의 악몽-절망의 투구",
+      "category": "아이템"
+    },
+    {
+      "boss_name": "봉인된 파괴의 힘",
+      "level": "380",
+      "item_name": "고대의 악몽-월성의 추락",
+      "category": "아이템"
+    },
+    {
+      "boss_name": "봉인된 파괴의 힘",
+      "level": "380",
+      "item_name": "혼돈의 족쇄",
+      "category": "재료"
+    },
+    {
+      "boss_name": "봉인된 파괴의 힘",
+      "level": "380",
+      "item_name": "파멸의 재",
+      "category": "재료"
+    },
+    {
+      "boss_name": "봉인된 파괴의 힘",
+      "level": "380",
+      "item_name": "잊힌 고대 마나석",
+      "category": "재료"
+    },
+    {
+      "boss_name": "봉인된 피의 선조 스토릭",
+      "level": "380",
+      "item_name": "검은 쌍둥이 반지-얼음 파편",
+      "category": "재료"
+    },
+    {
+      "boss_name": "봉인된 피의 선조 스토릭",
+      "level": "380",
+      "item_name": "검은 쌍둥이 반지-둔화 파편",
+      "category": "재료"
+    },
+    {
+      "boss_name": "봉인된 피의 선조 스토릭",
+      "level": "380",
+      "item_name": "검은 쌍둥이 반지-섬광 파편",
+      "category": "재료"
+    },
+    {
+      "boss_name": "봉인된 피의 선조 스토릭",
+      "level": "380",
+      "item_name": "검은 쌍둥이 반지-혈기 파편",
+      "category": "재료"
+    },
+    {
+      "boss_name": "봉인된 피의 선조 스토릭",
+      "level": "380",
+      "item_name": "타락한 피의 발톱",
+      "category": "재료"
+    },
+    {
+      "boss_name": "봉인된 피의 선조 스토릭",
+      "level": "380",
+      "item_name": "신비한 혈호박",
+      "category": "재료"
+    },
+    {
+      "boss_name": "봉인된 피의 선조 스토릭",
+      "level": "380",
+      "item_name": "피의 문양",
+      "category": "재료"
+    },
+    {
+      "boss_name": "봉인된 영혼의 족쇄",
+      "level": "380",
+      "item_name": "욕망의 눈",
+      "category": "아이템"
+    },
+    {
+      "boss_name": "봉인된 영혼의 족쇄",
+      "level": "380",
+      "item_name": "고통의 손",
+      "category": "아이템"
+    },
+    {
+      "boss_name": "봉인된 영혼의 족쇄",
+      "level": "380",
+      "item_name": "분노의 송곳니",
+      "category": "아이템"
+    },
+    {
+      "boss_name": "봉인된 영혼의 족쇄",
+      "level": "380",
+      "item_name": "영혼 구속의 족쇄",
+      "category": "아이템"
+    },
+    {
+      "boss_name": "봉인된 영혼의 족쇄",
+      "level": "380",
+      "item_name": "영혼 정수",
+      "category": "재료"
+    },
+    {
+      "boss_name": "봉인된 영혼의 족쇄",
+      "level": "380",
+      "item_name": "그림자의 핵",
+      "category": "재료"
+    },
+    {
+      "boss_name": "봉인된 영혼의 족쇄",
+      "level": "380",
+      "item_name": "영혼 문양",
+      "category": "재료"
+    },
+    {
+      "boss_name": "대지 수호자 로샨",
+      "level": "260",
+      "item_name": "대지 수호자 전투 도끼",
+      "category": "아이템"
+    },
+    {
+      "boss_name": "대지 수호자 로샨",
+      "level": "260",
+      "item_name": "대지 수호자 석궁",
+      "category": "아이템"
+    },
+    {
+      "boss_name": "대지 수호자 로샨",
+      "level": "260",
+      "item_name": "대지 수호자 지팡이",
+      "category": "아이템"
+    },
+    {
+      "boss_name": "대지 수호자 로샨",
+      "level": "260",
+      "item_name": "대지 수호자 전투 장비",
+      "category": "아이템"
+    },
+    {
+      "boss_name": "대지 수호자 로샨",
+      "level": "260",
+      "item_name": "대지 수호자의 반지",
+      "category": "아이템"
+    },
+    {
+      "boss_name": "대지 수호자 로샨",
+      "level": "260",
+      "item_name": "대지 수호자 핵",
+      "category": "아이템"
+    },
+    {
+      "boss_name": "대지 수호자 로샨",
+      "level": "260",
+      "item_name": "대지의 파편",
+      "category": "재료"
+    },
+    {
+      "boss_name": "대지 수호자 로샨",
+      "level": "260",
+      "item_name": "고대 마나석",
+      "category": "재료"
+    }
+  ]
+}
