@@ -44,6 +44,8 @@
     "지옥석": "지옥석 조각",
     "지옥볼의 핵": "지옥불의 핵",
     "파천의뇌석": "파천의 뇌석",
+    "빅옹의 결정": "빙옥의 결정",
+    "끝없는 어룸의 로브": "끝없는 어둠의 로브",
   };
 
   function normalizeName(name) {
@@ -510,7 +512,7 @@
       bosses: [],
       job_list: [],
       all_job_list: (gameData && gameData.all_job_list) || [
-        "프리스트", "가디언", "드루이드", "블레이드 스피릿", "버서커", "팔라딘", "워리어", "크루세이더",
+        "프리스트", "가디언", "드루이드", "블레이드 스피릿", "얼음마법사", "검사", "버서커", "팔라딘", "워리어", "크루세이더",
         "소드마스터", "다크나이트", "블레이더", "랜서", "어쌔신",
         "스나이퍼", "보우마스터", "헌터", "트릭스터", "메이지",
         "아크메이지", "워록", "네크로맨서", "소서러", "엘리멘탈리스트",
@@ -557,6 +559,25 @@
             itemToBoss[itName] = { boss: bName, level: lvlNum };
           }
         }
+
+        // Fallback mappings for unlisted drops
+        if (!itemToBoss["이그니르의 심장"]) itemToBoss["이그니르의 심장"] = { boss: "작열하는 용 이그니르", level: 340 };
+        if (!itemToBoss["이그닐의 심장"]) itemToBoss["이그닐의 심장"] = { boss: "작열하는 용 이그니르", level: 340 };
+        if (!itemToBoss["현빙"]) itemToBoss["현빙"] = { boss: "눈사람", level: 320 };
+
+        if (bossMap["작열하는 용 이그니르"]) {
+          const drops = bossMap["작열하는 용 이그니르"].drops.map(d => d.name);
+          if (!drops.includes("이그니르의 심장") && !drops.includes("이그닐의 심장")) {
+            bossMap["작열하는 용 이그니르"].drops.push({ name: "이그니르의 심장", type: "재료" });
+          }
+        }
+        if (bossMap["눈사람"]) {
+          const drops = bossMap["눈사람"].drops.map(d => d.name);
+          if (!drops.includes("현빙")) {
+            bossMap["눈사람"].drops.push({ name: "현빙", type: "재료" });
+          }
+        }
+
         result.bosses = Object.values(bossMap).sort((a, b) => a.level - b.level);
         result.bosses.forEach(b => {
           bossLevelLookup[b.name] = b.level;
@@ -639,7 +660,7 @@
           }
 
           let finalBoss = boss;
-          if (!finalBoss) {
+          if (!finalBoss || finalBoss === "재료" || finalBoss === "아이템") {
             if (allJobRecipes.has(finalMat)) {
               finalBoss = "조합템";
             } else if (itemToBoss[finalMat]) {
@@ -878,7 +899,7 @@
         <h3 class="gear-title">${itemName}</h3>
       </div>
       <div class="gear-card-actions">
-        <span class="gear-progress-text">달성률: <strong>${pct}%</strong> (${checkedInCard}/${leaves.length})</span>
+        <span class="gear-progress-text">${leaves.length > 0 ? `달성률: <strong>${pct}%</strong> (${checkedInCard}/${leaves.length})` : `<span style="color: var(--text-muted); font-size: 0.85rem;">조합 정보 준비 중</span>`}</span>
         <button class="btn-toggle-tree" data-target="body-${itemName.replace(/\s+/g, '_')}">펼치기/접기</button>
       </div>
     `;
@@ -934,9 +955,16 @@
       const childrenUl = document.createElement("ul");
       childrenUl.className = "tree-children";
 
-      recipe.materials.forEach((mat, idx) => {
-        renderTreeMaterial(mat, idx, recipe.name, slot, childrenUl, recipeMap, depth + 1, currentPath, pathDisplay);
-      });
+      if (recipe.materials.length === 0) {
+        const emptyNotice = document.createElement("li");
+        emptyNotice.className = "tree-node";
+        emptyNotice.innerHTML = `<span style="color: var(--text-muted); font-size: 0.85rem; padding: 4px 12px; display: inline-block;">(세부 조합식 정보 준비 중)</span>`;
+        childrenUl.appendChild(emptyNotice);
+      } else {
+        recipe.materials.forEach((mat, idx) => {
+          renderTreeMaterial(mat, idx, recipe.name, slot, childrenUl, recipeMap, depth + 1, currentPath, pathDisplay);
+        });
+      }
 
       li.appendChild(childrenUl);
     }
@@ -1039,7 +1067,10 @@
       const matsList = document.createElement("div");
       matsList.className = "flow-mats-list";
 
-      stepRecipe.materials.forEach((m, mIdx) => {
+      if (stepRecipe.materials.length === 0) {
+        matsList.innerHTML = `<div style="color: var(--text-muted); font-size: 0.85rem; padding: 6px 12px;">세부 조합 정보 준비 중</div>`;
+      } else {
+        stepRecipe.materials.forEach((m, mIdx) => {
         const matItem = document.createElement("div");
         matItem.className = "flow-mat-item";
         const isSubRecipe = m.boss === "조합템" || !!recipeMap[m.name];
@@ -1071,6 +1102,7 @@
 
         matsList.appendChild(matItem);
       });
+      }
 
       stepCard.appendChild(matsList);
       container.appendChild(stepCard);
@@ -1098,6 +1130,15 @@
 
     const items = Object.values(matGroups);
     const uncompleted = items.filter(g => g.nodes.some(n => !checkedNodes.has(n.id)));
+
+    if (leaves.length === 0) {
+      box.innerHTML = `
+        <div class="remaining-mats-title" style="color: var(--text-muted);">
+          📝 세부 조합 정보 준비 중 (엑셀 업데이트 예정)
+        </div>
+      `;
+      return box;
+    }
 
     if (uncompleted.length === 0) {
       box.innerHTML = `

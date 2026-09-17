@@ -50,6 +50,8 @@ ALIAS_MAP = {
     "지옥석": "지옥석 조각",
     "지옥볼의 핵": "지옥불의 핵",
     "파천의뇌석": "파천의 뇌석",
+    "빅옹의 결정": "빙옥의 결정",
+    "끝없는 어룸의 로브": "끝없는 어둠의 로브",
 }
 
 def clean_str(s):
@@ -92,7 +94,7 @@ def parse_excel(file_path):
     }
 
     known_jobs = [
-        "프리스트", "가디언", "드루이드", "블레이드 스피릿", "버서커", "팔라딘", "워리어", "크루세이더",
+        "프리스트", "가디언", "드루이드", "블레이드 스피릿", "얼음마법사", "검사", "버서커", "팔라딘", "워리어", "크루세이더",
         "소드마스터", "다크나이트", "블레이더", "랜서", "어쌔신",
         "스나이퍼", "보우마스터", "헌터", "트릭스터", "메이지",
         "아크메이지", "워록", "네크로맨서", "소서러", "엘리멘탈리스트",
@@ -140,6 +142,20 @@ def parse_excel(file_path):
                     })
                     item_to_boss[item_name] = {"boss": b_name, "level": int(lvl) if lvl.isdigit() else 0}
                     item_to_boss[clean_str(item_name)] = {"boss": b_name, "level": int(lvl) if lvl.isdigit() else 0}
+
+            # Fallback drops for materials omitted in Boss sheet
+            item_to_boss["이그닐의 심장"] = {"boss": "작열하는 용 이그니르", "level": 340}
+            item_to_boss["이그니르의 심장"] = {"boss": "작열하는 용 이그니르", "level": 340}
+            item_to_boss["현빙"] = {"boss": "눈사람", "level": 320}
+
+            if "작열하는 용 이그니르" in boss_map:
+                existing_drops = [d["name"] for d in boss_map["작열하는 용 이그니르"]["drops"]]
+                if "이그니르의 심장" not in existing_drops and "이그닐의 심장" not in existing_drops:
+                    boss_map["작열하는 용 이그니르"]["drops"].append({"name": "이그니르의 심장", "type": "재료"})
+            if "눈사람" in boss_map:
+                existing_drops = [d["name"] for d in boss_map["눈사람"]["drops"]]
+                if "현빙" not in existing_drops:
+                    boss_map["눈사람"]["drops"].append({"name": "현빙", "type": "재료"})
 
             game_data["bosses"] = sorted(list(boss_map.values()), key=lambda x: (x["level"], x["name"]))
             boss_level_lookup = {b["name"]: b["level"] for b in game_data["bosses"]}
@@ -219,7 +235,7 @@ def parse_excel(file_path):
                         mat = mat_name
 
                 # Auto-resolve missing boss and level from boss drops
-                if not boss:
+                if not boss or boss in ["재료", "아이템"]:
                     if mat in all_job_recipes:
                         boss = "조합템"
                     elif mat in item_to_boss:
