@@ -902,15 +902,43 @@
 
       const isFinal = (index === steps.length - 1);
       const stepLvl = stepRecipe.level_str || (stepRecipe.level ? `Lv.${stepRecipe.level}` : "");
-      stepCard.innerHTML = `
-        <div class="flow-step-header">
-          <div class="flow-step-target">
-            <span class="flow-step-number">Step ${index + 1}${isFinal ? " (최종 완성)" : ""}</span>
-            <strong>${stepRecipe.name}</strong>
-            ${stepLvl ? `<span class="badge-level">${stepLvl}</span>` : ""}
-          </div>
+
+      // Leaves belonging to this step
+      const stepLeaves = (stepRecipe.name === rootItemName)
+        ? (leaves || [])
+        : (leaves || []).filter(l => l.path && l.path.includes(stepRecipe.name));
+
+      const isStepComplete = stepLeaves.length > 0 && stepLeaves.every(l => checkedNodes.has(l.id));
+      if (isStepComplete) stepCard.classList.add("completed");
+
+      const stepHeader = document.createElement("div");
+      stepHeader.className = "flow-step-header";
+      stepHeader.title = "클릭 시 이 단계 하위 재료 일괄 완료/취소 토글";
+      stepHeader.innerHTML = `
+        <div class="flow-step-target">
+          <span class="flow-step-number">Step ${index + 1}${isFinal ? " (최종 완성)" : ""}</span>
+          <strong>${stepRecipe.name}</strong>
+          ${stepLvl ? `<span class="badge-level">${stepLvl}</span>` : ""}
+          ${isStepComplete 
+            ? `<span class="step-status-badge completed">✓ 단계 완료</span>` 
+            : `<span class="step-status-badge">(클릭 시 하위 재료 일괄 완료)</span>`
+          }
         </div>
       `;
+
+      // Clicking step header toggles all step leaves
+      stepHeader.addEventListener("click", () => {
+        if (stepLeaves.length === 0) return;
+        const allDone = stepLeaves.every(l => checkedNodes.has(l.id));
+        stepLeaves.forEach(l => {
+          if (allDone) checkedNodes.delete(l.id);
+          else checkedNodes.add(l.id);
+        });
+        saveCheckedNodes();
+        renderAll();
+      });
+
+      stepCard.appendChild(stepHeader);
 
       const matsList = document.createElement("div");
       matsList.className = "flow-mats-list";
@@ -923,34 +951,85 @@
           matItem.className = "flow-mat-item";
           const sub = getRecipe(m.name);
           const isSubRecipe = (m.boss === "조합템" || !!sub) && sub && sub.materials && sub.materials.length > 0 && !sub.is_drop;
-          const matchingLeaves = (leaves || []).filter(l => l.parentRecipe === stepRecipe.name && l.name === m.name);
-          const isChecked = matchingLeaves.length > 0 && matchingLeaves.every(l => checkedNodes.has(l.id));
-          if (isChecked) matItem.classList.add("checked");
 
-          const bossName = (m.boss && m.boss !== "조합템") ? m.boss : (sub ? sub.drop_boss : "");
-          const mLevelStr = m.level_str || (sub ? sub.level_str : (m.level ? `Lv.${m.level}` : ""));
+          if (isSubRecipe) {
+            // Intermediate combo item in step
+            const subLeaves = (leaves || []).filter(l => l.path && l.path.includes(m.name));
+            const isChecked = subLeaves.length > 0 && subLeaves.every(l => checkedNodes.has(l.id));
+            if (isChecked) matItem.classList.add("checked");
 
-          matItem.innerHTML = `
-            <input type="checkbox" class="tree-checkbox" ${isChecked ? "checked" : ""} />
-            <span class="item-name">${m.name} x${m.qty || 1}</span>
-            ${isSubRecipe 
-              ? '<span class="badge-craft">조합템</span>'
-              : `<span class="badge-boss">${(bossName && (bossName.includes("채광") || bossName.includes("채굴"))) ? "⛏️ " : "👹 "}${bossName || '보스'}</span> ${mLevelStr ? `<span class="badge-level">${mLevelStr}</span>` : ''}`
-            }
-          `;
-
-          const chk = matItem.querySelector(".tree-checkbox");
-          chk.addEventListener("change", () => {
-            if (matchingLeaves.length > 0) {
-              if (chk.checked) {
-                const nextUnchecked = matchingLeaves.find(l => !checkedNodes.has(l.id));
-                if (nextUnchecked) toggleNodeCheck(nextUnchecked.id, true);
-              } else {
-                const lastChecked = [...matchingLeaves].reverse().find(l => checkedNodes.has(l.id));
-                if (lastChecked) toggleNodeCheck(lastChecked.id, false);
+            matItem.title = "클릭 시 이 조합템의 하위 재료 일괄 완료/취소 토글";
+            matItem.innerHTML = `
+              <input type="checkbox" class="tree-checkbox" ${isChecked ? "checked" : ""} />
+              <span class="item-name" style="font-weight: 600;">${m.name} x${m.qty || 1}</span>
+              <span class="badge-craft" title="조합 아이템">🛠️ 조합템 (하위 ${subLeaves.length}개)</span>
+              ${isChecked 
+                ? `<span style="color: #86efac; font-size: 11px; margin-left: auto;">✓ 완성</span>` 
+                : `<span style="color: var(--text-muted); font-size: 11px; margin-left: auto;">(일괄 완료)</span>`
               }
+            `;
+
+            const toggleSubCombo = () => {
+              if (subLeaves.length === 0) return;
+              const allDone = subLeaves.every(l => checkedNodes.has(l.id));
+              subLeaves.forEach(l => {
+                if (allDone) checkedNodes.delete(l.id);
+                else checkedNodes.add(l.id);
+              });
+              saveCheckedNodes();
+              renderAll();
+            };
+
+            const chk = matItem.querySelector(".tree-checkbox");
+            if (chk) {
+              chk.addEventListener("click", (e) => {
+                e.stopPropagation();
+                toggleSubCombo();
+              });
             }
-          });
+            matItem.addEventListener("click", () => {
+              toggleSubCombo();
+            });
+          } else {
+            // Direct leaf material in step
+            const matchingLeaves = (leaves || []).filter(l => l.parentRecipe === stepRecipe.name && l.name === m.name);
+            const isChecked = matchingLeaves.length > 0 && matchingLeaves.every(l => checkedNodes.has(l.id));
+            if (isChecked) matItem.classList.add("checked");
+
+            const bossName = (m.boss && m.boss !== "조합템") ? m.boss : (sub ? sub.drop_boss : "");
+            const mLevelStr = m.level_str || (sub ? sub.level_str : (m.level ? `Lv.${m.level}` : ""));
+
+            matItem.innerHTML = `
+              <input type="checkbox" class="tree-checkbox" ${isChecked ? "checked" : ""} />
+              <span class="item-name">${m.name} x${m.qty || 1}</span>
+              <span class="badge-boss">${(bossName && (bossName.includes("채광") || bossName.includes("채굴"))) ? "⛏️ " : "👹 "}${bossName || '보스'}</span>
+              ${mLevelStr ? `<span class="badge-level">${mLevelStr}</span>` : ""}
+            `;
+
+            const toggleLeafItem = () => {
+              if (matchingLeaves.length > 0) {
+                const allDone = matchingLeaves.every(l => checkedNodes.has(l.id));
+                if (allDone) {
+                  matchingLeaves.forEach(l => checkedNodes.delete(l.id));
+                } else {
+                  matchingLeaves.forEach(l => checkedNodes.add(l.id));
+                }
+                saveCheckedNodes();
+                renderAll();
+              }
+            };
+
+            const chk = matItem.querySelector(".tree-checkbox");
+            if (chk) {
+              chk.addEventListener("click", (e) => {
+                e.stopPropagation();
+                toggleLeafItem();
+              });
+            }
+            matItem.addEventListener("click", () => {
+              toggleLeafItem();
+            });
+          }
 
           matsList.appendChild(matItem);
         });
@@ -1047,15 +1126,111 @@
   // =========================================================================
   // Inventory (보유 재료 보관함)
   // =========================================================================
+  function getAllGameItems() {
+    if (!gameData) return [];
+    const itemMap = new Map();
+
+    // 1. All recipes in global_recipe_map
+    if (gameData.global_recipe_map) {
+      Object.keys(gameData.global_recipe_map).forEach(name => {
+        const r = gameData.global_recipe_map[name];
+        itemMap.set(name, {
+          name: name,
+          category: r.category || "장비",
+          level: r.level || 0,
+          level_str: r.level_str || (r.level ? `Lv.${r.level}` : ""),
+          boss: r.drop_boss || "",
+          location: r.drop_location || "",
+          is_drop: !!r.is_drop
+        });
+      });
+    }
+
+    // 2. All materials across all recipes
+    if (gameData.global_recipe_map) {
+      Object.values(gameData.global_recipe_map).forEach(r => {
+        if (r.materials) {
+          r.materials.forEach(m => {
+            if (!itemMap.has(m.name)) {
+              itemMap.set(m.name, {
+                name: m.name,
+                category: "재료",
+                level: m.level || 0,
+                level_str: m.level_str || (m.level ? `Lv.${m.level}` : ""),
+                boss: m.boss || "",
+                location: m.location || "",
+                is_drop: !!m.is_drop
+              });
+            }
+          });
+        }
+      });
+    }
+
+    // 3. All boss drops
+    if (gameData.bosses) {
+      gameData.bosses.forEach(b => {
+        if (b.drops) {
+          b.drops.forEach(d => {
+            if (!itemMap.has(d.name)) {
+              itemMap.set(d.name, {
+                name: d.name,
+                category: d.type || "드랍",
+                level: d.level || b.level || 0,
+                level_str: d.level_str || b.level_str || (d.level ? `Lv.${d.level}` : ""),
+                boss: b.name || "",
+                location: d.location || b.location || "",
+                is_drop: true
+              });
+            }
+          });
+        }
+      });
+    }
+
+    // 4. All category gear top_gear
+    if (gameData.category_gear) {
+      Object.entries(gameData.category_gear).forEach(([cat, cg]) => {
+        if (cg.top_gear) {
+          cg.top_gear.forEach(name => {
+            if (!itemMap.has(name)) {
+              itemMap.set(name, {
+                name: name,
+                category: cat,
+                level: 0,
+                level_str: "",
+                boss: "",
+                location: "",
+                is_drop: false
+              });
+            }
+          });
+        }
+      });
+    }
+
+    return Array.from(itemMap.values());
+  }
+
   function renderInventory() {
     if (!invItemsList) return;
     invItemsList.innerHTML = "";
 
-    // Count required leaf materials in the current loadout
+    // Count required leaf materials and intermediate items in the current loadout
     const requiredMap = {};
+    const intermediateMap = {};
     const allLeaves = getAllCurrentLeaves();
     allLeaves.forEach(l => {
       requiredMap[l.name] = (requiredMap[l.name] || 0) + 1;
+      if (l.path) {
+        const parts = l.path.split(">").map(p => p.trim());
+        parts.forEach(p => {
+          const cleanPart = p.includes(":") ? p.split(":")[1].trim() : p;
+          if (cleanPart && cleanPart !== l.name) {
+            intermediateMap[cleanPart] = (intermediateMap[cleanPart] || 0) + 1;
+          }
+        });
+      }
     });
 
     const invKeys = Object.keys(userInventory);
@@ -1090,7 +1265,7 @@
       invItemsList.innerHTML = `
         <div style="grid-column: 1/-1; text-align: center; color: var(--text-dim); padding: 12px 8px; font-size: 12px;">
           🎒 가방이 비어 있습니다.<br>
-          파밍한 재료를 등록하면 체크박스를 자동으로 체크할 수 있습니다!
+          파밍한 재료 및 완제품 장비를 검색 등록하면 체크박스를 자동으로 체크할 수 있습니다!
         </div>
       `;
       return;
@@ -1098,8 +1273,8 @@
 
     // Sort inventory items: items needed for current loadout first
     const sortedKeys = [...invKeys].sort((a, b) => {
-      const aReq = requiredMap[a] || 0;
-      const bReq = requiredMap[b] || 0;
+      const aReq = requiredMap[a] || (intermediateMap[a] ? 1 : 0);
+      const bReq = requiredMap[b] || (intermediateMap[b] ? 1 : 0);
       if (aReq > 0 && bReq === 0) return -1;
       if (aReq === 0 && bReq > 0) return 1;
       return a.localeCompare(b);
@@ -1119,6 +1294,8 @@
         } else {
           statusBadge = `<span class="badge-status-shortage">${req - qty}개 부족 (${qty}/${req})</span>`;
         }
+      } else if (intermediateMap[itemName]) {
+        statusBadge = `<span class="badge-status-sufficient" style="background: rgba(168, 85, 247, 0.2); color: #c084fc; border: 1px solid rgba(168, 85, 247, 0.35);">🛠️ 빌드 장비/조합템 (${qty}개)</span>`;
       } else {
         statusBadge = `<span class="badge-status-unused">현재 미필요 (${qty}개)</span>`;
       }
@@ -1179,6 +1356,7 @@
     const countsUsed = {};
     let newlyChecked = 0;
 
+    // 1. Direct leaf materials matching
     allLeaves.forEach(leaf => {
       const owned = userInventory[leaf.name] || 0;
       const used = countsUsed[leaf.name] || 0;
@@ -1190,10 +1368,28 @@
       }
     });
 
+    // 2. Intermediate / composite crafted items in inventory
+    // e.g. If user owns "악몽 투구[에픽]" or "용융된 불꽃 갑옷",
+    // check all leaves belonging to that item's subtree!
+    Object.keys(userInventory).forEach(invItem => {
+      const ownedQty = userInventory[invItem] || 0;
+      if (ownedQty <= 0) return;
+
+      const subLeaves = allLeaves.filter(l => l.path && l.path.includes(invItem));
+      if (subLeaves.length > 0) {
+        subLeaves.forEach(leaf => {
+          if (!checkedNodes.has(leaf.id)) {
+            newlyChecked++;
+            checkedNodes.add(leaf.id);
+          }
+        });
+      }
+    });
+
     saveCheckedNodes();
     renderAll();
 
-    alert(`⚡ 가방에 등록된 재료를 바탕으로 총 ${newlyChecked}개 재료가 새롭게 체크 반영되었습니다!`);
+    alert(`⚡ 가방에 등록된 재료 및 장비를 바탕으로 총 ${newlyChecked}개 재료가 새롭게 체크 반영되었습니다!`);
   }
 
   // =========================================================================
@@ -2161,9 +2357,26 @@
 
     if (btnAddInvItem && invItemSearch) {
       const addItemAction = () => {
-        const name = invItemSearch.value.trim();
+        let name = invItemSearch.value.trim();
         const qty = parseInt(invItemQty.value) || 1;
         if (!name) return;
+
+        // Smart match: if not exact, try to match by clean name (ignore spaces/casing)
+        const cleanName = name.replace(/\s+/g, "").toLowerCase();
+        const allItems = getAllGameItems();
+        const exact = allItems.find(i => i.name === name);
+        if (!exact) {
+          const cleanExact = allItems.find(i => i.name.replace(/\s+/g, "").toLowerCase() === cleanName);
+          if (cleanExact) {
+            name = cleanExact.name;
+          } else {
+            const partial = allItems.find(i => i.name.replace(/\s+/g, "").toLowerCase().includes(cleanName));
+            if (partial) {
+              name = partial.name;
+            }
+          }
+        }
+
         userInventory[name] = (userInventory[name] || 0) + qty;
         saveInventory();
         invItemSearch.value = "";
@@ -2177,31 +2390,82 @@
         if (e.key === "Enter") addItemAction();
       });
 
-      // Autocomplete suggestions for inventory search
+      // Autocomplete suggestions for inventory search across ALL items in game
       invItemSearch.addEventListener("input", (e) => {
-        const val = e.target.value.trim().toLowerCase();
+        const rawVal = e.target.value;
+        const val = rawVal.trim().toLowerCase();
         if (!val || !invSearchSuggestions) {
           if (invSearchSuggestions) invSearchSuggestions.style.display = "none";
           return;
         }
 
+        const cleanVal = val.replace(/\s+/g, "");
+        const allItems = getAllGameItems();
         const allLeaves = getAllCurrentLeaves();
-        const matchedNames = Array.from(new Set(allLeaves.map(l => l.name))).filter(n => n.toLowerCase().includes(val));
+        const currentReqNames = new Set(allLeaves.map(l => l.name));
+
+        const matched = allItems.filter(item => {
+          const cleanName = item.name.replace(/\s+/g, "").toLowerCase();
+          return cleanName.includes(cleanVal);
+        });
+
+        // Sort: items in current build first, then exact clean match, then by level desc, then alphabetical
+        matched.sort((a, b) => {
+          const aInBuild = currentReqNames.has(a.name) ? 1 : 0;
+          const bInBuild = currentReqNames.has(b.name) ? 1 : 0;
+          if (aInBuild !== bInBuild) return bInBuild - aInBuild;
+
+          const aClean = a.name.replace(/\s+/g, "").toLowerCase();
+          const bClean = b.name.replace(/\s+/g, "").toLowerCase();
+          const aExact = (aClean === cleanVal) ? 1 : 0;
+          const bExact = (bClean === cleanVal) ? 1 : 0;
+          if (aExact !== bExact) return bExact - aExact;
+
+          return (b.level || 0) - (a.level || 0);
+        });
 
         invSearchSuggestions.innerHTML = "";
-        if (matchedNames.length > 0) {
-          matchedNames.slice(0, 5).forEach(mName => {
+        if (matched.length > 0) {
+          matched.slice(0, 10).forEach(item => {
             const div = document.createElement("div");
             div.className = "inv-suggestion-item";
-            div.textContent = mName;
+            const inBuild = currentReqNames.has(item.name);
+
+            let metaTag = "";
+            if (inBuild) {
+              metaTag = `<span class="slot-tag" style="background: rgba(16, 185, 129, 0.2); color: #86efac; font-size: 10.5px;">⭐ 빌드 필요</span>`;
+            } else if (item.category) {
+              metaTag = `<span class="slot-tag ${item.category}" style="font-size: 10.5px;">${item.category}</span>`;
+            }
+
+            const bossTag = item.boss && item.boss !== "조합템" 
+              ? `<span style="color: var(--accent-gold); font-size: 10.5px;">${item.boss.includes("채광") ? "⛏️" : "👹"} ${item.boss}</span>`
+              : "";
+
+            div.innerHTML = `
+              <span style="font-weight: 600;">${item.name}</span>
+              <div class="inv-suggestion-meta">
+                ${item.level_str ? `<span class="badge-level" style="font-size: 10px;">${item.level_str}</span>` : ""}
+                ${metaTag}
+                ${bossTag}
+              </div>
+            `;
             div.addEventListener("click", () => {
-              invItemSearch.value = mName;
+              invItemSearch.value = item.name;
               invSearchSuggestions.style.display = "none";
+              invItemQty.focus();
             });
             invSearchSuggestions.appendChild(div);
           });
           invSearchSuggestions.style.display = "block";
         } else {
+          invSearchSuggestions.style.display = "none";
+        }
+      });
+
+      // Close suggestions when clicking outside
+      document.addEventListener("click", (e) => {
+        if (invSearchSuggestions && !invSearchSuggestions.contains(e.target) && e.target !== invItemSearch) {
           invSearchSuggestions.style.display = "none";
         }
       });

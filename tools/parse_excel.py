@@ -64,6 +64,11 @@ ALIAS_MAP = {
     "붉은 화염 전투 세트": "붉은 화염 전투 셋트",
     "격노한 화염의 전쟁신 도끼": "격노한 화염의 전생신 도끼",
     "청공의 분노 뇌전홀": "천공의 분노 뇌전홀",
+    # Boss location aliases
+    "파문항구-위쪽-우사로옆 계단": "파문항구-위쪽-우사로 옆 계단",
+    "파문항구-위쪽-우사로옆계단": "파문항구-위쪽-우사로 옆 계단",
+    "파문항고-위쪽-우사로 옆 계단": "파문항구-위쪽-우사로 옆 계단",
+    "파문항고-위쪽-우사로옆 계단": "파문항구-위쪽-우사로 옆 계단",
 }
 
 def clean_str(s):
@@ -87,6 +92,14 @@ ALL_31_JOBS = [
     "권법가", "격투가", "가디언", "살육자", "검혼",
     "검사", "광전사", "마검사", "죽음의기사", "배틀메이지", "성기사"
 ]
+
+DEFAULT_BOSS_LOCATIONS = {
+    "TitonX-4060": "파문항구-위쪽-우사로 옆 계단",
+    "아즈샤라 여왕": "어인해변-위쪽포탈-왼쪽포탈",
+    "제5마왕 아노시스": "전초기지-오른쪽 성-위",
+    "역병의 근원 마이어스": "암흑도시-왼쪽 밑",
+    "암흑 망령": "사막-오른쪽 끝",
+}
 
 def parse_excel(file_path):
     wb = openpyxl.load_workbook(file_path, data_only=True)
@@ -135,6 +148,11 @@ def parse_excel(file_path):
                     "location": loc,
                     "type": cat
                 }
+
+    # Apply default boss locations if missing
+    for b_name, b_info in boss_map.items():
+        if not b_info["location"] and b_name in DEFAULT_BOSS_LOCATIONS:
+            b_info["location"] = DEFAULT_BOSS_LOCATIONS[b_name]
 
     # Propagate boss location to all items in item_to_boss
     for it_name, info in item_to_boss.items():

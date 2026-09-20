@@ -1079,6 +1079,12 @@ body {
   border-radius: var(--radius-md);
   padding: 12px 16px;
   position: relative;
+  transition: all 0.2s;
+}
+
+.flow-step-card.completed {
+  border-color: rgba(34, 197, 94, 0.4);
+  background: rgba(16, 185, 129, 0.05);
 }
 
 .flow-step-header {
@@ -1086,8 +1092,15 @@ body {
   align-items: center;
   justify-content: space-between;
   margin-bottom: 8px;
-  padding-bottom: 6px;
+  padding: 4px 6px;
+  border-radius: var(--radius-sm);
   border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+.flow-step-header:hover {
+  background: rgba(255, 255, 255, 0.06);
 }
 
 .flow-step-number {
@@ -1106,6 +1119,19 @@ body {
   display: flex;
   align-items: center;
   gap: 8px;
+  width: 100%;
+}
+
+.step-status-badge {
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--text-muted);
+  margin-left: auto;
+}
+
+.step-status-badge.completed {
+  color: #86efac;
+  font-weight: 700;
 }
 
 .flow-mats-list {
@@ -1123,11 +1149,25 @@ body {
   padding: 6px 10px;
   border-radius: var(--radius-sm);
   font-size: 12px;
+  cursor: pointer;
+  transition: all 0.15s;
+  user-select: none;
+}
+
+.flow-mat-item:hover {
+  border-color: rgba(255, 255, 255, 0.25);
+  background: rgba(255, 255, 255, 0.05);
 }
 
 .flow-mat-item.checked {
-  opacity: 0.5;
+  opacity: 0.6;
+  border-color: rgba(34, 197, 94, 0.35);
+  background: rgba(16, 185, 129, 0.08);
+}
+
+.flow-mat-item.checked .item-name {
   text-decoration: line-through;
+  color: var(--text-muted);
 }
 
 /* Remaining Materials Quick Summary */
@@ -2156,24 +2196,39 @@ body {
   top: 34px;
   left: 0;
   right: 120px;
-  background: #162035;
-  border: 1px solid var(--border);
+  background: #141d30;
+  border: 1px solid rgba(59, 130, 246, 0.4);
   border-radius: var(--radius-sm);
-  max-height: 160px;
+  max-height: 250px;
   overflow-y: auto;
   z-index: 300;
-  box-shadow: 0 8px 16px rgba(0,0,0,0.5);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.65);
 }
 
 .inv-suggestion-item {
-  padding: 6px 10px;
-  font-size: 12px;
+  padding: 7px 12px;
+  font-size: 12.5px;
   cursor: pointer;
-  border-bottom: 1px solid rgba(255,255,255,0.05);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  transition: all 0.15s;
 }
 
 .inv-suggestion-item:hover {
-  background: #1e293b;
+  background: #1e2d4a;
+  color: var(--accent-gold);
+}
+
+.inv-suggestion-meta {
+  font-size: 11px;
+  color: var(--text-muted);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-shrink: 0;
 }
 
 .inv-quick-add-chips {

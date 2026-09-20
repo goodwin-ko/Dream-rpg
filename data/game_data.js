@@ -396,7 +396,7 @@ window.PRELOADED_GAME_DATA = {
       "name": "암흑 망령",
       "level": 280,
       "level_str": "Lv.280",
-      "location": "",
+      "location": "사막-오른쪽 끝",
       "drops": [
         {
           "name": "환영 활",
@@ -1396,7 +1396,7 @@ window.PRELOADED_GAME_DATA = {
       "name": "제7마왕 모르페우스",
       "level": 340,
       "level_str": "Lv.340",
-      "location": "전초기지-심연내부-포탈-왼쪽포탈",
+      "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
       "drops": [
         {
           "name": "심연의 도끼",
@@ -1604,7 +1604,7 @@ window.PRELOADED_GAME_DATA = {
       "name": "아즈샤라 여왕",
       "level": 360,
       "level_str": "Lv.360",
-      "location": "",
+      "location": "어인해변-위쪽포탈-왼쪽포탈",
       "drops": [
         {
           "name": "광기의 바다 심연 석궁",
@@ -1718,7 +1718,7 @@ window.PRELOADED_GAME_DATA = {
       "name": "역병의 근원 마이어스",
       "level": 360,
       "level_str": "Lv.360",
-      "location": "",
+      "location": "암흑도시-왼쪽 밑",
       "drops": [
         {
           "name": "모든 역병의 근원-맹독검",
@@ -1750,7 +1750,7 @@ window.PRELOADED_GAME_DATA = {
       "name": "제5마왕 아노시스",
       "level": 360,
       "level_str": "Lv.360",
-      "location": "",
+      "location": "전초기지-오른쪽 성-위",
       "drops": [
         {
           "name": "악마의 속삭임",
@@ -1788,10 +1788,16 @@ window.PRELOADED_GAME_DATA = {
       "name": "TitonX-4060",
       "level": 380,
       "level_str": "Lv.380",
-      "location": "",
+      "location": "파문항구-위쪽-우사로 옆 계단",
       "drops": [
         {
-          "name": "유적 금속 조각",
+          "name": "초음속 장화",
+          "type": "재료",
+          "level": 380,
+          "level_str": "Lv.380"
+        },
+        {
+          "name": "동력 핵",
           "type": "재료",
           "level": 380,
           "level_str": "Lv.380"
@@ -1803,7 +1809,7 @@ window.PRELOADED_GAME_DATA = {
           "level_str": "Lv.380"
         },
         {
-          "name": "동력 핵",
+          "name": "유적 금속 조각",
           "type": "재료",
           "level": 380,
           "level_str": "Lv.380"
@@ -2068,7 +2074,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             }
@@ -2150,7 +2156,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "암흑 망령",
               "level": 280,
-              "location": "",
+              "location": "사막-오른쪽 끝",
               "level_str": "Lv.280",
               "is_drop": true
             }
@@ -2197,7 +2203,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -2318,7 +2324,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -2415,7 +2421,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "역병의 근원 마이어스",
               "level": 360,
-              "location": "",
+              "location": "암흑도시-왼쪽 밑",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -2551,7 +2557,7 @@ window.PRELOADED_GAME_DATA = {
           "is_drop": true,
           "drop_boss": "제5마왕 아노시스",
           "drop_level": 360,
-          "drop_location": "",
+          "drop_location": "전초기지-오른쪽 성-위",
           "drop_type": "아이템"
         },
         {
@@ -2601,7 +2607,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "TitonX-4060",
               "level": 380,
-              "location": "",
+              "location": "파문항구-위쪽-우사로 옆 계단",
               "level_str": "Lv.380",
               "is_drop": true
             },
@@ -3082,7 +3088,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -3100,7 +3106,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -3143,7 +3149,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -3161,7 +3167,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "역병의 근원 마이어스",
               "level": 360,
-              "location": "",
+              "location": "암흑도시-왼쪽 밑",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -3170,7 +3176,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -3231,7 +3237,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -3302,7 +3308,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "암흑 망령",
               "level": 280,
-              "location": "",
+              "location": "사막-오른쪽 끝",
               "level_str": "Lv.280",
               "is_drop": true
             },
@@ -3400,7 +3406,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "TitonX-4060",
               "level": 380,
-              "location": "",
+              "location": "파문항구-위쪽-우사로 옆 계단",
               "level_str": "Lv.380",
               "is_drop": true
             },
@@ -3623,7 +3629,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             }
@@ -3705,7 +3711,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "암흑 망령",
               "level": 280,
-              "location": "",
+              "location": "사막-오른쪽 끝",
               "level_str": "Lv.280",
               "is_drop": true
             }
@@ -3752,7 +3758,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -3873,7 +3879,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -3970,7 +3976,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "역병의 근원 마이어스",
               "level": 360,
-              "location": "",
+              "location": "암흑도시-왼쪽 밑",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -4106,7 +4112,7 @@ window.PRELOADED_GAME_DATA = {
           "is_drop": true,
           "drop_boss": "제5마왕 아노시스",
           "drop_level": 360,
-          "drop_location": "",
+          "drop_location": "전초기지-오른쪽 성-위",
           "drop_type": "아이템"
         },
         "유령 그림자 로브": {
@@ -4156,7 +4162,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "TitonX-4060",
               "level": 380,
-              "location": "",
+              "location": "파문항구-위쪽-우사로 옆 계단",
               "level_str": "Lv.380",
               "is_drop": true
             },
@@ -4637,7 +4643,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -4655,7 +4661,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -4698,7 +4704,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -4716,7 +4722,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "역병의 근원 마이어스",
               "level": 360,
-              "location": "",
+              "location": "암흑도시-왼쪽 밑",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -4725,7 +4731,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -4786,7 +4792,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -4857,7 +4863,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "암흑 망령",
               "level": 280,
-              "location": "",
+              "location": "사막-오른쪽 끝",
               "level_str": "Lv.280",
               "is_drop": true
             },
@@ -4955,7 +4961,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "TitonX-4060",
               "level": 380,
-              "location": "",
+              "location": "파문항구-위쪽-우사로 옆 계단",
               "level_str": "Lv.380",
               "is_drop": true
             },
@@ -5233,7 +5239,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -5242,7 +5248,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "역병의 근원 마이어스",
               "level": 360,
-              "location": "",
+              "location": "암흑도시-왼쪽 밑",
               "level_str": "Lv.360",
               "is_drop": true
             }
@@ -5278,7 +5284,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "역병의 근원 마이어스",
               "level": 360,
-              "location": "",
+              "location": "암흑도시-왼쪽 밑",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -5305,7 +5311,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -5395,7 +5401,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "암흑 망령",
               "level": 280,
-              "location": "",
+              "location": "사막-오른쪽 끝",
               "level_str": "Lv.280",
               "is_drop": true
             }
@@ -5522,7 +5528,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "TitonX-4060",
               "level": 380,
-              "location": "",
+              "location": "파문항구-위쪽-우사로 옆 계단",
               "level_str": "Lv.380",
               "is_drop": true
             },
@@ -5826,7 +5832,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -5844,7 +5850,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -5853,7 +5859,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -5905,7 +5911,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -6034,7 +6040,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "TitonX-4060",
               "level": 380,
-              "location": "",
+              "location": "파문항구-위쪽-우사로 옆 계단",
               "level_str": "Lv.380",
               "is_drop": true
             },
@@ -6515,7 +6521,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -6533,7 +6539,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -6576,7 +6582,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -6594,7 +6600,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "역병의 근원 마이어스",
               "level": 360,
-              "location": "",
+              "location": "암흑도시-왼쪽 밑",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -6603,7 +6609,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -6664,7 +6670,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -6735,7 +6741,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "암흑 망령",
               "level": 280,
-              "location": "",
+              "location": "사막-오른쪽 끝",
               "level_str": "Lv.280",
               "is_drop": true
             },
@@ -6833,7 +6839,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "TitonX-4060",
               "level": 380,
-              "location": "",
+              "location": "파문항구-위쪽-우사로 옆 계단",
               "level_str": "Lv.380",
               "is_drop": true
             },
@@ -7046,7 +7052,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -7055,7 +7061,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "역병의 근원 마이어스",
               "level": 360,
-              "location": "",
+              "location": "암흑도시-왼쪽 밑",
               "level_str": "Lv.360",
               "is_drop": true
             }
@@ -7091,7 +7097,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "역병의 근원 마이어스",
               "level": 360,
-              "location": "",
+              "location": "암흑도시-왼쪽 밑",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -7118,7 +7124,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -7208,7 +7214,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "암흑 망령",
               "level": 280,
-              "location": "",
+              "location": "사막-오른쪽 끝",
               "level_str": "Lv.280",
               "is_drop": true
             }
@@ -7335,7 +7341,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "TitonX-4060",
               "level": 380,
-              "location": "",
+              "location": "파문항구-위쪽-우사로 옆 계단",
               "level_str": "Lv.380",
               "is_drop": true
             },
@@ -7639,7 +7645,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -7657,7 +7663,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -7666,7 +7672,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -7718,7 +7724,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -7847,7 +7853,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "TitonX-4060",
               "level": 380,
-              "location": "",
+              "location": "파문항구-위쪽-우사로 옆 계단",
               "level_str": "Lv.380",
               "is_drop": true
             },
@@ -8328,7 +8334,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -8346,7 +8352,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -8389,7 +8395,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -8407,7 +8413,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "역병의 근원 마이어스",
               "level": 360,
-              "location": "",
+              "location": "암흑도시-왼쪽 밑",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -8416,7 +8422,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -8477,7 +8483,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -8548,7 +8554,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "암흑 망령",
               "level": 280,
-              "location": "",
+              "location": "사막-오른쪽 끝",
               "level_str": "Lv.280",
               "is_drop": true
             },
@@ -8646,7 +8652,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "TitonX-4060",
               "level": 380,
-              "location": "",
+              "location": "파문항구-위쪽-우사로 옆 계단",
               "level_str": "Lv.380",
               "is_drop": true
             },
@@ -8909,7 +8915,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "아즈샤라 여왕",
               "level": 360,
-              "location": "",
+              "location": "어인해변-위쪽포탈-왼쪽포탈",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -8918,7 +8924,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "아즈샤라 여왕",
               "level": 360,
-              "location": "",
+              "location": "어인해변-위쪽포탈-왼쪽포탈",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -9234,7 +9240,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "TitonX-4060",
               "level": 380,
-              "location": "",
+              "location": "파문항구-위쪽-우사로 옆 계단",
               "level_str": "Lv.380",
               "is_drop": true
             },
@@ -9538,7 +9544,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -9556,7 +9562,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -9565,7 +9571,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -9617,7 +9623,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -9746,7 +9752,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "TitonX-4060",
               "level": 380,
-              "location": "",
+              "location": "파문항구-위쪽-우사로 옆 계단",
               "level_str": "Lv.380",
               "is_drop": true
             },
@@ -10227,7 +10233,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -10245,7 +10251,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -10288,7 +10294,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -10306,7 +10312,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "역병의 근원 마이어스",
               "level": 360,
-              "location": "",
+              "location": "암흑도시-왼쪽 밑",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -10315,7 +10321,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -10376,7 +10382,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -10447,7 +10453,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "암흑 망령",
               "level": 280,
-              "location": "",
+              "location": "사막-오른쪽 끝",
               "level_str": "Lv.280",
               "is_drop": true
             },
@@ -10545,7 +10551,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "TitonX-4060",
               "level": 380,
-              "location": "",
+              "location": "파문항구-위쪽-우사로 옆 계단",
               "level_str": "Lv.380",
               "is_drop": true
             },
@@ -10750,7 +10756,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "아즈샤라 여왕",
               "level": 360,
-              "location": "",
+              "location": "어인해변-위쪽포탈-왼쪽포탈",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -10759,7 +10765,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "아즈샤라 여왕",
               "level": 360,
-              "location": "",
+              "location": "어인해변-위쪽포탈-왼쪽포탈",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -11075,7 +11081,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "TitonX-4060",
               "level": 380,
-              "location": "",
+              "location": "파문항구-위쪽-우사로 옆 계단",
               "level_str": "Lv.380",
               "is_drop": true
             },
@@ -11379,7 +11385,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -11397,7 +11403,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -11406,7 +11412,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -11458,7 +11464,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -11587,7 +11593,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "TitonX-4060",
               "level": 380,
-              "location": "",
+              "location": "파문항구-위쪽-우사로 옆 계단",
               "level_str": "Lv.380",
               "is_drop": true
             },
@@ -12068,7 +12074,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -12086,7 +12092,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -12129,7 +12135,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -12147,7 +12153,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "역병의 근원 마이어스",
               "level": 360,
-              "location": "",
+              "location": "암흑도시-왼쪽 밑",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -12156,7 +12162,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -12217,7 +12223,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -12288,7 +12294,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "암흑 망령",
               "level": 280,
-              "location": "",
+              "location": "사막-오른쪽 끝",
               "level_str": "Lv.280",
               "is_drop": true
             },
@@ -12386,7 +12392,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "TitonX-4060",
               "level": 380,
-              "location": "",
+              "location": "파문항구-위쪽-우사로 옆 계단",
               "level_str": "Lv.380",
               "is_drop": true
             },
@@ -12649,7 +12655,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "아즈샤라 여왕",
               "level": 360,
-              "location": "",
+              "location": "어인해변-위쪽포탈-왼쪽포탈",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -12658,7 +12664,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "아즈샤라 여왕",
               "level": 360,
-              "location": "",
+              "location": "어인해변-위쪽포탈-왼쪽포탈",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -13005,7 +13011,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "아즈샤라 여왕",
               "level": 360,
-              "location": "",
+              "location": "어인해변-위쪽포탈-왼쪽포탈",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -13131,7 +13137,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -13255,7 +13261,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "아즈샤라 여왕",
               "level": 360,
-              "location": "",
+              "location": "어인해변-위쪽포탈-왼쪽포탈",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -13465,7 +13471,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "TitonX-4060",
               "level": 380,
-              "location": "",
+              "location": "파문항구-위쪽-우사로 옆 계단",
               "level_str": "Lv.380",
               "is_drop": true
             },
@@ -13544,7 +13550,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -13942,7 +13948,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "아즈샤라 여왕",
               "level": 360,
-              "location": "",
+              "location": "어인해변-위쪽포탈-왼쪽포탈",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -13951,7 +13957,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "역병의 근원 마이어스",
               "level": 360,
-              "location": "",
+              "location": "암흑도시-왼쪽 밑",
               "level_str": "Lv.360",
               "is_drop": true
             }
@@ -14153,7 +14159,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "TitonX-4060",
               "level": 380,
-              "location": "",
+              "location": "파문항구-위쪽-우사로 옆 계단",
               "level_str": "Lv.380",
               "is_drop": true
             },
@@ -14180,7 +14186,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "아즈샤라 여왕",
               "level": 360,
-              "location": "",
+              "location": "어인해변-위쪽포탈-왼쪽포탈",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -14584,7 +14590,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "아즈샤라 여왕",
               "level": 360,
-              "location": "",
+              "location": "어인해변-위쪽포탈-왼쪽포탈",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -14593,7 +14599,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "아즈샤라 여왕",
               "level": 360,
-              "location": "",
+              "location": "어인해변-위쪽포탈-왼쪽포탈",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -14940,7 +14946,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "아즈샤라 여왕",
               "level": 360,
-              "location": "",
+              "location": "어인해변-위쪽포탈-왼쪽포탈",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -15066,7 +15072,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -15190,7 +15196,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "아즈샤라 여왕",
               "level": 360,
-              "location": "",
+              "location": "어인해변-위쪽포탈-왼쪽포탈",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -15400,7 +15406,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "TitonX-4060",
               "level": 380,
-              "location": "",
+              "location": "파문항구-위쪽-우사로 옆 계단",
               "level_str": "Lv.380",
               "is_drop": true
             },
@@ -15479,7 +15485,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -15877,7 +15883,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "아즈샤라 여왕",
               "level": 360,
-              "location": "",
+              "location": "어인해변-위쪽포탈-왼쪽포탈",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -15886,7 +15892,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "역병의 근원 마이어스",
               "level": 360,
-              "location": "",
+              "location": "암흑도시-왼쪽 밑",
               "level_str": "Lv.360",
               "is_drop": true
             }
@@ -16088,7 +16094,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "TitonX-4060",
               "level": 380,
-              "location": "",
+              "location": "파문항구-위쪽-우사로 옆 계단",
               "level_str": "Lv.380",
               "is_drop": true
             },
@@ -16115,7 +16121,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "아즈샤라 여왕",
               "level": 360,
-              "location": "",
+              "location": "어인해변-위쪽포탈-왼쪽포탈",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -16682,7 +16688,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "아즈샤라 여왕",
               "level": 360,
-              "location": "",
+              "location": "어인해변-위쪽포탈-왼쪽포탈",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -16763,7 +16769,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -16977,7 +16983,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "TitonX-4060",
               "level": 380,
-              "location": "",
+              "location": "파문항구-위쪽-우사로 옆 계단",
               "level_str": "Lv.380",
               "is_drop": true
             },
@@ -17004,7 +17010,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -17048,7 +17054,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -17084,7 +17090,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -17167,7 +17173,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "TitonX-4060",
               "level": 380,
-              "location": "",
+              "location": "파문항구-위쪽-우사로 옆 계단",
               "level_str": "Lv.380",
               "is_drop": true
             },
@@ -17194,7 +17200,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "역병의 근원 마이어스",
               "level": 360,
-              "location": "",
+              "location": "암흑도시-왼쪽 밑",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -17255,7 +17261,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -17316,7 +17322,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -17464,7 +17470,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "역병의 근원 마이어스",
               "level": 360,
-              "location": "",
+              "location": "암흑도시-왼쪽 밑",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -17473,7 +17479,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -17543,7 +17549,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -17706,7 +17712,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "TitonX-4060",
               "level": 380,
-              "location": "",
+              "location": "파문항구-위쪽-우사로 옆 계단",
               "level_str": "Lv.380",
               "is_drop": true
             },
@@ -17785,7 +17791,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -18238,7 +18244,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "역병의 근원 마이어스",
               "level": 360,
-              "location": "",
+              "location": "암흑도시-왼쪽 밑",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -18256,7 +18262,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -18556,7 +18562,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "TitonX-4060",
               "level": 380,
-              "location": "",
+              "location": "파문항구-위쪽-우사로 옆 계단",
               "level_str": "Lv.380",
               "is_drop": true
             },
@@ -18646,7 +18652,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "역병의 근원 마이어스",
               "level": 360,
-              "location": "",
+              "location": "암흑도시-왼쪽 밑",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -18710,7 +18716,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -18872,7 +18878,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "아즈샤라 여왕",
               "level": 360,
-              "location": "",
+              "location": "어인해변-위쪽포탈-왼쪽포탈",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -18953,7 +18959,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -19167,7 +19173,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "TitonX-4060",
               "level": 380,
-              "location": "",
+              "location": "파문항구-위쪽-우사로 옆 계단",
               "level_str": "Lv.380",
               "is_drop": true
             },
@@ -19194,7 +19200,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -19238,7 +19244,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -19274,7 +19280,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -19357,7 +19363,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "TitonX-4060",
               "level": 380,
-              "location": "",
+              "location": "파문항구-위쪽-우사로 옆 계단",
               "level_str": "Lv.380",
               "is_drop": true
             },
@@ -19384,7 +19390,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "역병의 근원 마이어스",
               "level": 360,
-              "location": "",
+              "location": "암흑도시-왼쪽 밑",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -19445,7 +19451,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -19506,7 +19512,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -19654,7 +19660,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "역병의 근원 마이어스",
               "level": 360,
-              "location": "",
+              "location": "암흑도시-왼쪽 밑",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -19663,7 +19669,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -19733,7 +19739,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -19896,7 +19902,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "TitonX-4060",
               "level": 380,
-              "location": "",
+              "location": "파문항구-위쪽-우사로 옆 계단",
               "level_str": "Lv.380",
               "is_drop": true
             },
@@ -19975,7 +19981,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -20428,7 +20434,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "역병의 근원 마이어스",
               "level": 360,
-              "location": "",
+              "location": "암흑도시-왼쪽 밑",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -20446,7 +20452,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -20746,7 +20752,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "TitonX-4060",
               "level": 380,
-              "location": "",
+              "location": "파문항구-위쪽-우사로 옆 계단",
               "level_str": "Lv.380",
               "is_drop": true
             },
@@ -20836,7 +20842,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "역병의 근원 마이어스",
               "level": 360,
-              "location": "",
+              "location": "암흑도시-왼쪽 밑",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -20900,7 +20906,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -21104,7 +21110,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             }
@@ -21186,7 +21192,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "암흑 망령",
               "level": 280,
-              "location": "",
+              "location": "사막-오른쪽 끝",
               "level_str": "Lv.280",
               "is_drop": true
             }
@@ -21233,7 +21239,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -21354,7 +21360,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -21451,7 +21457,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "역병의 근원 마이어스",
               "level": 360,
-              "location": "",
+              "location": "암흑도시-왼쪽 밑",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -21587,7 +21593,7 @@ window.PRELOADED_GAME_DATA = {
           "is_drop": true,
           "drop_boss": "제5마왕 아노시스",
           "drop_level": 360,
-          "drop_location": "",
+          "drop_location": "전초기지-오른쪽 성-위",
           "drop_type": "아이템"
         },
         {
@@ -21637,7 +21643,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "TitonX-4060",
               "level": 380,
-              "location": "",
+              "location": "파문항구-위쪽-우사로 옆 계단",
               "level_str": "Lv.380",
               "is_drop": true
             },
@@ -22118,7 +22124,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -22136,7 +22142,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -22179,7 +22185,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -22197,7 +22203,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "역병의 근원 마이어스",
               "level": 360,
-              "location": "",
+              "location": "암흑도시-왼쪽 밑",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -22206,7 +22212,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -22267,7 +22273,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -22338,7 +22344,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "암흑 망령",
               "level": 280,
-              "location": "",
+              "location": "사막-오른쪽 끝",
               "level_str": "Lv.280",
               "is_drop": true
             },
@@ -22436,7 +22442,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "TitonX-4060",
               "level": 380,
-              "location": "",
+              "location": "파문항구-위쪽-우사로 옆 계단",
               "level_str": "Lv.380",
               "is_drop": true
             },
@@ -22659,7 +22665,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             }
@@ -22741,7 +22747,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "암흑 망령",
               "level": 280,
-              "location": "",
+              "location": "사막-오른쪽 끝",
               "level_str": "Lv.280",
               "is_drop": true
             }
@@ -22788,7 +22794,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -22909,7 +22915,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -23006,7 +23012,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "역병의 근원 마이어스",
               "level": 360,
-              "location": "",
+              "location": "암흑도시-왼쪽 밑",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -23142,7 +23148,7 @@ window.PRELOADED_GAME_DATA = {
           "is_drop": true,
           "drop_boss": "제5마왕 아노시스",
           "drop_level": 360,
-          "drop_location": "",
+          "drop_location": "전초기지-오른쪽 성-위",
           "drop_type": "아이템"
         },
         "유령 그림자 로브": {
@@ -23192,7 +23198,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "TitonX-4060",
               "level": 380,
-              "location": "",
+              "location": "파문항구-위쪽-우사로 옆 계단",
               "level_str": "Lv.380",
               "is_drop": true
             },
@@ -23673,7 +23679,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -23691,7 +23697,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -23734,7 +23740,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -23752,7 +23758,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "역병의 근원 마이어스",
               "level": 360,
-              "location": "",
+              "location": "암흑도시-왼쪽 밑",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -23761,7 +23767,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -23822,7 +23828,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -23893,7 +23899,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "암흑 망령",
               "level": 280,
-              "location": "",
+              "location": "사막-오른쪽 끝",
               "level_str": "Lv.280",
               "is_drop": true
             },
@@ -23991,7 +23997,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "TitonX-4060",
               "level": 380,
-              "location": "",
+              "location": "파문항구-위쪽-우사로 옆 계단",
               "level_str": "Lv.380",
               "is_drop": true
             },
@@ -24343,7 +24349,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -24407,7 +24413,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -24609,7 +24615,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "TitonX-4060",
               "level": 380,
-              "location": "",
+              "location": "파문항구-위쪽-우사로 옆 계단",
               "level_str": "Lv.380",
               "is_drop": true
             },
@@ -24913,7 +24919,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -24931,7 +24937,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -24940,7 +24946,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -24992,7 +24998,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -25121,7 +25127,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "TitonX-4060",
               "level": 380,
-              "location": "",
+              "location": "파문항구-위쪽-우사로 옆 계단",
               "level_str": "Lv.380",
               "is_drop": true
             },
@@ -25602,7 +25608,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -25620,7 +25626,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -25663,7 +25669,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -25681,7 +25687,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "역병의 근원 마이어스",
               "level": 360,
-              "location": "",
+              "location": "암흑도시-왼쪽 밑",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -25690,7 +25696,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -25751,7 +25757,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -25822,7 +25828,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "암흑 망령",
               "level": 280,
-              "location": "",
+              "location": "사막-오른쪽 끝",
               "level_str": "Lv.280",
               "is_drop": true
             },
@@ -25920,7 +25926,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "TitonX-4060",
               "level": 380,
-              "location": "",
+              "location": "파문항구-위쪽-우사로 옆 계단",
               "level_str": "Lv.380",
               "is_drop": true
             },
@@ -26207,7 +26213,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -26271,7 +26277,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -26473,7 +26479,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "TitonX-4060",
               "level": 380,
-              "location": "",
+              "location": "파문항구-위쪽-우사로 옆 계단",
               "level_str": "Lv.380",
               "is_drop": true
             },
@@ -26777,7 +26783,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -26795,7 +26801,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -26804,7 +26810,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -26856,7 +26862,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -26985,7 +26991,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "TitonX-4060",
               "level": 380,
-              "location": "",
+              "location": "파문항구-위쪽-우사로 옆 계단",
               "level_str": "Lv.380",
               "is_drop": true
             },
@@ -27466,7 +27472,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -27484,7 +27490,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -27527,7 +27533,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -27545,7 +27551,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "역병의 근원 마이어스",
               "level": 360,
-              "location": "",
+              "location": "암흑도시-왼쪽 밑",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -27554,7 +27560,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -27615,7 +27621,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -27686,7 +27692,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "암흑 망령",
               "level": 280,
-              "location": "",
+              "location": "사막-오른쪽 끝",
               "level_str": "Lv.280",
               "is_drop": true
             },
@@ -27784,7 +27790,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "TitonX-4060",
               "level": 380,
-              "location": "",
+              "location": "파문항구-위쪽-우사로 옆 계단",
               "level_str": "Lv.380",
               "is_drop": true
             },
@@ -28064,7 +28070,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             }
@@ -28292,7 +28298,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "TitonX-4060",
               "level": 380,
-              "location": "",
+              "location": "파문항구-위쪽-우사로 옆 계단",
               "level_str": "Lv.380",
               "is_drop": true
             },
@@ -28596,7 +28602,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -28614,7 +28620,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -28623,7 +28629,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -28675,7 +28681,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -28804,7 +28810,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "TitonX-4060",
               "level": 380,
-              "location": "",
+              "location": "파문항구-위쪽-우사로 옆 계단",
               "level_str": "Lv.380",
               "is_drop": true
             },
@@ -29285,7 +29291,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -29303,7 +29309,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -29346,7 +29352,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -29364,7 +29370,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "역병의 근원 마이어스",
               "level": 360,
-              "location": "",
+              "location": "암흑도시-왼쪽 밑",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -29373,7 +29379,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -29434,7 +29440,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -29505,7 +29511,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "암흑 망령",
               "level": 280,
-              "location": "",
+              "location": "사막-오른쪽 끝",
               "level_str": "Lv.280",
               "is_drop": true
             },
@@ -29603,7 +29609,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "TitonX-4060",
               "level": 380,
-              "location": "",
+              "location": "파문항구-위쪽-우사로 옆 계단",
               "level_str": "Lv.380",
               "is_drop": true
             },
@@ -29825,7 +29831,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             }
@@ -30053,7 +30059,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "TitonX-4060",
               "level": 380,
-              "location": "",
+              "location": "파문항구-위쪽-우사로 옆 계단",
               "level_str": "Lv.380",
               "is_drop": true
             },
@@ -30357,7 +30363,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -30375,7 +30381,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -30384,7 +30390,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -30436,7 +30442,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -30565,7 +30571,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "TitonX-4060",
               "level": 380,
-              "location": "",
+              "location": "파문항구-위쪽-우사로 옆 계단",
               "level_str": "Lv.380",
               "is_drop": true
             },
@@ -31046,7 +31052,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -31064,7 +31070,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -31107,7 +31113,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -31125,7 +31131,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "역병의 근원 마이어스",
               "level": 360,
-              "location": "",
+              "location": "암흑도시-왼쪽 밑",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -31134,7 +31140,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -31195,7 +31201,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -31266,7 +31272,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "암흑 망령",
               "level": 280,
-              "location": "",
+              "location": "사막-오른쪽 끝",
               "level_str": "Lv.280",
               "is_drop": true
             },
@@ -31364,7 +31370,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "TitonX-4060",
               "level": 380,
-              "location": "",
+              "location": "파문항구-위쪽-우사로 옆 계단",
               "level_str": "Lv.380",
               "is_drop": true
             },
@@ -31633,7 +31639,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "아즈샤라 여왕",
               "level": 360,
-              "location": "",
+              "location": "어인해변-위쪽포탈-왼쪽포탈",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -31642,7 +31648,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "아즈샤라 여왕",
               "level": 360,
-              "location": "",
+              "location": "어인해변-위쪽포탈-왼쪽포탈",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -31687,7 +31693,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "아즈샤라 여왕",
               "level": 360,
-              "location": "",
+              "location": "어인해변-위쪽포탈-왼쪽포탈",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -31714,7 +31720,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -31969,7 +31975,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "아즈샤라 여왕",
               "level": 360,
-              "location": "",
+              "location": "어인해변-위쪽포탈-왼쪽포탈",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -32095,7 +32101,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -32219,7 +32225,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "아즈샤라 여왕",
               "level": 360,
-              "location": "",
+              "location": "어인해변-위쪽포탈-왼쪽포탈",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -32429,7 +32435,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "TitonX-4060",
               "level": 380,
-              "location": "",
+              "location": "파문항구-위쪽-우사로 옆 계단",
               "level_str": "Lv.380",
               "is_drop": true
             },
@@ -32508,7 +32514,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -32922,7 +32928,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "아즈샤라 여왕",
               "level": 360,
-              "location": "",
+              "location": "어인해변-위쪽포탈-왼쪽포탈",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -32931,7 +32937,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "역병의 근원 마이어스",
               "level": 360,
-              "location": "",
+              "location": "암흑도시-왼쪽 밑",
               "level_str": "Lv.360",
               "is_drop": true
             }
@@ -33133,7 +33139,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "TitonX-4060",
               "level": 380,
-              "location": "",
+              "location": "파문항구-위쪽-우사로 옆 계단",
               "level_str": "Lv.380",
               "is_drop": true
             },
@@ -33160,7 +33166,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "아즈샤라 여왕",
               "level": 360,
-              "location": "",
+              "location": "어인해변-위쪽포탈-왼쪽포탈",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -33563,7 +33569,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "아즈샤라 여왕",
               "level": 360,
-              "location": "",
+              "location": "어인해변-위쪽포탈-왼쪽포탈",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -33572,7 +33578,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "아즈샤라 여왕",
               "level": 360,
-              "location": "",
+              "location": "어인해변-위쪽포탈-왼쪽포탈",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -33617,7 +33623,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "아즈샤라 여왕",
               "level": 360,
-              "location": "",
+              "location": "어인해변-위쪽포탈-왼쪽포탈",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -33644,7 +33650,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -33899,7 +33905,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "아즈샤라 여왕",
               "level": 360,
-              "location": "",
+              "location": "어인해변-위쪽포탈-왼쪽포탈",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -34025,7 +34031,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -34149,7 +34155,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "아즈샤라 여왕",
               "level": 360,
-              "location": "",
+              "location": "어인해변-위쪽포탈-왼쪽포탈",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -34359,7 +34365,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "TitonX-4060",
               "level": 380,
-              "location": "",
+              "location": "파문항구-위쪽-우사로 옆 계단",
               "level_str": "Lv.380",
               "is_drop": true
             },
@@ -34438,7 +34444,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -34852,7 +34858,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "아즈샤라 여왕",
               "level": 360,
-              "location": "",
+              "location": "어인해변-위쪽포탈-왼쪽포탈",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -34861,7 +34867,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "역병의 근원 마이어스",
               "level": 360,
-              "location": "",
+              "location": "암흑도시-왼쪽 밑",
               "level_str": "Lv.360",
               "is_drop": true
             }
@@ -35063,7 +35069,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "TitonX-4060",
               "level": 380,
-              "location": "",
+              "location": "파문항구-위쪽-우사로 옆 계단",
               "level_str": "Lv.380",
               "is_drop": true
             },
@@ -35090,7 +35096,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "아즈샤라 여왕",
               "level": 360,
-              "location": "",
+              "location": "어인해변-위쪽포탈-왼쪽포탈",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -35640,7 +35646,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "아즈샤라 여왕",
               "level": 360,
-              "location": "",
+              "location": "어인해변-위쪽포탈-왼쪽포탈",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -35731,7 +35737,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -35848,7 +35854,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "TitonX-4060",
               "level": 380,
-              "location": "",
+              "location": "파문항구-위쪽-우사로 옆 계단",
               "level_str": "Lv.380",
               "is_drop": true
             },
@@ -36152,7 +36158,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -36170,7 +36176,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -36179,7 +36185,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -36231,7 +36237,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -36360,7 +36366,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "TitonX-4060",
               "level": 380,
-              "location": "",
+              "location": "파문항구-위쪽-우사로 옆 계단",
               "level_str": "Lv.380",
               "is_drop": true
             },
@@ -36841,7 +36847,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -36859,7 +36865,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -36902,7 +36908,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -36920,7 +36926,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "역병의 근원 마이어스",
               "level": 360,
-              "location": "",
+              "location": "암흑도시-왼쪽 밑",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -36929,7 +36935,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -36990,7 +36996,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -37061,7 +37067,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "암흑 망령",
               "level": 280,
-              "location": "",
+              "location": "사막-오른쪽 끝",
               "level_str": "Lv.280",
               "is_drop": true
             },
@@ -37156,7 +37162,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "TitonX-4060",
               "level": 380,
-              "location": "",
+              "location": "파문항구-위쪽-우사로 옆 계단",
               "level_str": "Lv.380",
               "is_drop": true
             },
@@ -37246,7 +37252,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "역병의 근원 마이어스",
               "level": 360,
-              "location": "",
+              "location": "암흑도시-왼쪽 밑",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -37310,7 +37316,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -37497,7 +37503,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "아즈샤라 여왕",
               "level": 360,
-              "location": "",
+              "location": "어인해변-위쪽포탈-왼쪽포탈",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -37588,7 +37594,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -37705,7 +37711,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "TitonX-4060",
               "level": 380,
-              "location": "",
+              "location": "파문항구-위쪽-우사로 옆 계단",
               "level_str": "Lv.380",
               "is_drop": true
             },
@@ -38009,7 +38015,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -38027,7 +38033,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -38036,7 +38042,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -38088,7 +38094,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -38217,7 +38223,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "TitonX-4060",
               "level": 380,
-              "location": "",
+              "location": "파문항구-위쪽-우사로 옆 계단",
               "level_str": "Lv.380",
               "is_drop": true
             },
@@ -38698,7 +38704,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -38716,7 +38722,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -38759,7 +38765,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -38777,7 +38783,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "역병의 근원 마이어스",
               "level": 360,
-              "location": "",
+              "location": "암흑도시-왼쪽 밑",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -38786,7 +38792,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -38847,7 +38853,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -38918,7 +38924,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "암흑 망령",
               "level": 280,
-              "location": "",
+              "location": "사막-오른쪽 끝",
               "level_str": "Lv.280",
               "is_drop": true
             },
@@ -39013,7 +39019,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "TitonX-4060",
               "level": 380,
-              "location": "",
+              "location": "파문항구-위쪽-우사로 옆 계단",
               "level_str": "Lv.380",
               "is_drop": true
             },
@@ -39103,7 +39109,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "역병의 근원 마이어스",
               "level": 360,
-              "location": "",
+              "location": "암흑도시-왼쪽 밑",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -39167,7 +39173,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -39451,7 +39457,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -39515,7 +39521,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -39717,7 +39723,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "TitonX-4060",
               "level": 380,
-              "location": "",
+              "location": "파문항구-위쪽-우사로 옆 계단",
               "level_str": "Lv.380",
               "is_drop": true
             },
@@ -40021,7 +40027,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -40039,7 +40045,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -40048,7 +40054,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -40100,7 +40106,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -40229,7 +40235,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "TitonX-4060",
               "level": 380,
-              "location": "",
+              "location": "파문항구-위쪽-우사로 옆 계단",
               "level_str": "Lv.380",
               "is_drop": true
             },
@@ -40710,7 +40716,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -40728,7 +40734,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -40771,7 +40777,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -40789,7 +40795,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "역병의 근원 마이어스",
               "level": 360,
-              "location": "",
+              "location": "암흑도시-왼쪽 밑",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -40798,7 +40804,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -40859,7 +40865,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -40930,7 +40936,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "암흑 망령",
               "level": 280,
-              "location": "",
+              "location": "사막-오른쪽 끝",
               "level_str": "Lv.280",
               "is_drop": true
             },
@@ -41009,7 +41015,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "아즈샤라 여왕",
               "level": 360,
-              "location": "",
+              "location": "어인해변-위쪽포탈-왼쪽포탈",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -41018,7 +41024,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -41128,7 +41134,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "TitonX-4060",
               "level": 380,
-              "location": "",
+              "location": "파문항구-위쪽-우사로 옆 계단",
               "level_str": "Lv.380",
               "is_drop": true
             },
@@ -41415,7 +41421,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -41479,7 +41485,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -41681,7 +41687,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "TitonX-4060",
               "level": 380,
-              "location": "",
+              "location": "파문항구-위쪽-우사로 옆 계단",
               "level_str": "Lv.380",
               "is_drop": true
             },
@@ -41985,7 +41991,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -42003,7 +42009,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -42012,7 +42018,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -42064,7 +42070,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -42193,7 +42199,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "TitonX-4060",
               "level": 380,
-              "location": "",
+              "location": "파문항구-위쪽-우사로 옆 계단",
               "level_str": "Lv.380",
               "is_drop": true
             },
@@ -42674,7 +42680,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -42692,7 +42698,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -42735,7 +42741,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -42753,7 +42759,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "역병의 근원 마이어스",
               "level": 360,
-              "location": "",
+              "location": "암흑도시-왼쪽 밑",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -42762,7 +42768,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -42823,7 +42829,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -42894,7 +42900,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "암흑 망령",
               "level": 280,
-              "location": "",
+              "location": "사막-오른쪽 끝",
               "level_str": "Lv.280",
               "is_drop": true
             },
@@ -42973,7 +42979,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "아즈샤라 여왕",
               "level": 360,
-              "location": "",
+              "location": "어인해변-위쪽포탈-왼쪽포탈",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -42982,7 +42988,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -43092,7 +43098,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "TitonX-4060",
               "level": 380,
-              "location": "",
+              "location": "파문항구-위쪽-우사로 옆 계단",
               "level_str": "Lv.380",
               "is_drop": true
             },
@@ -43370,7 +43376,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "아즈샤라 여왕",
               "level": 360,
-              "location": "",
+              "location": "어인해변-위쪽포탈-왼쪽포탈",
               "level_str": "Lv.360",
               "is_drop": true
             }
@@ -43550,7 +43556,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -43660,7 +43666,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "TitonX-4060",
               "level": 380,
-              "location": "",
+              "location": "파문항구-위쪽-우사로 옆 계단",
               "level_str": "Lv.380",
               "is_drop": true
             },
@@ -43964,7 +43970,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -43982,7 +43988,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -43991,7 +43997,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -44043,7 +44049,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -44172,7 +44178,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "TitonX-4060",
               "level": 380,
-              "location": "",
+              "location": "파문항구-위쪽-우사로 옆 계단",
               "level_str": "Lv.380",
               "is_drop": true
             },
@@ -44653,7 +44659,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -44671,7 +44677,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -44714,7 +44720,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -44732,7 +44738,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "역병의 근원 마이어스",
               "level": 360,
-              "location": "",
+              "location": "암흑도시-왼쪽 밑",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -44741,7 +44747,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -44802,7 +44808,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -44873,7 +44879,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "암흑 망령",
               "level": 280,
-              "location": "",
+              "location": "사막-오른쪽 끝",
               "level_str": "Lv.280",
               "is_drop": true
             },
@@ -44971,7 +44977,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "TitonX-4060",
               "level": 380,
-              "location": "",
+              "location": "파문항구-위쪽-우사로 옆 계단",
               "level_str": "Lv.380",
               "is_drop": true
             },
@@ -45184,7 +45190,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "아즈샤라 여왕",
               "level": 360,
-              "location": "",
+              "location": "어인해변-위쪽포탈-왼쪽포탈",
               "level_str": "Lv.360",
               "is_drop": true
             }
@@ -45364,7 +45370,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -45474,7 +45480,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "TitonX-4060",
               "level": 380,
-              "location": "",
+              "location": "파문항구-위쪽-우사로 옆 계단",
               "level_str": "Lv.380",
               "is_drop": true
             },
@@ -45778,7 +45784,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -45796,7 +45802,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -45805,7 +45811,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -45857,7 +45863,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -45986,7 +45992,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "TitonX-4060",
               "level": 380,
-              "location": "",
+              "location": "파문항구-위쪽-우사로 옆 계단",
               "level_str": "Lv.380",
               "is_drop": true
             },
@@ -46467,7 +46473,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -46485,7 +46491,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -46528,7 +46534,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -46546,7 +46552,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "역병의 근원 마이어스",
               "level": 360,
-              "location": "",
+              "location": "암흑도시-왼쪽 밑",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -46555,7 +46561,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -46616,7 +46622,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -46687,7 +46693,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "암흑 망령",
               "level": 280,
-              "location": "",
+              "location": "사막-오른쪽 끝",
               "level_str": "Lv.280",
               "is_drop": true
             },
@@ -46785,7 +46791,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "TitonX-4060",
               "level": 380,
-              "location": "",
+              "location": "파문항구-위쪽-우사로 옆 계단",
               "level_str": "Lv.380",
               "is_drop": true
             },
@@ -47092,7 +47098,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "아즈샤라 여왕",
               "level": 360,
-              "location": "",
+              "location": "어인해변-위쪽포탈-왼쪽포탈",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -47101,7 +47107,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -47110,7 +47116,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "아즈샤라 여왕",
               "level": 360,
-              "location": "",
+              "location": "어인해변-위쪽포탈-왼쪽포탈",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -47119,7 +47125,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -47177,7 +47183,7 @@ window.PRELOADED_GAME_DATA = {
           "is_drop": true,
           "drop_boss": "아즈샤라 여왕",
           "drop_level": 360,
-          "drop_location": "",
+          "drop_location": "어인해변-위쪽포탈-왼쪽포탈",
           "drop_type": "아이템"
         },
         {
@@ -47316,7 +47322,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "TitonX-4060",
               "level": 380,
-              "location": "",
+              "location": "파문항구-위쪽-우사로 옆 계단",
               "level_str": "Lv.380",
               "is_drop": true
             },
@@ -47620,7 +47626,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -47638,7 +47644,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -47647,7 +47653,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -47699,7 +47705,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -47828,7 +47834,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "TitonX-4060",
               "level": 380,
-              "location": "",
+              "location": "파문항구-위쪽-우사로 옆 계단",
               "level_str": "Lv.380",
               "is_drop": true
             },
@@ -48309,7 +48315,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -48327,7 +48333,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -48370,7 +48376,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -48388,7 +48394,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "역병의 근원 마이어스",
               "level": 360,
-              "location": "",
+              "location": "암흑도시-왼쪽 밑",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -48397,7 +48403,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -48458,7 +48464,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -48529,7 +48535,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "암흑 망령",
               "level": 280,
-              "location": "",
+              "location": "사막-오른쪽 끝",
               "level_str": "Lv.280",
               "is_drop": true
             },
@@ -48627,7 +48633,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "TitonX-4060",
               "level": 380,
-              "location": "",
+              "location": "파문항구-위쪽-우사로 옆 계단",
               "level_str": "Lv.380",
               "is_drop": true
             },
@@ -48876,7 +48882,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "아즈샤라 여왕",
               "level": 360,
-              "location": "",
+              "location": "어인해변-위쪽포탈-왼쪽포탈",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -48885,7 +48891,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -48894,7 +48900,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "아즈샤라 여왕",
               "level": 360,
-              "location": "",
+              "location": "어인해변-위쪽포탈-왼쪽포탈",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -48903,7 +48909,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -48961,7 +48967,7 @@ window.PRELOADED_GAME_DATA = {
           "is_drop": true,
           "drop_boss": "아즈샤라 여왕",
           "drop_level": 360,
-          "drop_location": "",
+          "drop_location": "어인해변-위쪽포탈-왼쪽포탈",
           "drop_type": "아이템"
         },
         "암흑 심연-지옥불 활": {
@@ -49100,7 +49106,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "TitonX-4060",
               "level": 380,
-              "location": "",
+              "location": "파문항구-위쪽-우사로 옆 계단",
               "level_str": "Lv.380",
               "is_drop": true
             },
@@ -49404,7 +49410,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -49422,7 +49428,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -49431,7 +49437,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -49483,7 +49489,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -49612,7 +49618,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "TitonX-4060",
               "level": 380,
-              "location": "",
+              "location": "파문항구-위쪽-우사로 옆 계단",
               "level_str": "Lv.380",
               "is_drop": true
             },
@@ -50093,7 +50099,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -50111,7 +50117,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -50154,7 +50160,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -50172,7 +50178,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "역병의 근원 마이어스",
               "level": 360,
-              "location": "",
+              "location": "암흑도시-왼쪽 밑",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -50181,7 +50187,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -50242,7 +50248,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -50313,7 +50319,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "암흑 망령",
               "level": 280,
-              "location": "",
+              "location": "사막-오른쪽 끝",
               "level_str": "Lv.280",
               "is_drop": true
             },
@@ -50411,7 +50417,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "TitonX-4060",
               "level": 380,
-              "location": "",
+              "location": "파문항구-위쪽-우사로 옆 계단",
               "level_str": "Lv.380",
               "is_drop": true
             },
@@ -50694,7 +50700,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "아즈샤라 여왕",
               "level": 360,
-              "location": "",
+              "location": "어인해변-위쪽포탈-왼쪽포탈",
               "level_str": "Lv.360",
               "is_drop": true
             }
@@ -50874,7 +50880,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -50984,7 +50990,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "TitonX-4060",
               "level": 380,
-              "location": "",
+              "location": "파문항구-위쪽-우사로 옆 계단",
               "level_str": "Lv.380",
               "is_drop": true
             },
@@ -51288,7 +51294,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -51306,7 +51312,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -51315,7 +51321,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -51367,7 +51373,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -51496,7 +51502,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "TitonX-4060",
               "level": 380,
-              "location": "",
+              "location": "파문항구-위쪽-우사로 옆 계단",
               "level_str": "Lv.380",
               "is_drop": true
             },
@@ -51977,7 +51983,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -51995,7 +52001,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -52038,7 +52044,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -52056,7 +52062,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "역병의 근원 마이어스",
               "level": 360,
-              "location": "",
+              "location": "암흑도시-왼쪽 밑",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -52065,7 +52071,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -52126,7 +52132,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -52197,7 +52203,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "암흑 망령",
               "level": 280,
-              "location": "",
+              "location": "사막-오른쪽 끝",
               "level_str": "Lv.280",
               "is_drop": true
             },
@@ -52295,7 +52301,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "TitonX-4060",
               "level": 380,
-              "location": "",
+              "location": "파문항구-위쪽-우사로 옆 계단",
               "level_str": "Lv.380",
               "is_drop": true
             },
@@ -52508,7 +52514,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "아즈샤라 여왕",
               "level": 360,
-              "location": "",
+              "location": "어인해변-위쪽포탈-왼쪽포탈",
               "level_str": "Lv.360",
               "is_drop": true
             }
@@ -52688,7 +52694,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -52798,7 +52804,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "TitonX-4060",
               "level": 380,
-              "location": "",
+              "location": "파문항구-위쪽-우사로 옆 계단",
               "level_str": "Lv.380",
               "is_drop": true
             },
@@ -53102,7 +53108,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -53120,7 +53126,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -53129,7 +53135,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -53181,7 +53187,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -53310,7 +53316,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "TitonX-4060",
               "level": 380,
-              "location": "",
+              "location": "파문항구-위쪽-우사로 옆 계단",
               "level_str": "Lv.380",
               "is_drop": true
             },
@@ -53791,7 +53797,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -53809,7 +53815,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -53852,7 +53858,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -53870,7 +53876,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "역병의 근원 마이어스",
               "level": 360,
-              "location": "",
+              "location": "암흑도시-왼쪽 밑",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -53879,7 +53885,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -53940,7 +53946,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -54011,7 +54017,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "암흑 망령",
               "level": 280,
-              "location": "",
+              "location": "사막-오른쪽 끝",
               "level_str": "Lv.280",
               "is_drop": true
             },
@@ -54109,7 +54115,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "TitonX-4060",
               "level": 380,
-              "location": "",
+              "location": "파문항구-위쪽-우사로 옆 계단",
               "level_str": "Lv.380",
               "is_drop": true
             },
@@ -54390,7 +54396,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             }
@@ -54436,7 +54442,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "역병의 근원 마이어스",
               "level": 360,
-              "location": "",
+              "location": "암흑도시-왼쪽 밑",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -54594,7 +54600,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "TitonX-4060",
               "level": 380,
-              "location": "",
+              "location": "파문항구-위쪽-우사로 옆 계단",
               "level_str": "Lv.380",
               "is_drop": true
             },
@@ -54898,7 +54904,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -54916,7 +54922,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -54925,7 +54931,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -54977,7 +54983,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -55106,7 +55112,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "TitonX-4060",
               "level": 380,
-              "location": "",
+              "location": "파문항구-위쪽-우사로 옆 계단",
               "level_str": "Lv.380",
               "is_drop": true
             },
@@ -55587,7 +55593,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -55605,7 +55611,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -55648,7 +55654,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -55666,7 +55672,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "역병의 근원 마이어스",
               "level": 360,
-              "location": "",
+              "location": "암흑도시-왼쪽 밑",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -55675,7 +55681,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -55736,7 +55742,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -55807,7 +55813,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "암흑 망령",
               "level": 280,
-              "location": "",
+              "location": "사막-오른쪽 끝",
               "level_str": "Lv.280",
               "is_drop": true
             },
@@ -55905,7 +55911,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "TitonX-4060",
               "level": 380,
-              "location": "",
+              "location": "파문항구-위쪽-우사로 옆 계단",
               "level_str": "Lv.380",
               "is_drop": true
             },
@@ -56128,7 +56134,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             }
@@ -56174,7 +56180,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "역병의 근원 마이어스",
               "level": 360,
-              "location": "",
+              "location": "암흑도시-왼쪽 밑",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -56332,7 +56338,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "TitonX-4060",
               "level": 380,
-              "location": "",
+              "location": "파문항구-위쪽-우사로 옆 계단",
               "level_str": "Lv.380",
               "is_drop": true
             },
@@ -56636,7 +56642,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -56654,7 +56660,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -56663,7 +56669,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -56715,7 +56721,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -56844,7 +56850,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "TitonX-4060",
               "level": 380,
-              "location": "",
+              "location": "파문항구-위쪽-우사로 옆 계단",
               "level_str": "Lv.380",
               "is_drop": true
             },
@@ -57325,7 +57331,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -57343,7 +57349,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -57386,7 +57392,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -57404,7 +57410,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "역병의 근원 마이어스",
               "level": 360,
-              "location": "",
+              "location": "암흑도시-왼쪽 밑",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -57413,7 +57419,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -57474,7 +57480,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -57545,7 +57551,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "암흑 망령",
               "level": 280,
-              "location": "",
+              "location": "사막-오른쪽 끝",
               "level_str": "Lv.280",
               "is_drop": true
             },
@@ -57643,7 +57649,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "TitonX-4060",
               "level": 380,
-              "location": "",
+              "location": "파문항구-위쪽-우사로 옆 계단",
               "level_str": "Lv.380",
               "is_drop": true
             },
@@ -57921,7 +57927,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "아즈샤라 여왕",
               "level": 360,
-              "location": "",
+              "location": "어인해변-위쪽포탈-왼쪽포탈",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -57930,7 +57936,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "역병의 근원 마이어스",
               "level": 360,
-              "location": "",
+              "location": "암흑도시-왼쪽 밑",
               "level_str": "Lv.360",
               "is_drop": true
             }
@@ -57966,7 +57972,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "아즈샤라 여왕",
               "level": 360,
-              "location": "",
+              "location": "어인해변-위쪽포탈-왼쪽포탈",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -58219,7 +58225,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "TitonX-4060",
               "level": 380,
-              "location": "",
+              "location": "파문항구-위쪽-우사로 옆 계단",
               "level_str": "Lv.380",
               "is_drop": true
             },
@@ -58246,7 +58252,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -58255,7 +58261,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             }
@@ -58298,7 +58304,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -58307,7 +58313,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -58334,7 +58340,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "암흑 망령",
               "level": 280,
-              "location": "",
+              "location": "사막-오른쪽 끝",
               "level_str": "Lv.280",
               "is_drop": true
             }
@@ -58681,7 +58687,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "TitonX-4060",
               "level": 380,
-              "location": "",
+              "location": "파문항구-위쪽-우사로 옆 계단",
               "level_str": "Lv.380",
               "is_drop": true
             },
@@ -58708,7 +58714,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "역병의 근원 마이어스",
               "level": 360,
-              "location": "",
+              "location": "암흑도시-왼쪽 밑",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -58769,7 +58775,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -58830,7 +58836,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -58978,7 +58984,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "역병의 근원 마이어스",
               "level": 360,
-              "location": "",
+              "location": "암흑도시-왼쪽 밑",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -58987,7 +58993,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -59057,7 +59063,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -59299,7 +59305,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -59370,7 +59376,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -59602,7 +59608,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -59611,7 +59617,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "역병의 근원 마이어스",
               "level": 360,
-              "location": "",
+              "location": "암흑도시-왼쪽 밑",
               "level_str": "Lv.360",
               "is_drop": true
             }
@@ -59645,7 +59651,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "아즈샤라 여왕",
               "level": 360,
-              "location": "",
+              "location": "어인해변-위쪽포탈-왼쪽포탈",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -59654,7 +59660,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "역병의 근원 마이어스",
               "level": 360,
-              "location": "",
+              "location": "암흑도시-왼쪽 밑",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -59935,7 +59941,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -60005,7 +60011,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -60048,7 +60054,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -60110,7 +60116,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "암흑 망령",
               "level": 280,
-              "location": "",
+              "location": "사막-오른쪽 끝",
               "level_str": "Lv.280",
               "is_drop": true
             },
@@ -60170,7 +60176,7 @@ window.PRELOADED_GAME_DATA = {
           "is_drop": true,
           "drop_boss": "암흑 망령",
           "drop_level": 280,
-          "drop_location": "",
+          "drop_location": "사막-오른쪽 끝",
           "drop_type": "아이템"
         },
         {
@@ -60252,7 +60258,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "아즈샤라 여왕",
               "level": 360,
-              "location": "",
+              "location": "어인해변-위쪽포탈-왼쪽포탈",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -60261,7 +60267,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "역병의 근원 마이어스",
               "level": 360,
-              "location": "",
+              "location": "암흑도시-왼쪽 밑",
               "level_str": "Lv.360",
               "is_drop": true
             }
@@ -60297,7 +60303,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "아즈샤라 여왕",
               "level": 360,
-              "location": "",
+              "location": "어인해변-위쪽포탈-왼쪽포탈",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -60550,7 +60556,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "TitonX-4060",
               "level": 380,
-              "location": "",
+              "location": "파문항구-위쪽-우사로 옆 계단",
               "level_str": "Lv.380",
               "is_drop": true
             },
@@ -60577,7 +60583,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -60586,7 +60592,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             }
@@ -60629,7 +60635,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -60638,7 +60644,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -60665,7 +60671,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "암흑 망령",
               "level": 280,
-              "location": "",
+              "location": "사막-오른쪽 끝",
               "level_str": "Lv.280",
               "is_drop": true
             }
@@ -61012,7 +61018,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "TitonX-4060",
               "level": 380,
-              "location": "",
+              "location": "파문항구-위쪽-우사로 옆 계단",
               "level_str": "Lv.380",
               "is_drop": true
             },
@@ -61039,7 +61045,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "역병의 근원 마이어스",
               "level": 360,
-              "location": "",
+              "location": "암흑도시-왼쪽 밑",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -61100,7 +61106,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -61161,7 +61167,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -61309,7 +61315,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "역병의 근원 마이어스",
               "level": 360,
-              "location": "",
+              "location": "암흑도시-왼쪽 밑",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -61318,7 +61324,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -61388,7 +61394,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -61630,7 +61636,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -61701,7 +61707,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -61933,7 +61939,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -61942,7 +61948,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "역병의 근원 마이어스",
               "level": 360,
-              "location": "",
+              "location": "암흑도시-왼쪽 밑",
               "level_str": "Lv.360",
               "is_drop": true
             }
@@ -61976,7 +61982,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "아즈샤라 여왕",
               "level": 360,
-              "location": "",
+              "location": "어인해변-위쪽포탈-왼쪽포탈",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -61985,7 +61991,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "역병의 근원 마이어스",
               "level": 360,
-              "location": "",
+              "location": "암흑도시-왼쪽 밑",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -62266,7 +62272,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -62336,7 +62342,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -62379,7 +62385,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -62441,7 +62447,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "암흑 망령",
               "level": 280,
-              "location": "",
+              "location": "사막-오른쪽 끝",
               "level_str": "Lv.280",
               "is_drop": true
             },
@@ -62501,7 +62507,7 @@ window.PRELOADED_GAME_DATA = {
           "is_drop": true,
           "drop_boss": "암흑 망령",
           "drop_level": 280,
-          "drop_location": "",
+          "drop_location": "사막-오른쪽 끝",
           "drop_type": "아이템"
         },
         "고대의 악몽-낙성": {
@@ -62631,7 +62637,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             }
@@ -62676,7 +62682,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "역병의 근원 마이어스",
               "level": 360,
-              "location": "",
+              "location": "암흑도시-왼쪽 밑",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -62859,7 +62865,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "TitonX-4060",
               "level": 380,
-              "location": "",
+              "location": "파문항구-위쪽-우사로 옆 계단",
               "level_str": "Lv.380",
               "is_drop": true
             },
@@ -63163,7 +63169,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -63181,7 +63187,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -63190,7 +63196,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -63242,7 +63248,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -63371,7 +63377,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "TitonX-4060",
               "level": 380,
-              "location": "",
+              "location": "파문항구-위쪽-우사로 옆 계단",
               "level_str": "Lv.380",
               "is_drop": true
             },
@@ -63852,7 +63858,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -63870,7 +63876,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -63913,7 +63919,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -63931,7 +63937,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "역병의 근원 마이어스",
               "level": 360,
-              "location": "",
+              "location": "암흑도시-왼쪽 밑",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -63940,7 +63946,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -64001,7 +64007,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -64072,7 +64078,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "암흑 망령",
               "level": 280,
-              "location": "",
+              "location": "사막-오른쪽 끝",
               "level_str": "Lv.280",
               "is_drop": true
             },
@@ -64170,7 +64176,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "TitonX-4060",
               "level": 380,
-              "location": "",
+              "location": "파문항구-위쪽-우사로 옆 계단",
               "level_str": "Lv.380",
               "is_drop": true
             },
@@ -64392,7 +64398,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             }
@@ -64437,7 +64443,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "역병의 근원 마이어스",
               "level": 360,
-              "location": "",
+              "location": "암흑도시-왼쪽 밑",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -64620,7 +64626,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "TitonX-4060",
               "level": 380,
-              "location": "",
+              "location": "파문항구-위쪽-우사로 옆 계단",
               "level_str": "Lv.380",
               "is_drop": true
             },
@@ -64924,7 +64930,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -64942,7 +64948,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -64951,7 +64957,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -65003,7 +65009,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -65132,7 +65138,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "TitonX-4060",
               "level": 380,
-              "location": "",
+              "location": "파문항구-위쪽-우사로 옆 계단",
               "level_str": "Lv.380",
               "is_drop": true
             },
@@ -65613,7 +65619,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -65631,7 +65637,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -65674,7 +65680,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -65692,7 +65698,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "역병의 근원 마이어스",
               "level": 360,
-              "location": "",
+              "location": "암흑도시-왼쪽 밑",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -65701,7 +65707,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -65762,7 +65768,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -65833,7 +65839,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "암흑 망령",
               "level": 280,
-              "location": "",
+              "location": "사막-오른쪽 끝",
               "level_str": "Lv.280",
               "is_drop": true
             },
@@ -65931,7 +65937,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "TitonX-4060",
               "level": 380,
-              "location": "",
+              "location": "파문항구-위쪽-우사로 옆 계단",
               "level_str": "Lv.380",
               "is_drop": true
             },
@@ -66212,7 +66218,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             }
@@ -66258,7 +66264,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "역병의 근원 마이어스",
               "level": 360,
-              "location": "",
+              "location": "암흑도시-왼쪽 밑",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -66416,7 +66422,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "TitonX-4060",
               "level": 380,
-              "location": "",
+              "location": "파문항구-위쪽-우사로 옆 계단",
               "level_str": "Lv.380",
               "is_drop": true
             },
@@ -66720,7 +66726,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -66738,7 +66744,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -66747,7 +66753,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -66799,7 +66805,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -66928,7 +66934,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "TitonX-4060",
               "level": 380,
-              "location": "",
+              "location": "파문항구-위쪽-우사로 옆 계단",
               "level_str": "Lv.380",
               "is_drop": true
             },
@@ -67409,7 +67415,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -67427,7 +67433,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -67470,7 +67476,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -67488,7 +67494,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "역병의 근원 마이어스",
               "level": 360,
-              "location": "",
+              "location": "암흑도시-왼쪽 밑",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -67497,7 +67503,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -67558,7 +67564,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -67629,7 +67635,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "암흑 망령",
               "level": 280,
-              "location": "",
+              "location": "사막-오른쪽 끝",
               "level_str": "Lv.280",
               "is_drop": true
             },
@@ -67727,7 +67733,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "TitonX-4060",
               "level": 380,
-              "location": "",
+              "location": "파문항구-위쪽-우사로 옆 계단",
               "level_str": "Lv.380",
               "is_drop": true
             },
@@ -67950,7 +67956,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             }
@@ -67996,7 +68002,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "역병의 근원 마이어스",
               "level": 360,
-              "location": "",
+              "location": "암흑도시-왼쪽 밑",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -68154,7 +68160,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "TitonX-4060",
               "level": 380,
-              "location": "",
+              "location": "파문항구-위쪽-우사로 옆 계단",
               "level_str": "Lv.380",
               "is_drop": true
             },
@@ -68458,7 +68464,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -68476,7 +68482,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -68485,7 +68491,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -68537,7 +68543,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -68666,7 +68672,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "TitonX-4060",
               "level": 380,
-              "location": "",
+              "location": "파문항구-위쪽-우사로 옆 계단",
               "level_str": "Lv.380",
               "is_drop": true
             },
@@ -69147,7 +69153,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -69165,7 +69171,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -69208,7 +69214,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -69226,7 +69232,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "역병의 근원 마이어스",
               "level": 360,
-              "location": "",
+              "location": "암흑도시-왼쪽 밑",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -69235,7 +69241,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -69296,7 +69302,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -69367,7 +69373,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "암흑 망령",
               "level": 280,
-              "location": "",
+              "location": "사막-오른쪽 끝",
               "level_str": "Lv.280",
               "is_drop": true
             },
@@ -69465,7 +69471,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "TitonX-4060",
               "level": 380,
-              "location": "",
+              "location": "파문항구-위쪽-우사로 옆 계단",
               "level_str": "Lv.380",
               "is_drop": true
             },
@@ -69744,7 +69750,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "역병의 근원 마이어스",
               "level": 360,
-              "location": "",
+              "location": "암흑도시-왼쪽 밑",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -69798,7 +69804,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "아즈샤라 여왕",
               "level": 360,
-              "location": "",
+              "location": "어인해변-위쪽포탈-왼쪽포탈",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -69807,7 +69813,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "역병의 근원 마이어스",
               "level": 360,
-              "location": "",
+              "location": "암흑도시-왼쪽 밑",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -69825,7 +69831,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             }
@@ -69862,7 +69868,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -70060,7 +70066,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "TitonX-4060",
               "level": 380,
-              "location": "",
+              "location": "파문항구-위쪽-우사로 옆 계단",
               "level_str": "Lv.380",
               "is_drop": true
             },
@@ -70364,7 +70370,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -70382,7 +70388,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -70391,7 +70397,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -70443,7 +70449,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -70572,7 +70578,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "TitonX-4060",
               "level": 380,
-              "location": "",
+              "location": "파문항구-위쪽-우사로 옆 계단",
               "level_str": "Lv.380",
               "is_drop": true
             },
@@ -71003,7 +71009,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             }
@@ -71120,7 +71126,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -71298,7 +71304,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "TitonX-4060",
               "level": 380,
-              "location": "",
+              "location": "파문항구-위쪽-우사로 옆 계단",
               "level_str": "Lv.380",
               "is_drop": true
             },
@@ -71512,7 +71518,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "역병의 근원 마이어스",
               "level": 360,
-              "location": "",
+              "location": "암흑도시-왼쪽 밑",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -71566,7 +71572,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "아즈샤라 여왕",
               "level": 360,
-              "location": "",
+              "location": "어인해변-위쪽포탈-왼쪽포탈",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -71575,7 +71581,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "역병의 근원 마이어스",
               "level": 360,
-              "location": "",
+              "location": "암흑도시-왼쪽 밑",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -71593,7 +71599,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             }
@@ -71630,7 +71636,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -71828,7 +71834,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "TitonX-4060",
               "level": 380,
-              "location": "",
+              "location": "파문항구-위쪽-우사로 옆 계단",
               "level_str": "Lv.380",
               "is_drop": true
             },
@@ -72132,7 +72138,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -72150,7 +72156,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -72159,7 +72165,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -72211,7 +72217,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -72340,7 +72346,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "TitonX-4060",
               "level": 380,
-              "location": "",
+              "location": "파문항구-위쪽-우사로 옆 계단",
               "level_str": "Lv.380",
               "is_drop": true
             },
@@ -72771,7 +72777,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             }
@@ -72888,7 +72894,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -73066,7 +73072,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "TitonX-4060",
               "level": 380,
-              "location": "",
+              "location": "파문항구-위쪽-우사로 옆 계단",
               "level_str": "Lv.380",
               "is_drop": true
             },
@@ -73415,7 +73421,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "아즈샤라 여왕",
               "level": 360,
-              "location": "",
+              "location": "어인해변-위쪽포탈-왼쪽포탈",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -73487,7 +73493,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -73556,7 +73562,7 @@ window.PRELOADED_GAME_DATA = {
           "is_drop": true,
           "drop_boss": "제7마왕 모르페우스",
           "drop_level": 340,
-          "drop_location": "전초기지-심연내부-포탈-왼쪽포탈",
+          "drop_location": "전초기지-오른쪽성-포탈-왼쪽포탈",
           "drop_type": "아이템"
         },
         {
@@ -73693,7 +73699,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "TitonX-4060",
               "level": 380,
-              "location": "",
+              "location": "파문항구-위쪽-우사로 옆 계단",
               "level_str": "Lv.380",
               "is_drop": true
             },
@@ -73997,7 +74003,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -74015,7 +74021,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -74024,7 +74030,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -74076,7 +74082,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -74205,7 +74211,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "TitonX-4060",
               "level": 380,
-              "location": "",
+              "location": "파문항구-위쪽-우사로 옆 계단",
               "level_str": "Lv.380",
               "is_drop": true
             },
@@ -74686,7 +74692,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -74704,7 +74710,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -74747,7 +74753,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -74765,7 +74771,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "역병의 근원 마이어스",
               "level": 360,
-              "location": "",
+              "location": "암흑도시-왼쪽 밑",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -74774,7 +74780,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -74835,7 +74841,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -74906,7 +74912,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "암흑 망령",
               "level": 280,
-              "location": "",
+              "location": "사막-오른쪽 끝",
               "level_str": "Lv.280",
               "is_drop": true
             },
@@ -75004,7 +75010,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "TitonX-4060",
               "level": 380,
-              "location": "",
+              "location": "파문항구-위쪽-우사로 옆 계단",
               "level_str": "Lv.380",
               "is_drop": true
             },
@@ -75252,7 +75258,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "아즈샤라 여왕",
               "level": 360,
-              "location": "",
+              "location": "어인해변-위쪽포탈-왼쪽포탈",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -75324,7 +75330,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -75393,7 +75399,7 @@ window.PRELOADED_GAME_DATA = {
           "is_drop": true,
           "drop_boss": "제7마왕 모르페우스",
           "drop_level": 340,
-          "drop_location": "전초기지-심연내부-포탈-왼쪽포탈",
+          "drop_location": "전초기지-오른쪽성-포탈-왼쪽포탈",
           "drop_type": "아이템"
         },
         "구룡파사창": {
@@ -75530,7 +75536,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "TitonX-4060",
               "level": 380,
-              "location": "",
+              "location": "파문항구-위쪽-우사로 옆 계단",
               "level_str": "Lv.380",
               "is_drop": true
             },
@@ -75834,7 +75840,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -75852,7 +75858,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -75861,7 +75867,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -75913,7 +75919,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -76042,7 +76048,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "TitonX-4060",
               "level": 380,
-              "location": "",
+              "location": "파문항구-위쪽-우사로 옆 계단",
               "level_str": "Lv.380",
               "is_drop": true
             },
@@ -76523,7 +76529,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -76541,7 +76547,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -76584,7 +76590,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -76602,7 +76608,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "역병의 근원 마이어스",
               "level": 360,
-              "location": "",
+              "location": "암흑도시-왼쪽 밑",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -76611,7 +76617,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -76672,7 +76678,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -76743,7 +76749,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "암흑 망령",
               "level": 280,
-              "location": "",
+              "location": "사막-오른쪽 끝",
               "level_str": "Lv.280",
               "is_drop": true
             },
@@ -76841,7 +76847,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "TitonX-4060",
               "level": 380,
-              "location": "",
+              "location": "파문항구-위쪽-우사로 옆 계단",
               "level_str": "Lv.380",
               "is_drop": true
             },
@@ -77112,7 +77118,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "아즈샤라 여왕",
               "level": 360,
-              "location": "",
+              "location": "어인해변-위쪽포탈-왼쪽포탈",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -77121,7 +77127,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "역병의 근원 마이어스",
               "level": 360,
-              "location": "",
+              "location": "암흑도시-왼쪽 밑",
               "level_str": "Lv.360",
               "is_drop": true
             }
@@ -77157,7 +77163,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "아즈샤라 여왕",
               "level": 360,
-              "location": "",
+              "location": "어인해변-위쪽포탈-왼쪽포탈",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -77410,7 +77416,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "TitonX-4060",
               "level": 380,
-              "location": "",
+              "location": "파문항구-위쪽-우사로 옆 계단",
               "level_str": "Lv.380",
               "is_drop": true
             },
@@ -77714,7 +77720,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -77732,7 +77738,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -77741,7 +77747,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -77793,7 +77799,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -77922,7 +77928,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "TitonX-4060",
               "level": 380,
-              "location": "",
+              "location": "파문항구-위쪽-우사로 옆 계단",
               "level_str": "Lv.380",
               "is_drop": true
             },
@@ -78403,7 +78409,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -78421,7 +78427,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -78464,7 +78470,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -78482,7 +78488,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "역병의 근원 마이어스",
               "level": 360,
-              "location": "",
+              "location": "암흑도시-왼쪽 밑",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -78491,7 +78497,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -78552,7 +78558,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -78623,7 +78629,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "암흑 망령",
               "level": 280,
-              "location": "",
+              "location": "사막-오른쪽 끝",
               "level_str": "Lv.280",
               "is_drop": true
             },
@@ -78721,7 +78727,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "TitonX-4060",
               "level": 380,
-              "location": "",
+              "location": "파문항구-위쪽-우사로 옆 계단",
               "level_str": "Lv.380",
               "is_drop": true
             },
@@ -78934,7 +78940,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "아즈샤라 여왕",
               "level": 360,
-              "location": "",
+              "location": "어인해변-위쪽포탈-왼쪽포탈",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -78943,7 +78949,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "역병의 근원 마이어스",
               "level": 360,
-              "location": "",
+              "location": "암흑도시-왼쪽 밑",
               "level_str": "Lv.360",
               "is_drop": true
             }
@@ -78979,7 +78985,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "아즈샤라 여왕",
               "level": 360,
-              "location": "",
+              "location": "어인해변-위쪽포탈-왼쪽포탈",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -79232,7 +79238,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "TitonX-4060",
               "level": 380,
-              "location": "",
+              "location": "파문항구-위쪽-우사로 옆 계단",
               "level_str": "Lv.380",
               "is_drop": true
             },
@@ -79536,7 +79542,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -79554,7 +79560,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -79563,7 +79569,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -79615,7 +79621,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -79744,7 +79750,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "TitonX-4060",
               "level": 380,
-              "location": "",
+              "location": "파문항구-위쪽-우사로 옆 계단",
               "level_str": "Lv.380",
               "is_drop": true
             },
@@ -80225,7 +80231,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -80243,7 +80249,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -80286,7 +80292,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -80304,7 +80310,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "역병의 근원 마이어스",
               "level": 360,
-              "location": "",
+              "location": "암흑도시-왼쪽 밑",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -80313,7 +80319,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -80374,7 +80380,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -80445,7 +80451,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "암흑 망령",
               "level": 280,
-              "location": "",
+              "location": "사막-오른쪽 끝",
               "level_str": "Lv.280",
               "is_drop": true
             },
@@ -80543,7 +80549,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "TitonX-4060",
               "level": 380,
-              "location": "",
+              "location": "파문항구-위쪽-우사로 옆 계단",
               "level_str": "Lv.380",
               "is_drop": true
             },
@@ -80815,7 +80821,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "역병의 근원 마이어스",
               "level": 360,
-              "location": "",
+              "location": "암흑도시-왼쪽 밑",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -80869,7 +80875,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "아즈샤라 여왕",
               "level": 360,
-              "location": "",
+              "location": "어인해변-위쪽포탈-왼쪽포탈",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -80878,7 +80884,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "역병의 근원 마이어스",
               "level": 360,
-              "location": "",
+              "location": "암흑도시-왼쪽 밑",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -80896,7 +80902,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             }
@@ -80933,7 +80939,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -81131,7 +81137,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "TitonX-4060",
               "level": 380,
-              "location": "",
+              "location": "파문항구-위쪽-우사로 옆 계단",
               "level_str": "Lv.380",
               "is_drop": true
             },
@@ -81435,7 +81441,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -81453,7 +81459,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -81462,7 +81468,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -81514,7 +81520,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -81643,7 +81649,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "TitonX-4060",
               "level": 380,
-              "location": "",
+              "location": "파문항구-위쪽-우사로 옆 계단",
               "level_str": "Lv.380",
               "is_drop": true
             },
@@ -82124,7 +82130,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -82142,7 +82148,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -82185,7 +82191,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -82203,7 +82209,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "역병의 근원 마이어스",
               "level": 360,
-              "location": "",
+              "location": "암흑도시-왼쪽 밑",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -82212,7 +82218,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -82273,7 +82279,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -82344,7 +82350,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "암흑 망령",
               "level": 280,
-              "location": "",
+              "location": "사막-오른쪽 끝",
               "level_str": "Lv.280",
               "is_drop": true
             },
@@ -82442,7 +82448,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "TitonX-4060",
               "level": 380,
-              "location": "",
+              "location": "파문항구-위쪽-우사로 옆 계단",
               "level_str": "Lv.380",
               "is_drop": true
             },
@@ -82656,7 +82662,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "역병의 근원 마이어스",
               "level": 360,
-              "location": "",
+              "location": "암흑도시-왼쪽 밑",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -82710,7 +82716,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "아즈샤라 여왕",
               "level": 360,
-              "location": "",
+              "location": "어인해변-위쪽포탈-왼쪽포탈",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -82719,7 +82725,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "역병의 근원 마이어스",
               "level": 360,
-              "location": "",
+              "location": "암흑도시-왼쪽 밑",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -82737,7 +82743,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             }
@@ -82774,7 +82780,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -82972,7 +82978,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "TitonX-4060",
               "level": 380,
-              "location": "",
+              "location": "파문항구-위쪽-우사로 옆 계단",
               "level_str": "Lv.380",
               "is_drop": true
             },
@@ -83276,7 +83282,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -83294,7 +83300,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -83303,7 +83309,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -83355,7 +83361,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -83484,7 +83490,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "TitonX-4060",
               "level": 380,
-              "location": "",
+              "location": "파문항구-위쪽-우사로 옆 계단",
               "level_str": "Lv.380",
               "is_drop": true
             },
@@ -83965,7 +83971,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -83983,7 +83989,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -84026,7 +84032,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -84044,7 +84050,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "역병의 근원 마이어스",
               "level": 360,
-              "location": "",
+              "location": "암흑도시-왼쪽 밑",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -84053,7 +84059,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -84114,7 +84120,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -84185,7 +84191,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "암흑 망령",
               "level": 280,
-              "location": "",
+              "location": "사막-오른쪽 끝",
               "level_str": "Lv.280",
               "is_drop": true
             },
@@ -84283,7 +84289,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "TitonX-4060",
               "level": 380,
-              "location": "",
+              "location": "파문항구-위쪽-우사로 옆 계단",
               "level_str": "Lv.380",
               "is_drop": true
             },
@@ -84588,7 +84594,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "아즈샤라 여왕",
               "level": 360,
-              "location": "",
+              "location": "어인해변-위쪽포탈-왼쪽포탈",
               "level_str": "Lv.360",
               "is_drop": true
             }
@@ -84634,7 +84640,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "아즈샤라 여왕",
               "level": 360,
-              "location": "",
+              "location": "어인해변-위쪽포탈-왼쪽포탈",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -84880,7 +84886,7 @@ window.PRELOADED_GAME_DATA = {
               "boss": "TitonX-4060",
               "level": 380,
               "level_str": "Lv.380",
-              "location": ""
+              "location": "파문항구-위쪽-우사로 옆 계단"
             },
             {
               "name": "그림자의 핵",
@@ -85173,7 +85179,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -85191,7 +85197,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -85200,7 +85206,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -85252,7 +85258,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -85411,7 +85417,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "아즈샤라 여왕",
               "level": 360,
-              "location": "",
+              "location": "어인해변-위쪽포탈-왼쪽포탈",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -85700,7 +85706,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -85771,7 +85777,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -86006,7 +86012,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "아즈샤라 여왕",
               "level": 360,
-              "location": "",
+              "location": "어인해변-위쪽포탈-왼쪽포탈",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -86015,7 +86021,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "역병의 근원 마이어스",
               "level": 360,
-              "location": "",
+              "location": "암흑도시-왼쪽 밑",
               "level_str": "Lv.360",
               "is_drop": true
             }
@@ -86233,7 +86239,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "TitonX-4060",
               "level": 380,
-              "location": "",
+              "location": "파문항구-위쪽-우사로 옆 계단",
               "level_str": "Lv.380",
               "is_drop": true
             },
@@ -86260,7 +86266,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "아즈샤라 여왕",
               "level": 360,
-              "location": "",
+              "location": "어인해변-위쪽포탈-왼쪽포탈",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -86682,7 +86688,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "아즈샤라 여왕",
               "level": 360,
-              "location": "",
+              "location": "어인해변-위쪽포탈-왼쪽포탈",
               "level_str": "Lv.360",
               "is_drop": true
             }
@@ -86728,7 +86734,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "아즈샤라 여왕",
               "level": 360,
-              "location": "",
+              "location": "어인해변-위쪽포탈-왼쪽포탈",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -86974,7 +86980,7 @@ window.PRELOADED_GAME_DATA = {
               "boss": "TitonX-4060",
               "level": 380,
               "level_str": "Lv.380",
-              "location": ""
+              "location": "파문항구-위쪽-우사로 옆 계단"
             },
             {
               "name": "그림자의 핵",
@@ -87267,7 +87273,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -87285,7 +87291,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -87294,7 +87300,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -87346,7 +87352,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -87505,7 +87511,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "아즈샤라 여왕",
               "level": 360,
-              "location": "",
+              "location": "어인해변-위쪽포탈-왼쪽포탈",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -87794,7 +87800,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -87865,7 +87871,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -88100,7 +88106,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "아즈샤라 여왕",
               "level": 360,
-              "location": "",
+              "location": "어인해변-위쪽포탈-왼쪽포탈",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -88109,7 +88115,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "역병의 근원 마이어스",
               "level": 360,
-              "location": "",
+              "location": "암흑도시-왼쪽 밑",
               "level_str": "Lv.360",
               "is_drop": true
             }
@@ -88327,7 +88333,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "TitonX-4060",
               "level": 380,
-              "location": "",
+              "location": "파문항구-위쪽-우사로 옆 계단",
               "level_str": "Lv.380",
               "is_drop": true
             },
@@ -88354,7 +88360,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "아즈샤라 여왕",
               "level": 360,
-              "location": "",
+              "location": "어인해변-위쪽포탈-왼쪽포탈",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -88815,7 +88821,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -88880,7 +88886,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "역병의 근원 마이어스",
               "level": 360,
-              "location": "",
+              "location": "암흑도시-왼쪽 밑",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -89063,7 +89069,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "TitonX-4060",
               "level": 380,
-              "location": "",
+              "location": "파문항구-위쪽-우사로 옆 계단",
               "level_str": "Lv.380",
               "is_drop": true
             },
@@ -89367,7 +89373,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -89385,7 +89391,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -89394,7 +89400,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -89446,7 +89452,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -89575,7 +89581,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "TitonX-4060",
               "level": 380,
-              "location": "",
+              "location": "파문항구-위쪽-우사로 옆 계단",
               "level_str": "Lv.380",
               "is_drop": true
             },
@@ -90056,7 +90062,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -90074,7 +90080,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -90117,7 +90123,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -90135,7 +90141,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "역병의 근원 마이어스",
               "level": 360,
-              "location": "",
+              "location": "암흑도시-왼쪽 밑",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -90144,7 +90150,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -90205,7 +90211,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -90276,7 +90282,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "암흑 망령",
               "level": 280,
-              "location": "",
+              "location": "사막-오른쪽 끝",
               "level_str": "Lv.280",
               "is_drop": true
             },
@@ -90374,7 +90380,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "TitonX-4060",
               "level": 380,
-              "location": "",
+              "location": "파문항구-위쪽-우사로 옆 계단",
               "level_str": "Lv.380",
               "is_drop": true
             },
@@ -90578,7 +90584,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -90643,7 +90649,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "역병의 근원 마이어스",
               "level": 360,
-              "location": "",
+              "location": "암흑도시-왼쪽 밑",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -90826,7 +90832,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "TitonX-4060",
               "level": 380,
-              "location": "",
+              "location": "파문항구-위쪽-우사로 옆 계단",
               "level_str": "Lv.380",
               "is_drop": true
             },
@@ -91130,7 +91136,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -91148,7 +91154,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -91157,7 +91163,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -91209,7 +91215,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -91338,7 +91344,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "TitonX-4060",
               "level": 380,
-              "location": "",
+              "location": "파문항구-위쪽-우사로 옆 계단",
               "level_str": "Lv.380",
               "is_drop": true
             },
@@ -91819,7 +91825,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -91837,7 +91843,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -91880,7 +91886,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -91898,7 +91904,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "역병의 근원 마이어스",
               "level": 360,
-              "location": "",
+              "location": "암흑도시-왼쪽 밑",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -91907,7 +91913,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -91968,7 +91974,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -92039,7 +92045,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "암흑 망령",
               "level": 280,
-              "location": "",
+              "location": "사막-오른쪽 끝",
               "level_str": "Lv.280",
               "is_drop": true
             },
@@ -92137,7 +92143,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "TitonX-4060",
               "level": 380,
-              "location": "",
+              "location": "파문항구-위쪽-우사로 옆 계단",
               "level_str": "Lv.380",
               "is_drop": true
             },
@@ -92400,7 +92406,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -92418,7 +92424,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "아즈샤라 여왕",
               "level": 360,
-              "location": "",
+              "location": "어인해변-위쪽포탈-왼쪽포탈",
               "level_str": "Lv.360",
               "is_drop": true
             }
@@ -92465,7 +92471,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "역병의 근원 마이어스",
               "level": 360,
-              "location": "",
+              "location": "암흑도시-왼쪽 밑",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -92648,7 +92654,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "TitonX-4060",
               "level": 380,
-              "location": "",
+              "location": "파문항구-위쪽-우사로 옆 계단",
               "level_str": "Lv.380",
               "is_drop": true
             },
@@ -92952,7 +92958,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -92970,7 +92976,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -92979,7 +92985,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -93031,7 +93037,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -93160,7 +93166,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "TitonX-4060",
               "level": 380,
-              "location": "",
+              "location": "파문항구-위쪽-우사로 옆 계단",
               "level_str": "Lv.380",
               "is_drop": true
             },
@@ -93641,7 +93647,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -93659,7 +93665,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -93702,7 +93708,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -93720,7 +93726,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "역병의 근원 마이어스",
               "level": 360,
-              "location": "",
+              "location": "암흑도시-왼쪽 밑",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -93729,7 +93735,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -93790,7 +93796,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -93861,7 +93867,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "암흑 망령",
               "level": 280,
-              "location": "",
+              "location": "사막-오른쪽 끝",
               "level_str": "Lv.280",
               "is_drop": true
             },
@@ -93959,7 +93965,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "TitonX-4060",
               "level": 380,
-              "location": "",
+              "location": "파문항구-위쪽-우사로 옆 계단",
               "level_str": "Lv.380",
               "is_drop": true
             },
@@ -94164,7 +94170,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -94182,7 +94188,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "아즈샤라 여왕",
               "level": 360,
-              "location": "",
+              "location": "어인해변-위쪽포탈-왼쪽포탈",
               "level_str": "Lv.360",
               "is_drop": true
             }
@@ -94229,7 +94235,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "역병의 근원 마이어스",
               "level": 360,
-              "location": "",
+              "location": "암흑도시-왼쪽 밑",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -94412,7 +94418,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "TitonX-4060",
               "level": 380,
-              "location": "",
+              "location": "파문항구-위쪽-우사로 옆 계단",
               "level_str": "Lv.380",
               "is_drop": true
             },
@@ -94716,7 +94722,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -94734,7 +94740,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -94743,7 +94749,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -94795,7 +94801,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -94924,7 +94930,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "TitonX-4060",
               "level": 380,
-              "location": "",
+              "location": "파문항구-위쪽-우사로 옆 계단",
               "level_str": "Lv.380",
               "is_drop": true
             },
@@ -95405,7 +95411,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -95423,7 +95429,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -95466,7 +95472,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -95484,7 +95490,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "역병의 근원 마이어스",
               "level": 360,
-              "location": "",
+              "location": "암흑도시-왼쪽 밑",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -95493,7 +95499,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -95554,7 +95560,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -95625,7 +95631,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "암흑 망령",
               "level": 280,
-              "location": "",
+              "location": "사막-오른쪽 끝",
               "level_str": "Lv.280",
               "is_drop": true
             },
@@ -95723,7 +95729,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "TitonX-4060",
               "level": 380,
-              "location": "",
+              "location": "파문항구-위쪽-우사로 옆 계단",
               "level_str": "Lv.380",
               "is_drop": true
             },
@@ -95980,7 +95986,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -95998,7 +96004,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "아즈샤라 여왕",
               "level": 360,
-              "location": "",
+              "location": "어인해변-위쪽포탈-왼쪽포탈",
               "level_str": "Lv.360",
               "is_drop": true
             }
@@ -96045,7 +96051,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "역병의 근원 마이어스",
               "level": 360,
-              "location": "",
+              "location": "암흑도시-왼쪽 밑",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -96228,7 +96234,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "TitonX-4060",
               "level": 380,
-              "location": "",
+              "location": "파문항구-위쪽-우사로 옆 계단",
               "level_str": "Lv.380",
               "is_drop": true
             },
@@ -96255,7 +96261,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -96264,7 +96270,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             }
@@ -96307,7 +96313,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -96316,7 +96322,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -96343,7 +96349,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "암흑 망령",
               "level": 280,
-              "location": "",
+              "location": "사막-오른쪽 끝",
               "level_str": "Lv.280",
               "is_drop": true
             }
@@ -96690,7 +96696,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "TitonX-4060",
               "level": 380,
-              "location": "",
+              "location": "파문항구-위쪽-우사로 옆 계단",
               "level_str": "Lv.380",
               "is_drop": true
             },
@@ -96717,7 +96723,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "역병의 근원 마이어스",
               "level": 360,
-              "location": "",
+              "location": "암흑도시-왼쪽 밑",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -96778,7 +96784,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -96839,7 +96845,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -96987,7 +96993,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "역병의 근원 마이어스",
               "level": 360,
-              "location": "",
+              "location": "암흑도시-왼쪽 밑",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -96996,7 +97002,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -97066,7 +97072,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -97229,7 +97235,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "TitonX-4060",
               "level": 380,
-              "location": "",
+              "location": "파문항구-위쪽-우사로 옆 계단",
               "level_str": "Lv.380",
               "is_drop": true
             },
@@ -97308,7 +97314,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -97719,7 +97725,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -97728,7 +97734,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "역병의 근원 마이어스",
               "level": 360,
-              "location": "",
+              "location": "암흑도시-왼쪽 밑",
               "level_str": "Lv.360",
               "is_drop": true
             }
@@ -97762,7 +97768,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "아즈샤라 여왕",
               "level": 360,
-              "location": "",
+              "location": "어인해변-위쪽포탈-왼쪽포탈",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -97771,7 +97777,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "역병의 근원 마이어스",
               "level": 360,
-              "location": "",
+              "location": "암흑도시-왼쪽 밑",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -98025,7 +98031,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "TitonX-4060",
               "level": 380,
-              "location": "",
+              "location": "파문항구-위쪽-우사로 옆 계단",
               "level_str": "Lv.380",
               "is_drop": true
             },
@@ -98052,7 +98058,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -98061,7 +98067,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "역병의 근원 마이어스",
               "level": 360,
-              "location": "",
+              "location": "암흑도시-왼쪽 밑",
               "level_str": "Lv.360",
               "is_drop": true
             }
@@ -98111,7 +98117,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -98129,7 +98135,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "역병의 근원 마이어스",
               "level": 360,
-              "location": "",
+              "location": "암흑도시-왼쪽 밑",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -98138,7 +98144,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -98199,7 +98205,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -98270,7 +98276,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "암흑 망령",
               "level": 280,
-              "location": "",
+              "location": "사막-오른쪽 끝",
               "level_str": "Lv.280",
               "is_drop": true
             },
@@ -98370,7 +98376,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -98388,7 +98394,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "아즈샤라 여왕",
               "level": 360,
-              "location": "",
+              "location": "어인해변-위쪽포탈-왼쪽포탈",
               "level_str": "Lv.360",
               "is_drop": true
             }
@@ -98435,7 +98441,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "역병의 근원 마이어스",
               "level": 360,
-              "location": "",
+              "location": "암흑도시-왼쪽 밑",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -98618,7 +98624,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "TitonX-4060",
               "level": 380,
-              "location": "",
+              "location": "파문항구-위쪽-우사로 옆 계단",
               "level_str": "Lv.380",
               "is_drop": true
             },
@@ -98645,7 +98651,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -98654,7 +98660,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             }
@@ -98697,7 +98703,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -98706,7 +98712,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -98733,7 +98739,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "암흑 망령",
               "level": 280,
-              "location": "",
+              "location": "사막-오른쪽 끝",
               "level_str": "Lv.280",
               "is_drop": true
             }
@@ -99080,7 +99086,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "TitonX-4060",
               "level": 380,
-              "location": "",
+              "location": "파문항구-위쪽-우사로 옆 계단",
               "level_str": "Lv.380",
               "is_drop": true
             },
@@ -99107,7 +99113,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "역병의 근원 마이어스",
               "level": 360,
-              "location": "",
+              "location": "암흑도시-왼쪽 밑",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -99168,7 +99174,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -99229,7 +99235,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -99377,7 +99383,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "역병의 근원 마이어스",
               "level": 360,
-              "location": "",
+              "location": "암흑도시-왼쪽 밑",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -99386,7 +99392,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -99456,7 +99462,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -99619,7 +99625,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "TitonX-4060",
               "level": 380,
-              "location": "",
+              "location": "파문항구-위쪽-우사로 옆 계단",
               "level_str": "Lv.380",
               "is_drop": true
             },
@@ -99698,7 +99704,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -100109,7 +100115,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -100118,7 +100124,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "역병의 근원 마이어스",
               "level": 360,
-              "location": "",
+              "location": "암흑도시-왼쪽 밑",
               "level_str": "Lv.360",
               "is_drop": true
             }
@@ -100152,7 +100158,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "아즈샤라 여왕",
               "level": 360,
-              "location": "",
+              "location": "어인해변-위쪽포탈-왼쪽포탈",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -100161,7 +100167,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "역병의 근원 마이어스",
               "level": 360,
-              "location": "",
+              "location": "암흑도시-왼쪽 밑",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -100415,7 +100421,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "TitonX-4060",
               "level": 380,
-              "location": "",
+              "location": "파문항구-위쪽-우사로 옆 계단",
               "level_str": "Lv.380",
               "is_drop": true
             },
@@ -100442,7 +100448,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -100451,7 +100457,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "역병의 근원 마이어스",
               "level": 360,
-              "location": "",
+              "location": "암흑도시-왼쪽 밑",
               "level_str": "Lv.360",
               "is_drop": true
             }
@@ -100501,7 +100507,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -100519,7 +100525,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "역병의 근원 마이어스",
               "level": 360,
-              "location": "",
+              "location": "암흑도시-왼쪽 밑",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -100528,7 +100534,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -100589,7 +100595,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -100660,7 +100666,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "암흑 망령",
               "level": 280,
-              "location": "",
+              "location": "사막-오른쪽 끝",
               "level_str": "Lv.280",
               "is_drop": true
             },
@@ -100922,7 +100928,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "암흑 망령",
               "level": 280,
-              "location": "",
+              "location": "사막-오른쪽 끝",
               "level_str": "Lv.280",
               "is_drop": true
             },
@@ -100931,7 +100937,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "암흑 망령",
               "level": 280,
-              "location": "",
+              "location": "사막-오른쪽 끝",
               "level_str": "Lv.280",
               "is_drop": true
             },
@@ -100973,7 +100979,7 @@ window.PRELOADED_GAME_DATA = {
           "is_drop": true,
           "drop_boss": "암흑 망령",
           "drop_level": 280,
-          "drop_location": "",
+          "drop_location": "사막-오른쪽 끝",
           "drop_type": "아이템"
         },
         {
@@ -101101,7 +101107,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "TitonX-4060",
               "level": 380,
-              "location": "",
+              "location": "파문항구-위쪽-우사로 옆 계단",
               "level_str": "Lv.380",
               "is_drop": true
             },
@@ -101405,7 +101411,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -101423,7 +101429,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -101432,7 +101438,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -101484,7 +101490,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -101613,7 +101619,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "TitonX-4060",
               "level": 380,
-              "location": "",
+              "location": "파문항구-위쪽-우사로 옆 계단",
               "level_str": "Lv.380",
               "is_drop": true
             },
@@ -102094,7 +102100,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -102112,7 +102118,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -102155,7 +102161,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -102173,7 +102179,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "역병의 근원 마이어스",
               "level": 360,
-              "location": "",
+              "location": "암흑도시-왼쪽 밑",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -102182,7 +102188,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -102243,7 +102249,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -102314,7 +102320,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "암흑 망령",
               "level": 280,
-              "location": "",
+              "location": "사막-오른쪽 끝",
               "level_str": "Lv.280",
               "is_drop": true
             },
@@ -102412,7 +102418,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "TitonX-4060",
               "level": 380,
-              "location": "",
+              "location": "파문항구-위쪽-우사로 옆 계단",
               "level_str": "Lv.380",
               "is_drop": true
             },
@@ -102727,7 +102733,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "암흑 망령",
               "level": 280,
-              "location": "",
+              "location": "사막-오른쪽 끝",
               "level_str": "Lv.280",
               "is_drop": true
             },
@@ -102736,7 +102742,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "암흑 망령",
               "level": 280,
-              "location": "",
+              "location": "사막-오른쪽 끝",
               "level_str": "Lv.280",
               "is_drop": true
             },
@@ -102778,7 +102784,7 @@ window.PRELOADED_GAME_DATA = {
           "is_drop": true,
           "drop_boss": "암흑 망령",
           "drop_level": 280,
-          "drop_location": "",
+          "drop_location": "사막-오른쪽 끝",
           "drop_type": "아이템"
         },
         "광기의 용 검-이그닐": {
@@ -102906,7 +102912,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "TitonX-4060",
               "level": 380,
-              "location": "",
+              "location": "파문항구-위쪽-우사로 옆 계단",
               "level_str": "Lv.380",
               "is_drop": true
             },
@@ -103210,7 +103216,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -103228,7 +103234,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -103237,7 +103243,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -103289,7 +103295,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -103418,7 +103424,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "TitonX-4060",
               "level": 380,
-              "location": "",
+              "location": "파문항구-위쪽-우사로 옆 계단",
               "level_str": "Lv.380",
               "is_drop": true
             },
@@ -103899,7 +103905,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -103917,7 +103923,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -103960,7 +103966,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -103978,7 +103984,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "역병의 근원 마이어스",
               "level": 360,
-              "location": "",
+              "location": "암흑도시-왼쪽 밑",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -103987,7 +103993,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -104048,7 +104054,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -104119,7 +104125,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "암흑 망령",
               "level": 280,
-              "location": "",
+              "location": "사막-오른쪽 끝",
               "level_str": "Lv.280",
               "is_drop": true
             },
@@ -104217,7 +104223,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "TitonX-4060",
               "level": 380,
-              "location": "",
+              "location": "파문항구-위쪽-우사로 옆 계단",
               "level_str": "Lv.380",
               "is_drop": true
             },
@@ -104623,7 +104629,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -104749,7 +104755,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "TitonX-4060",
               "level": 380,
-              "location": "",
+              "location": "파문항구-위쪽-우사로 옆 계단",
               "level_str": "Lv.380",
               "is_drop": true
             },
@@ -105053,7 +105059,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -105071,7 +105077,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -105080,7 +105086,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -105132,7 +105138,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -105261,7 +105267,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "TitonX-4060",
               "level": 380,
-              "location": "",
+              "location": "파문항구-위쪽-우사로 옆 계단",
               "level_str": "Lv.380",
               "is_drop": true
             },
@@ -105742,7 +105748,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -105760,7 +105766,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -105803,7 +105809,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -105821,7 +105827,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "역병의 근원 마이어스",
               "level": 360,
-              "location": "",
+              "location": "암흑도시-왼쪽 밑",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -105830,7 +105836,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -105891,7 +105897,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -105962,7 +105968,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "암흑 망령",
               "level": 280,
-              "location": "",
+              "location": "사막-오른쪽 끝",
               "level_str": "Lv.280",
               "is_drop": true
             },
@@ -106060,7 +106066,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "TitonX-4060",
               "level": 380,
-              "location": "",
+              "location": "파문항구-위쪽-우사로 옆 계단",
               "level_str": "Lv.380",
               "is_drop": true
             },
@@ -106408,7 +106414,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -106534,7 +106540,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "TitonX-4060",
               "level": 380,
-              "location": "",
+              "location": "파문항구-위쪽-우사로 옆 계단",
               "level_str": "Lv.380",
               "is_drop": true
             },
@@ -106838,7 +106844,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -106856,7 +106862,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -106865,7 +106871,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -106917,7 +106923,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -107046,7 +107052,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "TitonX-4060",
               "level": 380,
-              "location": "",
+              "location": "파문항구-위쪽-우사로 옆 계단",
               "level_str": "Lv.380",
               "is_drop": true
             },
@@ -107527,7 +107533,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -107545,7 +107551,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -107588,7 +107594,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -107606,7 +107612,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "역병의 근원 마이어스",
               "level": 360,
-              "location": "",
+              "location": "암흑도시-왼쪽 밑",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -107615,7 +107621,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -107676,7 +107682,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -107747,7 +107753,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "암흑 망령",
               "level": 280,
-              "location": "",
+              "location": "사막-오른쪽 끝",
               "level_str": "Lv.280",
               "is_drop": true
             },
@@ -107845,7 +107851,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "TitonX-4060",
               "level": 380,
-              "location": "",
+              "location": "파문항구-위쪽-우사로 옆 계단",
               "level_str": "Lv.380",
               "is_drop": true
             },
@@ -108245,7 +108251,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -108371,7 +108377,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "TitonX-4060",
               "level": 380,
-              "location": "",
+              "location": "파문항구-위쪽-우사로 옆 계단",
               "level_str": "Lv.380",
               "is_drop": true
             },
@@ -108675,7 +108681,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -108693,7 +108699,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -108702,7 +108708,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -108754,7 +108760,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -108883,7 +108889,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "TitonX-4060",
               "level": 380,
-              "location": "",
+              "location": "파문항구-위쪽-우사로 옆 계단",
               "level_str": "Lv.380",
               "is_drop": true
             },
@@ -109364,7 +109370,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -109382,7 +109388,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -109425,7 +109431,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -109443,7 +109449,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "역병의 근원 마이어스",
               "level": 360,
-              "location": "",
+              "location": "암흑도시-왼쪽 밑",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -109452,7 +109458,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -109513,7 +109519,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -109584,7 +109590,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "암흑 망령",
               "level": 280,
-              "location": "",
+              "location": "사막-오른쪽 끝",
               "level_str": "Lv.280",
               "is_drop": true
             },
@@ -109682,7 +109688,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "TitonX-4060",
               "level": 380,
-              "location": "",
+              "location": "파문항구-위쪽-우사로 옆 계단",
               "level_str": "Lv.380",
               "is_drop": true
             },
@@ -110030,7 +110036,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -110156,7 +110162,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "TitonX-4060",
               "level": 380,
-              "location": "",
+              "location": "파문항구-위쪽-우사로 옆 계단",
               "level_str": "Lv.380",
               "is_drop": true
             },
@@ -110460,7 +110466,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -110478,7 +110484,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -110487,7 +110493,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -110539,7 +110545,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -110668,7 +110674,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "TitonX-4060",
               "level": 380,
-              "location": "",
+              "location": "파문항구-위쪽-우사로 옆 계단",
               "level_str": "Lv.380",
               "is_drop": true
             },
@@ -111149,7 +111155,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -111167,7 +111173,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -111210,7 +111216,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -111228,7 +111234,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "역병의 근원 마이어스",
               "level": 360,
-              "location": "",
+              "location": "암흑도시-왼쪽 밑",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -111237,7 +111243,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -111298,7 +111304,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -111369,7 +111375,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "암흑 망령",
               "level": 280,
-              "location": "",
+              "location": "사막-오른쪽 끝",
               "level_str": "Lv.280",
               "is_drop": true
             },
@@ -111467,7 +111473,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "TitonX-4060",
               "level": 380,
-              "location": "",
+              "location": "파문항구-위쪽-우사로 옆 계단",
               "level_str": "Lv.380",
               "is_drop": true
             },
@@ -111769,7 +111775,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -111805,7 +111811,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -111838,7 +111844,7 @@ window.PRELOADED_GAME_DATA = {
           "is_drop": true,
           "drop_boss": "제7마왕 모르페우스",
           "drop_level": 340,
-          "drop_location": "전초기지-심연내부-포탈-왼쪽포탈",
+          "drop_location": "전초기지-오른쪽성-포탈-왼쪽포탈",
           "drop_type": "아이템"
         },
         {
@@ -111888,7 +111894,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "TitonX-4060",
               "level": 380,
-              "location": "",
+              "location": "파문항구-위쪽-우사로 옆 계단",
               "level_str": "Lv.380",
               "is_drop": true
             },
@@ -112192,7 +112198,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -112210,7 +112216,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -112219,7 +112225,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -112271,7 +112277,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -112400,7 +112406,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "TitonX-4060",
               "level": 380,
-              "location": "",
+              "location": "파문항구-위쪽-우사로 옆 계단",
               "level_str": "Lv.380",
               "is_drop": true
             },
@@ -112881,7 +112887,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -112899,7 +112905,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -112942,7 +112948,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -112960,7 +112966,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "역병의 근원 마이어스",
               "level": 360,
-              "location": "",
+              "location": "암흑도시-왼쪽 밑",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -112969,7 +112975,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -113030,7 +113036,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -113101,7 +113107,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "암흑 망령",
               "level": 280,
-              "location": "",
+              "location": "사막-오른쪽 끝",
               "level_str": "Lv.280",
               "is_drop": true
             },
@@ -113199,7 +113205,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "TitonX-4060",
               "level": 380,
-              "location": "",
+              "location": "파문항구-위쪽-우사로 옆 계단",
               "level_str": "Lv.380",
               "is_drop": true
             },
@@ -113449,7 +113455,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -113485,7 +113491,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -113518,7 +113524,7 @@ window.PRELOADED_GAME_DATA = {
           "is_drop": true,
           "drop_boss": "제7마왕 모르페우스",
           "drop_level": 340,
-          "drop_location": "전초기지-심연내부-포탈-왼쪽포탈",
+          "drop_location": "전초기지-오른쪽성-포탈-왼쪽포탈",
           "drop_type": "아이템"
         },
         "고대의 악몽-파괴의 검": {
@@ -113568,7 +113574,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "TitonX-4060",
               "level": 380,
-              "location": "",
+              "location": "파문항구-위쪽-우사로 옆 계단",
               "level_str": "Lv.380",
               "is_drop": true
             },
@@ -113872,7 +113878,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -113890,7 +113896,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -113899,7 +113905,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -113951,7 +113957,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -114080,7 +114086,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "TitonX-4060",
               "level": 380,
-              "location": "",
+              "location": "파문항구-위쪽-우사로 옆 계단",
               "level_str": "Lv.380",
               "is_drop": true
             },
@@ -114561,7 +114567,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -114579,7 +114585,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -114622,7 +114628,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -114640,7 +114646,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "역병의 근원 마이어스",
               "level": 360,
-              "location": "",
+              "location": "암흑도시-왼쪽 밑",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -114649,7 +114655,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -114710,7 +114716,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -114781,7 +114787,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "암흑 망령",
               "level": 280,
-              "location": "",
+              "location": "사막-오른쪽 끝",
               "level_str": "Lv.280",
               "is_drop": true
             },
@@ -114879,7 +114885,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "TitonX-4060",
               "level": 380,
-              "location": "",
+              "location": "파문항구-위쪽-우사로 옆 계단",
               "level_str": "Lv.380",
               "is_drop": true
             },
@@ -115161,7 +115167,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "아즈샤라 여왕",
               "level": 360,
-              "location": "",
+              "location": "어인해변-위쪽포탈-왼쪽포탈",
               "level_str": "Lv.360",
               "is_drop": true
             }
@@ -115207,7 +115213,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "아즈샤라 여왕",
               "level": 360,
-              "location": "",
+              "location": "어인해변-위쪽포탈-왼쪽포탈",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -115452,7 +115458,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "TitonX-4060",
               "level": 380,
-              "location": "",
+              "location": "파문항구-위쪽-우사로 옆 계단",
               "level_str": "Lv.380",
               "is_drop": true
             },
@@ -115756,7 +115762,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -115774,7 +115780,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -115783,7 +115789,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -115835,7 +115841,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -115964,7 +115970,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "TitonX-4060",
               "level": 380,
-              "location": "",
+              "location": "파문항구-위쪽-우사로 옆 계단",
               "level_str": "Lv.380",
               "is_drop": true
             },
@@ -116445,7 +116451,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -116463,7 +116469,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -116506,7 +116512,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -116524,7 +116530,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "역병의 근원 마이어스",
               "level": 360,
-              "location": "",
+              "location": "암흑도시-왼쪽 밑",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -116533,7 +116539,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -116594,7 +116600,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -116665,7 +116671,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "암흑 망령",
               "level": 280,
-              "location": "",
+              "location": "사막-오른쪽 끝",
               "level_str": "Lv.280",
               "is_drop": true
             },
@@ -116772,7 +116778,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "아즈샤라 여왕",
               "level": 360,
-              "location": "",
+              "location": "어인해변-위쪽포탈-왼쪽포탈",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -116781,7 +116787,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "역병의 근원 마이어스",
               "level": 360,
-              "location": "",
+              "location": "암흑도시-왼쪽 밑",
               "level_str": "Lv.360",
               "is_drop": true
             }
@@ -117005,7 +117011,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "TitonX-4060",
               "level": 380,
-              "location": "",
+              "location": "파문항구-위쪽-우사로 옆 계단",
               "level_str": "Lv.380",
               "is_drop": true
             },
@@ -117228,7 +117234,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "아즈샤라 여왕",
               "level": 360,
-              "location": "",
+              "location": "어인해변-위쪽포탈-왼쪽포탈",
               "level_str": "Lv.360",
               "is_drop": true
             }
@@ -117274,7 +117280,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "아즈샤라 여왕",
               "level": 360,
-              "location": "",
+              "location": "어인해변-위쪽포탈-왼쪽포탈",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -117519,7 +117525,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "TitonX-4060",
               "level": 380,
-              "location": "",
+              "location": "파문항구-위쪽-우사로 옆 계단",
               "level_str": "Lv.380",
               "is_drop": true
             },
@@ -117823,7 +117829,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -117841,7 +117847,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -117850,7 +117856,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -117902,7 +117908,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -118031,7 +118037,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "TitonX-4060",
               "level": 380,
-              "location": "",
+              "location": "파문항구-위쪽-우사로 옆 계단",
               "level_str": "Lv.380",
               "is_drop": true
             },
@@ -118512,7 +118518,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -118530,7 +118536,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -118573,7 +118579,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -118591,7 +118597,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "역병의 근원 마이어스",
               "level": 360,
-              "location": "",
+              "location": "암흑도시-왼쪽 밑",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -118600,7 +118606,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -118661,7 +118667,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -118732,7 +118738,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "암흑 망령",
               "level": 280,
-              "location": "",
+              "location": "사막-오른쪽 끝",
               "level_str": "Lv.280",
               "is_drop": true
             },
@@ -118839,7 +118845,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "아즈샤라 여왕",
               "level": 360,
-              "location": "",
+              "location": "어인해변-위쪽포탈-왼쪽포탈",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -118848,7 +118854,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "역병의 근원 마이어스",
               "level": 360,
-              "location": "",
+              "location": "암흑도시-왼쪽 밑",
               "level_str": "Lv.360",
               "is_drop": true
             }
@@ -119072,7 +119078,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "TitonX-4060",
               "level": 380,
-              "location": "",
+              "location": "파문항구-위쪽-우사로 옆 계단",
               "level_str": "Lv.380",
               "is_drop": true
             },
@@ -119512,7 +119518,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -119530,7 +119536,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "아즈샤라 여왕",
               "level": 360,
-              "location": "",
+              "location": "어인해변-위쪽포탈-왼쪽포탈",
               "level_str": "Lv.360",
               "is_drop": true
             }
@@ -119612,7 +119618,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "아즈샤라 여왕",
               "level": 360,
-              "location": "",
+              "location": "어인해변-위쪽포탈-왼쪽포탈",
               "level_str": "Lv.360",
               "is_drop": true
             }
@@ -119675,7 +119681,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -119928,7 +119934,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "아즈샤라 여왕",
               "level": 360,
-              "location": "",
+              "location": "어인해변-위쪽포탈-왼쪽포탈",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -119937,7 +119943,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "역병의 근원 마이어스",
               "level": 360,
-              "location": "",
+              "location": "암흑도시-왼쪽 밑",
               "level_str": "Lv.360",
               "is_drop": true
             }
@@ -120007,7 +120013,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "역병의 근원 마이어스",
               "level": 360,
-              "location": "",
+              "location": "암흑도시-왼쪽 밑",
               "level_str": "Lv.360",
               "is_drop": true
             }
@@ -120080,7 +120086,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "역병의 근원 마이어스",
               "level": 360,
-              "location": "",
+              "location": "암흑도시-왼쪽 밑",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -120161,7 +120167,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "아즈샤라 여왕",
               "level": 360,
-              "location": "",
+              "location": "어인해변-위쪽포탈-왼쪽포탈",
               "level_str": "Lv.360",
               "is_drop": true
             }
@@ -120243,7 +120249,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             }
@@ -120391,7 +120397,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "아즈샤라 여왕",
               "level": 360,
-              "location": "",
+              "location": "어인해변-위쪽포탈-왼쪽포탈",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -120400,7 +120406,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "아즈샤라 여왕",
               "level": 360,
-              "location": "",
+              "location": "어인해변-위쪽포탈-왼쪽포탈",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -120409,7 +120415,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "역병의 근원 마이어스",
               "level": 360,
-              "location": "",
+              "location": "암흑도시-왼쪽 밑",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -120527,7 +120533,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "아즈샤라 여왕",
               "level": 360,
-              "location": "",
+              "location": "어인해변-위쪽포탈-왼쪽포탈",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -120536,7 +120542,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "역병의 근원 마이어스",
               "level": 360,
-              "location": "",
+              "location": "암흑도시-왼쪽 밑",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -120554,7 +120560,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             }
@@ -120601,7 +120607,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "역병의 근원 마이어스",
               "level": 360,
-              "location": "",
+              "location": "암흑도시-왼쪽 밑",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -120673,7 +120679,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -120682,7 +120688,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "역병의 근원 마이어스",
               "level": 360,
-              "location": "",
+              "location": "암흑도시-왼쪽 밑",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -120754,7 +120760,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "아즈샤라 여왕",
               "level": 360,
-              "location": "",
+              "location": "어인해변-위쪽포탈-왼쪽포탈",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -120908,7 +120914,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -120944,7 +120950,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -121157,7 +121163,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -121221,7 +121227,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "아즈샤라 여왕",
               "level": 360,
-              "location": "",
+              "location": "어인해변-위쪽포탈-왼쪽포탈",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -121283,7 +121289,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "역병의 근원 마이어스",
               "level": 360,
-              "location": "",
+              "location": "암흑도시-왼쪽 밑",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -121301,7 +121307,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "역병의 근원 마이어스",
               "level": 360,
-              "location": "",
+              "location": "암흑도시-왼쪽 밑",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -121371,7 +121377,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "아즈샤라 여왕",
               "level": 360,
-              "location": "",
+              "location": "어인해변-위쪽포탈-왼쪽포탈",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -121458,7 +121464,7 @@ window.PRELOADED_GAME_DATA = {
           "is_drop": true,
           "drop_boss": "역병의 근원 마이어스",
           "drop_level": 360,
-          "drop_location": "",
+          "drop_location": "암흑도시-왼쪽 밑",
           "drop_type": "아이템"
         },
         {
@@ -121649,7 +121655,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -121729,7 +121735,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -121989,7 +121995,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -122433,7 +122439,7 @@ window.PRELOADED_GAME_DATA = {
           "is_drop": true,
           "drop_boss": "제7마왕 모르페우스",
           "drop_level": 340,
-          "drop_location": "전초기지-심연내부-포탈-왼쪽포탈",
+          "drop_location": "전초기지-오른쪽성-포탈-왼쪽포탈",
           "drop_type": "아이템"
         },
         {
@@ -122465,7 +122471,7 @@ window.PRELOADED_GAME_DATA = {
           "is_drop": true,
           "drop_boss": "제7마왕 모르페우스",
           "drop_level": 340,
-          "drop_location": "전초기지-심연내부-포탈-왼쪽포탈",
+          "drop_location": "전초기지-오른쪽성-포탈-왼쪽포탈",
           "drop_type": "아이템"
         },
         {
@@ -123169,7 +123175,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             }
@@ -123248,7 +123254,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             }
@@ -123330,7 +123336,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             }
@@ -123471,7 +123477,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "역병의 근원 마이어스",
               "level": 360,
-              "location": "",
+              "location": "암흑도시-왼쪽 밑",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -123540,7 +123546,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "아즈샤라 여왕",
               "level": 360,
-              "location": "",
+              "location": "어인해변-위쪽포탈-왼쪽포탈",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -123558,7 +123564,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             }
@@ -123601,7 +123607,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "아즈샤라 여왕",
               "level": 360,
-              "location": "",
+              "location": "어인해변-위쪽포탈-왼쪽포탈",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -123619,7 +123625,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "아즈샤라 여왕",
               "level": 360,
-              "location": "",
+              "location": "어인해변-위쪽포탈-왼쪽포탈",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -123751,7 +123757,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "아즈샤라 여왕",
               "level": 360,
-              "location": "",
+              "location": "어인해변-위쪽포탈-왼쪽포탈",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -123841,7 +123847,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "역병의 근원 마이어스",
               "level": 360,
-              "location": "",
+              "location": "암흑도시-왼쪽 밑",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -123922,7 +123928,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "역병의 근원 마이어스",
               "level": 360,
-              "location": "",
+              "location": "암흑도시-왼쪽 밑",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -124012,7 +124018,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "역병의 근원 마이어스",
               "level": 360,
-              "location": "",
+              "location": "암흑도시-왼쪽 밑",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -124076,7 +124082,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "아즈샤라 여왕",
               "level": 360,
-              "location": "",
+              "location": "어인해변-위쪽포탈-왼쪽포탈",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -124085,7 +124091,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -124094,7 +124100,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "아즈샤라 여왕",
               "level": 360,
-              "location": "",
+              "location": "어인해변-위쪽포탈-왼쪽포탈",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -124103,7 +124109,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -124155,7 +124161,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "아즈샤라 여왕",
               "level": 360,
-              "location": "",
+              "location": "어인해변-위쪽포탈-왼쪽포탈",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -124224,7 +124230,7 @@ window.PRELOADED_GAME_DATA = {
           "is_drop": true,
           "drop_boss": "아즈샤라 여왕",
           "drop_level": 360,
-          "drop_location": "",
+          "drop_location": "어인해변-위쪽포탈-왼쪽포탈",
           "drop_type": "아이템"
         },
         {
@@ -124244,7 +124250,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -124313,7 +124319,7 @@ window.PRELOADED_GAME_DATA = {
           "is_drop": true,
           "drop_boss": "제7마왕 모르페우스",
           "drop_level": 340,
-          "drop_location": "전초기지-심연내부-포탈-왼쪽포탈",
+          "drop_location": "전초기지-오른쪽성-포탈-왼쪽포탈",
           "drop_type": "아이템"
         },
         {
@@ -124742,7 +124748,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -125241,7 +125247,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "암흑 망령",
               "level": 280,
-              "location": "",
+              "location": "사막-오른쪽 끝",
               "level_str": "Lv.280",
               "is_drop": true
             },
@@ -125250,7 +125256,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "암흑 망령",
               "level": 280,
-              "location": "",
+              "location": "사막-오른쪽 끝",
               "level_str": "Lv.280",
               "is_drop": true
             },
@@ -125292,7 +125298,7 @@ window.PRELOADED_GAME_DATA = {
           "is_drop": true,
           "drop_boss": "암흑 망령",
           "drop_level": 280,
-          "drop_location": "",
+          "drop_location": "사막-오른쪽 끝",
           "drop_type": "아이템"
         },
         {
@@ -125310,7 +125316,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "암흑 망령",
               "level": 280,
-              "location": "",
+              "location": "사막-오른쪽 끝",
               "level_str": "Lv.280",
               "is_drop": true
             },
@@ -125319,7 +125325,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "암흑 망령",
               "level": 280,
-              "location": "",
+              "location": "사막-오른쪽 끝",
               "level_str": "Lv.280",
               "is_drop": true
             },
@@ -125361,7 +125367,7 @@ window.PRELOADED_GAME_DATA = {
           "is_drop": true,
           "drop_boss": "암흑 망령",
           "drop_level": 280,
-          "drop_location": "",
+          "drop_location": "사막-오른쪽 끝",
           "drop_type": "아이템"
         },
         {
@@ -125510,7 +125516,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -125519,7 +125525,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "역병의 근원 마이어스",
               "level": 360,
-              "location": "",
+              "location": "암흑도시-왼쪽 밑",
               "level_str": "Lv.360",
               "is_drop": true
             }
@@ -125583,7 +125589,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "아즈샤라 여왕",
               "level": 360,
-              "location": "",
+              "location": "어인해변-위쪽포탈-왼쪽포탈",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -125592,7 +125598,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "아즈샤라 여왕",
               "level": 360,
-              "location": "",
+              "location": "어인해변-위쪽포탈-왼쪽포탈",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -125664,7 +125670,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "아즈샤라 여왕",
               "level": 360,
-              "location": "",
+              "location": "어인해변-위쪽포탈-왼쪽포탈",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -125673,7 +125679,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "아즈샤라 여왕",
               "level": 360,
-              "location": "",
+              "location": "어인해변-위쪽포탈-왼쪽포탈",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -125764,7 +125770,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             }
@@ -126007,7 +126013,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             }
@@ -126239,7 +126245,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -126293,7 +126299,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "역병의 근원 마이어스",
               "level": 360,
-              "location": "",
+              "location": "암흑도시-왼쪽 밑",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -126320,7 +126326,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -126420,7 +126426,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "암흑 망령",
               "level": 280,
-              "location": "",
+              "location": "사막-오른쪽 끝",
               "level_str": "Lv.280",
               "is_drop": true
             }
@@ -126465,7 +126471,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "아즈샤라 여왕",
               "level": 360,
-              "location": "",
+              "location": "어인해변-위쪽포탈-왼쪽포탈",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -126618,7 +126624,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "아즈샤라 여왕",
               "level": 360,
-              "location": "",
+              "location": "어인해변-위쪽포탈-왼쪽포탈",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -126645,7 +126651,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -126781,7 +126787,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "아즈샤라 여왕",
               "level": 360,
-              "location": "",
+              "location": "어인해변-위쪽포탈-왼쪽포탈",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -126860,7 +126866,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "아즈샤라 여왕",
               "level": 360,
-              "location": "",
+              "location": "어인해변-위쪽포탈-왼쪽포탈",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -126951,7 +126957,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -127123,7 +127129,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "암흑 망령",
               "level": 280,
-              "location": "",
+              "location": "사막-오른쪽 끝",
               "level_str": "Lv.280",
               "is_drop": true
             }
@@ -127169,7 +127175,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -127437,7 +127443,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -127520,7 +127526,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -128290,7 +128296,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "TitonX-4060",
               "level": 380,
-              "location": "",
+              "location": "파문항구-위쪽-우사로 옆 계단",
               "level_str": "Lv.380",
               "is_drop": true
             },
@@ -128368,7 +128374,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "TitonX-4060",
               "level": 380,
-              "location": "",
+              "location": "파문항구-위쪽-우사로 옆 계단",
               "level_str": "Lv.380",
               "is_drop": true
             },
@@ -128477,7 +128483,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "아즈샤라 여왕",
               "level": 360,
-              "location": "",
+              "location": "어인해변-위쪽포탈-왼쪽포탈",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -128529,7 +128535,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "TitonX-4060",
               "level": 380,
-              "location": "",
+              "location": "파문항구-위쪽-우사로 옆 계단",
               "level_str": "Lv.380",
               "is_drop": true
             },
@@ -128556,7 +128562,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -128634,7 +128640,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "역병의 근원 마이어스",
               "level": 360,
-              "location": "",
+              "location": "암흑도시-왼쪽 밑",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -128680,7 +128686,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -128767,7 +128773,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "TitonX-4060",
               "level": 380,
-              "location": "",
+              "location": "파문항구-위쪽-우사로 옆 계단",
               "level_str": "Lv.380",
               "is_drop": true
             },
@@ -128794,7 +128800,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -128803,7 +128809,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             }
@@ -128923,7 +128929,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "TitonX-4060",
               "level": 380,
-              "location": "",
+              "location": "파문항구-위쪽-우사로 옆 계단",
               "level_str": "Lv.380",
               "is_drop": true
             },
@@ -129073,7 +129079,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -129109,7 +129115,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -129243,7 +129249,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -129252,7 +129258,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -129279,7 +129285,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "암흑 망령",
               "level": 280,
-              "location": "",
+              "location": "사막-오른쪽 끝",
               "level_str": "Lv.280",
               "is_drop": true
             }
@@ -129331,7 +129337,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -129393,7 +129399,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "아즈샤라 여왕",
               "level": 360,
-              "location": "",
+              "location": "어인해변-위쪽포탈-왼쪽포탈",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -129402,7 +129408,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "역병의 근원 마이어스",
               "level": 360,
-              "location": "",
+              "location": "암흑도시-왼쪽 밑",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -129472,7 +129478,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "역병의 근원 마이어스",
               "level": 360,
-              "location": "",
+              "location": "암흑도시-왼쪽 밑",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -129490,7 +129496,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -129560,7 +129566,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -129578,7 +129584,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -129709,7 +129715,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -129727,7 +129733,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -129736,7 +129742,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -129885,7 +129891,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "역병의 근원 마이어스",
               "level": 360,
-              "location": "",
+              "location": "암흑도시-왼쪽 밑",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -129955,7 +129961,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "역병의 근원 마이어스",
               "level": 360,
-              "location": "",
+              "location": "암흑도시-왼쪽 밑",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -129964,7 +129970,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "아즈샤라 여왕",
               "level": 360,
-              "location": "",
+              "location": "어인해변-위쪽포탈-왼쪽포탈",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -130025,7 +130031,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "아즈샤라 여왕",
               "level": 360,
-              "location": "",
+              "location": "어인해변-위쪽포탈-왼쪽포탈",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -130189,7 +130195,7 @@ window.PRELOADED_GAME_DATA = {
           "is_drop": true,
           "drop_boss": "아즈샤라 여왕",
           "drop_level": 360,
-          "drop_location": "",
+          "drop_location": "어인해변-위쪽포탈-왼쪽포탈",
           "drop_type": "아이템"
         },
         {
@@ -130318,7 +130324,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -130389,7 +130395,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -130653,7 +130659,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -130898,7 +130904,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -131856,7 +131862,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "TitonX-4060",
               "level": 380,
-              "location": "",
+              "location": "파문항구-위쪽-우사로 옆 계단",
               "level_str": "Lv.380",
               "is_drop": true
             },
@@ -131934,7 +131940,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "TitonX-4060",
               "level": 380,
-              "location": "",
+              "location": "파문항구-위쪽-우사로 옆 계단",
               "level_str": "Lv.380",
               "is_drop": true
             },
@@ -131961,7 +131967,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "역병의 근원 마이어스",
               "level": 360,
-              "location": "",
+              "location": "암흑도시-왼쪽 밑",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -132004,7 +132010,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "TitonX-4060",
               "level": 380,
-              "location": "",
+              "location": "파문항구-위쪽-우사로 옆 계단",
               "level_str": "Lv.380",
               "is_drop": true
             },
@@ -132049,7 +132055,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             }
@@ -132121,7 +132127,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "아즈샤라 여왕",
               "level": 360,
-              "location": "",
+              "location": "어인해변-위쪽포탈-왼쪽포탈",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -132164,7 +132170,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "TitonX-4060",
               "level": 380,
-              "location": "",
+              "location": "파문항구-위쪽-우사로 옆 계단",
               "level_str": "Lv.380",
               "is_drop": true
             },
@@ -132200,7 +132206,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -132243,7 +132249,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -132331,7 +132337,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "TitonX-4060",
               "level": 380,
-              "location": "",
+              "location": "파문항구-위쪽-우사로 옆 계단",
               "level_str": "Lv.380",
               "is_drop": true
             },
@@ -132367,7 +132373,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "역병의 근원 마이어스",
               "level": 360,
-              "location": "",
+              "location": "암흑도시-왼쪽 밑",
               "level_str": "Lv.360",
               "is_drop": true
             }
@@ -132515,7 +132521,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "역병의 근원 마이어스",
               "level": 360,
-              "location": "",
+              "location": "암흑도시-왼쪽 밑",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -132662,7 +132668,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -132671,7 +132677,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -132881,7 +132887,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "역병의 근원 마이어스",
               "level": 360,
-              "location": "",
+              "location": "암흑도시-왼쪽 밑",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -133120,7 +133126,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "역병의 근원 마이어스",
               "level": 360,
-              "location": "",
+              "location": "암흑도시-왼쪽 밑",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -133129,7 +133135,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -133208,7 +133214,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -133270,7 +133276,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -133297,7 +133303,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -133339,7 +133345,7 @@ window.PRELOADED_GAME_DATA = {
           "is_drop": true,
           "drop_boss": "제5마왕 아노시스",
           "drop_level": 360,
-          "drop_location": "",
+          "drop_location": "전초기지-오른쪽 성-위",
           "drop_type": "아이템"
         },
         {
@@ -133459,7 +133465,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -133600,7 +133606,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -133707,7 +133713,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "암흑 망령",
               "level": 280,
-              "location": "",
+              "location": "사막-오른쪽 끝",
               "level_str": "Lv.280",
               "is_drop": true
             }
@@ -133750,7 +133756,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -133882,7 +133888,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -134020,7 +134026,7 @@ window.PRELOADED_GAME_DATA = {
           "is_drop": true,
           "drop_boss": "제7마왕 모르페우스",
           "drop_level": 340,
-          "drop_location": "전초기지-심연내부-포탈-왼쪽포탈",
+          "drop_location": "전초기지-오른쪽성-포탈-왼쪽포탈",
           "drop_type": "아이템"
         },
         {
@@ -134279,7 +134285,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "암흑 망령",
               "level": 280,
-              "location": "",
+              "location": "사막-오른쪽 끝",
               "level_str": "Lv.280",
               "is_drop": true
             },
@@ -134297,7 +134303,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "암흑 망령",
               "level": 280,
-              "location": "",
+              "location": "사막-오른쪽 끝",
               "level_str": "Lv.280",
               "is_drop": true
             },
@@ -134479,7 +134485,7 @@ window.PRELOADED_GAME_DATA = {
           "is_drop": true,
           "drop_boss": "암흑 망령",
           "drop_level": 280,
-          "drop_location": "",
+          "drop_location": "사막-오른쪽 끝",
           "drop_type": "아이템"
         }
       ]
@@ -134697,7 +134703,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             }
@@ -134739,7 +134745,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "TitonX-4060",
               "level": 380,
-              "location": "",
+              "location": "파문항구-위쪽-우사로 옆 계단",
               "level_str": "Lv.380",
               "is_drop": true
             },
@@ -134766,7 +134772,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -134896,7 +134902,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -134914,7 +134920,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -135083,7 +135089,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             }
@@ -135127,7 +135133,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "TitonX-4060",
               "level": 380,
-              "location": "",
+              "location": "파문항구-위쪽-우사로 옆 계단",
               "level_str": "Lv.380",
               "is_drop": true
             },
@@ -135154,7 +135160,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -135206,7 +135212,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "TitonX-4060",
               "level": 380,
-              "location": "",
+              "location": "파문항구-위쪽-우사로 옆 계단",
               "level_str": "Lv.380",
               "is_drop": true
             },
@@ -135242,7 +135248,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             }
@@ -135284,7 +135290,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "TitonX-4060",
               "level": 380,
-              "location": "",
+              "location": "파문항구-위쪽-우사로 옆 계단",
               "level_str": "Lv.380",
               "is_drop": true
             },
@@ -135389,7 +135395,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -135398,7 +135404,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "역병의 근원 마이어스",
               "level": 360,
-              "location": "",
+              "location": "암흑도시-왼쪽 밑",
               "level_str": "Lv.360",
               "is_drop": true
             }
@@ -135469,7 +135475,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "역병의 근원 마이어스",
               "level": 360,
-              "location": "",
+              "location": "암흑도시-왼쪽 밑",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -135549,7 +135555,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -135638,7 +135644,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             }
@@ -135709,7 +135715,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "역병의 근원 마이어스",
               "level": 360,
-              "location": "",
+              "location": "암흑도시-왼쪽 밑",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -135718,7 +135724,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             }
@@ -135784,7 +135790,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -135802,7 +135808,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "역병의 근원 마이어스",
               "level": 360,
-              "location": "",
+              "location": "암흑도시-왼쪽 밑",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -135811,7 +135817,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -135863,7 +135869,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -135932,7 +135938,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -136063,7 +136069,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "역병의 근원 마이어스",
               "level": 360,
-              "location": "",
+              "location": "암흑도시-왼쪽 밑",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -136090,7 +136096,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -136133,7 +136139,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "아즈샤라 여왕",
               "level": 360,
-              "location": "",
+              "location": "어인해변-위쪽포탈-왼쪽포탈",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -136151,7 +136157,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -136213,7 +136219,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "아즈샤라 여왕",
               "level": 360,
-              "location": "",
+              "location": "어인해변-위쪽포탈-왼쪽포탈",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -136222,7 +136228,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -136499,7 +136505,7 @@ window.PRELOADED_GAME_DATA = {
           "is_drop": true,
           "drop_boss": "제5마왕 아노시스",
           "drop_level": 360,
-          "drop_location": "",
+          "drop_location": "전초기지-오른쪽 성-위",
           "drop_type": "아이템"
         },
         {
@@ -136536,7 +136542,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -136819,7 +136825,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -136968,7 +136974,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -137604,7 +137610,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "암흑 망령",
               "level": 280,
-              "location": "",
+              "location": "사막-오른쪽 끝",
               "level_str": "Lv.280",
               "is_drop": true
             },
@@ -138043,7 +138049,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             }
@@ -138077,7 +138083,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "TitonX-4060",
               "level": 380,
-              "location": "",
+              "location": "파문항구-위쪽-우사로 옆 계단",
               "level_str": "Lv.380",
               "is_drop": true
             },
@@ -138113,7 +138119,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "역병의 근원 마이어스",
               "level": 360,
-              "location": "",
+              "location": "암흑도시-왼쪽 밑",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -138156,7 +138162,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -138165,7 +138171,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "TitonX-4060",
               "level": 380,
-              "location": "",
+              "location": "파문항구-위쪽-우사로 옆 계단",
               "level_str": "Lv.380",
               "is_drop": true
             },
@@ -138201,7 +138207,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             }
@@ -138236,7 +138242,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "TitonX-4060",
               "level": 380,
-              "location": "",
+              "location": "파문항구-위쪽-우사로 옆 계단",
               "level_str": "Lv.380",
               "is_drop": true
             },
@@ -138354,7 +138360,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "아즈샤라 여왕",
               "level": 360,
-              "location": "",
+              "location": "어인해변-위쪽포탈-왼쪽포탈",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -138363,7 +138369,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "역병의 근원 마이어스",
               "level": 360,
-              "location": "",
+              "location": "암흑도시-왼쪽 밑",
               "level_str": "Lv.360",
               "is_drop": true
             }
@@ -138511,7 +138517,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -138520,7 +138526,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "역병의 근원 마이어스",
               "level": 360,
-              "location": "",
+              "location": "암흑도시-왼쪽 밑",
               "level_str": "Lv.360",
               "is_drop": true
             }
@@ -138581,7 +138587,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "역병의 근원 마이어스",
               "level": 360,
-              "location": "",
+              "location": "암흑도시-왼쪽 밑",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -138590,7 +138596,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "아즈샤라 여왕",
               "level": 360,
-              "location": "",
+              "location": "어인해변-위쪽포탈-왼쪽포탈",
               "level_str": "Lv.360",
               "is_drop": true
             }
@@ -138670,7 +138676,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "역병의 근원 마이어스",
               "level": 360,
-              "location": "",
+              "location": "암흑도시-왼쪽 밑",
               "level_str": "Lv.360",
               "is_drop": true
             }
@@ -138691,11 +138697,11 @@ window.PRELOADED_GAME_DATA = {
           "synergy_jobs": [],
           "special_effect": "",
           "materials": [],
-          "is_drop": false,
-          "drop_boss": "",
-          "drop_level": 0,
-          "drop_location": "",
-          "drop_type": "아이템"
+          "is_drop": true,
+          "drop_boss": "TitonX-4060",
+          "drop_level": 380,
+          "drop_location": "파문항구-위쪽-우사로 옆 계단",
+          "drop_type": "재료"
         },
         {
           "name": "영혼의 용광로",
@@ -138756,7 +138762,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "역병의 근원 마이어스",
               "level": 360,
-              "location": "",
+              "location": "암흑도시-왼쪽 밑",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -138807,7 +138813,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -138816,7 +138822,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "아즈샤라 여왕",
               "level": 360,
-              "location": "",
+              "location": "어인해변-위쪽포탈-왼쪽포탈",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -138825,7 +138831,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "역병의 근원 마이어스",
               "level": 360,
-              "location": "",
+              "location": "암흑도시-왼쪽 밑",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -138877,7 +138883,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "아즈샤라 여왕",
               "level": 360,
-              "location": "",
+              "location": "어인해변-위쪽포탈-왼쪽포탈",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -138886,7 +138892,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "아즈샤라 여왕",
               "level": 360,
-              "location": "",
+              "location": "어인해변-위쪽포탈-왼쪽포탈",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -138956,7 +138962,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "역병의 근원 마이어스",
               "level": 360,
-              "location": "",
+              "location": "암흑도시-왼쪽 밑",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -138965,7 +138971,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "아즈샤라 여왕",
               "level": 360,
-              "location": "",
+              "location": "어인해변-위쪽포탈-왼쪽포탈",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -138983,7 +138989,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -139035,7 +139041,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "아즈샤라 여왕",
               "level": 360,
-              "location": "",
+              "location": "어인해변-위쪽포탈-왼쪽포탈",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -139044,7 +139050,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "역병의 근원 마이어스",
               "level": 360,
-              "location": "",
+              "location": "암흑도시-왼쪽 밑",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -139193,7 +139199,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "역병의 근원 마이어스",
               "level": 360,
-              "location": "",
+              "location": "암흑도시-왼쪽 밑",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -139211,7 +139217,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -139278,7 +139284,7 @@ window.PRELOADED_GAME_DATA = {
           "is_drop": true,
           "drop_boss": "아즈샤라 여왕",
           "drop_level": 360,
-          "drop_location": "",
+          "drop_location": "어인해변-위쪽포탈-왼쪽포탈",
           "drop_type": "아이템"
         },
         {
@@ -139304,7 +139310,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "아즈샤라 여왕",
               "level": 360,
-              "location": "",
+              "location": "어인해변-위쪽포탈-왼쪽포탈",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -139331,7 +139337,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -139490,7 +139496,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "역병의 근원 마이어스",
               "level": 360,
-              "location": "",
+              "location": "암흑도시-왼쪽 밑",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -139571,7 +139577,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "아즈샤라 여왕",
               "level": 360,
-              "location": "",
+              "location": "어인해변-위쪽포탈-왼쪽포탈",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -139580,7 +139586,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -139613,7 +139619,7 @@ window.PRELOADED_GAME_DATA = {
           "is_drop": true,
           "drop_boss": "제5마왕 아노시스",
           "drop_level": 360,
-          "drop_location": "",
+          "drop_location": "전초기지-오른쪽 성-위",
           "drop_type": "아이템"
         },
         {
@@ -140131,7 +140137,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -140201,7 +140207,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -140955,7 +140961,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "암흑 망령",
               "level": 280,
-              "location": "",
+              "location": "사막-오른쪽 끝",
               "level_str": "Lv.280",
               "is_drop": true
             },
@@ -140973,7 +140979,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "암흑 망령",
               "level": 280,
-              "location": "",
+              "location": "사막-오른쪽 끝",
               "level_str": "Lv.280",
               "is_drop": true
             },
@@ -141129,7 +141135,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "TitonX-4060",
               "level": 380,
-              "location": "",
+              "location": "파문항구-위쪽-우사로 옆 계단",
               "level_str": "Lv.380",
               "is_drop": true
             },
@@ -141207,7 +141213,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "TitonX-4060",
               "level": 380,
-              "location": "",
+              "location": "파문항구-위쪽-우사로 옆 계단",
               "level_str": "Lv.380",
               "is_drop": true
             },
@@ -141234,7 +141240,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "아즈샤라 여왕",
               "level": 360,
-              "location": "",
+              "location": "어인해변-위쪽포탈-왼쪽포탈",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -141286,7 +141292,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "TitonX-4060",
               "level": 380,
-              "location": "",
+              "location": "파문항구-위쪽-우사로 옆 계단",
               "level_str": "Lv.380",
               "is_drop": true
             },
@@ -141313,7 +141319,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -141322,7 +141328,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "역병의 근원 마이어스",
               "level": 360,
-              "location": "",
+              "location": "암흑도시-왼쪽 밑",
               "level_str": "Lv.360",
               "is_drop": true
             }
@@ -141392,7 +141398,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -141480,7 +141486,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             }
@@ -141525,7 +141531,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "TitonX-4060",
               "level": 380,
-              "location": "",
+              "location": "파문항구-위쪽-우사로 옆 계단",
               "level_str": "Lv.380",
               "is_drop": true
             },
@@ -141606,7 +141612,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "TitonX-4060",
               "level": 380,
-              "location": "",
+              "location": "파문항구-위쪽-우사로 옆 계단",
               "level_str": "Lv.380",
               "is_drop": true
             },
@@ -141677,7 +141683,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "TitonX-4060",
               "level": 380,
-              "location": "",
+              "location": "파문항구-위쪽-우사로 옆 계단",
               "level_str": "Lv.380",
               "is_drop": true
             },
@@ -141704,7 +141710,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "역병의 근원 마이어스",
               "level": 360,
-              "location": "",
+              "location": "암흑도시-왼쪽 밑",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -141783,7 +141789,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "아즈샤라 여왕",
               "level": 360,
-              "location": "",
+              "location": "어인해변-위쪽포탈-왼쪽포탈",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -141882,7 +141888,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             }
@@ -141960,7 +141966,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             }
@@ -141994,7 +142000,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "역병의 근원 마이어스",
               "level": 360,
-              "location": "",
+              "location": "암흑도시-왼쪽 밑",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -142030,7 +142036,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -142178,7 +142184,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "역병의 근원 마이어스",
               "level": 360,
-              "location": "",
+              "location": "암흑도시-왼쪽 밑",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -142250,7 +142256,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "역병의 근원 마이어스",
               "level": 360,
-              "location": "",
+              "location": "암흑도시-왼쪽 밑",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -142302,7 +142308,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -142311,7 +142317,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제5마왕 아노시스",
               "level": 360,
-              "location": "",
+              "location": "전초기지-오른쪽 성-위",
               "level_str": "Lv.360",
               "is_drop": true
             },
@@ -142338,7 +142344,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -142486,7 +142492,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -142556,7 +142562,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -142764,7 +142770,7 @@ window.PRELOADED_GAME_DATA = {
           "is_drop": true,
           "drop_boss": "역병의 근원 마이어스",
           "drop_level": 360,
-          "drop_location": "",
+          "drop_location": "암흑도시-왼쪽 밑",
           "drop_type": "아이템"
         },
         {
@@ -142940,7 +142946,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -143225,7 +143231,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -143298,7 +143304,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -143359,7 +143365,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "제7마왕 모르페우스",
               "level": 340,
-              "location": "전초기지-심연내부-포탈-왼쪽포탈",
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
               "level_str": "Lv.340",
               "is_drop": true
             },
@@ -143453,7 +143459,7 @@ window.PRELOADED_GAME_DATA = {
               "qty": 1,
               "boss": "암흑 망령",
               "level": 280,
-              "location": "",
+              "location": "사막-오른쪽 끝",
               "level_str": "Lv.280",
               "is_drop": true
             },
@@ -143791,7 +143797,7 @@ window.PRELOADED_GAME_DATA = {
           "is_drop": true,
           "drop_boss": "암흑 망령",
           "drop_level": 280,
-          "drop_location": "",
+          "drop_location": "사막-오른쪽 끝",
           "drop_type": "아이템"
         },
         {
@@ -143867,7 +143873,7 @@ window.PRELOADED_GAME_DATA = {
           "qty": 1,
           "boss": "제5마왕 아노시스",
           "level": 360,
-          "location": "",
+          "location": "전초기지-오른쪽 성-위",
           "level_str": "Lv.360",
           "is_drop": true
         },
@@ -143885,7 +143891,7 @@ window.PRELOADED_GAME_DATA = {
           "qty": 1,
           "boss": "아즈샤라 여왕",
           "level": 360,
-          "location": "",
+          "location": "어인해변-위쪽포탈-왼쪽포탈",
           "level_str": "Lv.360",
           "is_drop": true
         }
@@ -143967,7 +143973,7 @@ window.PRELOADED_GAME_DATA = {
           "qty": 1,
           "boss": "아즈샤라 여왕",
           "level": 360,
-          "location": "",
+          "location": "어인해변-위쪽포탈-왼쪽포탈",
           "level_str": "Lv.360",
           "is_drop": true
         }
@@ -144030,7 +144036,7 @@ window.PRELOADED_GAME_DATA = {
           "qty": 1,
           "boss": "제5마왕 아노시스",
           "level": 360,
-          "location": "",
+          "location": "전초기지-오른쪽 성-위",
           "level_str": "Lv.360",
           "is_drop": true
         },
@@ -144283,7 +144289,7 @@ window.PRELOADED_GAME_DATA = {
           "qty": 1,
           "boss": "아즈샤라 여왕",
           "level": 360,
-          "location": "",
+          "location": "어인해변-위쪽포탈-왼쪽포탈",
           "level_str": "Lv.360",
           "is_drop": true
         },
@@ -144292,7 +144298,7 @@ window.PRELOADED_GAME_DATA = {
           "qty": 1,
           "boss": "역병의 근원 마이어스",
           "level": 360,
-          "location": "",
+          "location": "암흑도시-왼쪽 밑",
           "level_str": "Lv.360",
           "is_drop": true
         }
@@ -144362,7 +144368,7 @@ window.PRELOADED_GAME_DATA = {
           "qty": 1,
           "boss": "역병의 근원 마이어스",
           "level": 360,
-          "location": "",
+          "location": "암흑도시-왼쪽 밑",
           "level_str": "Lv.360",
           "is_drop": true
         }
@@ -144435,7 +144441,7 @@ window.PRELOADED_GAME_DATA = {
           "qty": 1,
           "boss": "역병의 근원 마이어스",
           "level": 360,
-          "location": "",
+          "location": "암흑도시-왼쪽 밑",
           "level_str": "Lv.360",
           "is_drop": true
         },
@@ -144516,7 +144522,7 @@ window.PRELOADED_GAME_DATA = {
           "qty": 1,
           "boss": "아즈샤라 여왕",
           "level": 360,
-          "location": "",
+          "location": "어인해변-위쪽포탈-왼쪽포탈",
           "level_str": "Lv.360",
           "is_drop": true
         }
@@ -144598,7 +144604,7 @@ window.PRELOADED_GAME_DATA = {
           "qty": 1,
           "boss": "제5마왕 아노시스",
           "level": 360,
-          "location": "",
+          "location": "전초기지-오른쪽 성-위",
           "level_str": "Lv.360",
           "is_drop": true
         }
@@ -144746,7 +144752,7 @@ window.PRELOADED_GAME_DATA = {
           "qty": 1,
           "boss": "아즈샤라 여왕",
           "level": 360,
-          "location": "",
+          "location": "어인해변-위쪽포탈-왼쪽포탈",
           "level_str": "Lv.360",
           "is_drop": true
         },
@@ -144755,7 +144761,7 @@ window.PRELOADED_GAME_DATA = {
           "qty": 1,
           "boss": "아즈샤라 여왕",
           "level": 360,
-          "location": "",
+          "location": "어인해변-위쪽포탈-왼쪽포탈",
           "level_str": "Lv.360",
           "is_drop": true
         },
@@ -144764,7 +144770,7 @@ window.PRELOADED_GAME_DATA = {
           "qty": 1,
           "boss": "역병의 근원 마이어스",
           "level": 360,
-          "location": "",
+          "location": "암흑도시-왼쪽 밑",
           "level_str": "Lv.360",
           "is_drop": true
         },
@@ -144882,7 +144888,7 @@ window.PRELOADED_GAME_DATA = {
           "qty": 1,
           "boss": "아즈샤라 여왕",
           "level": 360,
-          "location": "",
+          "location": "어인해변-위쪽포탈-왼쪽포탈",
           "level_str": "Lv.360",
           "is_drop": true
         },
@@ -144891,7 +144897,7 @@ window.PRELOADED_GAME_DATA = {
           "qty": 1,
           "boss": "역병의 근원 마이어스",
           "level": 360,
-          "location": "",
+          "location": "암흑도시-왼쪽 밑",
           "level_str": "Lv.360",
           "is_drop": true
         },
@@ -144909,7 +144915,7 @@ window.PRELOADED_GAME_DATA = {
           "qty": 1,
           "boss": "제7마왕 모르페우스",
           "level": 340,
-          "location": "전초기지-심연내부-포탈-왼쪽포탈",
+          "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
           "level_str": "Lv.340",
           "is_drop": true
         }
@@ -144956,7 +144962,7 @@ window.PRELOADED_GAME_DATA = {
           "qty": 1,
           "boss": "역병의 근원 마이어스",
           "level": 360,
-          "location": "",
+          "location": "암흑도시-왼쪽 밑",
           "level_str": "Lv.360",
           "is_drop": true
         },
@@ -145089,7 +145095,7 @@ window.PRELOADED_GAME_DATA = {
           "qty": 1,
           "boss": "아즈샤라 여왕",
           "level": 360,
-          "location": "",
+          "location": "어인해변-위쪽포탈-왼쪽포탈",
           "level_str": "Lv.360",
           "is_drop": true
         },
@@ -145243,7 +145249,7 @@ window.PRELOADED_GAME_DATA = {
           "qty": 1,
           "boss": "제7마왕 모르페우스",
           "level": 340,
-          "location": "전초기지-심연내부-포탈-왼쪽포탈",
+          "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
           "level_str": "Lv.340",
           "is_drop": true
         },
@@ -145279,7 +145285,7 @@ window.PRELOADED_GAME_DATA = {
           "qty": 1,
           "boss": "제7마왕 모르페우스",
           "level": 340,
-          "location": "전초기지-심연내부-포탈-왼쪽포탈",
+          "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
           "level_str": "Lv.340",
           "is_drop": true
         },
@@ -145492,7 +145498,7 @@ window.PRELOADED_GAME_DATA = {
           "qty": 1,
           "boss": "제7마왕 모르페우스",
           "level": 340,
-          "location": "전초기지-심연내부-포탈-왼쪽포탈",
+          "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
           "level_str": "Lv.340",
           "is_drop": true
         },
@@ -145556,7 +145562,7 @@ window.PRELOADED_GAME_DATA = {
           "qty": 1,
           "boss": "아즈샤라 여왕",
           "level": 360,
-          "location": "",
+          "location": "어인해변-위쪽포탈-왼쪽포탈",
           "level_str": "Lv.360",
           "is_drop": true
         },
@@ -145618,7 +145624,7 @@ window.PRELOADED_GAME_DATA = {
           "qty": 1,
           "boss": "역병의 근원 마이어스",
           "level": 360,
-          "location": "",
+          "location": "암흑도시-왼쪽 밑",
           "level_str": "Lv.360",
           "is_drop": true
         },
@@ -145636,7 +145642,7 @@ window.PRELOADED_GAME_DATA = {
           "qty": 1,
           "boss": "역병의 근원 마이어스",
           "level": 360,
-          "location": "",
+          "location": "암흑도시-왼쪽 밑",
           "level_str": "Lv.360",
           "is_drop": true
         },
@@ -145706,7 +145712,7 @@ window.PRELOADED_GAME_DATA = {
           "qty": 1,
           "boss": "아즈샤라 여왕",
           "level": 360,
-          "location": "",
+          "location": "어인해변-위쪽포탈-왼쪽포탈",
           "level_str": "Lv.360",
           "is_drop": true
         },
@@ -145793,7 +145799,7 @@ window.PRELOADED_GAME_DATA = {
       "is_drop": true,
       "drop_boss": "역병의 근원 마이어스",
       "drop_level": 360,
-      "drop_location": "",
+      "drop_location": "암흑도시-왼쪽 밑",
       "drop_type": "아이템"
     },
     "지옥불 권갑": {
@@ -145984,7 +145990,7 @@ window.PRELOADED_GAME_DATA = {
           "qty": 1,
           "boss": "제7마왕 모르페우스",
           "level": 340,
-          "location": "전초기지-심연내부-포탈-왼쪽포탈",
+          "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
           "level_str": "Lv.340",
           "is_drop": true
         },
@@ -146064,7 +146070,7 @@ window.PRELOADED_GAME_DATA = {
           "qty": 1,
           "boss": "제7마왕 모르페우스",
           "level": 340,
-          "location": "전초기지-심연내부-포탈-왼쪽포탈",
+          "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
           "level_str": "Lv.340",
           "is_drop": true
         },
@@ -146324,7 +146330,7 @@ window.PRELOADED_GAME_DATA = {
           "qty": 1,
           "boss": "제7마왕 모르페우스",
           "level": 340,
-          "location": "전초기지-심연내부-포탈-왼쪽포탈",
+          "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
           "level_str": "Lv.340",
           "is_drop": true
         },
@@ -146768,7 +146774,7 @@ window.PRELOADED_GAME_DATA = {
       "is_drop": true,
       "drop_boss": "제7마왕 모르페우스",
       "drop_level": 340,
-      "drop_location": "전초기지-심연내부-포탈-왼쪽포탈",
+      "drop_location": "전초기지-오른쪽성-포탈-왼쪽포탈",
       "drop_type": "아이템"
     },
     "성스러운 빛의 심판-타오르는 창": {
@@ -146800,7 +146806,7 @@ window.PRELOADED_GAME_DATA = {
       "is_drop": true,
       "drop_boss": "제7마왕 모르페우스",
       "drop_level": 340,
-      "drop_location": "전초기지-심연내부-포탈-왼쪽포탈",
+      "drop_location": "전초기지-오른쪽성-포탈-왼쪽포탈",
       "drop_type": "아이템"
     },
     "폭발의 칼날": {
@@ -147504,7 +147510,7 @@ window.PRELOADED_GAME_DATA = {
           "qty": 1,
           "boss": "제5마왕 아노시스",
           "level": 360,
-          "location": "",
+          "location": "전초기지-오른쪽 성-위",
           "level_str": "Lv.360",
           "is_drop": true
         }
@@ -147583,7 +147589,7 @@ window.PRELOADED_GAME_DATA = {
           "qty": 1,
           "boss": "제5마왕 아노시스",
           "level": 360,
-          "location": "",
+          "location": "전초기지-오른쪽 성-위",
           "level_str": "Lv.360",
           "is_drop": true
         }
@@ -147665,7 +147671,7 @@ window.PRELOADED_GAME_DATA = {
           "qty": 1,
           "boss": "제5마왕 아노시스",
           "level": 360,
-          "location": "",
+          "location": "전초기지-오른쪽 성-위",
           "level_str": "Lv.360",
           "is_drop": true
         }
@@ -147806,7 +147812,7 @@ window.PRELOADED_GAME_DATA = {
           "qty": 1,
           "boss": "역병의 근원 마이어스",
           "level": 360,
-          "location": "",
+          "location": "암흑도시-왼쪽 밑",
           "level_str": "Lv.360",
           "is_drop": true
         },
@@ -147875,7 +147881,7 @@ window.PRELOADED_GAME_DATA = {
           "qty": 1,
           "boss": "아즈샤라 여왕",
           "level": 360,
-          "location": "",
+          "location": "어인해변-위쪽포탈-왼쪽포탈",
           "level_str": "Lv.360",
           "is_drop": true
         },
@@ -147893,7 +147899,7 @@ window.PRELOADED_GAME_DATA = {
           "qty": 1,
           "boss": "제5마왕 아노시스",
           "level": 360,
-          "location": "",
+          "location": "전초기지-오른쪽 성-위",
           "level_str": "Lv.360",
           "is_drop": true
         }
@@ -147936,7 +147942,7 @@ window.PRELOADED_GAME_DATA = {
           "qty": 1,
           "boss": "아즈샤라 여왕",
           "level": 360,
-          "location": "",
+          "location": "어인해변-위쪽포탈-왼쪽포탈",
           "level_str": "Lv.360",
           "is_drop": true
         },
@@ -147954,7 +147960,7 @@ window.PRELOADED_GAME_DATA = {
           "qty": 1,
           "boss": "아즈샤라 여왕",
           "level": 360,
-          "location": "",
+          "location": "어인해변-위쪽포탈-왼쪽포탈",
           "level_str": "Lv.360",
           "is_drop": true
         },
@@ -148086,7 +148092,7 @@ window.PRELOADED_GAME_DATA = {
           "qty": 1,
           "boss": "아즈샤라 여왕",
           "level": 360,
-          "location": "",
+          "location": "어인해변-위쪽포탈-왼쪽포탈",
           "level_str": "Lv.360",
           "is_drop": true
         },
@@ -148176,7 +148182,7 @@ window.PRELOADED_GAME_DATA = {
           "qty": 1,
           "boss": "역병의 근원 마이어스",
           "level": 360,
-          "location": "",
+          "location": "암흑도시-왼쪽 밑",
           "level_str": "Lv.360",
           "is_drop": true
         },
@@ -148257,7 +148263,7 @@ window.PRELOADED_GAME_DATA = {
           "qty": 1,
           "boss": "역병의 근원 마이어스",
           "level": 360,
-          "location": "",
+          "location": "암흑도시-왼쪽 밑",
           "level_str": "Lv.360",
           "is_drop": true
         },
@@ -148347,7 +148353,7 @@ window.PRELOADED_GAME_DATA = {
           "qty": 1,
           "boss": "역병의 근원 마이어스",
           "level": 360,
-          "location": "",
+          "location": "암흑도시-왼쪽 밑",
           "level_str": "Lv.360",
           "is_drop": true
         },
@@ -148411,7 +148417,7 @@ window.PRELOADED_GAME_DATA = {
           "qty": 1,
           "boss": "아즈샤라 여왕",
           "level": 360,
-          "location": "",
+          "location": "어인해변-위쪽포탈-왼쪽포탈",
           "level_str": "Lv.360",
           "is_drop": true
         },
@@ -148420,7 +148426,7 @@ window.PRELOADED_GAME_DATA = {
           "qty": 1,
           "boss": "제5마왕 아노시스",
           "level": 360,
-          "location": "",
+          "location": "전초기지-오른쪽 성-위",
           "level_str": "Lv.360",
           "is_drop": true
         },
@@ -148429,7 +148435,7 @@ window.PRELOADED_GAME_DATA = {
           "qty": 1,
           "boss": "아즈샤라 여왕",
           "level": 360,
-          "location": "",
+          "location": "어인해변-위쪽포탈-왼쪽포탈",
           "level_str": "Lv.360",
           "is_drop": true
         },
@@ -148438,7 +148444,7 @@ window.PRELOADED_GAME_DATA = {
           "qty": 1,
           "boss": "제7마왕 모르페우스",
           "level": 340,
-          "location": "전초기지-심연내부-포탈-왼쪽포탈",
+          "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
           "level_str": "Lv.340",
           "is_drop": true
         },
@@ -148490,7 +148496,7 @@ window.PRELOADED_GAME_DATA = {
           "qty": 1,
           "boss": "아즈샤라 여왕",
           "level": 360,
-          "location": "",
+          "location": "어인해변-위쪽포탈-왼쪽포탈",
           "level_str": "Lv.360",
           "is_drop": true
         },
@@ -148559,7 +148565,7 @@ window.PRELOADED_GAME_DATA = {
       "is_drop": true,
       "drop_boss": "아즈샤라 여왕",
       "drop_level": 360,
-      "drop_location": "",
+      "drop_location": "어인해변-위쪽포탈-왼쪽포탈",
       "drop_type": "아이템"
     },
     "대재앙-종말의 황혼": {
@@ -148579,7 +148585,7 @@ window.PRELOADED_GAME_DATA = {
           "qty": 1,
           "boss": "제7마왕 모르페우스",
           "level": 340,
-          "location": "전초기지-심연내부-포탈-왼쪽포탈",
+          "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
           "level_str": "Lv.340",
           "is_drop": true
         },
@@ -148648,7 +148654,7 @@ window.PRELOADED_GAME_DATA = {
       "is_drop": true,
       "drop_boss": "제7마왕 모르페우스",
       "drop_level": 340,
-      "drop_location": "전초기지-심연내부-포탈-왼쪽포탈",
+      "drop_location": "전초기지-오른쪽성-포탈-왼쪽포탈",
       "drop_type": "아이템"
     },
     "용암의 포효": {
@@ -149077,7 +149083,7 @@ window.PRELOADED_GAME_DATA = {
           "qty": 1,
           "boss": "제7마왕 모르페우스",
           "level": 340,
-          "location": "전초기지-심연내부-포탈-왼쪽포탈",
+          "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
           "level_str": "Lv.340",
           "is_drop": true
         },
@@ -149515,7 +149521,7 @@ window.PRELOADED_GAME_DATA = {
           "qty": 1,
           "boss": "암흑 망령",
           "level": 280,
-          "location": "",
+          "location": "사막-오른쪽 끝",
           "level_str": "Lv.280",
           "is_drop": true
         },
@@ -149524,7 +149530,7 @@ window.PRELOADED_GAME_DATA = {
           "qty": 1,
           "boss": "암흑 망령",
           "level": 280,
-          "location": "",
+          "location": "사막-오른쪽 끝",
           "level_str": "Lv.280",
           "is_drop": true
         },
@@ -149566,7 +149572,7 @@ window.PRELOADED_GAME_DATA = {
       "is_drop": true,
       "drop_boss": "암흑 망령",
       "drop_level": 280,
-      "drop_location": "",
+      "drop_location": "사막-오른쪽 끝",
       "drop_type": "아이템"
     },
     "진-환영 활": {
@@ -149584,7 +149590,7 @@ window.PRELOADED_GAME_DATA = {
           "qty": 1,
           "boss": "암흑 망령",
           "level": 280,
-          "location": "",
+          "location": "사막-오른쪽 끝",
           "level_str": "Lv.280",
           "is_drop": true
         },
@@ -149593,7 +149599,7 @@ window.PRELOADED_GAME_DATA = {
           "qty": 1,
           "boss": "암흑 망령",
           "level": 280,
-          "location": "",
+          "location": "사막-오른쪽 끝",
           "level_str": "Lv.280",
           "is_drop": true
         },
@@ -149635,7 +149641,7 @@ window.PRELOADED_GAME_DATA = {
       "is_drop": true,
       "drop_boss": "암흑 망령",
       "drop_level": 280,
-      "drop_location": "",
+      "drop_location": "사막-오른쪽 끝",
       "drop_type": "아이템"
     },
     "뇌전 분쇄자": {
@@ -149784,7 +149790,7 @@ window.PRELOADED_GAME_DATA = {
           "qty": 1,
           "boss": "제5마왕 아노시스",
           "level": 360,
-          "location": "",
+          "location": "전초기지-오른쪽 성-위",
           "level_str": "Lv.360",
           "is_drop": true
         },
@@ -149793,7 +149799,7 @@ window.PRELOADED_GAME_DATA = {
           "qty": 1,
           "boss": "역병의 근원 마이어스",
           "level": 360,
-          "location": "",
+          "location": "암흑도시-왼쪽 밑",
           "level_str": "Lv.360",
           "is_drop": true
         }
@@ -149857,7 +149863,7 @@ window.PRELOADED_GAME_DATA = {
           "qty": 1,
           "boss": "아즈샤라 여왕",
           "level": 360,
-          "location": "",
+          "location": "어인해변-위쪽포탈-왼쪽포탈",
           "level_str": "Lv.360",
           "is_drop": true
         },
@@ -149866,7 +149872,7 @@ window.PRELOADED_GAME_DATA = {
           "qty": 1,
           "boss": "아즈샤라 여왕",
           "level": 360,
-          "location": "",
+          "location": "어인해변-위쪽포탈-왼쪽포탈",
           "level_str": "Lv.360",
           "is_drop": true
         },
@@ -149938,7 +149944,7 @@ window.PRELOADED_GAME_DATA = {
           "qty": 1,
           "boss": "아즈샤라 여왕",
           "level": 360,
-          "location": "",
+          "location": "어인해변-위쪽포탈-왼쪽포탈",
           "level_str": "Lv.360",
           "is_drop": true
         },
@@ -149947,7 +149953,7 @@ window.PRELOADED_GAME_DATA = {
           "qty": 1,
           "boss": "아즈샤라 여왕",
           "level": 360,
-          "location": "",
+          "location": "어인해변-위쪽포탈-왼쪽포탈",
           "level_str": "Lv.360",
           "is_drop": true
         },
@@ -150038,7 +150044,7 @@ window.PRELOADED_GAME_DATA = {
           "qty": 1,
           "boss": "제5마왕 아노시스",
           "level": 360,
-          "location": "",
+          "location": "전초기지-오른쪽 성-위",
           "level_str": "Lv.360",
           "is_drop": true
         }
@@ -150281,7 +150287,7 @@ window.PRELOADED_GAME_DATA = {
           "qty": 1,
           "boss": "제5마왕 아노시스",
           "level": 360,
-          "location": "",
+          "location": "전초기지-오른쪽 성-위",
           "level_str": "Lv.360",
           "is_drop": true
         }
@@ -150513,7 +150519,7 @@ window.PRELOADED_GAME_DATA = {
           "qty": 1,
           "boss": "제7마왕 모르페우스",
           "level": 340,
-          "location": "전초기지-심연내부-포탈-왼쪽포탈",
+          "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
           "level_str": "Lv.340",
           "is_drop": true
         },
@@ -150567,7 +150573,7 @@ window.PRELOADED_GAME_DATA = {
           "qty": 1,
           "boss": "역병의 근원 마이어스",
           "level": 360,
-          "location": "",
+          "location": "암흑도시-왼쪽 밑",
           "level_str": "Lv.360",
           "is_drop": true
         },
@@ -150594,7 +150600,7 @@ window.PRELOADED_GAME_DATA = {
           "qty": 1,
           "boss": "제7마왕 모르페우스",
           "level": 340,
-          "location": "전초기지-심연내부-포탈-왼쪽포탈",
+          "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
           "level_str": "Lv.340",
           "is_drop": true
         },
@@ -150694,7 +150700,7 @@ window.PRELOADED_GAME_DATA = {
           "qty": 1,
           "boss": "암흑 망령",
           "level": 280,
-          "location": "",
+          "location": "사막-오른쪽 끝",
           "level_str": "Lv.280",
           "is_drop": true
         }
@@ -150739,7 +150745,7 @@ window.PRELOADED_GAME_DATA = {
           "qty": 1,
           "boss": "아즈샤라 여왕",
           "level": 360,
-          "location": "",
+          "location": "어인해변-위쪽포탈-왼쪽포탈",
           "level_str": "Lv.360",
           "is_drop": true
         },
@@ -150892,7 +150898,7 @@ window.PRELOADED_GAME_DATA = {
           "qty": 1,
           "boss": "아즈샤라 여왕",
           "level": 360,
-          "location": "",
+          "location": "어인해변-위쪽포탈-왼쪽포탈",
           "level_str": "Lv.360",
           "is_drop": true
         },
@@ -150919,7 +150925,7 @@ window.PRELOADED_GAME_DATA = {
           "qty": 1,
           "boss": "제7마왕 모르페우스",
           "level": 340,
-          "location": "전초기지-심연내부-포탈-왼쪽포탈",
+          "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
           "level_str": "Lv.340",
           "is_drop": true
         },
@@ -151055,7 +151061,7 @@ window.PRELOADED_GAME_DATA = {
           "qty": 1,
           "boss": "아즈샤라 여왕",
           "level": 360,
-          "location": "",
+          "location": "어인해변-위쪽포탈-왼쪽포탈",
           "level_str": "Lv.360",
           "is_drop": true
         },
@@ -151134,7 +151140,7 @@ window.PRELOADED_GAME_DATA = {
           "qty": 1,
           "boss": "아즈샤라 여왕",
           "level": 360,
-          "location": "",
+          "location": "어인해변-위쪽포탈-왼쪽포탈",
           "level_str": "Lv.360",
           "is_drop": true
         },
@@ -151225,7 +151231,7 @@ window.PRELOADED_GAME_DATA = {
           "qty": 1,
           "boss": "제7마왕 모르페우스",
           "level": 340,
-          "location": "전초기지-심연내부-포탈-왼쪽포탈",
+          "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
           "level_str": "Lv.340",
           "is_drop": true
         },
@@ -151397,7 +151403,7 @@ window.PRELOADED_GAME_DATA = {
           "qty": 1,
           "boss": "암흑 망령",
           "level": 280,
-          "location": "",
+          "location": "사막-오른쪽 끝",
           "level_str": "Lv.280",
           "is_drop": true
         }
@@ -151443,7 +151449,7 @@ window.PRELOADED_GAME_DATA = {
           "qty": 1,
           "boss": "제7마왕 모르페우스",
           "level": 340,
-          "location": "전초기지-심연내부-포탈-왼쪽포탈",
+          "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
           "level_str": "Lv.340",
           "is_drop": true
         },
@@ -151711,7 +151717,7 @@ window.PRELOADED_GAME_DATA = {
           "qty": 1,
           "boss": "제7마왕 모르페우스",
           "level": 340,
-          "location": "전초기지-심연내부-포탈-왼쪽포탈",
+          "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
           "level_str": "Lv.340",
           "is_drop": true
         },
@@ -151794,7 +151800,7 @@ window.PRELOADED_GAME_DATA = {
           "qty": 1,
           "boss": "제7마왕 모르페우스",
           "level": 340,
-          "location": "전초기지-심연내부-포탈-왼쪽포탈",
+          "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
           "level_str": "Lv.340",
           "is_drop": true
         },
@@ -152487,7 +152493,7 @@ window.PRELOADED_GAME_DATA = {
           "qty": 1,
           "boss": "TitonX-4060",
           "level": 380,
-          "location": "",
+          "location": "파문항구-위쪽-우사로 옆 계단",
           "level_str": "Lv.380",
           "is_drop": true
         },
@@ -152565,7 +152571,7 @@ window.PRELOADED_GAME_DATA = {
           "qty": 1,
           "boss": "TitonX-4060",
           "level": 380,
-          "location": "",
+          "location": "파문항구-위쪽-우사로 옆 계단",
           "level_str": "Lv.380",
           "is_drop": true
         },
@@ -152674,7 +152680,7 @@ window.PRELOADED_GAME_DATA = {
           "qty": 1,
           "boss": "아즈샤라 여왕",
           "level": 360,
-          "location": "",
+          "location": "어인해변-위쪽포탈-왼쪽포탈",
           "level_str": "Lv.360",
           "is_drop": true
         },
@@ -152726,7 +152732,7 @@ window.PRELOADED_GAME_DATA = {
           "qty": 1,
           "boss": "TitonX-4060",
           "level": 380,
-          "location": "",
+          "location": "파문항구-위쪽-우사로 옆 계단",
           "level_str": "Lv.380",
           "is_drop": true
         },
@@ -152753,7 +152759,7 @@ window.PRELOADED_GAME_DATA = {
           "qty": 1,
           "boss": "제5마왕 아노시스",
           "level": 360,
-          "location": "",
+          "location": "전초기지-오른쪽 성-위",
           "level_str": "Lv.360",
           "is_drop": true
         },
@@ -152831,7 +152837,7 @@ window.PRELOADED_GAME_DATA = {
           "qty": 1,
           "boss": "역병의 근원 마이어스",
           "level": 360,
-          "location": "",
+          "location": "암흑도시-왼쪽 밑",
           "level_str": "Lv.360",
           "is_drop": true
         },
@@ -152877,7 +152883,7 @@ window.PRELOADED_GAME_DATA = {
           "qty": 1,
           "boss": "제5마왕 아노시스",
           "level": 360,
-          "location": "",
+          "location": "전초기지-오른쪽 성-위",
           "level_str": "Lv.360",
           "is_drop": true
         },
@@ -152964,7 +152970,7 @@ window.PRELOADED_GAME_DATA = {
           "qty": 1,
           "boss": "TitonX-4060",
           "level": 380,
-          "location": "",
+          "location": "파문항구-위쪽-우사로 옆 계단",
           "level_str": "Lv.380",
           "is_drop": true
         },
@@ -152991,7 +152997,7 @@ window.PRELOADED_GAME_DATA = {
           "qty": 1,
           "boss": "제5마왕 아노시스",
           "level": 360,
-          "location": "",
+          "location": "전초기지-오른쪽 성-위",
           "level_str": "Lv.360",
           "is_drop": true
         },
@@ -153000,7 +153006,7 @@ window.PRELOADED_GAME_DATA = {
           "qty": 1,
           "boss": "제7마왕 모르페우스",
           "level": 340,
-          "location": "전초기지-심연내부-포탈-왼쪽포탈",
+          "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
           "level_str": "Lv.340",
           "is_drop": true
         }
@@ -153120,7 +153126,7 @@ window.PRELOADED_GAME_DATA = {
           "qty": 1,
           "boss": "TitonX-4060",
           "level": 380,
-          "location": "",
+          "location": "파문항구-위쪽-우사로 옆 계단",
           "level_str": "Lv.380",
           "is_drop": true
         },
@@ -153270,7 +153276,7 @@ window.PRELOADED_GAME_DATA = {
           "qty": 1,
           "boss": "제5마왕 아노시스",
           "level": 360,
-          "location": "",
+          "location": "전초기지-오른쪽 성-위",
           "level_str": "Lv.360",
           "is_drop": true
         },
@@ -153306,7 +153312,7 @@ window.PRELOADED_GAME_DATA = {
           "qty": 1,
           "boss": "제7마왕 모르페우스",
           "level": 340,
-          "location": "전초기지-심연내부-포탈-왼쪽포탈",
+          "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
           "level_str": "Lv.340",
           "is_drop": true
         },
@@ -153440,7 +153446,7 @@ window.PRELOADED_GAME_DATA = {
           "qty": 1,
           "boss": "제5마왕 아노시스",
           "level": 360,
-          "location": "",
+          "location": "전초기지-오른쪽 성-위",
           "level_str": "Lv.360",
           "is_drop": true
         },
@@ -153449,7 +153455,7 @@ window.PRELOADED_GAME_DATA = {
           "qty": 1,
           "boss": "제7마왕 모르페우스",
           "level": 340,
-          "location": "전초기지-심연내부-포탈-왼쪽포탈",
+          "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
           "level_str": "Lv.340",
           "is_drop": true
         },
@@ -153476,7 +153482,7 @@ window.PRELOADED_GAME_DATA = {
           "qty": 1,
           "boss": "암흑 망령",
           "level": 280,
-          "location": "",
+          "location": "사막-오른쪽 끝",
           "level_str": "Lv.280",
           "is_drop": true
         }
@@ -153528,7 +153534,7 @@ window.PRELOADED_GAME_DATA = {
           "qty": 1,
           "boss": "제7마왕 모르페우스",
           "level": 340,
-          "location": "전초기지-심연내부-포탈-왼쪽포탈",
+          "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
           "level_str": "Lv.340",
           "is_drop": true
         },
@@ -153590,7 +153596,7 @@ window.PRELOADED_GAME_DATA = {
           "qty": 1,
           "boss": "아즈샤라 여왕",
           "level": 360,
-          "location": "",
+          "location": "어인해변-위쪽포탈-왼쪽포탈",
           "level_str": "Lv.360",
           "is_drop": true
         },
@@ -153599,7 +153605,7 @@ window.PRELOADED_GAME_DATA = {
           "qty": 1,
           "boss": "역병의 근원 마이어스",
           "level": 360,
-          "location": "",
+          "location": "암흑도시-왼쪽 밑",
           "level_str": "Lv.360",
           "is_drop": true
         },
@@ -153669,7 +153675,7 @@ window.PRELOADED_GAME_DATA = {
           "qty": 1,
           "boss": "역병의 근원 마이어스",
           "level": 360,
-          "location": "",
+          "location": "암흑도시-왼쪽 밑",
           "level_str": "Lv.360",
           "is_drop": true
         },
@@ -153687,7 +153693,7 @@ window.PRELOADED_GAME_DATA = {
           "qty": 1,
           "boss": "제7마왕 모르페우스",
           "level": 340,
-          "location": "전초기지-심연내부-포탈-왼쪽포탈",
+          "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
           "level_str": "Lv.340",
           "is_drop": true
         },
@@ -153757,7 +153763,7 @@ window.PRELOADED_GAME_DATA = {
           "qty": 1,
           "boss": "제5마왕 아노시스",
           "level": 360,
-          "location": "",
+          "location": "전초기지-오른쪽 성-위",
           "level_str": "Lv.360",
           "is_drop": true
         },
@@ -153775,7 +153781,7 @@ window.PRELOADED_GAME_DATA = {
           "qty": 1,
           "boss": "제7마왕 모르페우스",
           "level": 340,
-          "location": "전초기지-심연내부-포탈-왼쪽포탈",
+          "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
           "level_str": "Lv.340",
           "is_drop": true
         },
@@ -153906,7 +153912,7 @@ window.PRELOADED_GAME_DATA = {
           "qty": 1,
           "boss": "제5마왕 아노시스",
           "level": 360,
-          "location": "",
+          "location": "전초기지-오른쪽 성-위",
           "level_str": "Lv.360",
           "is_drop": true
         },
@@ -153924,7 +153930,7 @@ window.PRELOADED_GAME_DATA = {
           "qty": 1,
           "boss": "제7마왕 모르페우스",
           "level": 340,
-          "location": "전초기지-심연내부-포탈-왼쪽포탈",
+          "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
           "level_str": "Lv.340",
           "is_drop": true
         },
@@ -153933,7 +153939,7 @@ window.PRELOADED_GAME_DATA = {
           "qty": 1,
           "boss": "제7마왕 모르페우스",
           "level": 340,
-          "location": "전초기지-심연내부-포탈-왼쪽포탈",
+          "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
           "level_str": "Lv.340",
           "is_drop": true
         },
@@ -154082,7 +154088,7 @@ window.PRELOADED_GAME_DATA = {
           "qty": 1,
           "boss": "역병의 근원 마이어스",
           "level": 360,
-          "location": "",
+          "location": "암흑도시-왼쪽 밑",
           "level_str": "Lv.360",
           "is_drop": true
         },
@@ -154152,7 +154158,7 @@ window.PRELOADED_GAME_DATA = {
           "qty": 1,
           "boss": "역병의 근원 마이어스",
           "level": 360,
-          "location": "",
+          "location": "암흑도시-왼쪽 밑",
           "level_str": "Lv.360",
           "is_drop": true
         },
@@ -154161,7 +154167,7 @@ window.PRELOADED_GAME_DATA = {
           "qty": 1,
           "boss": "아즈샤라 여왕",
           "level": 360,
-          "location": "",
+          "location": "어인해변-위쪽포탈-왼쪽포탈",
           "level_str": "Lv.360",
           "is_drop": true
         },
@@ -154222,7 +154228,7 @@ window.PRELOADED_GAME_DATA = {
           "qty": 1,
           "boss": "아즈샤라 여왕",
           "level": 360,
-          "location": "",
+          "location": "어인해변-위쪽포탈-왼쪽포탈",
           "level_str": "Lv.360",
           "is_drop": true
         },
@@ -154386,7 +154392,7 @@ window.PRELOADED_GAME_DATA = {
       "is_drop": true,
       "drop_boss": "아즈샤라 여왕",
       "drop_level": 360,
-      "drop_location": "",
+      "drop_location": "어인해변-위쪽포탈-왼쪽포탈",
       "drop_type": "아이템"
     },
     "지옥불 갑옷": {
@@ -154515,7 +154521,7 @@ window.PRELOADED_GAME_DATA = {
           "qty": 1,
           "boss": "제7마왕 모르페우스",
           "level": 340,
-          "location": "전초기지-심연내부-포탈-왼쪽포탈",
+          "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
           "level_str": "Lv.340",
           "is_drop": true
         },
@@ -154586,7 +154592,7 @@ window.PRELOADED_GAME_DATA = {
           "qty": 1,
           "boss": "제7마왕 모르페우스",
           "level": 340,
-          "location": "전초기지-심연내부-포탈-왼쪽포탈",
+          "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
           "level_str": "Lv.340",
           "is_drop": true
         },
@@ -154850,7 +154856,7 @@ window.PRELOADED_GAME_DATA = {
           "qty": 1,
           "boss": "제7마왕 모르페우스",
           "level": 340,
-          "location": "전초기지-심연내부-포탈-왼쪽포탈",
+          "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
           "level_str": "Lv.340",
           "is_drop": true
         },
@@ -155095,7 +155101,7 @@ window.PRELOADED_GAME_DATA = {
           "qty": 1,
           "boss": "제7마왕 모르페우스",
           "level": 340,
-          "location": "전초기지-심연내부-포탈-왼쪽포탈",
+          "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
           "level_str": "Lv.340",
           "is_drop": true
         },
@@ -155997,7 +156003,7 @@ window.PRELOADED_GAME_DATA = {
           "qty": 1,
           "boss": "TitonX-4060",
           "level": 380,
-          "location": "",
+          "location": "파문항구-위쪽-우사로 옆 계단",
           "level_str": "Lv.380",
           "is_drop": true
         },
@@ -156075,7 +156081,7 @@ window.PRELOADED_GAME_DATA = {
           "qty": 1,
           "boss": "TitonX-4060",
           "level": 380,
-          "location": "",
+          "location": "파문항구-위쪽-우사로 옆 계단",
           "level_str": "Lv.380",
           "is_drop": true
         },
@@ -156102,7 +156108,7 @@ window.PRELOADED_GAME_DATA = {
           "qty": 1,
           "boss": "역병의 근원 마이어스",
           "level": 360,
-          "location": "",
+          "location": "암흑도시-왼쪽 밑",
           "level_str": "Lv.360",
           "is_drop": true
         },
@@ -156145,7 +156151,7 @@ window.PRELOADED_GAME_DATA = {
           "qty": 1,
           "boss": "TitonX-4060",
           "level": 380,
-          "location": "",
+          "location": "파문항구-위쪽-우사로 옆 계단",
           "level_str": "Lv.380",
           "is_drop": true
         },
@@ -156190,7 +156196,7 @@ window.PRELOADED_GAME_DATA = {
           "qty": 1,
           "boss": "제5마왕 아노시스",
           "level": 360,
-          "location": "",
+          "location": "전초기지-오른쪽 성-위",
           "level_str": "Lv.360",
           "is_drop": true
         }
@@ -156262,7 +156268,7 @@ window.PRELOADED_GAME_DATA = {
           "qty": 1,
           "boss": "아즈샤라 여왕",
           "level": 360,
-          "location": "",
+          "location": "어인해변-위쪽포탈-왼쪽포탈",
           "level_str": "Lv.360",
           "is_drop": true
         },
@@ -156305,7 +156311,7 @@ window.PRELOADED_GAME_DATA = {
           "qty": 1,
           "boss": "TitonX-4060",
           "level": 380,
-          "location": "",
+          "location": "파문항구-위쪽-우사로 옆 계단",
           "level_str": "Lv.380",
           "is_drop": true
         },
@@ -156341,7 +156347,7 @@ window.PRELOADED_GAME_DATA = {
           "qty": 1,
           "boss": "제5마왕 아노시스",
           "level": 360,
-          "location": "",
+          "location": "전초기지-오른쪽 성-위",
           "level_str": "Lv.360",
           "is_drop": true
         },
@@ -156384,7 +156390,7 @@ window.PRELOADED_GAME_DATA = {
           "qty": 1,
           "boss": "제5마왕 아노시스",
           "level": 360,
-          "location": "",
+          "location": "전초기지-오른쪽 성-위",
           "level_str": "Lv.360",
           "is_drop": true
         },
@@ -156472,7 +156478,7 @@ window.PRELOADED_GAME_DATA = {
           "qty": 1,
           "boss": "TitonX-4060",
           "level": 380,
-          "location": "",
+          "location": "파문항구-위쪽-우사로 옆 계단",
           "level_str": "Lv.380",
           "is_drop": true
         },
@@ -156508,7 +156514,7 @@ window.PRELOADED_GAME_DATA = {
           "qty": 1,
           "boss": "역병의 근원 마이어스",
           "level": 360,
-          "location": "",
+          "location": "암흑도시-왼쪽 밑",
           "level_str": "Lv.360",
           "is_drop": true
         }
@@ -156656,7 +156662,7 @@ window.PRELOADED_GAME_DATA = {
           "qty": 1,
           "boss": "역병의 근원 마이어스",
           "level": 360,
-          "location": "",
+          "location": "암흑도시-왼쪽 밑",
           "level_str": "Lv.360",
           "is_drop": true
         },
@@ -156803,7 +156809,7 @@ window.PRELOADED_GAME_DATA = {
           "qty": 1,
           "boss": "제5마왕 아노시스",
           "level": 360,
-          "location": "",
+          "location": "전초기지-오른쪽 성-위",
           "level_str": "Lv.360",
           "is_drop": true
         },
@@ -156812,7 +156818,7 @@ window.PRELOADED_GAME_DATA = {
           "qty": 1,
           "boss": "제7마왕 모르페우스",
           "level": 340,
-          "location": "전초기지-심연내부-포탈-왼쪽포탈",
+          "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
           "level_str": "Lv.340",
           "is_drop": true
         },
@@ -157022,7 +157028,7 @@ window.PRELOADED_GAME_DATA = {
           "qty": 1,
           "boss": "역병의 근원 마이어스",
           "level": 360,
-          "location": "",
+          "location": "암흑도시-왼쪽 밑",
           "level_str": "Lv.360",
           "is_drop": true
         },
@@ -157261,7 +157267,7 @@ window.PRELOADED_GAME_DATA = {
           "qty": 1,
           "boss": "역병의 근원 마이어스",
           "level": 360,
-          "location": "",
+          "location": "암흑도시-왼쪽 밑",
           "level_str": "Lv.360",
           "is_drop": true
         },
@@ -157270,7 +157276,7 @@ window.PRELOADED_GAME_DATA = {
           "qty": 1,
           "boss": "제7마왕 모르페우스",
           "level": 340,
-          "location": "전초기지-심연내부-포탈-왼쪽포탈",
+          "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
           "level_str": "Lv.340",
           "is_drop": true
         },
@@ -157349,7 +157355,7 @@ window.PRELOADED_GAME_DATA = {
           "qty": 1,
           "boss": "제7마왕 모르페우스",
           "level": 340,
-          "location": "전초기지-심연내부-포탈-왼쪽포탈",
+          "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
           "level_str": "Lv.340",
           "is_drop": true
         },
@@ -157411,7 +157417,7 @@ window.PRELOADED_GAME_DATA = {
           "qty": 1,
           "boss": "제5마왕 아노시스",
           "level": 360,
-          "location": "",
+          "location": "전초기지-오른쪽 성-위",
           "level_str": "Lv.360",
           "is_drop": true
         },
@@ -157438,7 +157444,7 @@ window.PRELOADED_GAME_DATA = {
           "qty": 1,
           "boss": "제7마왕 모르페우스",
           "level": 340,
-          "location": "전초기지-심연내부-포탈-왼쪽포탈",
+          "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
           "level_str": "Lv.340",
           "is_drop": true
         },
@@ -157480,7 +157486,7 @@ window.PRELOADED_GAME_DATA = {
       "is_drop": true,
       "drop_boss": "제5마왕 아노시스",
       "drop_level": 360,
-      "drop_location": "",
+      "drop_location": "전초기지-오른쪽 성-위",
       "drop_type": "아이템"
     },
     "빛-영광의 투구": {
@@ -157600,7 +157606,7 @@ window.PRELOADED_GAME_DATA = {
           "qty": 1,
           "boss": "제7마왕 모르페우스",
           "level": 340,
-          "location": "전초기지-심연내부-포탈-왼쪽포탈",
+          "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
           "level_str": "Lv.340",
           "is_drop": true
         },
@@ -157741,7 +157747,7 @@ window.PRELOADED_GAME_DATA = {
           "qty": 1,
           "boss": "제7마왕 모르페우스",
           "level": 340,
-          "location": "전초기지-심연내부-포탈-왼쪽포탈",
+          "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
           "level_str": "Lv.340",
           "is_drop": true
         },
@@ -157848,7 +157854,7 @@ window.PRELOADED_GAME_DATA = {
           "qty": 1,
           "boss": "암흑 망령",
           "level": 280,
-          "location": "",
+          "location": "사막-오른쪽 끝",
           "level_str": "Lv.280",
           "is_drop": true
         }
@@ -157891,7 +157897,7 @@ window.PRELOADED_GAME_DATA = {
           "qty": 1,
           "boss": "제7마왕 모르페우스",
           "level": 340,
-          "location": "전초기지-심연내부-포탈-왼쪽포탈",
+          "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
           "level_str": "Lv.340",
           "is_drop": true
         },
@@ -158023,7 +158029,7 @@ window.PRELOADED_GAME_DATA = {
           "qty": 1,
           "boss": "제7마왕 모르페우스",
           "level": 340,
-          "location": "전초기지-심연내부-포탈-왼쪽포탈",
+          "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
           "level_str": "Lv.340",
           "is_drop": true
         },
@@ -158161,7 +158167,7 @@ window.PRELOADED_GAME_DATA = {
       "is_drop": true,
       "drop_boss": "제7마왕 모르페우스",
       "drop_level": 340,
-      "drop_location": "전초기지-심연내부-포탈-왼쪽포탈",
+      "drop_location": "전초기지-오른쪽성-포탈-왼쪽포탈",
       "drop_type": "아이템"
     },
     "에메랄드 왕관": {
@@ -158420,7 +158426,7 @@ window.PRELOADED_GAME_DATA = {
           "qty": 1,
           "boss": "암흑 망령",
           "level": 280,
-          "location": "",
+          "location": "사막-오른쪽 끝",
           "level_str": "Lv.280",
           "is_drop": true
         },
@@ -158438,7 +158444,7 @@ window.PRELOADED_GAME_DATA = {
           "qty": 1,
           "boss": "암흑 망령",
           "level": 280,
-          "location": "",
+          "location": "사막-오른쪽 끝",
           "level_str": "Lv.280",
           "is_drop": true
         },
@@ -158620,7 +158626,7 @@ window.PRELOADED_GAME_DATA = {
       "is_drop": true,
       "drop_boss": "암흑 망령",
       "drop_level": 280,
-      "drop_location": "",
+      "drop_location": "사막-오른쪽 끝",
       "drop_type": "아이템"
     },
     "종말의 처형자": {
@@ -158770,7 +158776,7 @@ window.PRELOADED_GAME_DATA = {
           "qty": 1,
           "boss": "제5마왕 아노시스",
           "level": 360,
-          "location": "",
+          "location": "전초기지-오른쪽 성-위",
           "level_str": "Lv.360",
           "is_drop": true
         }
@@ -158812,7 +158818,7 @@ window.PRELOADED_GAME_DATA = {
           "qty": 1,
           "boss": "TitonX-4060",
           "level": 380,
-          "location": "",
+          "location": "파문항구-위쪽-우사로 옆 계단",
           "level_str": "Lv.380",
           "is_drop": true
         },
@@ -158839,7 +158845,7 @@ window.PRELOADED_GAME_DATA = {
           "qty": 1,
           "boss": "제5마왕 아노시스",
           "level": 360,
-          "location": "",
+          "location": "전초기지-오른쪽 성-위",
           "level_str": "Lv.360",
           "is_drop": true
         },
@@ -158969,7 +158975,7 @@ window.PRELOADED_GAME_DATA = {
           "qty": 1,
           "boss": "제5마왕 아노시스",
           "level": 360,
-          "location": "",
+          "location": "전초기지-오른쪽 성-위",
           "level_str": "Lv.360",
           "is_drop": true
         },
@@ -158987,7 +158993,7 @@ window.PRELOADED_GAME_DATA = {
           "qty": 1,
           "boss": "제5마왕 아노시스",
           "level": 360,
-          "location": "",
+          "location": "전초기지-오른쪽 성-위",
           "level_str": "Lv.360",
           "is_drop": true
         },
@@ -159156,7 +159162,7 @@ window.PRELOADED_GAME_DATA = {
           "qty": 1,
           "boss": "제5마왕 아노시스",
           "level": 360,
-          "location": "",
+          "location": "전초기지-오른쪽 성-위",
           "level_str": "Lv.360",
           "is_drop": true
         }
@@ -159200,7 +159206,7 @@ window.PRELOADED_GAME_DATA = {
           "qty": 1,
           "boss": "TitonX-4060",
           "level": 380,
-          "location": "",
+          "location": "파문항구-위쪽-우사로 옆 계단",
           "level_str": "Lv.380",
           "is_drop": true
         },
@@ -159227,7 +159233,7 @@ window.PRELOADED_GAME_DATA = {
           "qty": 1,
           "boss": "제5마왕 아노시스",
           "level": 360,
-          "location": "",
+          "location": "전초기지-오른쪽 성-위",
           "level_str": "Lv.360",
           "is_drop": true
         },
@@ -159279,7 +159285,7 @@ window.PRELOADED_GAME_DATA = {
           "qty": 1,
           "boss": "TitonX-4060",
           "level": 380,
-          "location": "",
+          "location": "파문항구-위쪽-우사로 옆 계단",
           "level_str": "Lv.380",
           "is_drop": true
         },
@@ -159315,7 +159321,7 @@ window.PRELOADED_GAME_DATA = {
           "qty": 1,
           "boss": "제5마왕 아노시스",
           "level": 360,
-          "location": "",
+          "location": "전초기지-오른쪽 성-위",
           "level_str": "Lv.360",
           "is_drop": true
         }
@@ -159357,7 +159363,7 @@ window.PRELOADED_GAME_DATA = {
           "qty": 1,
           "boss": "TitonX-4060",
           "level": 380,
-          "location": "",
+          "location": "파문항구-위쪽-우사로 옆 계단",
           "level_str": "Lv.380",
           "is_drop": true
         },
@@ -159462,7 +159468,7 @@ window.PRELOADED_GAME_DATA = {
           "qty": 1,
           "boss": "제5마왕 아노시스",
           "level": 360,
-          "location": "",
+          "location": "전초기지-오른쪽 성-위",
           "level_str": "Lv.360",
           "is_drop": true
         },
@@ -159471,7 +159477,7 @@ window.PRELOADED_GAME_DATA = {
           "qty": 1,
           "boss": "역병의 근원 마이어스",
           "level": 360,
-          "location": "",
+          "location": "암흑도시-왼쪽 밑",
           "level_str": "Lv.360",
           "is_drop": true
         }
@@ -159542,7 +159548,7 @@ window.PRELOADED_GAME_DATA = {
           "qty": 1,
           "boss": "역병의 근원 마이어스",
           "level": 360,
-          "location": "",
+          "location": "암흑도시-왼쪽 밑",
           "level_str": "Lv.360",
           "is_drop": true
         },
@@ -159622,7 +159628,7 @@ window.PRELOADED_GAME_DATA = {
           "qty": 1,
           "boss": "제5마왕 아노시스",
           "level": 360,
-          "location": "",
+          "location": "전초기지-오른쪽 성-위",
           "level_str": "Lv.360",
           "is_drop": true
         },
@@ -159711,7 +159717,7 @@ window.PRELOADED_GAME_DATA = {
           "qty": 1,
           "boss": "제7마왕 모르페우스",
           "level": 340,
-          "location": "전초기지-심연내부-포탈-왼쪽포탈",
+          "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
           "level_str": "Lv.340",
           "is_drop": true
         }
@@ -159782,7 +159788,7 @@ window.PRELOADED_GAME_DATA = {
           "qty": 1,
           "boss": "역병의 근원 마이어스",
           "level": 360,
-          "location": "",
+          "location": "암흑도시-왼쪽 밑",
           "level_str": "Lv.360",
           "is_drop": true
         },
@@ -159791,7 +159797,7 @@ window.PRELOADED_GAME_DATA = {
           "qty": 1,
           "boss": "제5마왕 아노시스",
           "level": 360,
-          "location": "",
+          "location": "전초기지-오른쪽 성-위",
           "level_str": "Lv.360",
           "is_drop": true
         }
@@ -159857,7 +159863,7 @@ window.PRELOADED_GAME_DATA = {
           "qty": 1,
           "boss": "제5마왕 아노시스",
           "level": 360,
-          "location": "",
+          "location": "전초기지-오른쪽 성-위",
           "level_str": "Lv.360",
           "is_drop": true
         },
@@ -159875,7 +159881,7 @@ window.PRELOADED_GAME_DATA = {
           "qty": 1,
           "boss": "역병의 근원 마이어스",
           "level": 360,
-          "location": "",
+          "location": "암흑도시-왼쪽 밑",
           "level_str": "Lv.360",
           "is_drop": true
         },
@@ -159884,7 +159890,7 @@ window.PRELOADED_GAME_DATA = {
           "qty": 1,
           "boss": "제7마왕 모르페우스",
           "level": 340,
-          "location": "전초기지-심연내부-포탈-왼쪽포탈",
+          "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
           "level_str": "Lv.340",
           "is_drop": true
         },
@@ -159936,7 +159942,7 @@ window.PRELOADED_GAME_DATA = {
           "qty": 1,
           "boss": "제5마왕 아노시스",
           "level": 360,
-          "location": "",
+          "location": "전초기지-오른쪽 성-위",
           "level_str": "Lv.360",
           "is_drop": true
         },
@@ -160005,7 +160011,7 @@ window.PRELOADED_GAME_DATA = {
           "qty": 1,
           "boss": "제5마왕 아노시스",
           "level": 360,
-          "location": "",
+          "location": "전초기지-오른쪽 성-위",
           "level_str": "Lv.360",
           "is_drop": true
         },
@@ -160136,7 +160142,7 @@ window.PRELOADED_GAME_DATA = {
           "qty": 1,
           "boss": "역병의 근원 마이어스",
           "level": 360,
-          "location": "",
+          "location": "암흑도시-왼쪽 밑",
           "level_str": "Lv.360",
           "is_drop": true
         },
@@ -160163,7 +160169,7 @@ window.PRELOADED_GAME_DATA = {
           "qty": 1,
           "boss": "제7마왕 모르페우스",
           "level": 340,
-          "location": "전초기지-심연내부-포탈-왼쪽포탈",
+          "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
           "level_str": "Lv.340",
           "is_drop": true
         },
@@ -160206,7 +160212,7 @@ window.PRELOADED_GAME_DATA = {
           "qty": 1,
           "boss": "아즈샤라 여왕",
           "level": 360,
-          "location": "",
+          "location": "어인해변-위쪽포탈-왼쪽포탈",
           "level_str": "Lv.360",
           "is_drop": true
         },
@@ -160224,7 +160230,7 @@ window.PRELOADED_GAME_DATA = {
           "qty": 1,
           "boss": "제7마왕 모르페우스",
           "level": 340,
-          "location": "전초기지-심연내부-포탈-왼쪽포탈",
+          "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
           "level_str": "Lv.340",
           "is_drop": true
         },
@@ -160286,7 +160292,7 @@ window.PRELOADED_GAME_DATA = {
           "qty": 1,
           "boss": "아즈샤라 여왕",
           "level": 360,
-          "location": "",
+          "location": "어인해변-위쪽포탈-왼쪽포탈",
           "level_str": "Lv.360",
           "is_drop": true
         },
@@ -160295,7 +160301,7 @@ window.PRELOADED_GAME_DATA = {
           "qty": 1,
           "boss": "제7마왕 모르페우스",
           "level": 340,
-          "location": "전초기지-심연내부-포탈-왼쪽포탈",
+          "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
           "level_str": "Lv.340",
           "is_drop": true
         },
@@ -160572,7 +160578,7 @@ window.PRELOADED_GAME_DATA = {
       "is_drop": true,
       "drop_boss": "제5마왕 아노시스",
       "drop_level": 360,
-      "drop_location": "",
+      "drop_location": "전초기지-오른쪽 성-위",
       "drop_type": "아이템"
     },
     "격노의 반지": {
@@ -160609,7 +160615,7 @@ window.PRELOADED_GAME_DATA = {
           "qty": 1,
           "boss": "제7마왕 모르페우스",
           "level": 340,
-          "location": "전초기지-심연내부-포탈-왼쪽포탈",
+          "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
           "level_str": "Lv.340",
           "is_drop": true
         },
@@ -160892,7 +160898,7 @@ window.PRELOADED_GAME_DATA = {
           "qty": 1,
           "boss": "제7마왕 모르페우스",
           "level": 340,
-          "location": "전초기지-심연내부-포탈-왼쪽포탈",
+          "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
           "level_str": "Lv.340",
           "is_drop": true
         },
@@ -161041,7 +161047,7 @@ window.PRELOADED_GAME_DATA = {
           "qty": 1,
           "boss": "제7마왕 모르페우스",
           "level": 340,
-          "location": "전초기지-심연내부-포탈-왼쪽포탈",
+          "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
           "level_str": "Lv.340",
           "is_drop": true
         },
@@ -161677,7 +161683,7 @@ window.PRELOADED_GAME_DATA = {
           "qty": 1,
           "boss": "암흑 망령",
           "level": 280,
-          "location": "",
+          "location": "사막-오른쪽 끝",
           "level_str": "Lv.280",
           "is_drop": true
         },
@@ -162055,7 +162061,7 @@ window.PRELOADED_GAME_DATA = {
           "qty": 1,
           "boss": "제5마왕 아노시스",
           "level": 360,
-          "location": "",
+          "location": "전초기지-오른쪽 성-위",
           "level_str": "Lv.360",
           "is_drop": true
         }
@@ -162089,7 +162095,7 @@ window.PRELOADED_GAME_DATA = {
           "qty": 1,
           "boss": "TitonX-4060",
           "level": 380,
-          "location": "",
+          "location": "파문항구-위쪽-우사로 옆 계단",
           "level_str": "Lv.380",
           "is_drop": true
         },
@@ -162125,7 +162131,7 @@ window.PRELOADED_GAME_DATA = {
           "qty": 1,
           "boss": "역병의 근원 마이어스",
           "level": 360,
-          "location": "",
+          "location": "암흑도시-왼쪽 밑",
           "level_str": "Lv.360",
           "is_drop": true
         },
@@ -162168,7 +162174,7 @@ window.PRELOADED_GAME_DATA = {
           "qty": 1,
           "boss": "제5마왕 아노시스",
           "level": 360,
-          "location": "",
+          "location": "전초기지-오른쪽 성-위",
           "level_str": "Lv.360",
           "is_drop": true
         },
@@ -162177,7 +162183,7 @@ window.PRELOADED_GAME_DATA = {
           "qty": 1,
           "boss": "TitonX-4060",
           "level": 380,
-          "location": "",
+          "location": "파문항구-위쪽-우사로 옆 계단",
           "level_str": "Lv.380",
           "is_drop": true
         },
@@ -162213,7 +162219,7 @@ window.PRELOADED_GAME_DATA = {
           "qty": 1,
           "boss": "제5마왕 아노시스",
           "level": 360,
-          "location": "",
+          "location": "전초기지-오른쪽 성-위",
           "level_str": "Lv.360",
           "is_drop": true
         }
@@ -162248,7 +162254,7 @@ window.PRELOADED_GAME_DATA = {
           "qty": 1,
           "boss": "TitonX-4060",
           "level": 380,
-          "location": "",
+          "location": "파문항구-위쪽-우사로 옆 계단",
           "level_str": "Lv.380",
           "is_drop": true
         },
@@ -162366,7 +162372,7 @@ window.PRELOADED_GAME_DATA = {
           "qty": 1,
           "boss": "아즈샤라 여왕",
           "level": 360,
-          "location": "",
+          "location": "어인해변-위쪽포탈-왼쪽포탈",
           "level_str": "Lv.360",
           "is_drop": true
         },
@@ -162375,7 +162381,7 @@ window.PRELOADED_GAME_DATA = {
           "qty": 1,
           "boss": "역병의 근원 마이어스",
           "level": 360,
-          "location": "",
+          "location": "암흑도시-왼쪽 밑",
           "level_str": "Lv.360",
           "is_drop": true
         }
@@ -162523,7 +162529,7 @@ window.PRELOADED_GAME_DATA = {
           "qty": 1,
           "boss": "제5마왕 아노시스",
           "level": 360,
-          "location": "",
+          "location": "전초기지-오른쪽 성-위",
           "level_str": "Lv.360",
           "is_drop": true
         },
@@ -162532,7 +162538,7 @@ window.PRELOADED_GAME_DATA = {
           "qty": 1,
           "boss": "역병의 근원 마이어스",
           "level": 360,
-          "location": "",
+          "location": "암흑도시-왼쪽 밑",
           "level_str": "Lv.360",
           "is_drop": true
         }
@@ -162593,7 +162599,7 @@ window.PRELOADED_GAME_DATA = {
           "qty": 1,
           "boss": "역병의 근원 마이어스",
           "level": 360,
-          "location": "",
+          "location": "암흑도시-왼쪽 밑",
           "level_str": "Lv.360",
           "is_drop": true
         },
@@ -162602,7 +162608,7 @@ window.PRELOADED_GAME_DATA = {
           "qty": 1,
           "boss": "아즈샤라 여왕",
           "level": 360,
-          "location": "",
+          "location": "어인해변-위쪽포탈-왼쪽포탈",
           "level_str": "Lv.360",
           "is_drop": true
         }
@@ -162682,7 +162688,7 @@ window.PRELOADED_GAME_DATA = {
           "qty": 1,
           "boss": "역병의 근원 마이어스",
           "level": 360,
-          "location": "",
+          "location": "암흑도시-왼쪽 밑",
           "level_str": "Lv.360",
           "is_drop": true
         }
@@ -162703,11 +162709,11 @@ window.PRELOADED_GAME_DATA = {
       "synergy_jobs": [],
       "special_effect": "",
       "materials": [],
-      "is_drop": false,
-      "drop_boss": "",
-      "drop_level": 0,
-      "drop_location": "",
-      "drop_type": "아이템"
+      "is_drop": true,
+      "drop_boss": "TitonX-4060",
+      "drop_level": 380,
+      "drop_location": "파문항구-위쪽-우사로 옆 계단",
+      "drop_type": "재료"
     },
     "영혼의 용광로": {
       "name": "영혼의 용광로",
@@ -162768,7 +162774,7 @@ window.PRELOADED_GAME_DATA = {
           "qty": 1,
           "boss": "역병의 근원 마이어스",
           "level": 360,
-          "location": "",
+          "location": "암흑도시-왼쪽 밑",
           "level_str": "Lv.360",
           "is_drop": true
         },
@@ -162819,7 +162825,7 @@ window.PRELOADED_GAME_DATA = {
           "qty": 1,
           "boss": "제5마왕 아노시스",
           "level": 360,
-          "location": "",
+          "location": "전초기지-오른쪽 성-위",
           "level_str": "Lv.360",
           "is_drop": true
         },
@@ -162828,7 +162834,7 @@ window.PRELOADED_GAME_DATA = {
           "qty": 1,
           "boss": "아즈샤라 여왕",
           "level": 360,
-          "location": "",
+          "location": "어인해변-위쪽포탈-왼쪽포탈",
           "level_str": "Lv.360",
           "is_drop": true
         },
@@ -162837,7 +162843,7 @@ window.PRELOADED_GAME_DATA = {
           "qty": 1,
           "boss": "역병의 근원 마이어스",
           "level": 360,
-          "location": "",
+          "location": "암흑도시-왼쪽 밑",
           "level_str": "Lv.360",
           "is_drop": true
         },
@@ -162889,7 +162895,7 @@ window.PRELOADED_GAME_DATA = {
           "qty": 1,
           "boss": "아즈샤라 여왕",
           "level": 360,
-          "location": "",
+          "location": "어인해변-위쪽포탈-왼쪽포탈",
           "level_str": "Lv.360",
           "is_drop": true
         },
@@ -162898,7 +162904,7 @@ window.PRELOADED_GAME_DATA = {
           "qty": 1,
           "boss": "아즈샤라 여왕",
           "level": 360,
-          "location": "",
+          "location": "어인해변-위쪽포탈-왼쪽포탈",
           "level_str": "Lv.360",
           "is_drop": true
         },
@@ -162968,7 +162974,7 @@ window.PRELOADED_GAME_DATA = {
           "qty": 1,
           "boss": "역병의 근원 마이어스",
           "level": 360,
-          "location": "",
+          "location": "암흑도시-왼쪽 밑",
           "level_str": "Lv.360",
           "is_drop": true
         },
@@ -162977,7 +162983,7 @@ window.PRELOADED_GAME_DATA = {
           "qty": 1,
           "boss": "아즈샤라 여왕",
           "level": 360,
-          "location": "",
+          "location": "어인해변-위쪽포탈-왼쪽포탈",
           "level_str": "Lv.360",
           "is_drop": true
         },
@@ -162995,7 +163001,7 @@ window.PRELOADED_GAME_DATA = {
           "qty": 1,
           "boss": "제7마왕 모르페우스",
           "level": 340,
-          "location": "전초기지-심연내부-포탈-왼쪽포탈",
+          "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
           "level_str": "Lv.340",
           "is_drop": true
         },
@@ -163047,7 +163053,7 @@ window.PRELOADED_GAME_DATA = {
           "qty": 1,
           "boss": "아즈샤라 여왕",
           "level": 360,
-          "location": "",
+          "location": "어인해변-위쪽포탈-왼쪽포탈",
           "level_str": "Lv.360",
           "is_drop": true
         },
@@ -163056,7 +163062,7 @@ window.PRELOADED_GAME_DATA = {
           "qty": 1,
           "boss": "역병의 근원 마이어스",
           "level": 360,
-          "location": "",
+          "location": "암흑도시-왼쪽 밑",
           "level_str": "Lv.360",
           "is_drop": true
         },
@@ -163205,7 +163211,7 @@ window.PRELOADED_GAME_DATA = {
           "qty": 1,
           "boss": "역병의 근원 마이어스",
           "level": 360,
-          "location": "",
+          "location": "암흑도시-왼쪽 밑",
           "level_str": "Lv.360",
           "is_drop": true
         },
@@ -163223,7 +163229,7 @@ window.PRELOADED_GAME_DATA = {
           "qty": 1,
           "boss": "제7마왕 모르페우스",
           "level": 340,
-          "location": "전초기지-심연내부-포탈-왼쪽포탈",
+          "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
           "level_str": "Lv.340",
           "is_drop": true
         },
@@ -163290,7 +163296,7 @@ window.PRELOADED_GAME_DATA = {
       "is_drop": true,
       "drop_boss": "아즈샤라 여왕",
       "drop_level": 360,
-      "drop_location": "",
+      "drop_location": "어인해변-위쪽포탈-왼쪽포탈",
       "drop_type": "아이템"
     },
     "성스러운 서리 영혼 날개": {
@@ -163316,7 +163322,7 @@ window.PRELOADED_GAME_DATA = {
           "qty": 1,
           "boss": "아즈샤라 여왕",
           "level": 360,
-          "location": "",
+          "location": "어인해변-위쪽포탈-왼쪽포탈",
           "level_str": "Lv.360",
           "is_drop": true
         },
@@ -163343,7 +163349,7 @@ window.PRELOADED_GAME_DATA = {
           "qty": 1,
           "boss": "제7마왕 모르페우스",
           "level": 340,
-          "location": "전초기지-심연내부-포탈-왼쪽포탈",
+          "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
           "level_str": "Lv.340",
           "is_drop": true
         },
@@ -163502,7 +163508,7 @@ window.PRELOADED_GAME_DATA = {
           "qty": 1,
           "boss": "역병의 근원 마이어스",
           "level": 360,
-          "location": "",
+          "location": "암흑도시-왼쪽 밑",
           "level_str": "Lv.360",
           "is_drop": true
         },
@@ -163583,7 +163589,7 @@ window.PRELOADED_GAME_DATA = {
           "qty": 1,
           "boss": "아즈샤라 여왕",
           "level": 360,
-          "location": "",
+          "location": "어인해변-위쪽포탈-왼쪽포탈",
           "level_str": "Lv.360",
           "is_drop": true
         },
@@ -163592,7 +163598,7 @@ window.PRELOADED_GAME_DATA = {
           "qty": 1,
           "boss": "제7마왕 모르페우스",
           "level": 340,
-          "location": "전초기지-심연내부-포탈-왼쪽포탈",
+          "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
           "level_str": "Lv.340",
           "is_drop": true
         },
@@ -163625,7 +163631,7 @@ window.PRELOADED_GAME_DATA = {
       "is_drop": true,
       "drop_boss": "제5마왕 아노시스",
       "drop_level": 360,
-      "drop_location": "",
+      "drop_location": "전초기지-오른쪽 성-위",
       "drop_type": "아이템"
     },
     "지옥의 성배": {
@@ -164143,7 +164149,7 @@ window.PRELOADED_GAME_DATA = {
           "qty": 1,
           "boss": "제7마왕 모르페우스",
           "level": 340,
-          "location": "전초기지-심연내부-포탈-왼쪽포탈",
+          "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
           "level_str": "Lv.340",
           "is_drop": true
         },
@@ -164213,7 +164219,7 @@ window.PRELOADED_GAME_DATA = {
           "qty": 1,
           "boss": "제7마왕 모르페우스",
           "level": 340,
-          "location": "전초기지-심연내부-포탈-왼쪽포탈",
+          "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
           "level_str": "Lv.340",
           "is_drop": true
         },
@@ -164967,7 +164973,7 @@ window.PRELOADED_GAME_DATA = {
           "qty": 1,
           "boss": "암흑 망령",
           "level": 280,
-          "location": "",
+          "location": "사막-오른쪽 끝",
           "level_str": "Lv.280",
           "is_drop": true
         },
@@ -164985,7 +164991,7 @@ window.PRELOADED_GAME_DATA = {
           "qty": 1,
           "boss": "암흑 망령",
           "level": 280,
-          "location": "",
+          "location": "사막-오른쪽 끝",
           "level_str": "Lv.280",
           "is_drop": true
         },
@@ -165086,7 +165092,7 @@ window.PRELOADED_GAME_DATA = {
           "qty": 1,
           "boss": "TitonX-4060",
           "level": 380,
-          "location": "",
+          "location": "파문항구-위쪽-우사로 옆 계단",
           "level_str": "Lv.380",
           "is_drop": true
         },
@@ -165164,7 +165170,7 @@ window.PRELOADED_GAME_DATA = {
           "qty": 1,
           "boss": "TitonX-4060",
           "level": 380,
-          "location": "",
+          "location": "파문항구-위쪽-우사로 옆 계단",
           "level_str": "Lv.380",
           "is_drop": true
         },
@@ -165191,7 +165197,7 @@ window.PRELOADED_GAME_DATA = {
           "qty": 1,
           "boss": "아즈샤라 여왕",
           "level": 360,
-          "location": "",
+          "location": "어인해변-위쪽포탈-왼쪽포탈",
           "level_str": "Lv.360",
           "is_drop": true
         },
@@ -165243,7 +165249,7 @@ window.PRELOADED_GAME_DATA = {
           "qty": 1,
           "boss": "TitonX-4060",
           "level": 380,
-          "location": "",
+          "location": "파문항구-위쪽-우사로 옆 계단",
           "level_str": "Lv.380",
           "is_drop": true
         },
@@ -165270,7 +165276,7 @@ window.PRELOADED_GAME_DATA = {
           "qty": 1,
           "boss": "제7마왕 모르페우스",
           "level": 340,
-          "location": "전초기지-심연내부-포탈-왼쪽포탈",
+          "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
           "level_str": "Lv.340",
           "is_drop": true
         },
@@ -165279,7 +165285,7 @@ window.PRELOADED_GAME_DATA = {
           "qty": 1,
           "boss": "역병의 근원 마이어스",
           "level": 360,
-          "location": "",
+          "location": "암흑도시-왼쪽 밑",
           "level_str": "Lv.360",
           "is_drop": true
         }
@@ -165349,7 +165355,7 @@ window.PRELOADED_GAME_DATA = {
           "qty": 1,
           "boss": "제5마왕 아노시스",
           "level": 360,
-          "location": "",
+          "location": "전초기지-오른쪽 성-위",
           "level_str": "Lv.360",
           "is_drop": true
         },
@@ -165437,7 +165443,7 @@ window.PRELOADED_GAME_DATA = {
           "qty": 1,
           "boss": "제5마왕 아노시스",
           "level": 360,
-          "location": "",
+          "location": "전초기지-오른쪽 성-위",
           "level_str": "Lv.360",
           "is_drop": true
         }
@@ -165482,7 +165488,7 @@ window.PRELOADED_GAME_DATA = {
           "qty": 1,
           "boss": "TitonX-4060",
           "level": 380,
-          "location": "",
+          "location": "파문항구-위쪽-우사로 옆 계단",
           "level_str": "Lv.380",
           "is_drop": true
         },
@@ -165563,7 +165569,7 @@ window.PRELOADED_GAME_DATA = {
           "qty": 1,
           "boss": "TitonX-4060",
           "level": 380,
-          "location": "",
+          "location": "파문항구-위쪽-우사로 옆 계단",
           "level_str": "Lv.380",
           "is_drop": true
         },
@@ -165634,7 +165640,7 @@ window.PRELOADED_GAME_DATA = {
           "qty": 1,
           "boss": "TitonX-4060",
           "level": 380,
-          "location": "",
+          "location": "파문항구-위쪽-우사로 옆 계단",
           "level_str": "Lv.380",
           "is_drop": true
         },
@@ -165661,7 +165667,7 @@ window.PRELOADED_GAME_DATA = {
           "qty": 1,
           "boss": "역병의 근원 마이어스",
           "level": 360,
-          "location": "",
+          "location": "암흑도시-왼쪽 밑",
           "level_str": "Lv.360",
           "is_drop": true
         },
@@ -165740,7 +165746,7 @@ window.PRELOADED_GAME_DATA = {
           "qty": 1,
           "boss": "아즈샤라 여왕",
           "level": 360,
-          "location": "",
+          "location": "어인해변-위쪽포탈-왼쪽포탈",
           "level_str": "Lv.360",
           "is_drop": true
         },
@@ -165839,7 +165845,7 @@ window.PRELOADED_GAME_DATA = {
           "qty": 1,
           "boss": "제7마왕 모르페우스",
           "level": 340,
-          "location": "전초기지-심연내부-포탈-왼쪽포탈",
+          "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
           "level_str": "Lv.340",
           "is_drop": true
         }
@@ -165917,7 +165923,7 @@ window.PRELOADED_GAME_DATA = {
           "qty": 1,
           "boss": "제7마왕 모르페우스",
           "level": 340,
-          "location": "전초기지-심연내부-포탈-왼쪽포탈",
+          "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
           "level_str": "Lv.340",
           "is_drop": true
         }
@@ -165951,7 +165957,7 @@ window.PRELOADED_GAME_DATA = {
           "qty": 1,
           "boss": "역병의 근원 마이어스",
           "level": 360,
-          "location": "",
+          "location": "암흑도시-왼쪽 밑",
           "level_str": "Lv.360",
           "is_drop": true
         },
@@ -165987,7 +165993,7 @@ window.PRELOADED_GAME_DATA = {
           "qty": 1,
           "boss": "제7마왕 모르페우스",
           "level": 340,
-          "location": "전초기지-심연내부-포탈-왼쪽포탈",
+          "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
           "level_str": "Lv.340",
           "is_drop": true
         },
@@ -166135,7 +166141,7 @@ window.PRELOADED_GAME_DATA = {
           "qty": 1,
           "boss": "역병의 근원 마이어스",
           "level": 360,
-          "location": "",
+          "location": "암흑도시-왼쪽 밑",
           "level_str": "Lv.360",
           "is_drop": true
         },
@@ -166207,7 +166213,7 @@ window.PRELOADED_GAME_DATA = {
           "qty": 1,
           "boss": "역병의 근원 마이어스",
           "level": 360,
-          "location": "",
+          "location": "암흑도시-왼쪽 밑",
           "level_str": "Lv.360",
           "is_drop": true
         },
@@ -166259,7 +166265,7 @@ window.PRELOADED_GAME_DATA = {
           "qty": 1,
           "boss": "제5마왕 아노시스",
           "level": 360,
-          "location": "",
+          "location": "전초기지-오른쪽 성-위",
           "level_str": "Lv.360",
           "is_drop": true
         },
@@ -166268,7 +166274,7 @@ window.PRELOADED_GAME_DATA = {
           "qty": 1,
           "boss": "제5마왕 아노시스",
           "level": 360,
-          "location": "",
+          "location": "전초기지-오른쪽 성-위",
           "level_str": "Lv.360",
           "is_drop": true
         },
@@ -166295,7 +166301,7 @@ window.PRELOADED_GAME_DATA = {
           "qty": 1,
           "boss": "제7마왕 모르페우스",
           "level": 340,
-          "location": "전초기지-심연내부-포탈-왼쪽포탈",
+          "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
           "level_str": "Lv.340",
           "is_drop": true
         },
@@ -166443,7 +166449,7 @@ window.PRELOADED_GAME_DATA = {
           "qty": 1,
           "boss": "제7마왕 모르페우스",
           "level": 340,
-          "location": "전초기지-심연내부-포탈-왼쪽포탈",
+          "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
           "level_str": "Lv.340",
           "is_drop": true
         },
@@ -166513,7 +166519,7 @@ window.PRELOADED_GAME_DATA = {
           "qty": 1,
           "boss": "제7마왕 모르페우스",
           "level": 340,
-          "location": "전초기지-심연내부-포탈-왼쪽포탈",
+          "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
           "level_str": "Lv.340",
           "is_drop": true
         },
@@ -166721,7 +166727,7 @@ window.PRELOADED_GAME_DATA = {
       "is_drop": true,
       "drop_boss": "역병의 근원 마이어스",
       "drop_level": 360,
-      "drop_location": "",
+      "drop_location": "암흑도시-왼쪽 밑",
       "drop_type": "아이템"
     },
     "고대 해양의 기억": {
@@ -166897,7 +166903,7 @@ window.PRELOADED_GAME_DATA = {
           "qty": 1,
           "boss": "제7마왕 모르페우스",
           "level": 340,
-          "location": "전초기지-심연내부-포탈-왼쪽포탈",
+          "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
           "level_str": "Lv.340",
           "is_drop": true
         },
@@ -167182,7 +167188,7 @@ window.PRELOADED_GAME_DATA = {
           "qty": 1,
           "boss": "제7마왕 모르페우스",
           "level": 340,
-          "location": "전초기지-심연내부-포탈-왼쪽포탈",
+          "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
           "level_str": "Lv.340",
           "is_drop": true
         },
@@ -167255,7 +167261,7 @@ window.PRELOADED_GAME_DATA = {
           "qty": 1,
           "boss": "제7마왕 모르페우스",
           "level": 340,
-          "location": "전초기지-심연내부-포탈-왼쪽포탈",
+          "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
           "level_str": "Lv.340",
           "is_drop": true
         },
@@ -167316,7 +167322,7 @@ window.PRELOADED_GAME_DATA = {
           "qty": 1,
           "boss": "제7마왕 모르페우스",
           "level": 340,
-          "location": "전초기지-심연내부-포탈-왼쪽포탈",
+          "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
           "level_str": "Lv.340",
           "is_drop": true
         },
@@ -167410,7 +167416,7 @@ window.PRELOADED_GAME_DATA = {
           "qty": 1,
           "boss": "암흑 망령",
           "level": 280,
-          "location": "",
+          "location": "사막-오른쪽 끝",
           "level_str": "Lv.280",
           "is_drop": true
         },
@@ -167748,7 +167754,7 @@ window.PRELOADED_GAME_DATA = {
       "is_drop": true,
       "drop_boss": "암흑 망령",
       "drop_level": 280,
-      "drop_location": "",
+      "drop_location": "사막-오른쪽 끝",
       "drop_type": "아이템"
     },
     "대지 수호자 핵": {
@@ -167799,7 +167805,7 @@ window.PRELOADED_GAME_DATA = {
           "boss": "TitonX-4060",
           "level": 380,
           "level_str": "Lv.380",
-          "location": ""
+          "location": "파문항구-위쪽-우사로 옆 계단"
         },
         {
           "name": "그림자의 핵",
@@ -168124,7 +168130,7 @@ window.PRELOADED_GAME_DATA = {
               "boss": "아즈샤라 여왕",
               "level": 360,
               "level_str": "Lv.360",
-              "location": ""
+              "location": "어인해변-위쪽포탈-왼쪽포탈"
             },
             {
               "name": "심빙의 송곳",
@@ -168231,7 +168237,7 @@ window.PRELOADED_GAME_DATA = {
               "boss": "제7마왕 모르페우스",
               "level": 340,
               "level_str": "Lv.340",
-              "location": "전초기지-심연내부-포탈-왼쪽포탈"
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈"
             },
             {
               "name": "자연의 씨앗",
@@ -168325,7 +168331,7 @@ window.PRELOADED_GAME_DATA = {
               "boss": "아즈샤라 여왕",
               "level": 360,
               "level_str": "Lv.360",
-              "location": ""
+              "location": "어인해변-위쪽포탈-왼쪽포탈"
             },
             {
               "name": "암흑 결정",
@@ -168499,7 +168505,7 @@ window.PRELOADED_GAME_DATA = {
               "boss": "TitonX-4060",
               "level": 380,
               "level_str": "Lv.380",
-              "location": ""
+              "location": "파문항구-위쪽-우사로 옆 계단"
             },
             {
               "name": "영혼 문양",
@@ -168567,7 +168573,7 @@ window.PRELOADED_GAME_DATA = {
               "boss": "제5마왕 아노시스",
               "level": 360,
               "level_str": "Lv.360",
-              "location": ""
+              "location": "전초기지-오른쪽 성-위"
             },
             {
               "name": "별의 파편",
@@ -168894,7 +168900,7 @@ window.PRELOADED_GAME_DATA = {
               "boss": "아즈샤라 여왕",
               "level": 360,
               "level_str": "Lv.360",
-              "location": ""
+              "location": "어인해변-위쪽포탈-왼쪽포탈"
             },
             {
               "name": "독무의 결정",
@@ -168902,7 +168908,7 @@ window.PRELOADED_GAME_DATA = {
               "boss": "역병의 근원 마이어스",
               "level": 360,
               "level_str": "Lv.360",
-              "location": ""
+              "location": "암흑도시-왼쪽 밑"
             }
           ]
         },
@@ -169061,7 +169067,7 @@ window.PRELOADED_GAME_DATA = {
               "boss": "TitonX-4060",
               "level": 380,
               "level_str": "Lv.380",
-              "location": ""
+              "location": "파문항구-위쪽-우사로 옆 계단"
             },
             {
               "name": "파멸의 재",
@@ -169085,7 +169091,7 @@ window.PRELOADED_GAME_DATA = {
               "boss": "아즈샤라 여왕",
               "level": 360,
               "level_str": "Lv.360",
-              "location": ""
+              "location": "어인해변-위쪽포탈-왼쪽포탈"
             },
             {
               "name": "영혼 정화의 성목",
@@ -169659,7 +169665,7 @@ window.PRELOADED_GAME_DATA = {
               "boss": "아즈샤라 여왕",
               "level": 360,
               "level_str": "Lv.360",
-              "location": ""
+              "location": "어인해변-위쪽포탈-왼쪽포탈"
             },
             {
               "name": "심빙의 송곳",
@@ -169766,7 +169772,7 @@ window.PRELOADED_GAME_DATA = {
               "boss": "제7마왕 모르페우스",
               "level": 340,
               "level_str": "Lv.340",
-              "location": "전초기지-심연내부-포탈-왼쪽포탈"
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈"
             },
             {
               "name": "자연의 씨앗",
@@ -169860,7 +169866,7 @@ window.PRELOADED_GAME_DATA = {
               "boss": "아즈샤라 여왕",
               "level": 360,
               "level_str": "Lv.360",
-              "location": ""
+              "location": "어인해변-위쪽포탈-왼쪽포탈"
             },
             {
               "name": "암흑 결정",
@@ -170034,7 +170040,7 @@ window.PRELOADED_GAME_DATA = {
               "boss": "TitonX-4060",
               "level": 380,
               "level_str": "Lv.380",
-              "location": ""
+              "location": "파문항구-위쪽-우사로 옆 계단"
             },
             {
               "name": "영혼 문양",
@@ -170102,7 +170108,7 @@ window.PRELOADED_GAME_DATA = {
               "boss": "제5마왕 아노시스",
               "level": 360,
               "level_str": "Lv.360",
-              "location": ""
+              "location": "전초기지-오른쪽 성-위"
             },
             {
               "name": "별의 파편",
@@ -170429,7 +170435,7 @@ window.PRELOADED_GAME_DATA = {
               "boss": "아즈샤라 여왕",
               "level": 360,
               "level_str": "Lv.360",
-              "location": ""
+              "location": "어인해변-위쪽포탈-왼쪽포탈"
             },
             {
               "name": "독무의 결정",
@@ -170437,7 +170443,7 @@ window.PRELOADED_GAME_DATA = {
               "boss": "역병의 근원 마이어스",
               "level": 360,
               "level_str": "Lv.360",
-              "location": ""
+              "location": "암흑도시-왼쪽 밑"
             }
           ]
         },
@@ -170596,7 +170602,7 @@ window.PRELOADED_GAME_DATA = {
               "boss": "TitonX-4060",
               "level": 380,
               "level_str": "Lv.380",
-              "location": ""
+              "location": "파문항구-위쪽-우사로 옆 계단"
             },
             {
               "name": "파멸의 재",
@@ -170620,7 +170626,7 @@ window.PRELOADED_GAME_DATA = {
               "boss": "아즈샤라 여왕",
               "level": 360,
               "level_str": "Lv.360",
-              "location": ""
+              "location": "어인해변-위쪽포탈-왼쪽포탈"
             },
             {
               "name": "영혼 정화의 성목",
@@ -170999,7 +171005,7 @@ window.PRELOADED_GAME_DATA = {
               "boss": "아즈샤라 여왕",
               "level": 360,
               "level_str": "Lv.360",
-              "location": ""
+              "location": "어인해변-위쪽포탈-왼쪽포탈"
             },
             {
               "name": "별의 파편",
@@ -171182,7 +171188,7 @@ window.PRELOADED_GAME_DATA = {
               "boss": "TitonX-4060",
               "level": 380,
               "level_str": "Lv.380",
-              "location": ""
+              "location": "파문항구-위쪽-우사로 옆 계단"
             },
             {
               "name": "그림자의 핵",
@@ -171448,7 +171454,7 @@ window.PRELOADED_GAME_DATA = {
               "boss": "아즈샤라 여왕",
               "level": 360,
               "level_str": "Lv.360",
-              "location": ""
+              "location": "어인해변-위쪽포탈-왼쪽포탈"
             },
             {
               "name": "암흑 결정",
@@ -171674,7 +171680,7 @@ window.PRELOADED_GAME_DATA = {
               "boss": "제5마왕 아노시스",
               "level": 360,
               "level_str": "Lv.360",
-              "location": ""
+              "location": "전초기지-오른쪽 성-위"
             },
             {
               "name": "암흑 결정",
@@ -171734,7 +171740,7 @@ window.PRELOADED_GAME_DATA = {
               "boss": "제7마왕 모르페우스",
               "level": 340,
               "level_str": "Lv.340",
-              "location": "전초기지-심연내부-포탈-왼쪽포탈"
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈"
             },
             {
               "name": "파괴된 원혼의 뼈",
@@ -171881,7 +171887,7 @@ window.PRELOADED_GAME_DATA = {
               "boss": "아즈샤라 여왕",
               "level": 360,
               "level_str": "Lv.360",
-              "location": ""
+              "location": "어인해변-위쪽포탈-왼쪽포탈"
             },
             {
               "name": "독무의 결정",
@@ -171889,7 +171895,7 @@ window.PRELOADED_GAME_DATA = {
               "boss": "역병의 근원 마이어스",
               "level": 360,
               "level_str": "Lv.360",
-              "location": ""
+              "location": "암흑도시-왼쪽 밑"
             }
           ]
         },
@@ -172048,7 +172054,7 @@ window.PRELOADED_GAME_DATA = {
               "boss": "TitonX-4060",
               "level": 380,
               "level_str": "Lv.380",
-              "location": ""
+              "location": "파문항구-위쪽-우사로 옆 계단"
             },
             {
               "name": "파멸의 재",
@@ -172072,7 +172078,7 @@ window.PRELOADED_GAME_DATA = {
               "boss": "아즈샤라 여왕",
               "level": 360,
               "level_str": "Lv.360",
-              "location": ""
+              "location": "어인해변-위쪽포탈-왼쪽포탈"
             },
             {
               "name": "영혼 정화의 성목",
@@ -172428,7 +172434,7 @@ window.PRELOADED_GAME_DATA = {
               "boss": "아즈샤라 여왕",
               "level": 360,
               "level_str": "Lv.360",
-              "location": ""
+              "location": "어인해변-위쪽포탈-왼쪽포탈"
             },
             {
               "name": "별의 파편",
@@ -172611,7 +172617,7 @@ window.PRELOADED_GAME_DATA = {
               "boss": "TitonX-4060",
               "level": 380,
               "level_str": "Lv.380",
-              "location": ""
+              "location": "파문항구-위쪽-우사로 옆 계단"
             },
             {
               "name": "그림자의 핵",
@@ -172877,7 +172883,7 @@ window.PRELOADED_GAME_DATA = {
               "boss": "아즈샤라 여왕",
               "level": 360,
               "level_str": "Lv.360",
-              "location": ""
+              "location": "어인해변-위쪽포탈-왼쪽포탈"
             },
             {
               "name": "암흑 결정",
@@ -173103,7 +173109,7 @@ window.PRELOADED_GAME_DATA = {
               "boss": "제5마왕 아노시스",
               "level": 360,
               "level_str": "Lv.360",
-              "location": ""
+              "location": "전초기지-오른쪽 성-위"
             },
             {
               "name": "암흑 결정",
@@ -173163,7 +173169,7 @@ window.PRELOADED_GAME_DATA = {
               "boss": "제7마왕 모르페우스",
               "level": 340,
               "level_str": "Lv.340",
-              "location": "전초기지-심연내부-포탈-왼쪽포탈"
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈"
             },
             {
               "name": "파괴된 원혼의 뼈",
@@ -173310,7 +173316,7 @@ window.PRELOADED_GAME_DATA = {
               "boss": "아즈샤라 여왕",
               "level": 360,
               "level_str": "Lv.360",
-              "location": ""
+              "location": "어인해변-위쪽포탈-왼쪽포탈"
             },
             {
               "name": "독무의 결정",
@@ -173318,7 +173324,7 @@ window.PRELOADED_GAME_DATA = {
               "boss": "역병의 근원 마이어스",
               "level": 360,
               "level_str": "Lv.360",
-              "location": ""
+              "location": "암흑도시-왼쪽 밑"
             }
           ]
         },
@@ -173477,7 +173483,7 @@ window.PRELOADED_GAME_DATA = {
               "boss": "TitonX-4060",
               "level": 380,
               "level_str": "Lv.380",
-              "location": ""
+              "location": "파문항구-위쪽-우사로 옆 계단"
             },
             {
               "name": "파멸의 재",
@@ -173501,7 +173507,7 @@ window.PRELOADED_GAME_DATA = {
               "boss": "아즈샤라 여왕",
               "level": 360,
               "level_str": "Lv.360",
-              "location": ""
+              "location": "어인해변-위쪽포탈-왼쪽포탈"
             },
             {
               "name": "영혼 정화의 성목",
@@ -173864,7 +173870,7 @@ window.PRELOADED_GAME_DATA = {
               "boss": "아즈샤라 여왕",
               "level": 0,
               "level_str": "",
-              "location": ""
+              "location": "어인해변-위쪽포탈-왼쪽포탈"
             },
             {
               "name": "천수화의 조각",
@@ -173872,7 +173878,7 @@ window.PRELOADED_GAME_DATA = {
               "boss": "아즈샤라 여왕",
               "level": 0,
               "level_str": "",
-              "location": ""
+              "location": "어인해변-위쪽포탈-왼쪽포탈"
             },
             {
               "name": "파천의 뇌석",
@@ -173910,7 +173916,7 @@ window.PRELOADED_GAME_DATA = {
               "boss": "아즈샤라 여왕",
               "level": 0,
               "level_str": "",
-              "location": ""
+              "location": "어인해변-위쪽포탈-왼쪽포탈"
             },
             {
               "name": "영혼 정화의 성목",
@@ -173934,7 +173940,7 @@ window.PRELOADED_GAME_DATA = {
               "boss": "제7마왕 모르페우스",
               "level": 0,
               "level_str": "",
-              "location": "전초기지-심연내부-포탈-왼쪽포탈"
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈"
             },
             {
               "name": "고대 혈정",
@@ -174127,7 +174133,7 @@ window.PRELOADED_GAME_DATA = {
               "boss": "아즈샤라 여왕",
               "level": 360,
               "level_str": "Lv.360",
-              "location": ""
+              "location": "어인해변-위쪽포탈-왼쪽포탈"
             },
             {
               "name": "심빙의 송곳",
@@ -174234,7 +174240,7 @@ window.PRELOADED_GAME_DATA = {
               "boss": "제7마왕 모르페우스",
               "level": 340,
               "level_str": "Lv.340",
-              "location": "전초기지-심연내부-포탈-왼쪽포탈"
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈"
             },
             {
               "name": "자연의 씨앗",
@@ -174328,7 +174334,7 @@ window.PRELOADED_GAME_DATA = {
               "boss": "아즈샤라 여왕",
               "level": 360,
               "level_str": "Lv.360",
-              "location": ""
+              "location": "어인해변-위쪽포탈-왼쪽포탈"
             },
             {
               "name": "암흑 결정",
@@ -174502,7 +174508,7 @@ window.PRELOADED_GAME_DATA = {
               "boss": "TitonX-4060",
               "level": 380,
               "level_str": "Lv.380",
-              "location": ""
+              "location": "파문항구-위쪽-우사로 옆 계단"
             },
             {
               "name": "영혼 문양",
@@ -174570,7 +174576,7 @@ window.PRELOADED_GAME_DATA = {
               "boss": "제5마왕 아노시스",
               "level": 360,
               "level_str": "Lv.360",
-              "location": ""
+              "location": "전초기지-오른쪽 성-위"
             },
             {
               "name": "별의 파편",
@@ -174897,7 +174903,7 @@ window.PRELOADED_GAME_DATA = {
               "boss": "아즈샤라 여왕",
               "level": 360,
               "level_str": "Lv.360",
-              "location": ""
+              "location": "어인해변-위쪽포탈-왼쪽포탈"
             },
             {
               "name": "독무의 결정",
@@ -174905,7 +174911,7 @@ window.PRELOADED_GAME_DATA = {
               "boss": "역병의 근원 마이어스",
               "level": 360,
               "level_str": "Lv.360",
-              "location": ""
+              "location": "암흑도시-왼쪽 밑"
             }
           ]
         },
@@ -175064,7 +175070,7 @@ window.PRELOADED_GAME_DATA = {
               "boss": "TitonX-4060",
               "level": 380,
               "level_str": "Lv.380",
-              "location": ""
+              "location": "파문항구-위쪽-우사로 옆 계단"
             },
             {
               "name": "파멸의 재",
@@ -175088,7 +175094,7 @@ window.PRELOADED_GAME_DATA = {
               "boss": "아즈샤라 여왕",
               "level": 360,
               "level_str": "Lv.360",
-              "location": ""
+              "location": "어인해변-위쪽포탈-왼쪽포탈"
             },
             {
               "name": "영혼 정화의 성목",
@@ -175428,7 +175434,7 @@ window.PRELOADED_GAME_DATA = {
               "boss": "아즈샤라 여왕",
               "level": 0,
               "level_str": "",
-              "location": ""
+              "location": "어인해변-위쪽포탈-왼쪽포탈"
             },
             {
               "name": "천수화의 조각",
@@ -175436,7 +175442,7 @@ window.PRELOADED_GAME_DATA = {
               "boss": "아즈샤라 여왕",
               "level": 0,
               "level_str": "",
-              "location": ""
+              "location": "어인해변-위쪽포탈-왼쪽포탈"
             },
             {
               "name": "파천의 뇌석",
@@ -175474,7 +175480,7 @@ window.PRELOADED_GAME_DATA = {
               "boss": "아즈샤라 여왕",
               "level": 0,
               "level_str": "",
-              "location": ""
+              "location": "어인해변-위쪽포탈-왼쪽포탈"
             },
             {
               "name": "영혼 정화의 성목",
@@ -175498,7 +175504,7 @@ window.PRELOADED_GAME_DATA = {
               "boss": "제7마왕 모르페우스",
               "level": 0,
               "level_str": "",
-              "location": "전초기지-심연내부-포탈-왼쪽포탈"
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈"
             },
             {
               "name": "고대 혈정",
@@ -175691,7 +175697,7 @@ window.PRELOADED_GAME_DATA = {
               "boss": "아즈샤라 여왕",
               "level": 360,
               "level_str": "Lv.360",
-              "location": ""
+              "location": "어인해변-위쪽포탈-왼쪽포탈"
             },
             {
               "name": "심빙의 송곳",
@@ -175798,7 +175804,7 @@ window.PRELOADED_GAME_DATA = {
               "boss": "제7마왕 모르페우스",
               "level": 340,
               "level_str": "Lv.340",
-              "location": "전초기지-심연내부-포탈-왼쪽포탈"
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈"
             },
             {
               "name": "자연의 씨앗",
@@ -175892,7 +175898,7 @@ window.PRELOADED_GAME_DATA = {
               "boss": "아즈샤라 여왕",
               "level": 360,
               "level_str": "Lv.360",
-              "location": ""
+              "location": "어인해변-위쪽포탈-왼쪽포탈"
             },
             {
               "name": "암흑 결정",
@@ -176066,7 +176072,7 @@ window.PRELOADED_GAME_DATA = {
               "boss": "TitonX-4060",
               "level": 380,
               "level_str": "Lv.380",
-              "location": ""
+              "location": "파문항구-위쪽-우사로 옆 계단"
             },
             {
               "name": "영혼 문양",
@@ -176134,7 +176140,7 @@ window.PRELOADED_GAME_DATA = {
               "boss": "제5마왕 아노시스",
               "level": 360,
               "level_str": "Lv.360",
-              "location": ""
+              "location": "전초기지-오른쪽 성-위"
             },
             {
               "name": "별의 파편",
@@ -176461,7 +176467,7 @@ window.PRELOADED_GAME_DATA = {
               "boss": "아즈샤라 여왕",
               "level": 360,
               "level_str": "Lv.360",
-              "location": ""
+              "location": "어인해변-위쪽포탈-왼쪽포탈"
             },
             {
               "name": "독무의 결정",
@@ -176469,7 +176475,7 @@ window.PRELOADED_GAME_DATA = {
               "boss": "역병의 근원 마이어스",
               "level": 360,
               "level_str": "Lv.360",
-              "location": ""
+              "location": "암흑도시-왼쪽 밑"
             }
           ]
         },
@@ -176628,7 +176634,7 @@ window.PRELOADED_GAME_DATA = {
               "boss": "TitonX-4060",
               "level": 380,
               "level_str": "Lv.380",
-              "location": ""
+              "location": "파문항구-위쪽-우사로 옆 계단"
             },
             {
               "name": "파멸의 재",
@@ -176652,7 +176658,7 @@ window.PRELOADED_GAME_DATA = {
               "boss": "아즈샤라 여왕",
               "level": 360,
               "level_str": "Lv.360",
-              "location": ""
+              "location": "어인해변-위쪽포탈-왼쪽포탈"
             },
             {
               "name": "영혼 정화의 성목",
@@ -177023,7 +177029,7 @@ window.PRELOADED_GAME_DATA = {
               "boss": "아즈샤라 여왕",
               "level": 360,
               "level_str": "Lv.360",
-              "location": ""
+              "location": "어인해변-위쪽포탈-왼쪽포탈"
             },
             {
               "name": "타락한 마나핵",
@@ -177031,7 +177037,7 @@ window.PRELOADED_GAME_DATA = {
               "boss": "역병의 근원 마이어스",
               "level": 360,
               "level_str": "Lv.360",
-              "location": ""
+              "location": "암흑도시-왼쪽 밑"
             }
           ]
         },
@@ -177061,7 +177067,7 @@ window.PRELOADED_GAME_DATA = {
               "boss": "아즈샤라 여왕",
               "level": 360,
               "level_str": "Lv.360",
-              "location": ""
+              "location": "어인해변-위쪽포탈-왼쪽포탈"
             },
             {
               "name": "파천의 뇌석",
@@ -177251,7 +177257,7 @@ window.PRELOADED_GAME_DATA = {
               "boss": "TitonX-4060",
               "level": 380,
               "level_str": "Lv.380",
-              "location": ""
+              "location": "파문항구-위쪽-우사로 옆 계단"
             },
             {
               "name": "영혼 정수",
@@ -177275,7 +177281,7 @@ window.PRELOADED_GAME_DATA = {
               "boss": "제5마왕 아노시스",
               "level": 360,
               "level_str": "Lv.360",
-              "location": ""
+              "location": "전초기지-오른쪽 성-위"
             },
             {
               "name": "영혼 포식의 피",
@@ -177283,7 +177289,7 @@ window.PRELOADED_GAME_DATA = {
               "boss": "제7마왕 모르페우스",
               "level": 340,
               "level_str": "Lv.340",
-              "location": "전초기지-심연내부-포탈-왼쪽포탈"
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈"
             }
           ]
         },
@@ -177319,7 +177325,7 @@ window.PRELOADED_GAME_DATA = {
               "boss": "제5마왕 아노시스",
               "level": 360,
               "level_str": "Lv.360",
-              "location": ""
+              "location": "전초기지-오른쪽 성-위"
             },
             {
               "name": "뒤틀린 결정",
@@ -177327,7 +177333,7 @@ window.PRELOADED_GAME_DATA = {
               "boss": "제7마왕 모르페우스",
               "level": 340,
               "level_str": "Lv.340",
-              "location": "전초기지-심연내부-포탈-왼쪽포탈"
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈"
             },
             {
               "name": "회오리의 핵",
@@ -177351,7 +177357,7 @@ window.PRELOADED_GAME_DATA = {
               "boss": "암흑 망령",
               "level": 280,
               "level_str": "Lv.280",
-              "location": ""
+              "location": "사막-오른쪽 끝"
             }
           ]
         },
@@ -177619,7 +177625,7 @@ window.PRELOADED_GAME_DATA = {
               "boss": "TitonX-4060",
               "level": 380,
               "level_str": "Lv.380",
-              "location": ""
+              "location": "파문항구-위쪽-우사로 옆 계단"
             },
             {
               "name": "신비한 혈호박",
@@ -177643,7 +177649,7 @@ window.PRELOADED_GAME_DATA = {
               "boss": "역병의 근원 마이어스",
               "level": 360,
               "level_str": "Lv.360",
-              "location": ""
+              "location": "암흑도시-왼쪽 밑"
             },
             {
               "name": "그림자 결정",
@@ -177695,7 +177701,7 @@ window.PRELOADED_GAME_DATA = {
               "boss": "제7마왕 모르페우스",
               "level": 340,
               "level_str": "Lv.340",
-              "location": "전초기지-심연내부-포탈-왼쪽포탈"
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈"
             },
             {
               "name": "파괴된 원혼의 뼈",
@@ -177747,7 +177753,7 @@ window.PRELOADED_GAME_DATA = {
               "boss": "제7마왕 모르페우스",
               "level": 340,
               "level_str": "Lv.340",
-              "location": "전초기지-심연내부-포탈-왼쪽포탈"
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈"
             },
             {
               "name": "파괴된 원혼의 뼈",
@@ -177859,7 +177865,7 @@ window.PRELOADED_GAME_DATA = {
               "boss": "역병의 근원 마이어스",
               "level": 360,
               "level_str": "Lv.360",
-              "location": ""
+              "location": "암흑도시-왼쪽 밑"
             },
             {
               "name": "영혼 포식의 피",
@@ -177867,7 +177873,7 @@ window.PRELOADED_GAME_DATA = {
               "boss": "제7마왕 모르페우스",
               "level": 340,
               "level_str": "Lv.340",
-              "location": "전초기지-심연내부-포탈-왼쪽포탈"
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈"
             },
             {
               "name": "자비의 성광 조각",
@@ -177927,7 +177933,7 @@ window.PRELOADED_GAME_DATA = {
               "boss": "제7마왕 모르페우스",
               "level": 340,
               "level_str": "Lv.340",
-              "location": "전초기지-심연내부-포탈-왼쪽포탈"
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈"
             },
             {
               "name": "회오리의 핵",
@@ -178099,7 +178105,7 @@ window.PRELOADED_GAME_DATA = {
               "boss": "제5마왕 아노시스",
               "level": 360,
               "level_str": "Lv.360",
-              "location": ""
+              "location": "전초기지-오른쪽 성-위"
             },
             {
               "name": "암흑 결정",
@@ -178159,7 +178165,7 @@ window.PRELOADED_GAME_DATA = {
               "boss": "제7마왕 모르페우스",
               "level": 340,
               "level_str": "Lv.340",
-              "location": "전초기지-심연내부-포탈-왼쪽포탈"
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈"
             },
             {
               "name": "파괴된 원혼의 뼈",
@@ -178303,7 +178309,7 @@ window.PRELOADED_GAME_DATA = {
               "boss": "제5마왕 아노시스",
               "level": 360,
               "level_str": "Lv.360",
-              "location": ""
+              "location": "전초기지-오른쪽 성-위"
             },
             {
               "name": "타락한 마나핵",
@@ -178311,7 +178317,7 @@ window.PRELOADED_GAME_DATA = {
               "boss": "역병의 근원 마이어스",
               "level": 360,
               "level_str": "Lv.360",
-              "location": ""
+              "location": "암흑도시-왼쪽 밑"
             }
           ]
         },
@@ -178339,7 +178345,7 @@ window.PRELOADED_GAME_DATA = {
               "boss": "아즈샤라 여왕",
               "level": 360,
               "level_str": "Lv.360",
-              "location": ""
+              "location": "어인해변-위쪽포탈-왼쪽포탈"
             },
             {
               "name": "타락한 마나핵",
@@ -178347,7 +178353,7 @@ window.PRELOADED_GAME_DATA = {
               "boss": "역병의 근원 마이어스",
               "level": 360,
               "level_str": "Lv.360",
-              "location": ""
+              "location": "암흑도시-왼쪽 밑"
             },
             {
               "name": "멸세의 화염깃",
@@ -178587,7 +178593,7 @@ window.PRELOADED_GAME_DATA = {
               "boss": "제5마왕 아노시스",
               "level": 360,
               "level_str": "Lv.360",
-              "location": ""
+              "location": "전초기지-오른쪽 성-위"
             },
             {
               "name": "영혼 정화의 성목",
@@ -178647,7 +178653,7 @@ window.PRELOADED_GAME_DATA = {
               "boss": "제7마왕 모르페우스",
               "level": 340,
               "level_str": "Lv.340",
-              "location": "전초기지-심연내부-포탈-왼쪽포탈"
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈"
             },
             {
               "name": "명계의 녹",
@@ -178683,7 +178689,7 @@ window.PRELOADED_GAME_DATA = {
               "boss": "제7마왕 모르페우스",
               "level": 340,
               "level_str": "Lv.340",
-              "location": "전초기지-심연내부-포탈-왼쪽포탈"
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈"
             },
             {
               "name": "자비의 성광 조각",
@@ -178831,7 +178837,7 @@ window.PRELOADED_GAME_DATA = {
               "boss": "아즈샤라 여왕",
               "level": 360,
               "level_str": "Lv.360",
-              "location": ""
+              "location": "어인해변-위쪽포탈-왼쪽포탈"
             },
             {
               "name": "타락한 마나핵",
@@ -178839,7 +178845,7 @@ window.PRELOADED_GAME_DATA = {
               "boss": "역병의 근원 마이어스",
               "level": 360,
               "level_str": "Lv.360",
-              "location": ""
+              "location": "암흑도시-왼쪽 밑"
             }
           ]
         },
@@ -178869,7 +178875,7 @@ window.PRELOADED_GAME_DATA = {
               "boss": "아즈샤라 여왕",
               "level": 360,
               "level_str": "Lv.360",
-              "location": ""
+              "location": "어인해변-위쪽포탈-왼쪽포탈"
             },
             {
               "name": "파천의 뇌석",
@@ -179059,7 +179065,7 @@ window.PRELOADED_GAME_DATA = {
               "boss": "TitonX-4060",
               "level": 380,
               "level_str": "Lv.380",
-              "location": ""
+              "location": "파문항구-위쪽-우사로 옆 계단"
             },
             {
               "name": "영혼 정수",
@@ -179083,7 +179089,7 @@ window.PRELOADED_GAME_DATA = {
               "boss": "제5마왕 아노시스",
               "level": 360,
               "level_str": "Lv.360",
-              "location": ""
+              "location": "전초기지-오른쪽 성-위"
             },
             {
               "name": "영혼 포식의 피",
@@ -179091,7 +179097,7 @@ window.PRELOADED_GAME_DATA = {
               "boss": "제7마왕 모르페우스",
               "level": 340,
               "level_str": "Lv.340",
-              "location": "전초기지-심연내부-포탈-왼쪽포탈"
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈"
             }
           ]
         },
@@ -179127,7 +179133,7 @@ window.PRELOADED_GAME_DATA = {
               "boss": "제5마왕 아노시스",
               "level": 360,
               "level_str": "Lv.360",
-              "location": ""
+              "location": "전초기지-오른쪽 성-위"
             },
             {
               "name": "뒤틀린 결정",
@@ -179135,7 +179141,7 @@ window.PRELOADED_GAME_DATA = {
               "boss": "제7마왕 모르페우스",
               "level": 340,
               "level_str": "Lv.340",
-              "location": "전초기지-심연내부-포탈-왼쪽포탈"
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈"
             },
             {
               "name": "회오리의 핵",
@@ -179159,7 +179165,7 @@ window.PRELOADED_GAME_DATA = {
               "boss": "암흑 망령",
               "level": 280,
               "level_str": "Lv.280",
-              "location": ""
+              "location": "사막-오른쪽 끝"
             }
           ]
         },
@@ -179427,7 +179433,7 @@ window.PRELOADED_GAME_DATA = {
               "boss": "TitonX-4060",
               "level": 380,
               "level_str": "Lv.380",
-              "location": ""
+              "location": "파문항구-위쪽-우사로 옆 계단"
             },
             {
               "name": "신비한 혈호박",
@@ -179451,7 +179457,7 @@ window.PRELOADED_GAME_DATA = {
               "boss": "역병의 근원 마이어스",
               "level": 360,
               "level_str": "Lv.360",
-              "location": ""
+              "location": "암흑도시-왼쪽 밑"
             },
             {
               "name": "그림자 결정",
@@ -179503,7 +179509,7 @@ window.PRELOADED_GAME_DATA = {
               "boss": "제7마왕 모르페우스",
               "level": 340,
               "level_str": "Lv.340",
-              "location": "전초기지-심연내부-포탈-왼쪽포탈"
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈"
             },
             {
               "name": "파괴된 원혼의 뼈",
@@ -179555,7 +179561,7 @@ window.PRELOADED_GAME_DATA = {
               "boss": "제7마왕 모르페우스",
               "level": 340,
               "level_str": "Lv.340",
-              "location": "전초기지-심연내부-포탈-왼쪽포탈"
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈"
             },
             {
               "name": "파괴된 원혼의 뼈",
@@ -179667,7 +179673,7 @@ window.PRELOADED_GAME_DATA = {
               "boss": "역병의 근원 마이어스",
               "level": 360,
               "level_str": "Lv.360",
-              "location": ""
+              "location": "암흑도시-왼쪽 밑"
             },
             {
               "name": "영혼 포식의 피",
@@ -179675,7 +179681,7 @@ window.PRELOADED_GAME_DATA = {
               "boss": "제7마왕 모르페우스",
               "level": 340,
               "level_str": "Lv.340",
-              "location": "전초기지-심연내부-포탈-왼쪽포탈"
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈"
             },
             {
               "name": "자비의 성광 조각",
@@ -179735,7 +179741,7 @@ window.PRELOADED_GAME_DATA = {
               "boss": "제7마왕 모르페우스",
               "level": 340,
               "level_str": "Lv.340",
-              "location": "전초기지-심연내부-포탈-왼쪽포탈"
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈"
             },
             {
               "name": "회오리의 핵",
@@ -179907,7 +179913,7 @@ window.PRELOADED_GAME_DATA = {
               "boss": "제5마왕 아노시스",
               "level": 360,
               "level_str": "Lv.360",
-              "location": ""
+              "location": "전초기지-오른쪽 성-위"
             },
             {
               "name": "암흑 결정",
@@ -179967,7 +179973,7 @@ window.PRELOADED_GAME_DATA = {
               "boss": "제7마왕 모르페우스",
               "level": 340,
               "level_str": "Lv.340",
-              "location": "전초기지-심연내부-포탈-왼쪽포탈"
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈"
             },
             {
               "name": "파괴된 원혼의 뼈",
@@ -180111,7 +180117,7 @@ window.PRELOADED_GAME_DATA = {
               "boss": "제5마왕 아노시스",
               "level": 360,
               "level_str": "Lv.360",
-              "location": ""
+              "location": "전초기지-오른쪽 성-위"
             },
             {
               "name": "타락한 마나핵",
@@ -180119,7 +180125,7 @@ window.PRELOADED_GAME_DATA = {
               "boss": "역병의 근원 마이어스",
               "level": 360,
               "level_str": "Lv.360",
-              "location": ""
+              "location": "암흑도시-왼쪽 밑"
             }
           ]
         },
@@ -180147,7 +180153,7 @@ window.PRELOADED_GAME_DATA = {
               "boss": "아즈샤라 여왕",
               "level": 360,
               "level_str": "Lv.360",
-              "location": ""
+              "location": "어인해변-위쪽포탈-왼쪽포탈"
             },
             {
               "name": "타락한 마나핵",
@@ -180155,7 +180161,7 @@ window.PRELOADED_GAME_DATA = {
               "boss": "역병의 근원 마이어스",
               "level": 360,
               "level_str": "Lv.360",
-              "location": ""
+              "location": "암흑도시-왼쪽 밑"
             },
             {
               "name": "멸세의 화염깃",
@@ -180395,7 +180401,7 @@ window.PRELOADED_GAME_DATA = {
               "boss": "제5마왕 아노시스",
               "level": 360,
               "level_str": "Lv.360",
-              "location": ""
+              "location": "전초기지-오른쪽 성-위"
             },
             {
               "name": "영혼 정화의 성목",
@@ -180455,7 +180461,7 @@ window.PRELOADED_GAME_DATA = {
               "boss": "제7마왕 모르페우스",
               "level": 340,
               "level_str": "Lv.340",
-              "location": "전초기지-심연내부-포탈-왼쪽포탈"
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈"
             },
             {
               "name": "명계의 녹",
@@ -180491,7 +180497,7 @@ window.PRELOADED_GAME_DATA = {
               "boss": "제7마왕 모르페우스",
               "level": 340,
               "level_str": "Lv.340",
-              "location": "전초기지-심연내부-포탈-왼쪽포탈"
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈"
             },
             {
               "name": "자비의 성광 조각",
@@ -180700,7 +180706,7 @@ window.PRELOADED_GAME_DATA = {
               "boss": "아즈샤라 여왕",
               "level": 360,
               "level_str": "Lv.360",
-              "location": ""
+              "location": "어인해변-위쪽포탈-왼쪽포탈"
             },
             {
               "name": "영구동토의 핵",
@@ -180770,7 +180776,7 @@ window.PRELOADED_GAME_DATA = {
               "boss": "제7마왕 모르페우스",
               "level": 340,
               "level_str": "Lv.340",
-              "location": "전초기지-심연내부-포탈-왼쪽포탈"
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈"
             },
             {
               "name": "성스러운 결정",
@@ -180898,7 +180904,7 @@ window.PRELOADED_GAME_DATA = {
               "boss": "TitonX-4060",
               "level": 380,
               "level_str": "Lv.380",
-              "location": ""
+              "location": "파문항구-위쪽-우사로 옆 계단"
             },
             {
               "name": "영혼 문양",
@@ -180922,7 +180928,7 @@ window.PRELOADED_GAME_DATA = {
               "boss": "제5마왕 아노시스",
               "level": 360,
               "level_str": "Lv.360",
-              "location": ""
+              "location": "전초기지-오른쪽 성-위"
             },
             {
               "name": "그림자 결정",
@@ -180958,7 +180964,7 @@ window.PRELOADED_GAME_DATA = {
               "boss": "제5마왕 아노시스",
               "level": 360,
               "level_str": "Lv.360",
-              "location": ""
+              "location": "전초기지-오른쪽 성-위"
             },
             {
               "name": "죽음의 그림자",
@@ -180990,7 +180996,7 @@ window.PRELOADED_GAME_DATA = {
               "boss": "제7마왕 모르페우스",
               "level": 340,
               "level_str": "Lv.340",
-              "location": "전초기지-심연내부-포탈-왼쪽포탈"
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈"
             },
             {
               "name": "망자의 육신",
@@ -181034,7 +181040,7 @@ window.PRELOADED_GAME_DATA = {
               "boss": "TitonX-4060",
               "level": 380,
               "level_str": "Lv.380",
-              "location": ""
+              "location": "파문항구-위쪽-우사로 옆 계단"
             },
             {
               "name": "신비한 혈호박",
@@ -181058,7 +181064,7 @@ window.PRELOADED_GAME_DATA = {
               "boss": "역병의 근원 마이어스",
               "level": 360,
               "level_str": "Lv.360",
-              "location": ""
+              "location": "암흑도시-왼쪽 밑"
             },
             {
               "name": "그림자 결정",
@@ -181110,7 +181116,7 @@ window.PRELOADED_GAME_DATA = {
               "boss": "제7마왕 모르페우스",
               "level": 340,
               "level_str": "Lv.340",
-              "location": "전초기지-심연내부-포탈-왼쪽포탈"
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈"
             },
             {
               "name": "파괴된 원혼의 뼈",
@@ -181162,7 +181168,7 @@ window.PRELOADED_GAME_DATA = {
               "boss": "제7마왕 모르페우스",
               "level": 340,
               "level_str": "Lv.340",
-              "location": "전초기지-심연내부-포탈-왼쪽포탈"
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈"
             },
             {
               "name": "파괴된 원혼의 뼈",
@@ -181274,7 +181280,7 @@ window.PRELOADED_GAME_DATA = {
               "boss": "역병의 근원 마이어스",
               "level": 360,
               "level_str": "Lv.360",
-              "location": ""
+              "location": "암흑도시-왼쪽 밑"
             },
             {
               "name": "영혼 포식의 피",
@@ -181282,7 +181288,7 @@ window.PRELOADED_GAME_DATA = {
               "boss": "제7마왕 모르페우스",
               "level": 340,
               "level_str": "Lv.340",
-              "location": "전초기지-심연내부-포탈-왼쪽포탈"
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈"
             },
             {
               "name": "자비의 성광 조각",
@@ -181342,7 +181348,7 @@ window.PRELOADED_GAME_DATA = {
               "boss": "제7마왕 모르페우스",
               "level": 340,
               "level_str": "Lv.340",
-              "location": "전초기지-심연내부-포탈-왼쪽포탈"
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈"
             },
             {
               "name": "회오리의 핵",
@@ -181454,7 +181460,7 @@ window.PRELOADED_GAME_DATA = {
               "boss": "TitonX-4060",
               "level": 380,
               "level_str": "Lv.380",
-              "location": ""
+              "location": "파문항구-위쪽-우사로 옆 계단"
             },
             {
               "name": "영혼 문양",
@@ -181522,7 +181528,7 @@ window.PRELOADED_GAME_DATA = {
               "boss": "제5마왕 아노시스",
               "level": 360,
               "level_str": "Lv.360",
-              "location": ""
+              "location": "전초기지-오른쪽 성-위"
             },
             {
               "name": "별의 파편",
@@ -181882,7 +181888,7 @@ window.PRELOADED_GAME_DATA = {
               "boss": "역병의 근원 마이어스",
               "level": 360,
               "level_str": "Lv.360",
-              "location": ""
+              "location": "암흑도시-왼쪽 밑"
             },
             {
               "name": "죽음의 정수",
@@ -181898,7 +181904,7 @@ window.PRELOADED_GAME_DATA = {
               "boss": "제7마왕 모르페우스",
               "level": 340,
               "level_str": "Lv.340",
-              "location": "전초기지-심연내부-포탈-왼쪽포탈"
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈"
             },
             {
               "name": "생명의 싹",
@@ -182080,7 +182086,7 @@ window.PRELOADED_GAME_DATA = {
               "boss": "TitonX-4060",
               "level": 380,
               "level_str": "Lv.380",
-              "location": ""
+              "location": "파문항구-위쪽-우사로 옆 계단"
             },
             {
               "name": "영혼 문양",
@@ -182158,7 +182164,7 @@ window.PRELOADED_GAME_DATA = {
               "boss": "역병의 근원 마이어스",
               "level": 360,
               "level_str": "Lv.360",
-              "location": ""
+              "location": "암흑도시-왼쪽 밑"
             },
             {
               "name": "정화의 모래",
@@ -182212,7 +182218,7 @@ window.PRELOADED_GAME_DATA = {
               "boss": "제7마왕 모르페우스",
               "level": 340,
               "level_str": "Lv.340",
-              "location": "전초기지-심연내부-포탈-왼쪽포탈"
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈"
             },
             {
               "name": "암흑 악몽의 타액",
@@ -182338,7 +182344,7 @@ window.PRELOADED_GAME_DATA = {
               "boss": "아즈샤라 여왕",
               "level": 360,
               "level_str": "Lv.360",
-              "location": ""
+              "location": "어인해변-위쪽포탈-왼쪽포탈"
             },
             {
               "name": "영구동토의 핵",
@@ -182408,7 +182414,7 @@ window.PRELOADED_GAME_DATA = {
               "boss": "제7마왕 모르페우스",
               "level": 340,
               "level_str": "Lv.340",
-              "location": "전초기지-심연내부-포탈-왼쪽포탈"
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈"
             },
             {
               "name": "성스러운 결정",
@@ -182536,7 +182542,7 @@ window.PRELOADED_GAME_DATA = {
               "boss": "TitonX-4060",
               "level": 380,
               "level_str": "Lv.380",
-              "location": ""
+              "location": "파문항구-위쪽-우사로 옆 계단"
             },
             {
               "name": "영혼 문양",
@@ -182560,7 +182566,7 @@ window.PRELOADED_GAME_DATA = {
               "boss": "제5마왕 아노시스",
               "level": 360,
               "level_str": "Lv.360",
-              "location": ""
+              "location": "전초기지-오른쪽 성-위"
             },
             {
               "name": "그림자 결정",
@@ -182596,7 +182602,7 @@ window.PRELOADED_GAME_DATA = {
               "boss": "제5마왕 아노시스",
               "level": 360,
               "level_str": "Lv.360",
-              "location": ""
+              "location": "전초기지-오른쪽 성-위"
             },
             {
               "name": "죽음의 그림자",
@@ -182628,7 +182634,7 @@ window.PRELOADED_GAME_DATA = {
               "boss": "제7마왕 모르페우스",
               "level": 340,
               "level_str": "Lv.340",
-              "location": "전초기지-심연내부-포탈-왼쪽포탈"
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈"
             },
             {
               "name": "망자의 육신",
@@ -182672,7 +182678,7 @@ window.PRELOADED_GAME_DATA = {
               "boss": "TitonX-4060",
               "level": 380,
               "level_str": "Lv.380",
-              "location": ""
+              "location": "파문항구-위쪽-우사로 옆 계단"
             },
             {
               "name": "신비한 혈호박",
@@ -182696,7 +182702,7 @@ window.PRELOADED_GAME_DATA = {
               "boss": "역병의 근원 마이어스",
               "level": 360,
               "level_str": "Lv.360",
-              "location": ""
+              "location": "암흑도시-왼쪽 밑"
             },
             {
               "name": "그림자 결정",
@@ -182748,7 +182754,7 @@ window.PRELOADED_GAME_DATA = {
               "boss": "제7마왕 모르페우스",
               "level": 340,
               "level_str": "Lv.340",
-              "location": "전초기지-심연내부-포탈-왼쪽포탈"
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈"
             },
             {
               "name": "파괴된 원혼의 뼈",
@@ -182800,7 +182806,7 @@ window.PRELOADED_GAME_DATA = {
               "boss": "제7마왕 모르페우스",
               "level": 340,
               "level_str": "Lv.340",
-              "location": "전초기지-심연내부-포탈-왼쪽포탈"
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈"
             },
             {
               "name": "파괴된 원혼의 뼈",
@@ -182912,7 +182918,7 @@ window.PRELOADED_GAME_DATA = {
               "boss": "역병의 근원 마이어스",
               "level": 360,
               "level_str": "Lv.360",
-              "location": ""
+              "location": "암흑도시-왼쪽 밑"
             },
             {
               "name": "영혼 포식의 피",
@@ -182920,7 +182926,7 @@ window.PRELOADED_GAME_DATA = {
               "boss": "제7마왕 모르페우스",
               "level": 340,
               "level_str": "Lv.340",
-              "location": "전초기지-심연내부-포탈-왼쪽포탈"
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈"
             },
             {
               "name": "자비의 성광 조각",
@@ -182980,7 +182986,7 @@ window.PRELOADED_GAME_DATA = {
               "boss": "제7마왕 모르페우스",
               "level": 340,
               "level_str": "Lv.340",
-              "location": "전초기지-심연내부-포탈-왼쪽포탈"
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈"
             },
             {
               "name": "회오리의 핵",
@@ -183092,7 +183098,7 @@ window.PRELOADED_GAME_DATA = {
               "boss": "TitonX-4060",
               "level": 380,
               "level_str": "Lv.380",
-              "location": ""
+              "location": "파문항구-위쪽-우사로 옆 계단"
             },
             {
               "name": "영혼 문양",
@@ -183160,7 +183166,7 @@ window.PRELOADED_GAME_DATA = {
               "boss": "제5마왕 아노시스",
               "level": 360,
               "level_str": "Lv.360",
-              "location": ""
+              "location": "전초기지-오른쪽 성-위"
             },
             {
               "name": "별의 파편",
@@ -183520,7 +183526,7 @@ window.PRELOADED_GAME_DATA = {
               "boss": "역병의 근원 마이어스",
               "level": 360,
               "level_str": "Lv.360",
-              "location": ""
+              "location": "암흑도시-왼쪽 밑"
             },
             {
               "name": "죽음의 정수",
@@ -183536,7 +183542,7 @@ window.PRELOADED_GAME_DATA = {
               "boss": "제7마왕 모르페우스",
               "level": 340,
               "level_str": "Lv.340",
-              "location": "전초기지-심연내부-포탈-왼쪽포탈"
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈"
             },
             {
               "name": "생명의 싹",
@@ -183718,7 +183724,7 @@ window.PRELOADED_GAME_DATA = {
               "boss": "TitonX-4060",
               "level": 380,
               "level_str": "Lv.380",
-              "location": ""
+              "location": "파문항구-위쪽-우사로 옆 계단"
             },
             {
               "name": "영혼 문양",
@@ -183796,7 +183802,7 @@ window.PRELOADED_GAME_DATA = {
               "boss": "역병의 근원 마이어스",
               "level": 360,
               "level_str": "Lv.360",
-              "location": ""
+              "location": "암흑도시-왼쪽 밑"
             },
             {
               "name": "정화의 모래",
@@ -183850,7 +183856,7 @@ window.PRELOADED_GAME_DATA = {
               "boss": "제7마왕 모르페우스",
               "level": 340,
               "level_str": "Lv.340",
-              "location": "전초기지-심연내부-포탈-왼쪽포탈"
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈"
             },
             {
               "name": "암흑 악몽의 타액",
@@ -183954,7 +183960,7 @@ window.PRELOADED_GAME_DATA = {
               "boss": "제5마왕 아노시스",
               "level": 360,
               "level_str": "Lv.360",
-              "location": ""
+              "location": "전초기지-오른쪽 성-위"
             },
             {
               "name": "암흑 결정",
@@ -183970,7 +183976,7 @@ window.PRELOADED_GAME_DATA = {
               "boss": "아즈샤라 여왕",
               "level": 360,
               "level_str": "Lv.360",
-              "location": ""
+              "location": "어인해변-위쪽포탈-왼쪽포탈"
             }
           ]
         },
@@ -184010,7 +184016,7 @@ window.PRELOADED_GAME_DATA = {
               "boss": "역병의 근원 마이어스",
               "level": 360,
               "level_str": "Lv.360",
-              "location": ""
+              "location": "암흑도시-왼쪽 밑"
             },
             {
               "name": "용숨결 호박",
@@ -184140,7 +184146,7 @@ window.PRELOADED_GAME_DATA = {
               "boss": "TitonX-4060",
               "level": 380,
               "level_str": "Lv.380",
-              "location": ""
+              "location": "파문항구-위쪽-우사로 옆 계단"
             },
             {
               "name": "영혼 정수",
@@ -184164,7 +184170,7 @@ window.PRELOADED_GAME_DATA = {
               "boss": "제5마왕 아노시스",
               "level": 360,
               "level_str": "Lv.360",
-              "location": ""
+              "location": "전초기지-오른쪽 성-위"
             },
             {
               "name": "영혼 포식의 피",
@@ -184172,7 +184178,7 @@ window.PRELOADED_GAME_DATA = {
               "boss": "제7마왕 모르페우스",
               "level": 340,
               "level_str": "Lv.340",
-              "location": "전초기지-심연내부-포탈-왼쪽포탈"
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈"
             }
           ]
         },
@@ -184208,7 +184214,7 @@ window.PRELOADED_GAME_DATA = {
               "boss": "제5마왕 아노시스",
               "level": 360,
               "level_str": "Lv.360",
-              "location": ""
+              "location": "전초기지-오른쪽 성-위"
             },
             {
               "name": "뒤틀린 결정",
@@ -184216,7 +184222,7 @@ window.PRELOADED_GAME_DATA = {
               "boss": "제7마왕 모르페우스",
               "level": 340,
               "level_str": "Lv.340",
-              "location": "전초기지-심연내부-포탈-왼쪽포탈"
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈"
             },
             {
               "name": "회오리의 핵",
@@ -184240,7 +184246,7 @@ window.PRELOADED_GAME_DATA = {
               "boss": "암흑 망령",
               "level": 280,
               "level_str": "Lv.280",
-              "location": ""
+              "location": "사막-오른쪽 끝"
             }
           ]
         },
@@ -184508,7 +184514,7 @@ window.PRELOADED_GAME_DATA = {
               "boss": "TitonX-4060",
               "level": 380,
               "level_str": "Lv.380",
-              "location": ""
+              "location": "파문항구-위쪽-우사로 옆 계단"
             },
             {
               "name": "신비한 혈호박",
@@ -184532,7 +184538,7 @@ window.PRELOADED_GAME_DATA = {
               "boss": "역병의 근원 마이어스",
               "level": 360,
               "level_str": "Lv.360",
-              "location": ""
+              "location": "암흑도시-왼쪽 밑"
             },
             {
               "name": "그림자 결정",
@@ -184584,7 +184590,7 @@ window.PRELOADED_GAME_DATA = {
               "boss": "제7마왕 모르페우스",
               "level": 340,
               "level_str": "Lv.340",
-              "location": "전초기지-심연내부-포탈-왼쪽포탈"
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈"
             },
             {
               "name": "파괴된 원혼의 뼈",
@@ -184636,7 +184642,7 @@ window.PRELOADED_GAME_DATA = {
               "boss": "제7마왕 모르페우스",
               "level": 340,
               "level_str": "Lv.340",
-              "location": "전초기지-심연내부-포탈-왼쪽포탈"
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈"
             },
             {
               "name": "파괴된 원혼의 뼈",
@@ -184748,7 +184754,7 @@ window.PRELOADED_GAME_DATA = {
               "boss": "역병의 근원 마이어스",
               "level": 360,
               "level_str": "Lv.360",
-              "location": ""
+              "location": "암흑도시-왼쪽 밑"
             },
             {
               "name": "영혼 포식의 피",
@@ -184756,7 +184762,7 @@ window.PRELOADED_GAME_DATA = {
               "boss": "제7마왕 모르페우스",
               "level": 340,
               "level_str": "Lv.340",
-              "location": "전초기지-심연내부-포탈-왼쪽포탈"
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈"
             },
             {
               "name": "자비의 성광 조각",
@@ -184816,7 +184822,7 @@ window.PRELOADED_GAME_DATA = {
               "boss": "제7마왕 모르페우스",
               "level": 340,
               "level_str": "Lv.340",
-              "location": "전초기지-심연내부-포탈-왼쪽포탈"
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈"
             },
             {
               "name": "회오리의 핵",
@@ -184928,7 +184934,7 @@ window.PRELOADED_GAME_DATA = {
               "boss": "TitonX-4060",
               "level": 380,
               "level_str": "Lv.380",
-              "location": ""
+              "location": "파문항구-위쪽-우사로 옆 계단"
             },
             {
               "name": "영혼 문양",
@@ -184996,7 +185002,7 @@ window.PRELOADED_GAME_DATA = {
               "boss": "제5마왕 아노시스",
               "level": 360,
               "level_str": "Lv.360",
-              "location": ""
+              "location": "전초기지-오른쪽 성-위"
             },
             {
               "name": "별의 파편",
@@ -185320,7 +185326,7 @@ window.PRELOADED_GAME_DATA = {
               "boss": "제5마왕 아노시스",
               "level": 360,
               "level_str": "Lv.360",
-              "location": ""
+              "location": "전초기지-오른쪽 성-위"
             },
             {
               "name": "타락한 마나핵",
@@ -185328,7 +185334,7 @@ window.PRELOADED_GAME_DATA = {
               "boss": "역병의 근원 마이어스",
               "level": 360,
               "level_str": "Lv.360",
-              "location": ""
+              "location": "암흑도시-왼쪽 밑"
             }
           ]
         },
@@ -185356,7 +185362,7 @@ window.PRELOADED_GAME_DATA = {
               "boss": "아즈샤라 여왕",
               "level": 360,
               "level_str": "Lv.360",
-              "location": ""
+              "location": "어인해변-위쪽포탈-왼쪽포탈"
             },
             {
               "name": "타락한 마나핵",
@@ -185364,7 +185370,7 @@ window.PRELOADED_GAME_DATA = {
               "boss": "역병의 근원 마이어스",
               "level": 360,
               "level_str": "Lv.360",
-              "location": ""
+              "location": "암흑도시-왼쪽 밑"
             },
             {
               "name": "멸세의 화염깃",
@@ -185580,7 +185586,7 @@ window.PRELOADED_GAME_DATA = {
               "boss": "TitonX-4060",
               "level": 380,
               "level_str": "Lv.380",
-              "location": ""
+              "location": "파문항구-위쪽-우사로 옆 계단"
             },
             {
               "name": "타락한 피의 발톱",
@@ -185604,7 +185610,7 @@ window.PRELOADED_GAME_DATA = {
               "boss": "제7마왕 모르페우스",
               "level": 340,
               "level_str": "Lv.340",
-              "location": "전초기지-심연내부-포탈-왼쪽포탈"
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈"
             },
             {
               "name": "독무의 결정",
@@ -185612,7 +185618,7 @@ window.PRELOADED_GAME_DATA = {
               "boss": "역병의 근원 마이어스",
               "level": 360,
               "level_str": "Lv.360",
-              "location": ""
+              "location": "암흑도시-왼쪽 밑"
             }
           ]
         },
@@ -185640,7 +185646,7 @@ window.PRELOADED_GAME_DATA = {
               "boss": "제5마왕 아노시스",
               "level": 360,
               "level_str": "Lv.360",
-              "location": ""
+              "location": "전초기지-오른쪽 성-위"
             },
             {
               "name": "불씨의 핵",
@@ -185656,7 +185662,7 @@ window.PRELOADED_GAME_DATA = {
               "boss": "역병의 근원 마이어스",
               "level": 360,
               "level_str": "Lv.360",
-              "location": ""
+              "location": "암흑도시-왼쪽 밑"
             },
             {
               "name": "지옥의 정수",
@@ -185664,7 +185670,7 @@ window.PRELOADED_GAME_DATA = {
               "boss": "제7마왕 모르페우스",
               "level": 340,
               "level_str": "Lv.340",
-              "location": "전초기지-심연내부-포탈-왼쪽포탈"
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈"
             },
             {
               "name": "성스러운 결정",
@@ -185716,7 +185722,7 @@ window.PRELOADED_GAME_DATA = {
               "boss": "제7마왕 모르페우스",
               "level": 340,
               "level_str": "Lv.340",
-              "location": "전초기지-심연내부-포탈-왼쪽포탈"
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈"
             },
             {
               "name": "망자의 육신",
@@ -185776,7 +185782,7 @@ window.PRELOADED_GAME_DATA = {
               "boss": "암흑 망령",
               "level": 280,
               "level_str": "Lv.280",
-              "location": ""
+              "location": "사막-오른쪽 끝"
             },
             {
               "name": "암흑별 철",
@@ -185849,7 +185855,7 @@ window.PRELOADED_GAME_DATA = {
               "boss": "제5마왕 아노시스",
               "level": 360,
               "level_str": "Lv.360",
-              "location": ""
+              "location": "전초기지-오른쪽 성-위"
             },
             {
               "name": "암흑 결정",
@@ -185865,7 +185871,7 @@ window.PRELOADED_GAME_DATA = {
               "boss": "아즈샤라 여왕",
               "level": 360,
               "level_str": "Lv.360",
-              "location": ""
+              "location": "어인해변-위쪽포탈-왼쪽포탈"
             }
           ]
         },
@@ -185905,7 +185911,7 @@ window.PRELOADED_GAME_DATA = {
               "boss": "역병의 근원 마이어스",
               "level": 360,
               "level_str": "Lv.360",
-              "location": ""
+              "location": "암흑도시-왼쪽 밑"
             },
             {
               "name": "용숨결 호박",
@@ -186035,7 +186041,7 @@ window.PRELOADED_GAME_DATA = {
               "boss": "TitonX-4060",
               "level": 380,
               "level_str": "Lv.380",
-              "location": ""
+              "location": "파문항구-위쪽-우사로 옆 계단"
             },
             {
               "name": "영혼 정수",
@@ -186059,7 +186065,7 @@ window.PRELOADED_GAME_DATA = {
               "boss": "제5마왕 아노시스",
               "level": 360,
               "level_str": "Lv.360",
-              "location": ""
+              "location": "전초기지-오른쪽 성-위"
             },
             {
               "name": "영혼 포식의 피",
@@ -186067,7 +186073,7 @@ window.PRELOADED_GAME_DATA = {
               "boss": "제7마왕 모르페우스",
               "level": 340,
               "level_str": "Lv.340",
-              "location": "전초기지-심연내부-포탈-왼쪽포탈"
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈"
             }
           ]
         },
@@ -186103,7 +186109,7 @@ window.PRELOADED_GAME_DATA = {
               "boss": "제5마왕 아노시스",
               "level": 360,
               "level_str": "Lv.360",
-              "location": ""
+              "location": "전초기지-오른쪽 성-위"
             },
             {
               "name": "뒤틀린 결정",
@@ -186111,7 +186117,7 @@ window.PRELOADED_GAME_DATA = {
               "boss": "제7마왕 모르페우스",
               "level": 340,
               "level_str": "Lv.340",
-              "location": "전초기지-심연내부-포탈-왼쪽포탈"
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈"
             },
             {
               "name": "회오리의 핵",
@@ -186135,7 +186141,7 @@ window.PRELOADED_GAME_DATA = {
               "boss": "암흑 망령",
               "level": 280,
               "level_str": "Lv.280",
-              "location": ""
+              "location": "사막-오른쪽 끝"
             }
           ]
         },
@@ -186403,7 +186409,7 @@ window.PRELOADED_GAME_DATA = {
               "boss": "TitonX-4060",
               "level": 380,
               "level_str": "Lv.380",
-              "location": ""
+              "location": "파문항구-위쪽-우사로 옆 계단"
             },
             {
               "name": "신비한 혈호박",
@@ -186427,7 +186433,7 @@ window.PRELOADED_GAME_DATA = {
               "boss": "역병의 근원 마이어스",
               "level": 360,
               "level_str": "Lv.360",
-              "location": ""
+              "location": "암흑도시-왼쪽 밑"
             },
             {
               "name": "그림자 결정",
@@ -186479,7 +186485,7 @@ window.PRELOADED_GAME_DATA = {
               "boss": "제7마왕 모르페우스",
               "level": 340,
               "level_str": "Lv.340",
-              "location": "전초기지-심연내부-포탈-왼쪽포탈"
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈"
             },
             {
               "name": "파괴된 원혼의 뼈",
@@ -186531,7 +186537,7 @@ window.PRELOADED_GAME_DATA = {
               "boss": "제7마왕 모르페우스",
               "level": 340,
               "level_str": "Lv.340",
-              "location": "전초기지-심연내부-포탈-왼쪽포탈"
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈"
             },
             {
               "name": "파괴된 원혼의 뼈",
@@ -186643,7 +186649,7 @@ window.PRELOADED_GAME_DATA = {
               "boss": "역병의 근원 마이어스",
               "level": 360,
               "level_str": "Lv.360",
-              "location": ""
+              "location": "암흑도시-왼쪽 밑"
             },
             {
               "name": "영혼 포식의 피",
@@ -186651,7 +186657,7 @@ window.PRELOADED_GAME_DATA = {
               "boss": "제7마왕 모르페우스",
               "level": 340,
               "level_str": "Lv.340",
-              "location": "전초기지-심연내부-포탈-왼쪽포탈"
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈"
             },
             {
               "name": "자비의 성광 조각",
@@ -186711,7 +186717,7 @@ window.PRELOADED_GAME_DATA = {
               "boss": "제7마왕 모르페우스",
               "level": 340,
               "level_str": "Lv.340",
-              "location": "전초기지-심연내부-포탈-왼쪽포탈"
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈"
             },
             {
               "name": "회오리의 핵",
@@ -186823,7 +186829,7 @@ window.PRELOADED_GAME_DATA = {
               "boss": "TitonX-4060",
               "level": 380,
               "level_str": "Lv.380",
-              "location": ""
+              "location": "파문항구-위쪽-우사로 옆 계단"
             },
             {
               "name": "영혼 문양",
@@ -186891,7 +186897,7 @@ window.PRELOADED_GAME_DATA = {
               "boss": "제5마왕 아노시스",
               "level": 360,
               "level_str": "Lv.360",
-              "location": ""
+              "location": "전초기지-오른쪽 성-위"
             },
             {
               "name": "별의 파편",
@@ -187215,7 +187221,7 @@ window.PRELOADED_GAME_DATA = {
               "boss": "제5마왕 아노시스",
               "level": 360,
               "level_str": "Lv.360",
-              "location": ""
+              "location": "전초기지-오른쪽 성-위"
             },
             {
               "name": "타락한 마나핵",
@@ -187223,7 +187229,7 @@ window.PRELOADED_GAME_DATA = {
               "boss": "역병의 근원 마이어스",
               "level": 360,
               "level_str": "Lv.360",
-              "location": ""
+              "location": "암흑도시-왼쪽 밑"
             }
           ]
         },
@@ -187251,7 +187257,7 @@ window.PRELOADED_GAME_DATA = {
               "boss": "아즈샤라 여왕",
               "level": 360,
               "level_str": "Lv.360",
-              "location": ""
+              "location": "어인해변-위쪽포탈-왼쪽포탈"
             },
             {
               "name": "타락한 마나핵",
@@ -187259,7 +187265,7 @@ window.PRELOADED_GAME_DATA = {
               "boss": "역병의 근원 마이어스",
               "level": 360,
               "level_str": "Lv.360",
-              "location": ""
+              "location": "암흑도시-왼쪽 밑"
             },
             {
               "name": "멸세의 화염깃",
@@ -187475,7 +187481,7 @@ window.PRELOADED_GAME_DATA = {
               "boss": "TitonX-4060",
               "level": 380,
               "level_str": "Lv.380",
-              "location": ""
+              "location": "파문항구-위쪽-우사로 옆 계단"
             },
             {
               "name": "타락한 피의 발톱",
@@ -187499,7 +187505,7 @@ window.PRELOADED_GAME_DATA = {
               "boss": "제7마왕 모르페우스",
               "level": 340,
               "level_str": "Lv.340",
-              "location": "전초기지-심연내부-포탈-왼쪽포탈"
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈"
             },
             {
               "name": "독무의 결정",
@@ -187507,7 +187513,7 @@ window.PRELOADED_GAME_DATA = {
               "boss": "역병의 근원 마이어스",
               "level": 360,
               "level_str": "Lv.360",
-              "location": ""
+              "location": "암흑도시-왼쪽 밑"
             }
           ]
         },
@@ -187535,7 +187541,7 @@ window.PRELOADED_GAME_DATA = {
               "boss": "제5마왕 아노시스",
               "level": 360,
               "level_str": "Lv.360",
-              "location": ""
+              "location": "전초기지-오른쪽 성-위"
             },
             {
               "name": "불씨의 핵",
@@ -187551,7 +187557,7 @@ window.PRELOADED_GAME_DATA = {
               "boss": "역병의 근원 마이어스",
               "level": 360,
               "level_str": "Lv.360",
-              "location": ""
+              "location": "암흑도시-왼쪽 밑"
             },
             {
               "name": "지옥의 정수",
@@ -187559,7 +187565,7 @@ window.PRELOADED_GAME_DATA = {
               "boss": "제7마왕 모르페우스",
               "level": 340,
               "level_str": "Lv.340",
-              "location": "전초기지-심연내부-포탈-왼쪽포탈"
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈"
             },
             {
               "name": "성스러운 결정",
@@ -187611,7 +187617,7 @@ window.PRELOADED_GAME_DATA = {
               "boss": "제7마왕 모르페우스",
               "level": 340,
               "level_str": "Lv.340",
-              "location": "전초기지-심연내부-포탈-왼쪽포탈"
+              "location": "전초기지-오른쪽성-포탈-왼쪽포탈"
             },
             {
               "name": "망자의 육신",
@@ -187671,7 +187677,7 @@ window.PRELOADED_GAME_DATA = {
               "boss": "암흑 망령",
               "level": 280,
               "level_str": "Lv.280",
-              "location": ""
+              "location": "사막-오른쪽 끝"
             },
             {
               "name": "암흑별 철",
