@@ -25,6 +25,8 @@
   --radius-sm: 6px;
   --radius-md: 10px;
   --radius-lg: 14px;
+
+  --header-group-height: 115px;
 }
 
 * {
@@ -54,14 +56,24 @@ body {
   border-radius: 4px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #3b4e75;
+}
+
+/* Global IME Mode & Text Inputs */
+input[type="text"],
+input[type="search"],
+.gear-search-input,
+.side-search-input,
+.codex-search-input,
+.gear-modal-search,
+.search-input-wrapper input {
+  ime-mode: active;
 }
 
 /* Sticky Header & Nav Container */
 .sticky-header-group {
   position: sticky;
   top: 0;
-  z-index: 200;
+  z-index: 1000;
   background: var(--bg-main);
   box-shadow: 0 4px 24px rgba(0, 0, 0, 0.45);
 }
@@ -382,9 +394,10 @@ body {
 
 .side-panel-sticky {
   position: sticky;
-  top: calc(92px + var(--tab1-top-height, 195px) + 12px);
-  height: calc(100vh - 92px - var(--tab1-top-height, 195px) - 26px);
-  max-height: calc(100vh - 92px - var(--tab1-top-height, 195px) - 26px);
+  top: calc(var(--header-group-height, 115px) + var(--tab1-top-height, 195px) + 12px);
+  height: calc(100vh - var(--header-group-height, 115px) - var(--tab1-top-height, 195px) - 26px);
+  max-height: calc(100vh - var(--header-group-height, 115px) - var(--tab1-top-height, 195px) - 26px);
+  z-index: 80;
   display: flex;
   flex-direction: column;
   background: var(--bg-card);
@@ -808,6 +821,62 @@ body {
   color: #93c5fd;
 }
 
+/* Slot Selection Multi-Count Badge */
+.slot-selection-counter {
+  font-size: 11px;
+  color: var(--text-dim);
+  padding: 4px 9px;
+  border-radius: var(--radius-sm);
+  background: rgba(255, 255, 255, 0.04);
+  white-space: nowrap;
+  flex-shrink: 0;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  border: 1px dashed rgba(255, 255, 255, 0.12);
+  margin-left: 4px;
+  transition: all 0.2s ease;
+}
+.slot-selection-counter.active {
+  color: #93c5fd;
+  background: rgba(59, 130, 246, 0.12);
+  border: 1px solid rgba(59, 130, 246, 0.35);
+  box-shadow: 0 0 8px rgba(59, 130, 246, 0.15);
+}
+.slot-selection-counter.active.max {
+  color: #fcd34d;
+  background: rgba(245, 158, 11, 0.15);
+  border: 1px solid rgba(245, 158, 11, 0.4);
+  font-weight: 700;
+  box-shadow: 0 0 10px rgba(245, 158, 11, 0.2);
+}
+
+/* Floating Toast Notification */
+.app-toast {
+  position: fixed;
+  top: 75px;
+  left: 50%;
+  transform: translateX(-50%) translateY(-20px);
+  background: #1e293b;
+  color: #f8fafc;
+  padding: 10px 22px;
+  border-radius: 30px;
+  border: 1px solid var(--accent-gold);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6), 0 0 15px rgba(245, 158, 11, 0.25);
+  font-size: 13px;
+  font-weight: 600;
+  z-index: 99999;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  text-align: center;
+  line-height: 1.4;
+}
+.app-toast.show {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+}
+
 /* View Mode Switcher */
 .view-switch-bar {
   display: flex;
@@ -857,6 +926,145 @@ body {
   display: grid;
   grid-template-columns: 1fr;
   gap: 20px;
+}
+
+/* Slot Group Section & Add Item Card */
+.slot-group-section {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.slot-group-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 16px;
+  background: rgba(30, 41, 59, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: var(--radius-md);
+  margin-bottom: 4px;
+}
+
+.slot-group-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.badge-slot-item-count {
+  font-size: 11px;
+  font-weight: 700;
+  padding: 2px 8px;
+  border-radius: 12px;
+  background: rgba(59, 130, 246, 0.15);
+  color: #93c5fd;
+  border: 1px solid rgba(59, 130, 246, 0.3);
+}
+
+.btn-add-gear-item {
+  background: linear-gradient(135deg, rgba(59, 130, 246, 0.2), rgba(37, 99, 235, 0.25));
+  border: 1px solid rgba(59, 130, 246, 0.5);
+  color: #93c5fd;
+  padding: 5px 12px;
+  border-radius: var(--radius-md);
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: all 0.2s;
+}
+.btn-add-gear-item:hover {
+  background: linear-gradient(135deg, rgba(59, 130, 246, 0.35), rgba(37, 99, 235, 0.4));
+  color: #fff;
+  border-color: #60a5fa;
+  transform: translateY(-1px);
+}
+
+.empty-gear-add-card {
+  background: rgba(15, 23, 42, 0.4);
+  border: 2px dashed rgba(255, 255, 255, 0.15);
+  border-radius: var(--radius-lg);
+  padding: 20px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.empty-gear-add-card:hover {
+  background: rgba(30, 41, 59, 0.5);
+  border-color: var(--border-focus);
+  box-shadow: 0 4px 16px rgba(59, 130, 246, 0.15);
+}
+
+.empty-add-icon {
+  font-size: 26px;
+  color: var(--text-dim);
+  transition: transform 0.2s;
+}
+.empty-gear-add-card:hover .empty-add-icon {
+  transform: scale(1.15);
+  color: var(--accent-gold);
+}
+
+.empty-add-text {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  flex: 1;
+}
+.empty-add-text strong {
+  color: #f1f5f9;
+  font-size: 13.5px;
+}
+.empty-add-text span {
+  color: var(--text-muted);
+  font-size: 11.5px;
+}
+
+/* Modal Equipped Chips */
+.modal-equipped-summary {
+  background: rgba(15, 23, 42, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: var(--radius-md);
+  padding: 8px 12px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.modal-equipped-chips {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+.modal-chip {
+  background: rgba(59, 130, 246, 0.2);
+  border: 1px solid rgba(59, 130, 246, 0.4);
+  color: #93c5fd;
+  font-size: 11.5px;
+  padding: 2px 8px;
+  border-radius: 12px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+.modal-chip .chip-del {
+  cursor: pointer;
+  color: #fca5a5;
+  font-weight: 700;
+  font-size: 12px;
+}
+.modal-chip .chip-del:hover {
+  color: #ef4444;
 }
 
 .gear-card {
@@ -1400,8 +1608,8 @@ body {
 /* Tab 2: Boss Farming Route Report Sticky Header */
 .boss-route-sticky-header {
   position: sticky;
-  top: 92px;
-  z-index: 200;
+  top: var(--header-group-height, 115px);
+  z-index: 100;
   background: var(--bg-main);
   padding: 4px 0 14px 0;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.35);
@@ -1420,8 +1628,8 @@ body {
 /* Tab 3: Boss Codex Sticky Header */
 .codex-sticky-header {
   position: sticky;
-  top: 92px;
-  z-index: 200;
+  top: var(--header-group-height, 115px);
+  z-index: 100;
   background: var(--bg-main);
   padding: 4px 0 14px 0;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.35);
@@ -1851,13 +2059,14 @@ body {
   top: calc(100% + 6px);
   left: 0;
   width: 320px;
-  max-height: 400px;
+  max-width: 90vw;
+  max-height: 420px;
   overflow-y: auto;
   background: #141c2e;
   border: 1px solid var(--border);
   border-radius: var(--radius-md);
-  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.65);
-  z-index: 300;
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.85);
+  z-index: 1050;
 }
 
 .search-result-item {
@@ -2020,8 +2229,8 @@ body {
    ========================================================================== */
 .tab1-sticky-top {
   position: sticky;
-  top: 92px;
-  z-index: 250;
+  top: var(--header-group-height, 115px);
+  z-index: 100;
   background: var(--bg-main);
   padding: 4px 0 12px 0;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
@@ -2504,8 +2713,8 @@ body {
    ========================================================================== */
 .gear-codex-sticky-header {
   position: sticky;
-  top: 92px;
-  z-index: 200;
+  top: var(--header-group-height, 115px);
+  z-index: 100;
   background: var(--bg-main);
   padding: 4px 0 14px 0;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.35);
@@ -2783,4 +2992,533 @@ body {
   background: linear-gradient(135deg, #10b981, #059669);
   transform: translateY(-1px);
 }
+
+/* Matched Material Badges & Highlighting in Gear Codex */
+.matched-material-banner {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: linear-gradient(135deg, rgba(245, 158, 11, 0.2), rgba(217, 119, 6, 0.12));
+  border: 1px solid rgba(245, 158, 11, 0.55);
+  border-radius: 6px;
+  padding: 6px 10px;
+  margin-top: 8px;
+  margin-bottom: 6px;
+  font-size: 11.5px;
+  color: #fde68a;
+  box-shadow: 0 2px 10px rgba(245, 158, 11, 0.15);
+}
+
+.matched-material-banner strong {
+  color: #fbbf24;
+  font-weight: 800;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.matched-material-banner.sub {
+  background: rgba(59, 130, 246, 0.15);
+  border-color: rgba(59, 130, 246, 0.45);
+  color: #93c5fd;
+  box-shadow: 0 2px 8px rgba(59, 130, 246, 0.15);
+}
+
+.matched-material-banner.sub strong {
+  color: #60a5fa;
+  font-weight: 700;
+}
+
+.gear-codex-mat-chip.highlighted {
+  background: linear-gradient(135deg, rgba(245, 158, 11, 0.28), rgba(217, 119, 6, 0.22));
+  border: 1.5px solid #f59e0b;
+  box-shadow: 0 0 12px rgba(245, 158, 11, 0.45);
+  transform: scale(1.02);
+}
+
+.gear-codex-mat-chip.highlighted .gear-codex-mat-name {
+  color: #fbbf24;
+  font-weight: 800;
+}
+
+.gear-codex-mat-chip.highlighted .gear-codex-mat-qty {
+  background: #f59e0b;
+  color: #111827;
+  font-weight: 900;
+  border-color: #f59e0b;
+}
+
+.gear-cat-badge-count {
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.18);
+  color: #fff;
+  font-size: 10px;
+  font-weight: 700;
+  padding: 1px 6px;
+  border-radius: 9999px;
+  margin-left: 4px;
+}
+
+/* ==========================================================================
+   Gear Grades & Rarity Badges
+   ========================================================================== */
+.badge-grade {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  font-size: 11px;
+  font-weight: 800;
+  padding: 2px 7px;
+  border-radius: 4px;
+  letter-spacing: -0.2px;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+}
+
+.badge-grade-일반 {
+  background: rgba(148, 163, 184, 0.2);
+  border: 1px solid #94a3b8;
+  color: #e2e8f0;
+}
+
+.badge-grade-우수 {
+  background: rgba(34, 197, 94, 0.2);
+  border: 1px solid #22c55e;
+  color: #86efac;
+}
+
+.badge-grade-희귀 {
+  background: rgba(59, 130, 246, 0.2);
+  border: 1px solid #3b82f6;
+  color: #93c5fd;
+}
+
+.badge-grade-궁극,
+.badge-grade-극한 {
+  background: rgba(168, 85, 247, 0.22);
+  border: 1px solid #a855f7;
+  color: #d8b4fe;
+  box-shadow: 0 0 8px rgba(168, 85, 247, 0.25);
+}
+
+.badge-grade-에픽 {
+  background: rgba(236, 72, 153, 0.22);
+  border: 1px solid #ec4899;
+  color: #fbcfe8;
+  box-shadow: 0 0 10px rgba(236, 72, 153, 0.3);
+}
+
+.badge-grade-전설 {
+  background: linear-gradient(135deg, rgba(245, 158, 11, 0.28), rgba(217, 119, 6, 0.2));
+  border: 1px solid #f59e0b;
+  color: #fde047;
+  box-shadow: 0 0 10px rgba(245, 158, 11, 0.35);
+}
+
+.badge-grade-신화 {
+  background: linear-gradient(135deg, rgba(239, 68, 68, 0.3), rgba(185, 28, 28, 0.25));
+  border: 1px solid #ef4444;
+  color: #fca5a5;
+  box-shadow: 0 0 12px rgba(239, 68, 68, 0.4);
+}
+
+.badge-grade-고대,
+.badge-grade-영원,
+.badge-grade-영원영원,
+.badge-grade-영원·영구 {
+  background: linear-gradient(135deg, rgba(6, 182, 212, 0.3), rgba(14, 165, 233, 0.25));
+  border: 1px solid #06b6d4;
+  color: #a5f3fc;
+  box-shadow: 0 0 14px rgba(6, 182, 212, 0.45);
+}
+
+/* Sub-type Tag in Meta Row (e.g. 중갑, 경갑, 천) */
+.sub-type-pill {
+  font-size: 10.5px;
+  font-weight: 700;
+  color: #cbd5e1;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  padding: 1px 6px;
+  border-radius: 4px;
+}
+
+/* ==========================================================================
+   Gear Detailed Stats & Options Formatting
+   ========================================================================== */
+.gear-options-container {
+  margin-top: 8px;
+  background: rgba(15, 23, 42, 0.55);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  border-radius: 8px;
+  padding: 8px 10px;
+}
+
+.gear-options-header {
+  font-size: 11px;
+  font-weight: 700;
+  color: #94a3b8;
+  margin-bottom: 6px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.gear-stat-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 6px;
+}
+
+.gear-stat-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 11px;
+  color: #f1f5f9;
+  background: rgba(30, 41, 59, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 4px;
+  padding: 2px 7px;
+  line-height: 1.35;
+}
+
+.gear-stat-chip strong {
+  color: #38bdf8;
+  font-weight: 700;
+}
+
+/* ==========================================================================
+   Active / Passive Skill Callouts
+   ========================================================================== */
+.gear-skill-callout {
+  margin-top: 8px;
+  border-radius: 8px;
+  padding: 8px 12px;
+  font-size: 11.5px;
+  line-height: 1.45;
+  position: relative;
+}
+
+.gear-skill-callout.active-skill {
+  background: linear-gradient(135deg, rgba(37, 99, 235, 0.15), rgba(30, 58, 138, 0.2));
+  border: 1px solid rgba(59, 130, 246, 0.4);
+  color: #e0e7ff;
+}
+
+.gear-skill-callout.passive-skill {
+  background: linear-gradient(135deg, rgba(217, 119, 6, 0.15), rgba(146, 64, 14, 0.18));
+  border: 1px solid rgba(245, 158, 11, 0.35);
+  color: #fef3c7;
+}
+
+.gear-skill-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  margin-bottom: 4px;
+}
+
+.gear-skill-title {
+  font-weight: 800;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.gear-skill-callout.active-skill .gear-skill-title {
+  color: #93c5fd;
+}
+
+.gear-skill-callout.passive-skill .gear-skill-title {
+  color: #fcd34d;
+}
+
+.gear-skill-cd-badge {
+  font-size: 10px;
+  font-weight: 700;
+  color: #67e8f9;
+  background: rgba(6, 182, 212, 0.18);
+  border: 1px solid rgba(6, 182, 212, 0.35);
+  padding: 1px 6px;
+  border-radius: 9999px;
+  white-space: nowrap;
+}
+
+.gear-skill-body {
+  font-size: 11px;
+  opacity: 0.95;
+  word-break: break-word;
+}
+
+/* Toggle Details Button */
+.btn-toggle-stats {
+  background: transparent;
+  border: none;
+  color: #60a5fa;
+  font-size: 11px;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 4px 0 0 0;
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+}
+
+.btn-toggle-stats:hover {
+  text-decoration: underline;
+  color: #93c5fd;
+}
+
+/* ==========================================================================
+   Multi-Gear per Slot & Section Grouping Styles
+   ========================================================================== */
+.slot-group-section {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 24px;
+  width: 100%;
+}
+
+.slot-group-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 16px;
+  background: rgba(30, 41, 59, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 8px;
+  margin-bottom: 4px;
+}
+
+.slot-group-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.badge-slot-item-count {
+  font-size: 11px;
+  font-weight: 700;
+  padding: 2px 8px;
+  border-radius: 12px;
+  background: rgba(56, 189, 248, 0.15);
+  color: #38bdf8;
+  border: 1px solid rgba(56, 189, 248, 0.3);
+}
+
+.btn-add-gear-item {
+  background: linear-gradient(135deg, rgba(37, 99, 235, 0.25), rgba(30, 58, 138, 0.35));
+  border: 1px solid rgba(59, 130, 246, 0.45);
+  color: #93c5fd;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 6px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.btn-add-gear-item:hover {
+  background: linear-gradient(135deg, rgba(37, 99, 235, 0.4), rgba(30, 58, 138, 0.5));
+  border-color: #60a5fa;
+  color: #fff;
+  transform: translateY(-1px);
+}
+
+.empty-gear-add-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 20px 24px;
+  background: rgba(15, 23, 42, 0.5);
+  border: 2px dashed rgba(255, 255, 255, 0.12);
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.empty-gear-add-card:hover {
+  background: rgba(30, 41, 59, 0.6);
+  border-color: rgba(96, 165, 250, 0.45);
+}
+
+.empty-add-icon {
+  font-size: 24px;
+  opacity: 0.8;
+}
+
+.empty-add-text {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  flex: 1;
+}
+
+.empty-add-text strong {
+  font-size: 14px;
+  color: #e2e8f0;
+}
+
+.empty-add-text span {
+  font-size: 12px;
+  color: var(--text-muted);
+}
+
+/* Modal Equipped Summary Bar */
+.modal-equipped-summary {
+  background: rgba(15, 23, 42, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 8px;
+  padding: 10px 14px;
+  margin-bottom: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.modal-equipped-label {
+  font-size: 12px;
+  font-weight: 700;
+  color: #94a3b8;
+}
+
+.modal-equipped-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+}
+
+.modal-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(30, 41, 59, 0.9);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 6px;
+  padding: 4px 8px;
+  font-size: 12px;
+  color: #f1f5f9;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.modal-chip:hover {
+  background: rgba(51, 65, 85, 0.9);
+  border-color: #60a5fa;
+}
+
+.modal-chip.targeting {
+  border-color: #f59e0b;
+  background: rgba(245, 158, 11, 0.15);
+  box-shadow: 0 0 8px rgba(245, 158, 11, 0.3);
+}
+
+.chip-num {
+  font-size: 10px;
+  font-weight: 800;
+  color: #93c5fd;
+  background: rgba(37, 99, 235, 0.25);
+  padding: 1px 5px;
+  border-radius: 4px;
+}
+
+.chip-name {
+  font-weight: 600;
+}
+
+.chip-del {
+  background: transparent;
+  border: none;
+  color: #f87171;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  padding: 0 2px;
+  line-height: 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+}
+
+.chip-del:hover {
+  background: rgba(239, 68, 68, 0.25);
+  color: #fca5a5;
+}
+
+.modal-chip-add {
+  background: rgba(34, 197, 94, 0.12);
+  border: 1px dashed rgba(34, 197, 94, 0.4);
+  color: #86efac;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 4px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+.modal-chip-add:hover,
+.modal-chip-add.active {
+  background: rgba(34, 197, 94, 0.22);
+  border-color: #22c55e;
+  color: #fff;
+}
+
+/* Slot Selection Counter */
+.slot-selection-counter {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text-dim);
+  padding: 4px 10px;
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  white-space: nowrap;
+}
+
+.slot-selection-counter.active {
+  color: #38bdf8;
+  background: rgba(56, 189, 248, 0.1);
+  border-color: rgba(56, 189, 248, 0.25);
+}
+
+.slot-selection-counter.max {
+  color: #f59e0b;
+  background: rgba(245, 158, 11, 0.12);
+  border-color: rgba(245, 158, 11, 0.3);
+}
+
+/* Floating Toast Notification */
+.app-toast {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background: rgba(15, 23, 42, 0.95);
+  border: 1px solid rgba(56, 189, 248, 0.4);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.6), 0 0 15px rgba(56, 189, 248, 0.2);
+  color: #f1f5f9;
+  padding: 12px 20px;
+  border-radius: 10px;
+  font-size: 13px;
+  font-weight: 600;
+  z-index: 10000;
+  pointer-events: none;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  max-width: 420px;
+  line-height: 1.45;
+}
+
+.app-toast.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
 

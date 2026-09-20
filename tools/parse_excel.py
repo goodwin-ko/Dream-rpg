@@ -15,8 +15,10 @@ ALIAS_MAP = {
     "빛의 그레 일린": "빛의 그레일린",
     "빛의 그러일런": "빛의 그레일린",
     "얼음 그림자 아퀄리스": "얼음 그림자 아퀼리스",
-    "속세의 및-우키요에 두루마리": "속세의 빛-우키요에 두루마리",
-    "속세의및-우키요에 두루마리": "속세의 빛-우키요에 두루마리",
+    "속세의 및-우키요에 두루마리": "속세의 빛·우키요에 두루마리",
+    "속세의및-우키요에 두루마리": "속세의 빛·우키요에 두루마리",
+    "속세의 및·우키요에 두루마리": "속세의 빛·우키요에 두루마리",
+    "속세의및·우키요에 두루마리": "속세의 빛·우키요에 두루마리",
     "피의문양": "피의 문양",
     "영혼정화의 성목": "영혼 정화의 성목",
     "암흑의 회환": "암흑의 회한",
@@ -58,12 +60,17 @@ ALIAS_MAP = {
     "영혼 녹이는 화염 결정": "혼을 녹이는 화염 결정",
     "성스러운 및의 수호석": "성스러운 빛의 수호석",
     "영혼 구술의 족쇄": "영혼 구슬의 족쇄",
-    "용의 격노-용혼갑옷": "용의 격노-용혼 갑옷",
+    "용의 격노-용혼갑옷": "용의 격노·용혼 갑옷",
+    "용의 격노-용혼 갑옷": "용의 격노·용혼 갑옷",
+    "용의 격노·용혼갑옷": "용의 격노·용혼 갑옷",
     "잊힌 고대의 마나석": "잊힌 고대 마나석",
-    "검은 쌍둥이 반지-성광 파편": "검은 쌍둥이 반지-섬광 파편",
+    "검은 쌍둥이 반지-성광 파편": "검은 쌍둥이 반지·섬광 파편",
+    "검은 쌍둥이 반지·성광 파편": "검은 쌍둥이 반지·섬광 파편",
+    "검은 쌍둥이 반지-섬광 파편": "검은 쌍둥이 반지·섬광 파편",
     "붉은 화염 전투 세트": "붉은 화염 전투 셋트",
     "격노한 화염의 전쟁신 도끼": "격노한 화염의 전생신 도끼",
     "청공의 분노 뇌전홀": "천공의 분노 뇌전홀",
+    "TitanX-4060": "TitonX-4060",
     # Boss location aliases
     "파문항구-위쪽-우사로옆 계단": "파문항구-위쪽-우사로 옆 계단",
     "파문항구-위쪽-우사로옆계단": "파문항구-위쪽-우사로 옆 계단",
@@ -76,6 +83,20 @@ def clean_str(s):
         return ""
     val = str(s).strip()
     return ALIAS_MAP.get(val, val)
+
+def normalize_name(s):
+    if s is None:
+        return ""
+    val = str(s).strip()
+    if val in ALIAS_MAP:
+        val = ALIAS_MAP[val]
+    if re.match(r'^tit[ao]nx-4060$', val, re.IGNORECASE):
+        return "TitonX-4060"
+    val = re.sub(r'\s*[\-\–—•ㆍ・]\s*', '·', val)
+    val = re.sub(r'\s*·\s*', '·', val)
+    if val in ALIAS_MAP:
+        val = ALIAS_MAP[val]
+    return val
 
 def clean_lvl(s):
     if not s:
@@ -116,7 +137,7 @@ def parse_excel(file_path):
                 continue
             b_name = clean_str(r[0])
             lvl = clean_lvl(r[1])
-            it_name = clean_str(r[2])
+            it_name = normalize_name(r[2])
             cat = clean_str(r[3]) if len(r) > 3 and r[3] is not None else "아이템"
             loc = clean_str(r[4]) if len(r) > 4 and r[4] is not None else ""
             
@@ -219,8 +240,8 @@ def parse_excel(file_path):
             sub_cat = clean_str(r[0])
             if sub_cat:
                 curr_sub_cat = sub_cat.replace(" ", "")
-            it_name = clean_str(r[1])
-            mat_name = clean_str(r[2])
+            it_name = normalize_name(r[1])
+            mat_name = normalize_name(r[2])
             qty = r[3] if len(r) > 3 and r[3] is not None else 1
             lvl = clean_lvl(r[4]) if len(r) > 4 else ""
             synergy = clean_str(r[5]) if len(r) > 5 else ""
@@ -259,7 +280,7 @@ def parse_excel(file_path):
                     q_val = int(qty)
                 elif "*" in mat_name:
                     parts = mat_name.split("*")
-                    mat_name = clean_str(parts[0])
+                    mat_name = normalize_name(parts[0])
                     if len(parts) > 1 and parts[1].strip().isdigit():
                         q_val = int(parts[1].strip())
                         
@@ -275,7 +296,7 @@ def parse_excel(file_path):
         # Mark drop items (items with 0 materials that drop from bosses)
         for rc in c_recipes:
             if len(rc["materials"]) == 0:
-                it_lookup = clean_str(rc["name"])
+                it_lookup = normalize_name(rc["name"])
                 if it_lookup in item_to_boss:
                     drop_info = item_to_boss[it_lookup]
                     rc["is_drop"] = True
@@ -294,7 +315,7 @@ def parse_excel(file_path):
         for rc in r_list:
             for m in rc["materials"]:
                 m_name = m["name"]
-                c_mat = clean_str(m_name)
+                c_mat = normalize_name(m_name)
                 target_rc = global_recipe_map.get(m_name) or global_recipe_map.get(c_mat)
 
                 if target_rc and len(target_rc.get("materials", [])) > 0 and not target_rc.get("is_drop"):
@@ -554,9 +575,246 @@ def parse_excel(file_path):
         "legacy_jobs": legacy_jobs
     }
 
+def map_category(raw_cat):
+    if not raw_cat:
+        return "기타", ""
+    c = str(raw_cat).strip()
+    if c in ["갑옷", "경갑", "중갑", "천 갑옷", "천", "세트"]:
+        sub = "중갑" if "중갑" in c else ("경갑" if "경갑" in c else ("천" if "천" in c else "갑옷"))
+        return "갑옷", sub
+    elif c in ["근접 무기", "근접무기"]:
+        return "무기", "근접무기"
+    elif c in ["원거리 무기", "원거리무기"]:
+        return "무기", "원거리무기"
+    elif c in ["마법 무기", "마법무기", "지팡이"]:
+        return "무기", "지팡이"
+    elif c in ["무기"]:
+        return "무기", "무기"
+    elif c in ["투구", "머리장식"]:
+        sub = "머리장식" if "머리장식" in c else "투구"
+        return "투구", sub
+    elif c in ["장신구"]:
+        return "장신구", "장신구"
+    elif c in ["보조 장비", "보조장비", "배지"]:
+        sub = "배지" if "배지" in c else "보조장비"
+        return "보조장비", sub
+    elif c in ["마나석"]:
+        return "마나석", "마나석"
+    return c, c
+
+def merge_info_table(data, info_path):
+    if not os.path.exists(info_path):
+        return data
+    print(f"Merging info table from {info_path}...")
+    wb_info = openpyxl.load_workbook(info_path, data_only=True)
+    
+    boss_map = {b["name"]: b for b in data["bosses"]}
+    global_recipe_map = data["global_recipe_map"]
+    category_gear = data["category_gear"]
+    
+    # 1. 장비아이템
+    gear_specs = {}
+    if "장비아이템" in wb_info.sheetnames:
+        s_gear = wb_info["장비아이템"]
+        for r in list(s_gear.iter_rows(values_only=True))[1:]:
+            if not any(r): continue
+            iname = clean_str(r[0])
+            raw_cat = clean_str(r[1])
+            grade = clean_str(r[2])
+            lvl = r[3] if r[3] is not None else 0
+            opt = str(r[4]).strip() if r[4] else ""
+            act_pass = str(r[5]).strip() if r[5] else ""
+            
+            cat, sub_type = map_category(raw_cat)
+            lvl_num = int(lvl) if str(lvl).isdigit() else 0
+            
+            gear_specs[iname] = {
+                "name": iname,
+                "category": cat,
+                "sub_type": sub_type,
+                "grade": grade,
+                "level": lvl_num,
+                "level_str": f"Lv.{lvl_num}" if lvl_num else "",
+                "options": opt,
+                "active_passive": act_pass
+            }
+        print(f"  Loaded {len(gear_specs)} gear specs from 장비아이템")
+        
+    # 2. 조합법
+    if "조합법" in wb_info.sheetnames:
+        s_rec = wb_info["조합법"]
+        rec_groups = {}
+        for r in list(s_rec.iter_rows(values_only=True))[1:]:
+            if not any(r): continue
+            iname = clean_str(r[0])
+            raw_cat = clean_str(r[1])
+            grade = clean_str(r[2])
+            mat_name = clean_str(r[3])
+            mat_qty = r[4] if r[4] is not None else 1
+            if not iname: continue
+            cat, sub_type = map_category(raw_cat)
+            if iname not in rec_groups:
+                rec_groups[iname] = {
+                    "name": iname,
+                    "category": cat,
+                    "sub_type": sub_type,
+                    "grade": grade,
+                    "materials": []
+                }
+            if mat_name:
+                try:
+                    q_num = int(mat_qty)
+                except:
+                    q_num = 1
+                rec_groups[iname]["materials"].append({
+                    "name": mat_name,
+                    "qty": q_num
+                })
+        print(f"  Loaded {len(rec_groups)} recipes from 조합법")
+        
+        for iname, rinfo in rec_groups.items():
+            gspec = gear_specs.get(iname, {})
+            cat = gspec.get("category") or rinfo["category"]
+            sub_type = gspec.get("sub_type") or rinfo["sub_type"]
+            grade = gspec.get("grade") or rinfo["grade"]
+            lvl = gspec.get("level") or 0
+            lvl_str = gspec.get("level_str") or (f"Lv.{lvl}" if lvl else "")
+            opt = gspec.get("options") or ""
+            act_pass = gspec.get("active_passive") or ""
+
+            if iname in global_recipe_map:
+                rc = global_recipe_map[iname]
+                if grade: rc["grade"] = grade
+                if opt: rc["options"] = opt
+                if act_pass: rc["active_passive"] = act_pass
+                if lvl and not rc.get("level"):
+                    rc["level"] = lvl
+                    rc["level_str"] = lvl_str
+                if sub_type and not rc.get("sub_cat"):
+                    rc["sub_cat"] = sub_type
+                if not rc.get("materials") and rinfo["materials"]:
+                    rc["materials"] = rinfo["materials"]
+            else:
+                global_recipe_map[iname] = {
+                    "name": iname,
+                    "category": cat,
+                    "sub_cat": sub_type,
+                    "grade": grade,
+                    "level": lvl,
+                    "level_str": lvl_str,
+                    "synergy": "",
+                    "synergy_jobs": [],
+                    "special_effect": "",
+                    "options": opt,
+                    "active_passive": act_pass,
+                    "materials": rinfo["materials"],
+                    "is_drop": False,
+                    "drop_boss": "",
+                    "drop_level": 0,
+                    "drop_location": "",
+                    "drop_type": "아이템"
+                }
+                if cat in category_gear:
+                    if iname not in category_gear[cat]["top_gear"]:
+                        category_gear[cat]["top_gear"].append(iname)
+                    category_gear[cat]["recipes"].append(global_recipe_map[iname])
+
+    # 3. Enrich any other items from gear_specs
+    for iname, gspec in gear_specs.items():
+        if iname in global_recipe_map:
+            rc = global_recipe_map[iname]
+            if gspec.get("grade") and not rc.get("grade"):
+                rc["grade"] = gspec["grade"]
+            if gspec.get("options") and not rc.get("options"):
+                rc["options"] = gspec["options"]
+            if gspec.get("active_passive") and not rc.get("active_passive"):
+                rc["active_passive"] = gspec["active_passive"]
+            if gspec.get("level") and not rc.get("level"):
+                rc["level"] = gspec["level"]
+                rc["level_str"] = gspec["level_str"]
+            if gspec.get("sub_type") and not rc.get("sub_cat"):
+                rc["sub_cat"] = gspec["sub_type"]
+        else:
+            cat = gspec["category"]
+            if cat in category_gear:
+                global_recipe_map[iname] = {
+                    "name": iname,
+                    "category": cat,
+                    "sub_cat": gspec["sub_type"],
+                    "grade": gspec["grade"],
+                    "level": gspec["level"],
+                    "level_str": gspec["level_str"],
+                    "synergy": "",
+                    "synergy_jobs": [],
+                    "special_effect": "",
+                    "options": gspec["options"],
+                    "active_passive": gspec["active_passive"],
+                    "materials": [],
+                    "is_drop": True,
+                    "drop_boss": "",
+                    "drop_level": gspec["level"],
+                    "drop_location": "",
+                    "drop_type": "아이템"
+                }
+                if iname not in category_gear[cat]["top_gear"]:
+                    category_gear[cat]["top_gear"].append(iname)
+                category_gear[cat]["recipes"].append(global_recipe_map[iname])
+
+    # 4. 보스드랍
+    if "보스드랍" in wb_info.sheetnames:
+        s_boss = wb_info["보스드랍"]
+        for r in list(s_boss.iter_rows(values_only=True))[1:]:
+            if not any(r): continue
+            bname = clean_str(r[0])
+            iname = clean_str(r[1])
+            itype = clean_str(r[2])
+            igrade = clean_str(r[3])
+            if not bname or not iname: continue
+            
+            if bname not in boss_map:
+                boss_map[bname] = {
+                    "name": bname,
+                    "level": 0,
+                    "level_str": "",
+                    "location": "",
+                    "drops": []
+                }
+            existing_drops = boss_map[bname]["drops"]
+            drop_entry = next((d for d in existing_drops if d["name"] == iname), None)
+            if drop_entry:
+                if itype and not drop_entry.get("type"):
+                    drop_entry["type"] = itype
+                if igrade and not drop_entry.get("grade"):
+                    drop_entry["grade"] = igrade
+            else:
+                new_drop = {
+                    "name": iname,
+                    "type": itype or "아이템",
+                    "grade": igrade or (gear_specs.get(iname, {}).get("grade", "")),
+                    "level": boss_map[bname]["level"],
+                    "level_str": boss_map[bname]["level_str"]
+                }
+                boss_map[bname]["drops"].append(new_drop)
+                
+            if iname in global_recipe_map:
+                rc = global_recipe_map[iname]
+                if not rc.get("drop_boss"):
+                    rc["drop_boss"] = bname
+                    rc["drop_location"] = boss_map[bname].get("location", "")
+                if igrade and not rc.get("grade"):
+                    rc["grade"] = igrade
+                    
+        data["bosses"] = sorted(list(boss_map.values()), key=lambda x: (x["level"], x["name"]))
+
+    return data
+
 if __name__ == "__main__":
     os.makedirs(os.path.join(BASE_DIR, 'data'), exist_ok=True)
     data = parse_excel(EXCEL_PATH)
+    
+    info_path = os.path.join(BASE_DIR, '정보Table.xlsx')
+    if os.path.exists(info_path):
+        data = merge_info_table(data, info_path)
     
     with open(OUTPUT_JSON, 'w', encoding='utf-8') as f:
         json.dump(data, f, ensure_ascii=False, indent=2)
@@ -570,3 +828,4 @@ if __name__ == "__main__":
     print(f"Total global recipes: {len(data['global_recipe_map'])}")
     for cat in ["무기", "갑옷", "투구", "장신구", "보조장비", "마나석"]:
         print(f"  [{cat}]: {len(data['category_gear'][cat]['top_gear'])} top gear, {len(data['category_gear'][cat]['recipes'])} total recipes")
+

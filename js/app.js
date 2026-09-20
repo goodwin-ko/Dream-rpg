@@ -9,8 +9,10 @@
     "빛의 그레 일린": "빛의 그레일린",
     "빛의 그러일런": "빛의 그레일린",
     "얼음 그림자 아퀄리스": "얼음 그림자 아퀼리스",
-    "속세의 및-우키요에 두루마리": "속세의 빛-우키요에 두루마리",
-    "속세의및-우키요에 두루마리": "속세의 빛-우키요에 두루마리",
+    "속세의 및-우키요에 두루마리": "속세의 빛·우키요에 두루마리",
+    "속세의및-우키요에 두루마리": "속세의 빛·우키요에 두루마리",
+    "속세의 및·우키요에 두루마리": "속세의 빛·우키요에 두루마리",
+    "속세의및·우키요에 두루마리": "속세의 빛·우키요에 두루마리",
     "피의문양": "피의 문양",
     "영혼정화의 성목": "영혼 정화의 성목",
     "암흑의 회환": "암흑의 회한",
@@ -51,9 +53,11 @@
     "영혼 녹이는 화염 결정": "혼을 녹이는 화염 결정",
     "성스러운 및의 수호석": "성스러운 빛의 수호석",
     "영혼 구술의 족쇄": "영혼 구슬의 족쇄",
-    "용의 격노-용혼갑옷": "용의 격노-용혼 갑옷",
+    "용의 격노-용혼갑옷": "용의 격노·용혼 갑옷",
+    "용의 격노·용혼갑옷": "용의 격노·용혼 갑옷",
     "잊힌 고대의 마나석": "잊힌 고대 마나석",
-    "검은 쌍둥이 반지-성광 파편": "검은 쌍둥이 반지-섬광 파편",
+    "검은 쌍둥이 반지-성광 파편": "검은 쌍둥이 반지·섬광 파편",
+    "검은 쌍둥이 반지·성광 파편": "검은 쌍둥이 반지·섬광 파편",
     "붉은 화염 전투 세트": "붉은 화염 전투 셋트",
     "격노한 화염의 전쟁신 도끼": "격노한 화염의 전생신 도끼",
     "청공의 분노 뇌전홀": "천공의 분노 뇌전홀"
@@ -63,16 +67,136 @@
 
   function normalizeName(name) {
     if (!name) return "";
-    const trimmed = String(name).trim();
-    return ALIAS_MAP[trimmed] || trimmed;
+    let s = String(name).trim();
+    if (ALIAS_MAP[s]) s = ALIAS_MAP[s];
+
+    // Preserve special boss name TitonX-4060
+    if (/^tit[ao]nx-4060$/i.test(s)) {
+      return "TitonX-4060";
+    }
+
+    // Convert hyphen / dash / alternate dots to original middle dot '·' (U+00B7)
+    // e.g. "용의 격노-용혼 갑옷" -> "용의 격노·용혼 갑옷"
+    // "고대의 악몽-파괴의 검" -> "고대의 악몽·파괴의 검"
+    // "속세의 빛 - 우키요에 두루마리" -> "속세의 빛·우키요에 두루마리"
+    s = s.replace(/\s*[\-\–—•ㆍ・]\s*/g, "·");
+    s = s.replace(/\s*·\s*/g, "·");
+
+    if (ALIAS_MAP[s]) s = ALIAS_MAP[s];
+    return s;
+  }
+
+  function stripSeparators(s) {
+    if (!s) return "";
+    return String(s).toLowerCase().replace(/[\s\-\–—•ㆍ・\.\/\\·]+/g, "");
+  }
+
+  // English QWERTY 2-set to Korean converter (영타 -> 한타 자동 변환)
+  function engToKor(src) {
+    if (!src || typeof src !== 'string') return '';
+    
+    const CHO = ["ㄱ","ㄲ","ㄴ","ㄷ","ㄸ","ㄹ","ㅁ","ㅂ","ㅃ","ㅅ","ㅆ","ㅇ","ㅈ","ㅉ","ㅊ","ㅋ","ㅌ","ㅍ","ㅎ"];
+    const JUNG = ["ㅏ","ㅐ","ㅑ","ㅒ","ㅓ","ㅔ","ㅕ","ㅖ","ㅗ","ㅘ","ㅙ","ㅚ","ㅛ","ㅜ","ㅝ","ㅞ","ㅟ","ㅠ","ㅡ","ㅢ","ㅣ"];
+    const JONG = ["","ㄱ","ㄲ","ㄳ","ㄴ","ㄵ","ㄶ","ㄷ","ㄹ","ㄺ","ㄻ","ㄼ","ㄽ","ㄾ","ㄿ","ㅀ","ㅁ","ㅂ","ㅄ","ㅅ","ㅆ","ㅇ","ㅈ","ㅊ","ㅋ","ㅌ","ㅍ","ㅎ"];
+
+    const CHO_MAP = {
+      'r': 0, 'R': 1, 's': 2, 'e': 3, 'E': 4, 'f': 5, 'a': 6, 'q': 7, 'Q': 8,
+      't': 9, 'T': 10, 'd': 11, 'w': 12, 'W': 13, 'c': 14, 'z': 15, 'x': 16,
+      'v': 17, 'g': 18
+    };
+    const JUNG_MAP = {
+      'k': 0, 'o': 1, 'i': 2, 'O': 3, 'j': 4, 'p': 5, 'u': 6, 'P': 7,
+      'h': 8, 'y': 12, 'n': 13, 'b': 17, 'm': 18, 'l': 20
+    };
+    const COMP_JUNG = {
+      'hk': 9, 'ho': 10, 'hl': 11,
+      'nj': 14, 'np': 15, 'nl': 16,
+      'ml': 19
+    };
+    const JONG_MAP = {
+      'r': 1, 'R': 2, 's': 4, 'e': 7, 'f': 8, 'a': 16, 'q': 17,
+      't': 19, 'T': 20, 'd': 21, 'c': 22, 'z': 23, 'x': 24, 'v': 25, 'g': 26
+    };
+    const COMP_JONG = {
+      'rt': 3, 'sw': 5, 'sg': 6,
+      'fr': 9, 'fa': 10, 'fq': 11, 'ft': 12, 'fx': 13, 'fv': 14, 'fg': 15,
+      'qt': 18
+    };
+
+    let result = '';
+    let i = 0;
+    const len = src.length;
+
+    while (i < len) {
+      const c1 = src[i];
+      if (CHO_MAP[c1] !== undefined) {
+        const c2 = i + 1 < len ? src[i + 1] : '';
+        if (JUNG_MAP[c2] !== undefined) {
+          let choIdx = CHO_MAP[c1];
+          let jungIdx = JUNG_MAP[c2];
+          let step = 2;
+
+          const c3 = i + 2 < len ? src[i + 2] : '';
+          if (COMP_JUNG[c2 + c3] !== undefined) {
+            jungIdx = COMP_JUNG[c2 + c3];
+            step = 3;
+          }
+
+          let jongIdx = 0;
+          const c4 = i + step < len ? src[i + step] : '';
+          const c5 = i + step + 1 < len ? src[i + step + 1] : '';
+
+          if (c4 && JONG_MAP[c4] !== undefined) {
+            if (c5 && JUNG_MAP[c5] !== undefined) {
+              // c4 is cho for next syllable
+            } else {
+              if (c5 && COMP_JONG[c4 + c5] !== undefined) {
+                const c6 = i + step + 2 < len ? src[i + step + 2] : '';
+                if (c6 && JUNG_MAP[c6] !== undefined) {
+                  jongIdx = JONG_MAP[c4];
+                  step += 1;
+                } else {
+                  jongIdx = COMP_JONG[c4 + c5];
+                  step += 2;
+                }
+              } else {
+                jongIdx = JONG_MAP[c4];
+                step += 1;
+              }
+            }
+          }
+
+          result += String.fromCharCode(0xAC00 + (choIdx * 21 + jungIdx) * 28 + jongIdx);
+          i += step;
+        } else {
+          result += CHO[CHO_MAP[c1]];
+          i++;
+        }
+      } else if (JUNG_MAP[c1] !== undefined) {
+        const c2 = i + 1 < len ? src[i + 1] : '';
+        if (COMP_JUNG[c1 + c2] !== undefined) {
+          result += JUNG[COMP_JUNG[c1 + c2]];
+          i += 2;
+        } else {
+          result += JUNG[JUNG_MAP[c1]];
+          i++;
+        }
+      } else {
+        result += c1;
+        i++;
+      }
+    }
+
+    return result;
   }
 
   // App State
   let gameData = null;
   let currentJob = "프리스트";
-  let currentLoadout = {}; // { "무기": "...", "갑옷": "...", ... }
+  let currentLoadout = {}; // { [slot: string]: string[] } - 최대 3종류 장비 다중 등록
   let currentTab = "tree"; // "tree", "boss-route", "codex", "gear-codex"
   let currentSlot = "ALL";
+  let bossRouteSyncWithSlots = true; // Tab 2 boss route sync with selected slot
   let currentViewMode = "tree"; // "tree" or "flow"
   let checkedNodes = new Set();
   let userInventory = {}; // { [itemName: string]: number }
@@ -94,6 +218,7 @@
 
   // Modal State
   let modalSlot = "무기";
+  let modalTargetIndex = 0; // 0, 1, 2 to replace, -1 to add new
   let modalSearchQuery = "";
   let modalWeaponSubFilter = "ALL";
 
@@ -158,6 +283,7 @@
   // Tab 4 Gear Codex Elements
   const gearCatButtons = document.querySelectorAll(".gear-cat-btn");
   const gearCodexSearch = document.getElementById("gearCodexSearch");
+  const btnClearGearSearch = document.getElementById("btnClearGearSearch");
   const chkSynergyOnly = document.getElementById("chkSynergyOnly");
   const currentJobSynergyLabel = document.getElementById("currentJobSynergyLabel");
   const gearCodexGrid = document.getElementById("gearCodexGrid");
@@ -171,8 +297,211 @@
     loadInventory();
     renderJobSelector();
     bindEvents();
+    initStickyHeaderObserver();
     restoreUIState();
     renderAll();
+  }
+
+  function initStickyHeaderObserver() {
+    function updateStickyHeaderHeight() {
+      const headerGroup = document.querySelector('.sticky-header-group');
+      if (headerGroup) {
+        const h = headerGroup.offsetHeight;
+        if (h > 0) {
+          document.documentElement.style.setProperty('--header-group-height', `${h}px`);
+        }
+      }
+    }
+    updateStickyHeaderHeight();
+    window.addEventListener('resize', updateStickyHeaderHeight);
+    window.addEventListener('load', updateStickyHeaderHeight);
+    const headerGroup = document.querySelector('.sticky-header-group');
+    if (headerGroup && window.ResizeObserver) {
+      const ro = new ResizeObserver(() => updateStickyHeaderHeight());
+      ro.observe(headerGroup);
+    }
+  }
+
+  function normalizeGameData(targetData) {
+    if (!targetData) return targetData;
+    clearSearchCaches();
+
+    // 1. Normalize global_recipe_map
+    if (targetData.global_recipe_map) {
+      const newMap = {};
+      Object.keys(targetData.global_recipe_map).forEach(key => {
+        const oldRecipe = targetData.global_recipe_map[key];
+        const canonName = normalizeName(key);
+        oldRecipe.name = canonName;
+
+        if (oldRecipe.materials) {
+          oldRecipe.materials.forEach(m => {
+            m.name = normalizeName(m.name);
+            if (m.boss && !/^tit[ao]nx-4060$/i.test(m.boss)) {
+              m.boss = normalizeName(m.boss);
+            }
+          });
+        }
+        if (oldRecipe.drop_boss && !/^tit[ao]nx-4060$/i.test(oldRecipe.drop_boss)) {
+          oldRecipe.drop_boss = normalizeName(oldRecipe.drop_boss);
+        }
+
+        if (!newMap[canonName]) {
+          newMap[canonName] = oldRecipe;
+        } else {
+          const existing = newMap[canonName];
+          if ((!existing.materials || existing.materials.length === 0) && oldRecipe.materials && oldRecipe.materials.length > 0) {
+            existing.materials = oldRecipe.materials;
+          }
+          if (!existing.options && oldRecipe.options) existing.options = oldRecipe.options;
+          if (!existing.active_passive && oldRecipe.active_passive) existing.active_passive = oldRecipe.active_passive;
+          if (!existing.grade && oldRecipe.grade) existing.grade = oldRecipe.grade;
+          if (!existing.level && oldRecipe.level) {
+            existing.level = oldRecipe.level;
+            existing.level_str = oldRecipe.level_str;
+          }
+          if (!existing.sub_cat && oldRecipe.sub_cat) existing.sub_cat = oldRecipe.sub_cat;
+          if (!existing.sub_type && oldRecipe.sub_type) existing.sub_type = oldRecipe.sub_type;
+          if (!existing.synergy && oldRecipe.synergy) existing.synergy = oldRecipe.synergy;
+          if ((!existing.synergy_jobs || existing.synergy_jobs.length === 0) && oldRecipe.synergy_jobs) {
+            existing.synergy_jobs = oldRecipe.synergy_jobs;
+          }
+          if (!existing.drop_boss && oldRecipe.drop_boss) {
+            existing.drop_boss = oldRecipe.drop_boss;
+            existing.drop_level = oldRecipe.drop_level;
+            existing.drop_location = oldRecipe.drop_location;
+            existing.is_drop = oldRecipe.is_drop;
+          }
+        }
+      });
+      targetData.global_recipe_map = newMap;
+    }
+
+    // 2. Normalize category_gear
+    if (targetData.category_gear) {
+      Object.keys(targetData.category_gear).forEach(cat => {
+        const cg = targetData.category_gear[cat];
+        if (cg.top_gear) {
+          const seen = new Set();
+          const newTopGear = [];
+          cg.top_gear.forEach(name => {
+            const canon = normalizeName(name);
+            if (!seen.has(canon)) {
+              seen.add(canon);
+              newTopGear.push(canon);
+            }
+          });
+          cg.top_gear = newTopGear;
+        }
+        if (cg.recipes) {
+          const recipeMap = new Map();
+          cg.recipes.forEach(rc => {
+            const canon = normalizeName(rc.name);
+            rc.name = canon;
+            if (rc.materials) {
+              rc.materials.forEach(m => {
+                m.name = normalizeName(m.name);
+                if (m.boss && !/^tit[ao]nx-4060$/i.test(m.boss)) {
+                  m.boss = normalizeName(m.boss);
+                }
+              });
+            }
+            if (!recipeMap.has(canon)) {
+              recipeMap.set(canon, rc);
+            } else {
+              const ex = recipeMap.get(canon);
+              if ((!ex.materials || ex.materials.length === 0) && rc.materials && rc.materials.length > 0) {
+                ex.materials = rc.materials;
+              }
+              if (!ex.options && rc.options) ex.options = rc.options;
+              if (!ex.active_passive && rc.active_passive) ex.active_passive = rc.active_passive;
+              if (!ex.grade && rc.grade) ex.grade = rc.grade;
+            }
+          });
+          cg.recipes = Array.from(recipeMap.values());
+        }
+      });
+    }
+
+    // 3. Normalize bosses
+    if (targetData.bosses) {
+      targetData.bosses.forEach(b => {
+        if (!/^tit[ao]nx-4060$/i.test(b.name)) {
+          b.name = normalizeName(b.name);
+        }
+        if (b.drops) {
+          const dropSeen = new Set();
+          const newDrops = [];
+          b.drops.forEach(d => {
+            d.name = normalizeName(d.name);
+            if (!dropSeen.has(d.name)) {
+              dropSeen.add(d.name);
+              newDrops.push(d);
+            } else {
+              const existingDrop = newDrops.find(x => x.name === d.name);
+              if (existingDrop) {
+                if (!existingDrop.grade && d.grade) existingDrop.grade = d.grade;
+                if (!existingDrop.type && d.type) existingDrop.type = d.type;
+              }
+            }
+          });
+          b.drops = newDrops;
+        }
+      });
+    }
+
+    // 4. Normalize jobs
+    if (targetData.jobs) {
+      Object.keys(targetData.jobs).forEach(jobName => {
+        const j = targetData.jobs[jobName];
+        if (j.default_loadout) {
+          Object.keys(j.default_loadout).forEach(slot => {
+            j.default_loadout[slot] = normalizeName(j.default_loadout[slot]);
+          });
+        }
+        if (j.gear_slots) {
+          Object.keys(j.gear_slots).forEach(slot => {
+            if (Array.isArray(j.gear_slots[slot])) {
+              j.gear_slots[slot] = Array.from(new Set(j.gear_slots[slot].map(x => normalizeName(x))));
+            } else if (typeof j.gear_slots[slot] === "string") {
+              j.gear_slots[slot] = normalizeName(j.gear_slots[slot]);
+            }
+          });
+        }
+        if (j.recommendations) {
+          Object.keys(j.recommendations).forEach(slot => {
+            if (Array.isArray(j.recommendations[slot])) {
+              j.recommendations[slot] = Array.from(new Set(j.recommendations[slot].map(x => normalizeName(x))));
+            }
+          });
+        }
+        if (j.recipes) {
+          j.recipes.forEach(rc => {
+            rc.name = normalizeName(rc.name);
+            if (rc.materials) {
+              rc.materials.forEach(m => {
+                m.name = normalizeName(m.name);
+              });
+            }
+          });
+        }
+      });
+    }
+
+    try {
+      if (targetData && targetData.category_gear) {
+        CATEGORIES.forEach(cat => {
+          const topList = (targetData.category_gear[cat] && targetData.category_gear[cat].top_gear) || [];
+          topList.forEach(itemName => {
+            const clean = normalizeName(itemName);
+            const rec = targetData.global_recipe_map && targetData.global_recipe_map[clean];
+            if (rec) getSearchIndex(rec);
+          });
+        });
+      }
+    } catch (err) {}
+
+    return targetData;
   }
 
   function loadGameData() {
@@ -196,12 +525,56 @@
           }
         });
       }
+      if (savedData && savedData._info_table_merged) {
+        gameData = savedData;
+      }
     } else if (savedData) {
       gameData = savedData;
     }
 
     if (!gameData) {
       alert("게임 데이터를 불러올 수 없습니다. dream01.xlsx 파일을 업로드해주세요.");
+    }
+
+    // Deduplicate and normalize all item names to middle dot '·'
+    normalizeGameData(gameData);
+
+    // Automatically synchronize 정보Table.xlsx if available
+    autoSyncInfoTable();
+  }
+
+  function showToast(msg) {
+    let toast = document.getElementById("appToast");
+    if (!toast) {
+      toast = document.createElement("div");
+      toast.id = "appToast";
+      toast.className = "app-toast";
+      document.body.appendChild(toast);
+    }
+    toast.innerHTML = msg;
+    toast.classList.add("show");
+    if (toast._timer) clearTimeout(toast._timer);
+    toast._timer = setTimeout(() => {
+      toast.classList.remove("show");
+    }, 2500);
+  }
+
+  function updateSlotCounterUI() {
+    const counterEl = document.getElementById("slotSelectionCounter");
+    if (!counterEl) return;
+
+    if (currentSlot === "ALL") {
+      counterEl.className = "slot-selection-counter";
+      counterEl.textContent = "전체 부위 표시 중 (부위 클릭 시 해당 부위 최대 3종류 파밍)";
+    } else {
+      const items = currentLoadout[currentSlot] || [];
+      const count = items.length;
+      counterEl.className = `slot-selection-counter active ${count >= 3 ? 'max' : ''}`;
+      if (count >= 3) {
+        counterEl.textContent = `${currentSlot} 3/3종류 선택 완료 (최대)`;
+      } else {
+        counterEl.textContent = `${currentSlot} ${count}/3종류 선택 (최대 3종류 가능)`;
+      }
     }
   }
 
@@ -220,7 +593,11 @@
       }
 
       const savedSlot = localStorage.getItem("dream_selected_slot");
-      if (savedSlot) currentSlot = savedSlot;
+      if (savedSlot && (savedSlot === "ALL" || CATEGORIES.includes(savedSlot))) {
+        currentSlot = savedSlot;
+      } else {
+        currentSlot = "ALL";
+      }
 
       const savedViewMode = localStorage.getItem("dream_selected_view_mode");
       if (savedViewMode) currentViewMode = savedViewMode;
@@ -252,16 +629,26 @@
     try {
       const saved = localStorage.getItem("dream_rpg_loadout_" + currentJob);
       if (saved) {
-        currentLoadout = JSON.parse(saved);
+        const raw = JSON.parse(saved);
+        Object.keys(raw).forEach(k => {
+          if (Array.isArray(raw[k])) {
+            currentLoadout[k] = raw[k].map(x => normalizeName(x)).filter(Boolean).slice(0, 3);
+          } else if (typeof raw[k] === "string" && raw[k]) {
+            currentLoadout[k] = [normalizeName(raw[k])];
+          }
+        });
       }
     } catch (e) {
       console.error("Failed to load loadout:", e);
     }
 
     CATEGORIES.forEach(slot => {
-      if (!currentLoadout[slot]) {
-        currentLoadout[slot] = defaultLoadout[slot] || 
-          (gameData && gameData.category_gear && gameData.category_gear[slot] && gameData.category_gear[slot].top_gear[0]) || "";
+      if (!currentLoadout[slot] || currentLoadout[slot].length === 0) {
+        const def = normalizeName(defaultLoadout[slot] || 
+          (gameData && gameData.category_gear && gameData.category_gear[slot] && gameData.category_gear[slot].top_gear[0]) || "");
+        currentLoadout[slot] = def ? [def] : [];
+      } else {
+        currentLoadout[slot] = currentLoadout[slot].map(x => normalizeName(x)).slice(0, 3);
       }
     });
   }
@@ -278,7 +665,22 @@
     try {
       const key = "dream_v2_checked_nodes_" + currentJob;
       const saved = localStorage.getItem(key);
-      checkedNodes = new Set(saved ? JSON.parse(saved) : []);
+      const rawList = saved ? JSON.parse(saved) : [];
+      checkedNodes = new Set();
+      rawList.forEach(id => {
+        checkedNodes.add(id);
+        // Also add normalized variant for compatibility with legacy hyphenated node IDs
+        if (id && typeof id === "string") {
+          const normalizedId = id.split('__').map(part => {
+            if (part.includes('#')) {
+              const [pName, idx] = part.split('#');
+              return `${normalizeName(pName)}#${idx}`;
+            }
+            return normalizeName(part);
+          }).join('__');
+          checkedNodes.add(normalizedId);
+        }
+      });
     } catch (e) {
       console.error("Failed to load checked nodes:", e);
       checkedNodes = new Set();
@@ -297,7 +699,12 @@
   function loadInventory() {
     try {
       const saved = localStorage.getItem("dream_rpg_inventory");
-      userInventory = saved ? JSON.parse(saved) : {};
+      const rawInv = saved ? JSON.parse(saved) : {};
+      userInventory = {};
+      Object.keys(rawInv).forEach(k => {
+        const canon = normalizeName(k);
+        userInventory[canon] = (userInventory[canon] || 0) + rawInv[k];
+      });
     } catch (e) {
       console.error("Failed to load inventory:", e);
       userInventory = {};
@@ -350,6 +757,7 @@
     slotButtons.forEach(btn => {
       btn.classList.toggle("active", btn.dataset.slot === currentSlot);
     });
+    updateSlotCounterUI();
 
     viewModeButtons.forEach(btn => {
       btn.classList.toggle("active", btn.dataset.mode === currentViewMode);
@@ -362,7 +770,9 @@
 
     if (btnToggleSideSync) {
       btnToggleSideSync.classList.toggle("active", sideSlotSync);
-      btnToggleSideSync.textContent = sideSlotSync ? "선택 부위만 보기" : "선택 부위 연동";
+      const items = currentLoadout[currentSlot] || [];
+      const countText = currentSlot === "ALL" ? "전체 6부위" : `${currentSlot} ${items.length}종류`;
+      btnToggleSideSync.textContent = sideSlotSync ? `선택 부위만 보기 (${countText})` : "선택 부위 연동";
     }
 
     if (btnTogglePanelMode) {
@@ -383,6 +793,9 @@
       invBody.classList.toggle("collapsed", invCollapsed);
       btnToggleInvCollapse.textContent = invCollapsed ? "펼치기" : "접기";
     }
+    gearCatButtons.forEach(btn => {
+      btn.classList.toggle("active", btn.dataset.cat === gearCodexCat);
+    });
     updateInvBarHeight();
   }
 
@@ -431,11 +844,131 @@
     }
   }
 
+  // Precomputed Search Index & Material Tree Cache
+  const leafMaterialsCache = new Map();
+  let cachedAllGameItems = null;
+
+  function clearSearchCaches() {
+    leafMaterialsCache.clear();
+    cachedAllGameItems = null;
+    if (gameData && gameData.global_recipe_map) {
+      Object.values(gameData.global_recipe_map).forEach(r => {
+        delete r._searchIndex;
+        delete r._optionsHtml;
+        delete r._skillHtml;
+        delete r._gradeBadgeHtml;
+      });
+    }
+  }
+
+  function clearLeafMaterialsCache() {
+    clearSearchCaches();
+  }
+
+  // Precomputed search index for lightning-fast sub-millisecond search
+  function getSearchIndex(recipe) {
+    if (!recipe) return null;
+    if (recipe._searchIndex) return recipe._searchIndex;
+
+    const cleanName = stripSeparators(recipe.name);
+    const cleanGrade = stripSeparators(recipe.grade || "");
+    const cleanBoss = stripSeparators((recipe.drop_boss || "") + " " + (recipe.drop_location || ""));
+    const cleanSynergy = stripSeparators((recipe.synergy || "") + " " + (recipe.special_effect || ""));
+    const cleanOptions = stripSeparators(recipe.options || "");
+    const cleanSkill = stripSeparators(recipe.active_passive || "");
+
+    const directMats = (recipe.materials || []).map(m => ({
+      name: m.name,
+      cleanName: stripSeparators(m.name),
+      cleanBoss: stripSeparators(m.boss || ""),
+      qty: m.qty || 1,
+      boss: m.boss
+    }));
+
+    // Precompute recursive tree materials (names & hierarchy paths)
+    const treeMatMap = new Map();
+    const visited = new Set();
+    function collectTreeMats(rName, pathDisplay, depth) {
+      if (depth > 8 || visited.has(rName)) return;
+      visited.add(rName);
+
+      const r = getRecipe(rName);
+      if (!r || !r.materials) return;
+      r.materials.forEach(m => {
+        const cName = stripSeparators(m.name);
+        const subDisp = `${pathDisplay} > ${m.name}`;
+        if (!treeMatMap.has(cName)) {
+          treeMatMap.set(cName, {
+            cleanName: cName,
+            rawName: m.name,
+            path: subDisp,
+            cleanBoss: stripSeparators(m.boss || "")
+          });
+        }
+        const sub = getRecipe(m.name);
+        if (sub && !sub.is_drop && sub.materials && sub.materials.length > 0) {
+          collectTreeMats(m.name, subDisp, depth + 1);
+        }
+      });
+      visited.delete(rName);
+    }
+    collectTreeMats(recipe.name, recipe.name, 0);
+
+    const treeMatsList = Array.from(treeMatMap.values());
+
+    recipe._searchIndex = {
+      cleanName,
+      cleanGrade,
+      cleanBoss,
+      cleanSynergy,
+      cleanOptions,
+      cleanSkill,
+      directMats,
+      treeMatsList
+    };
+    return recipe._searchIndex;
+  }
+
+  // IME-safe debounce helper (handles compositionend and delayed triggers)
+  function setupDebouncedInput(inputEl, callback, delay = 200) {
+    if (!inputEl) return null;
+    let timer = null;
+
+    const schedule = () => {
+      if (timer) clearTimeout(timer);
+      timer = setTimeout(() => {
+        callback(inputEl.value);
+      }, delay);
+    };
+
+    inputEl.addEventListener("compositionend", () => {
+      schedule();
+    });
+
+    inputEl.addEventListener("input", () => {
+      schedule();
+    });
+
+    return {
+      cancel: () => {
+        if (timer) clearTimeout(timer);
+      },
+      flush: () => {
+        if (timer) clearTimeout(timer);
+        callback(inputEl.value);
+      }
+    };
+  }
+
   // Get leaf materials for an item
   function getLeafMaterials(rootItemName, slot) {
-    const leaves = [];
-    if (!rootItemName) return leaves;
+    if (!rootItemName) return [];
+    const cacheKey = `${rootItemName}__${slot}`;
+    if (leafMaterialsCache.has(cacheKey)) {
+      return leafMaterialsCache.get(cacheKey);
+    }
 
+    const leaves = [];
     const rootRecipe = getRecipe(rootItemName);
     // If root item itself is a boss drop item (0 craft materials)
     if (rootRecipe && (rootRecipe.is_drop || (!rootRecipe.materials || rootRecipe.materials.length === 0))) {
@@ -456,13 +989,21 @@
           location: rootRecipe.drop_location || "",
           is_drop: true
         });
+        leafMaterialsCache.set(cacheKey, leaves);
         return leaves;
       }
     }
 
+    const visitedSet = new Set();
     function traverse(itemName, currentPath, pathDisplay) {
+      if (visitedSet.has(itemName)) return; // Prevent circular recursion
+      visitedSet.add(itemName);
+
       const recipe = getRecipe(itemName);
-      if (!recipe || !recipe.materials || recipe.materials.length === 0) return;
+      if (!recipe || !recipe.materials || recipe.materials.length === 0) {
+        visitedSet.delete(itemName);
+        return;
+      }
 
       recipe.materials.forEach((mat, idx) => {
         const subRecipe = getRecipe(mat.name);
@@ -495,9 +1036,12 @@
           });
         }
       });
+
+      visitedSet.delete(itemName);
     }
 
     traverse(rootItemName, [slot, rootItemName], `${slot}: ${rootItemName}`);
+    leafMaterialsCache.set(cacheKey, leaves);
     return leaves;
   }
 
@@ -540,15 +1084,17 @@
     return leaves;
   }
 
-  // Get all leaves across the current 6-slot loadout
+  // Get all leaves across the current loadout (supports up to 3 items per slot)
   function getAllCurrentLeaves() {
     const allLeaves = [];
     CATEGORIES.forEach(slot => {
-      const topItem = currentLoadout[slot];
-      if (topItem) {
-        const leaves = getLeafMaterials(topItem, slot);
-        allLeaves.push(...leaves);
-      }
+      const items = currentLoadout[slot] || [];
+      items.forEach(topItem => {
+        if (topItem) {
+          const leaves = getLeafMaterials(topItem, slot);
+          allLeaves.push(...leaves);
+        }
+      });
     });
     return allLeaves;
   }
@@ -575,13 +1121,16 @@
     let checkedCount = 0;
 
     CATEGORIES.forEach(slot => {
-      const topItem = currentLoadout[slot];
-      const leaves = topItem ? getLeafMaterials(topItem, slot) : [];
-      let slotTotal = leaves.length;
+      const items = currentLoadout[slot] || [];
+      let slotTotal = 0;
       let slotChecked = 0;
 
-      leaves.forEach(leaf => {
-        if (checkedNodes.has(leaf.id)) slotChecked++;
+      items.forEach(topItem => {
+        const leaves = topItem ? getLeafMaterials(topItem, slot) : [];
+        slotTotal += leaves.length;
+        leaves.forEach(leaf => {
+          if (checkedNodes.has(leaf.id)) slotChecked++;
+        });
       });
 
       totalNodes += slotTotal;
@@ -592,7 +1141,8 @@
         const badge = slotBtn.querySelector(".slot-badge-count");
         if (badge) {
           const pct = slotTotal > 0 ? Math.round((slotChecked / slotTotal) * 100) : 0;
-          badge.textContent = `${pct}%`;
+          const countText = items.length > 1 ? ` (${items.length})` : '';
+          badge.textContent = `${pct}%${countText}`;
         }
       }
     });
@@ -609,7 +1159,22 @@
     const overallPct = totalNodes > 0 ? Math.round((checkedCount / totalNodes) * 100) : 0;
     if (overallProgressFill) overallProgressFill.style.width = `${overallPct}%`;
     if (overallProgressText) {
-      overallProgressText.innerHTML = `전체 파밍 진행률: <strong>${overallPct}%</strong> (보유 재료: ${checkedCount} / 총 필요: ${totalNodes})`;
+      if (currentSlot === "ALL") {
+        overallProgressText.innerHTML = `전체 파밍 진행률: <strong>${overallPct}%</strong> (보유 재료: ${checkedCount} / 총 필요: ${totalNodes})`;
+      } else {
+        const items = currentLoadout[currentSlot] || [];
+        let slotTotal = 0;
+        let slotChecked = 0;
+        items.forEach(topItem => {
+          const leaves = topItem ? getLeafMaterials(topItem, currentSlot) : [];
+          slotTotal += leaves.length;
+          leaves.forEach(leaf => {
+            if (checkedNodes.has(leaf.id)) slotChecked++;
+          });
+        });
+        const slotPct = slotTotal > 0 ? Math.round((slotChecked / slotTotal) * 100) : 0;
+        overallProgressText.innerHTML = `[${currentSlot}] 진행률: <strong>${slotPct}%</strong> (${slotChecked}/${slotTotal}개, ${items.length}종류 선택됨) <span style="font-size: 11.5px; color: var(--text-dim); margin-left: 8px;">(전체 6부위: ${overallPct}%)</span>`;
+      }
     }
   }
 
@@ -624,15 +1189,69 @@
     const slotsToShow = currentSlot === "ALL" ? CATEGORIES : [currentSlot];
 
     slotsToShow.forEach(slot => {
-      const topItemName = currentLoadout[slot];
-      if (!topItemName) return;
+      const items = currentLoadout[slot] || [];
 
-      const card = createGearCard(topItemName, slot);
-      container.appendChild(card);
+      // Slot Section Container
+      const sectionEl = document.createElement("div");
+      sectionEl.className = `slot-group-section slot-${slot}`;
+
+      // If viewing a specific slot (e.g. "무기" or "갑옷"), show a header with add button
+      const isSingleSlotView = (currentSlot !== "ALL");
+      if (isSingleSlotView) {
+        const slotHeader = document.createElement("div");
+        slotHeader.className = "slot-group-header";
+        slotHeader.innerHTML = `
+          <div class="slot-group-title">
+            <span class="slot-tag ${slot}">${slot}</span>
+            <span style="font-size: 15px; font-weight: 700; color: #fff;">${slot} 파밍 목록</span>
+            <span class="badge-slot-item-count">${items.length}/3종류 선택됨</span>
+          </div>
+          ${items.length < 3 ? `
+            <button class="btn-add-gear-item" data-slot="${slot}">
+              ➕ ${slot} 추가하기 (${3 - items.length}개 더 추가 가능)
+            </button>
+          ` : `<span style="font-size: 12px; color: var(--accent-gold); font-weight: 600;">✓ 최대 3종류 선택 완료</span>`}
+        `;
+
+        const btnAdd = slotHeader.querySelector(".btn-add-gear-item");
+        if (btnAdd) {
+          btnAdd.addEventListener("click", () => {
+            openGearModal(slot, -1);
+          });
+        }
+        sectionEl.appendChild(slotHeader);
+      }
+
+      // Render cards for each item in this slot
+      items.forEach((topItemName, itemIdx) => {
+        if (!topItemName) return;
+        const card = createGearCard(topItemName, slot, itemIdx, items.length);
+        sectionEl.appendChild(card);
+      });
+
+      // If in single slot view and less than 3, also show an empty slot card / button
+      if (isSingleSlotView && items.length < 3) {
+        const addCard = document.createElement("div");
+        addCard.className = "empty-gear-add-card";
+        addCard.innerHTML = `
+          <div class="empty-add-icon">➕</div>
+          <div class="empty-add-text">
+            <strong>새로운 ${slot} 파밍 아이템 추가</strong>
+            <span>최대 3종류까지 등록하여 동시에 조합 트리와 파밍 재료를 확인할 수 있습니다 (${items.length}/3)</span>
+          </div>
+          <button class="btn btn-primary" style="padding: 6px 14px; font-size: 12px;">+ ${slot} 추가</button>
+        `;
+        addCard.addEventListener("click", () => {
+          openGearModal(slot, -1);
+        });
+        sectionEl.appendChild(addCard);
+      }
+
+      container.appendChild(sectionEl);
     });
   }
 
-  function createGearCard(itemName, slot) {
+  function createGearCard(itemName, slot, itemIdx = 0, totalItemsInSlot = 1) {
     const card = document.createElement("div");
     card.className = `gear-card slot-${slot}`;
 
@@ -647,29 +1266,36 @@
     const isDropItem = recipe && (recipe.is_drop || (leaves.length === 1 && leaves[0].is_drop && leaves[0].name === itemName));
     const itemLvlStr = recipe ? (recipe.level_str || (recipe.level ? `Lv.${recipe.level}` : "")) : "";
 
+    const slotLabel = totalItemsInSlot > 1 ? `${slot} #${itemIdx + 1}` : slot;
+
     const header = document.createElement("div");
     header.className = "gear-card-header";
     header.innerHTML = `
       <div class="gear-info">
         <div style="display: flex; align-items: center; gap: 8px; flex-wrap: wrap;">
-          <span class="slot-tag ${slot}">${slot}</span>
+          <span class="slot-tag ${slot}">${slotLabel}</span>
           ${itemLvlStr ? `<span class="badge-level">${itemLvlStr}</span>` : ""}
           <h3 class="gear-title">${itemName}</h3>
           ${isDropItem ? `<span class="badge-drop-item">👹 보스 완제품 드랍</span>` : ""}
           ${hasSynergy ? `<span class="badge-synergy active">⭐ ${currentJob} 추천 [시너지: ${itemSynergy}]</span>` : (itemSynergy ? `<span class="badge-synergy other">✨ 시너지: ${itemSynergy}</span>` : "")}
-          <button class="btn-change-gear" data-slot="${slot}" title="다른 장비로 변경">🔄 장비 변경</button>
+          <button class="btn-change-gear" data-slot="${slot}" data-idx="${itemIdx}" title="다른 장비로 변경">🔄 장비 변경</button>
+          ${totalItemsInSlot > 1 ? `
+            <button class="btn-delete-gear-item" data-slot="${slot}" data-idx="${itemIdx}" title="이 장비 파밍 목록에서 제거" style="background: rgba(239, 68, 68, 0.15); border: 1px solid rgba(239, 68, 68, 0.35); color: #fca5a5; padding: 4px 8px; border-radius: 4px; font-size: 11px; cursor: pointer;">
+              ❌ 제거
+            </button>
+          ` : ''}
         </div>
         ${itemSynergy ? `<div class="synergy-effect-box">✨ <strong>[특수직업효과]</strong> ${itemSynergy}</div>` : ""}
       </div>
       <div class="gear-card-actions">
         <span class="gear-progress-text">${leaves.length > 0 ? `달성률: <strong>${pct}%</strong> (${checkedInCard}/${leaves.length})` : `<span style="color: var(--text-muted); font-size: 0.85rem;">조합 정보 준비 중</span>`}</span>
-        <button class="btn-toggle-tree" data-target="body-${slot}-${itemName.replace(/\s+/g, '_')}">펼치기/접기</button>
+        <button class="btn-toggle-tree" data-target="body-${slot}-${itemIdx}-${itemName.replace(/\s+/g, '_')}">펼치기/접기</button>
       </div>
     `;
 
     const body = document.createElement("div");
     body.className = "gear-card-body";
-    body.id = `body-${slot}-${itemName.replace(/\s+/g, '_')}`;
+    body.id = `body-${slot}-${itemIdx}-${itemName.replace(/\s+/g, '_')}`;
 
     if (isDropItem) {
       const dropLeaf = leaves[0];
@@ -741,8 +1367,20 @@
     const changeBtn = header.querySelector(".btn-change-gear");
     changeBtn.addEventListener("click", (e) => {
       e.stopPropagation();
-      openGearModal(slot);
+      openGearModal(slot, itemIdx);
     });
+
+    const deleteBtn = header.querySelector(".btn-delete-gear-item");
+    if (deleteBtn) {
+      deleteBtn.addEventListener("click", (e) => {
+        e.stopPropagation();
+        if (confirm(`'${itemName}' 장비를 ${slot} 파밍 목록에서 제거하시겠습니까?`)) {
+          currentLoadout[slot].splice(itemIdx, 1);
+          saveActiveLoadout();
+          renderAll();
+        }
+      });
+    }
 
     card.appendChild(header);
     card.appendChild(body);
@@ -1128,6 +1766,7 @@
   // =========================================================================
   function getAllGameItems() {
     if (!gameData) return [];
+    if (cachedAllGameItems) return cachedAllGameItems;
     const itemMap = new Map();
 
     // 1. All recipes in global_recipe_map
@@ -1209,7 +1848,8 @@
       });
     }
 
-    return Array.from(itemMap.values());
+    cachedAllGameItems = Array.from(itemMap.values());
+    return cachedAllGameItems;
   }
 
   function renderInventory() {
@@ -1399,9 +2039,18 @@
     if (!sideLevelList) return;
     sideLevelList.innerHTML = "";
 
-    const allLeaves = (sideSlotSync && currentSlot !== "ALL")
-      ? getLeafMaterials(currentLoadout[currentSlot], currentSlot)
-      : getAllCurrentLeaves();
+    let allLeaves;
+    if (sideSlotSync && currentSlot !== "ALL") {
+      allLeaves = [];
+      const items = currentLoadout[currentSlot] || [];
+      items.forEach(topItem => {
+        if (topItem) {
+          allLeaves.push(...getLeafMaterials(topItem, currentSlot));
+        }
+      });
+    } else {
+      allLeaves = getAllCurrentLeaves();
+    }
 
     const levelGroups = {};
     allLeaves.forEach(l => {
@@ -1438,8 +2087,9 @@
 
       const matchedMats = matList.filter(m => {
         if (!sideSearchQuery) return true;
-        return m.name.toLowerCase().includes(sideSearchQuery) || 
-               (m.boss && m.boss.toLowerCase().includes(sideSearchQuery));
+        const qClean = stripSeparators(sideSearchQuery);
+        return stripSeparators(m.name).includes(qClean) || 
+               stripSeparators(m.boss || "").includes(qClean);
       });
 
       if (matchedMats.length === 0) return;
@@ -1596,12 +2246,22 @@
   // =========================================================================
   // Gear Selection Modal
   // =========================================================================
-  function openGearModal(slot) {
+  function openGearModal(slot, targetIdx = 0) {
     modalSlot = slot;
+    modalTargetIndex = (targetIdx !== undefined) ? targetIdx : 0;
     modalSearchQuery = "";
     modalWeaponSubFilter = "ALL";
     if (gearModalSearch) gearModalSearch.value = "";
-    if (gearSelectModalTitle) gearSelectModalTitle.textContent = `${slot} 장비 변경`;
+
+    const items = currentLoadout[slot] || [];
+    if (gearSelectModalTitle) {
+      if (modalTargetIndex === -1) {
+        gearSelectModalTitle.textContent = `${slot} 추가하기 (${items.length}/3)`;
+      } else {
+        const itemNum = (items.length > 1) ? ` #${modalTargetIndex + 1}` : '';
+        gearSelectModalTitle.textContent = `${slot}${itemNum} 장비 변경`;
+      }
+    }
     if (gearModalSlotBadge) {
       gearModalSlotBadge.textContent = slot;
       gearModalSlotBadge.className = `slot-tag ${slot}`;
@@ -1623,6 +2283,63 @@
     if (!gearSelectList) return;
     gearSelectList.innerHTML = "";
 
+    const currentlyEquippedList = currentLoadout[modalSlot] || [];
+
+    // Render Equipped Summary Chips
+    const modalEquippedSummary = document.getElementById("modalEquippedSummary");
+    if (modalEquippedSummary) {
+      if (currentlyEquippedList.length === 0) {
+        modalEquippedSummary.innerHTML = `
+          <div class="modal-equipped-label">등록된 ${modalSlot}: 없음 (장비를 선택하여 추가하세요)</div>
+        `;
+      } else {
+        modalEquippedSummary.innerHTML = `
+          <div class="modal-equipped-label">현재 등록된 ${modalSlot} (${currentlyEquippedList.length}/3):</div>
+          <div class="modal-equipped-chips">
+            ${currentlyEquippedList.map((it, idx) => `
+              <span class="modal-chip ${modalTargetIndex === idx ? 'targeting' : ''}">
+                <span class="chip-num">#${idx + 1}</span>
+                <span class="chip-name">${it}</span>
+                <button class="chip-del" data-idx="${idx}" title="제거">×</button>
+              </span>
+            `).join("")}
+            ${currentlyEquippedList.length < 3 ? `
+              <button class="modal-chip-add ${modalTargetIndex === -1 ? 'active' : ''}">+ 추가 모드</button>
+            ` : ''}
+          </div>
+        `;
+
+        modalEquippedSummary.querySelectorAll(".chip-del").forEach(btn => {
+          btn.onclick = (e) => {
+            e.stopPropagation();
+            const delIdx = parseInt(btn.dataset.idx, 10);
+            currentlyEquippedList.splice(delIdx, 1);
+            saveActiveLoadout();
+            if (modalTargetIndex >= currentlyEquippedList.length) modalTargetIndex = currentlyEquippedList.length - 1;
+            renderAll();
+            renderGearModalList();
+          };
+        });
+
+        const btnAddMode = modalEquippedSummary.querySelector(".modal-chip-add");
+        if (btnAddMode) {
+          btnAddMode.onclick = () => {
+            modalTargetIndex = -1;
+            if (gearSelectModalTitle) gearSelectModalTitle.textContent = `${modalSlot} 추가하기 (${currentlyEquippedList.length}/3)`;
+            renderGearModalList();
+          };
+        }
+
+        modalEquippedSummary.querySelectorAll(".modal-chip").forEach((chip, idx) => {
+          chip.onclick = () => {
+            modalTargetIndex = idx;
+            if (gearSelectModalTitle) gearSelectModalTitle.textContent = `${modalSlot} #${idx + 1} 장비 변경`;
+            renderGearModalList();
+          };
+        });
+      }
+    }
+
     const modalWeaponSubFilterBar = document.getElementById("modalWeaponSubFilterBar");
     if (modalWeaponSubFilterBar) {
       if (modalSlot === "무기") {
@@ -1643,15 +2360,14 @@
     const catData = gameData && gameData.category_gear && gameData.category_gear[modalSlot];
     const topGearList = (catData && catData.top_gear) || [];
 
-    const currentlyEquipped = currentLoadout[modalSlot];
-
     const filtered = topGearList.filter(name => {
       const recipe = getRecipe(name);
       if (modalSlot === "무기" && modalWeaponSubFilter !== "ALL") {
         if (!recipe || recipe.sub_cat !== modalWeaponSubFilter) return false;
       }
       if (!modalSearchQuery) return true;
-      return name.toLowerCase().includes(modalSearchQuery.toLowerCase());
+      const modalQClean = stripSeparators(modalSearchQuery);
+      return stripSeparators(name).includes(modalQClean);
     });
 
     // Sort: Synergy items for current job first, then equipped, then level descending, then alphabetical
@@ -1663,8 +2379,11 @@
 
       if (synA && !synB) return -1;
       if (!synA && synB) return 1;
-      if (a === currentlyEquipped) return -1;
-      if (b === currentlyEquipped) return 1;
+
+      const aEq = currentlyEquippedList.includes(a);
+      const bEq = currentlyEquippedList.includes(b);
+      if (aEq && !bEq) return -1;
+      if (!aEq && bEq) return 1;
 
       const lvlA = (recA && recA.level) || 0;
       const lvlB = (recB && recB.level) || 0;
@@ -1680,7 +2399,8 @@
 
     filtered.forEach(itemName => {
       const recipe = getRecipe(itemName);
-      const isEquipped = (itemName === currentlyEquipped);
+      const isEquipped = currentlyEquippedList.includes(itemName);
+      const eqIdx = currentlyEquippedList.indexOf(itemName);
       const hasSynergy = recipe && recipe.synergy_jobs && recipe.synergy_jobs.includes(currentJob);
       const itemSynergy = recipe ? (recipe.synergy || recipe.special_effect || "") : "";
       const isDrop = recipe && recipe.is_drop;
@@ -1690,10 +2410,28 @@
       const card = document.createElement("div");
       card.className = `gear-select-card ${isEquipped ? 'active-equipped' : ''} ${hasSynergy ? 'has-synergy' : ''}`;
 
+      const gradeBadge = (recipe && recipe.grade) ? getGradeBadgeHtml(recipe.grade) : "";
+      const statsPreview = (recipe && recipe.options)
+        ? `<div style="font-size: 11px; color: #94a3b8; margin-top: 6px; line-height: 1.35;">${recipe.options.split(/[\r\n]+/).slice(0, 3).join(' · ')}</div>`
+        : "";
+      const skillPreview = (recipe && recipe.active_passive)
+        ? `<div style="font-size: 10.5px; color: #fde68a; margin-top: 4px; background: rgba(245, 158, 11, 0.1); padding: 3px 6px; border-radius: 4px;">⚡ ${recipe.active_passive.split(/[\r\n]+/)[0]}</div>`
+        : "";
+
+      let btnLabel = "장착하기";
+      if (isEquipped) {
+        btnLabel = `✓ 등록 중 (#${eqIdx + 1})`;
+      } else if (modalTargetIndex === -1) {
+        btnLabel = `+ 추가하기 (${currentlyEquippedList.length}/3)`;
+      } else {
+        btnLabel = `#${modalTargetIndex + 1} 장비로 교체`;
+      }
+
       card.innerHTML = `
         <div>
           <div class="gear-select-card-header">
             <div style="display: flex; align-items: center; gap: 6px; flex-wrap: wrap;">
+              ${gradeBadge}
               <span class="slot-tag ${subTag}">${subTag}</span>
               <span class="gear-select-card-name">${itemName}</span>
               ${lvlStr ? `<span class="badge-level">${lvlStr}</span>` : ""}
@@ -1701,13 +2439,36 @@
             </div>
             ${hasSynergy ? `<span class="badge-synergy active">⭐ ${currentJob} 추천</span>` : (itemSynergy ? `<span class="badge-synergy-tag">✨ ${itemSynergy}</span>` : "")}
           </div>
+          ${statsPreview}
+          ${skillPreview}
           ${itemSynergy ? `<div class="gear-select-card-effect">✨ <strong>[특수직업효과]</strong> ${itemSynergy}</div>` : ""}
         </div>
-        <button class="gear-select-card-btn">${isEquipped ? '✓ 현재 장착 중' : '장착하기'}</button>
+        <button class="gear-select-card-btn">${btnLabel}</button>
       `;
 
       card.addEventListener("click", () => {
-        currentLoadout[modalSlot] = itemName;
+        if (!currentLoadout[modalSlot]) currentLoadout[modalSlot] = [];
+
+        if (modalTargetIndex === -1) {
+          if (currentLoadout[modalSlot].includes(itemName)) {
+            showToast(`ℹ️ '${itemName}'은(는) 이미 등록되어 있습니다.`);
+            return;
+          }
+          if (currentLoadout[modalSlot].length >= 3) {
+            showToast(`⚠️ [${modalSlot}] 부위는 최대 3종류까지만 등록 가능합니다.`);
+            return;
+          }
+          currentLoadout[modalSlot].push(itemName);
+          showToast(`✅ [${modalSlot}]에 '${itemName}'이(가) 추가되었습니다. (${currentLoadout[modalSlot].length}/3)`);
+        } else {
+          if (currentLoadout[modalSlot].includes(itemName) && currentLoadout[modalSlot][modalTargetIndex] !== itemName) {
+            showToast(`ℹ️ '${itemName}'은(는) 이미 다른 슬롯에 등록되어 있습니다.`);
+            return;
+          }
+          currentLoadout[modalSlot][modalTargetIndex] = itemName;
+          showToast(`🔄 [${modalSlot}] #${modalTargetIndex + 1} 장비가 '${itemName}'(으)로 변경되었습니다.`);
+        }
+
         saveActiveLoadout();
         if (gearSelectModal) gearSelectModal.style.display = "none";
         renderAll();
@@ -1725,7 +2486,44 @@
     if (!container) return;
     container.innerHTML = "";
 
-    const allLeaves = getAllCurrentLeaves();
+    const isSingleSlot = (currentSlot !== "ALL");
+    const allLeaves = (bossRouteSyncWithSlots && isSingleSlot)
+      ? (() => {
+          const leaves = [];
+          const items = currentLoadout[currentSlot] || [];
+          items.forEach(topItem => {
+            if (topItem) leaves.push(...getLeafMaterials(topItem, currentSlot));
+          });
+          return leaves;
+        })()
+      : getAllCurrentLeaves();
+
+    const bossRouteInfoBox = document.querySelector(".boss-route-info-box");
+    if (bossRouteInfoBox) {
+      const itemsCount = (currentLoadout[currentSlot] || []).length;
+      const filterToggleHtml = isSingleSlot ? `
+        <div style="margin-top: 8px; display: flex; align-items: center; gap: 8px;">
+          <span style="font-size: 12px; color: var(--text-muted);">보스 필터:</span>
+          <button id="btnBossRouteFilterToggle" class="btn-side-filter ${bossRouteSyncWithSlots ? 'active' : ''}">
+            ${bossRouteSyncWithSlots ? `🎯 선택한 [${currentSlot}] 보스만 보기 (${itemsCount}종류)` : '🌐 전체 6부위 보스 보기'}
+          </button>
+        </div>
+      ` : '';
+      bossRouteInfoBox.innerHTML = `
+        <div>
+          💡 ${(isSingleSlot && bossRouteSyncWithSlots) ? `현재 선택된 <strong>[${currentSlot}]</strong> (${itemsCount}종류) 장비에 필요한` : '현재 선택된 6개 부위 장비에 필요한'} <strong>보스 드랍 재료 및 이동 지역</strong>입니다. 체크박스를 누르면 조합 트리와 실시간 연동됩니다.
+        </div>
+        ${filterToggleHtml}
+      `;
+      const btnToggle = document.getElementById("btnBossRouteFilterToggle");
+      if (btnToggle) {
+        btnToggle.onclick = () => {
+          bossRouteSyncWithSlots = !bossRouteSyncWithSlots;
+          renderBossRouteTab();
+        };
+      }
+    }
+
     const bossMap = {};
 
     allLeaves.forEach(leaf => {
@@ -1893,9 +2691,15 @@
       }
 
       if (query) {
-        const matchBoss = b.name.toLowerCase().includes(query);
-        const matchLoc = (b.location || "").toLowerCase().includes(query);
-        const matchDrop = b.drops.some(d => d.name.toLowerCase().includes(query));
+        const qClean = stripSeparators(query);
+        const qConverted = /[a-zA-Z]/.test(query) ? stripSeparators(engToKor(query)) : "";
+        const matchText = (t) => {
+          const c = stripSeparators(t || "");
+          return c.includes(qClean) || (qConverted && c.includes(qConverted));
+        };
+        const matchBoss = matchText(b.name);
+        const matchLoc = matchText(b.location);
+        const matchDrop = b.drops.some(d => matchText(d.name));
         if (!matchBoss && !matchLoc && !matchDrop) return false;
       }
 
@@ -1938,13 +2742,15 @@
         const typeClass = isItemType ? "tag-drop-item" : (isMiningType ? "tag-drop-mining" : "tag-drop-mat");
         const lvlStr = d.level_str || (b.level_str || (b.level ? `Lv.${b.level}` : ""));
 
+        const gradeBadge = d.grade ? getGradeBadgeHtml(d.grade) : "";
+
         li.innerHTML = `
           <div style="display: flex; align-items: center; gap: 8px; flex-wrap: wrap;">
             <span class="drop-name">${isMining ? (d.display || (d.location ? `${d.name}-${d.location}` : d.name)) : d.name}</span>
-            ${lvlStr ? `<span class="badge-level" style="font-size: 11px;">${lvlStr}</span>` : ""}
           </div>
           <div style="display: flex; align-items: center; gap: 6px;">
             ${needed > 0 ? `<span class="needed-badge">★ 현재 빌드 ${needed}개 필요</span> ` : ""}
+            ${gradeBadge}
             <span class="drop-type-tag ${typeClass}">${d.type || (isMining ? "채광" : "재료")}</span>
           </div>
         `;
@@ -1957,10 +2763,348 @@
   }
 
   // =========================================================================
-  // Tab 4: Gear Codex & Job Synergy
+  // Gear Grade & Stats & Skill Formatters
   // =========================================================================
+  function getGradeBadgeHtml(grade) {
+    if (!grade) return "";
+    const g = String(grade).trim();
+    let gradeClass = "일반";
+    if (g.includes("우수")) gradeClass = "우수";
+    else if (g.includes("희귀")) gradeClass = "희귀";
+    else if (g.includes("궁극") || g.includes("극한")) gradeClass = "극한";
+    else if (g.includes("에픽")) gradeClass = "에픽";
+    else if (g.includes("전설")) gradeClass = "전설";
+    else if (g.includes("신화")) gradeClass = "신화";
+    else if (g.includes("고대") || g.includes("영원")) gradeClass = "고대";
+    
+    return `<span class="badge-grade badge-grade-${gradeClass}">${g}</span>`;
+  }
+
+  function formatGearOptions(optionsStr) {
+    if (!optionsStr) return "";
+    const lines = String(optionsStr).split(/[\r\n]+/).map(s => s.trim()).filter(Boolean);
+    if (lines.length === 0) return "";
+
+    const chips = lines.map(line => {
+      let icon = "🔹";
+      if (line.includes("방어력")) icon = "🛡️";
+      else if (line.includes("힘")) icon = "⚔️";
+      else if (line.includes("민첩")) icon = "🏹";
+      else if (line.includes("지능")) icon = "🪄";
+      else if (line.includes("주 능력치")) icon = "🌟";
+      else if (line.includes("체력") && !line.includes("회복")) icon = "❤️";
+      else if (line.includes("마나") && !line.includes("회복")) icon = "💧";
+      else if (line.includes("회복")) icon = "💚";
+      else if (line.includes("공격력")) icon = "🗡️";
+      else if (line.includes("이동 속도")) icon = "👟";
+      else if (line.includes("공격 속도")) icon = "⚡";
+      else if (line.includes("회피")) icon = "💨";
+      else if (line.includes("마법 저항")) icon = "🔮";
+      else if (line.includes("스킬 피해")) icon = "✨";
+      else if (line.includes("치명타")) icon = "🎯";
+
+      const formattedLine = line.replace(/(\d+(?:\.\d+)?%?)/g, '<strong>$1</strong>');
+      return `<span class="gear-stat-chip">${icon} ${formattedLine}</span>`;
+    }).join("");
+
+    return `
+      <div class="gear-options-container">
+        <div class="gear-options-header">📊 기본 옵션 & 능력치</div>
+        <div class="gear-stat-chips">${chips}</div>
+      </div>
+    `;
+  }
+
+  function formatGearSkill(skillStr) {
+    if (!skillStr) return "";
+    const trimmed = String(skillStr).trim();
+    if (!trimmed) return "";
+
+    const isActive = trimmed.includes("액티브");
+    const isPassive = trimmed.includes("패시브");
+
+    let title = isActive ? "액티브 효과" : (isPassive ? "패시브 효과" : "특수 효과");
+    let body = trimmed;
+    let cooldown = "";
+
+    const titleMatch = trimmed.match(/(?:액티브|패시브)\s*효과\s*[-–—:]\s*([^-\n]+)[-–—]?/);
+    if (titleMatch) {
+      title = `${isActive ? '액티브' : '패시브'}: ${titleMatch[1].trim()}`;
+    }
+
+    const cdMatch = trimmed.match(/(?:재사용\s*대기시간|쿨타임|쿨다운)\s*[:：]?\s*([^\n\r]+)/);
+    if (cdMatch) {
+      cooldown = cdMatch[1].trim();
+      body = body.replace(/(?:재사용\s*대기시간|쿨타임|쿨다운)\s*[:：]?\s*[^\n\r]+/, "").trim();
+    }
+
+    if (titleMatch) {
+      body = body.replace(/(?:액티브|패시브)\s*효과\s*[-–—:][^\n\r]+[\n\r]*/, "").trim();
+    }
+
+    const boxClass = isActive ? "active-skill" : "passive-skill";
+    const icon = isActive ? "⚡" : "🛡️";
+
+    return `
+      <div class="gear-skill-callout ${boxClass}">
+        <div class="gear-skill-header">
+          <span class="gear-skill-title">${icon} ${title}</span>
+          ${cooldown ? `<span class="gear-skill-cd-badge">⏱️ 쿨타임 ${cooldown}</span>` : ""}
+        </div>
+        <div class="gear-skill-body">${body.replace(/\n/g, '<br>')}</div>
+      </div>
+    `;
+  }
+
+  // =========================================================================
+  // Tab 4: Gear Codex & Job Synergy & Material Usage Search
+  // =========================================================================
+  function getItemSearchRelevance(itemName, slot, queryClean) {
+    const qClean = stripSeparators(queryClean);
+    if (!qClean) return { match: true, score: 0, matchedDirectMats: [], matchedTreeMats: [], isDropMatch: false };
+
+    const recipe = getRecipe(itemName);
+    if (!recipe) return { match: false, score: -1, matchedDirectMats: [], matchedTreeMats: [], isDropMatch: false };
+
+    const idx = getSearchIndex(recipe);
+    if (!idx) return { match: false, score: -1, matchedDirectMats: [], matchedTreeMats: [], isDropMatch: false };
+
+    // Support English keyboard input (e.g. 'rja' -> '검') when user switched windows
+    const queryList = [qClean];
+    if (/[a-zA-Z]/.test(queryClean)) {
+      const qConverted = stripSeparators(engToKor(queryClean));
+      if (qConverted && qConverted !== qClean) {
+        queryList.push(qConverted);
+      }
+    }
+
+    let bestScore = 0;
+    let bestMatchedDirectMats = [];
+    let bestMatchedTreeMats = [];
+    let bestIsDropMatch = false;
+
+    for (let q = 0; q < queryList.length; q++) {
+      const curQ = queryList[q];
+      let score = 0;
+
+      // 1. Exact / Prefix / Substring Item Name Match
+      if (idx.cleanName === curQ) score = 1000;
+      else if (idx.cleanName.startsWith(curQ)) score = 800;
+      else if (idx.cleanName.includes(curQ)) score = 600;
+
+      // 2. Direct Materials Match
+      const matchedDirectMats = [];
+      for (let i = 0; i < idx.directMats.length; i++) {
+        const dm = idx.directMats[i];
+        if (dm.cleanName.includes(curQ) || dm.cleanBoss.includes(curQ)) {
+          matchedDirectMats.push(dm);
+        }
+      }
+      if (matchedDirectMats.length > 0) {
+        score = Math.max(score, 450);
+      }
+
+      // 3. Drop Boss Match
+      let isDropMatch = false;
+      if (recipe.is_drop && idx.cleanBoss.includes(curQ)) {
+        isDropMatch = true;
+        score = Math.max(score, 400);
+      }
+
+      // 4. Grade Match
+      if (idx.cleanGrade && idx.cleanGrade.includes(curQ)) {
+        score = Math.max(score, 350);
+      }
+
+      // 5. Tree Materials Match
+      const matchedTreeMats = [];
+      if (score < 450 && matchedDirectMats.length === 0) {
+        for (let i = 0; i < idx.treeMatsList.length; i++) {
+          const tm = idx.treeMatsList[i];
+          if (tm.cleanName.includes(curQ) || (tm.cleanBoss && tm.cleanBoss.includes(curQ))) {
+            matchedTreeMats.push({ name: tm.rawName, path: tm.path });
+          }
+        }
+        if (matchedTreeMats.length > 0) {
+          score = Math.max(score, 300);
+        }
+      }
+
+      // 6. Options, Skills, Synergy (only if length >= 2)
+      if (curQ.length >= 2) {
+        if (idx.cleanOptions && idx.cleanOptions.includes(curQ)) {
+          score = Math.max(score, 250);
+        }
+        if (idx.cleanSkill && idx.cleanSkill.includes(curQ)) {
+          score = Math.max(score, 250);
+        }
+        if (idx.cleanSynergy && idx.cleanSynergy.includes(curQ)) {
+          score = Math.max(score, 200);
+        }
+      }
+
+      if (score > bestScore) {
+        bestScore = score;
+        bestMatchedDirectMats = matchedDirectMats;
+        bestMatchedTreeMats = matchedTreeMats;
+        bestIsDropMatch = isDropMatch;
+      }
+    }
+
+    return {
+      match: bestScore > 0,
+      score: bestScore,
+      matchedDirectMats: bestMatchedDirectMats,
+      matchedTreeMats: bestMatchedTreeMats,
+      isDropMatch: bestIsDropMatch
+    };
+  }
+
+  function createGearCodexCardElement(item) {
+    const card = document.createElement("div");
+    card.className = `gear-codex-card ${item.hasSynergy ? 'has-synergy' : ''}`;
+
+    const currentItems = currentLoadout[item.slot] || [];
+    const isEquipped = currentItems.includes(item.name);
+
+    // Construct Matched Material Banner if searched by material
+    let matchedBannerHtml = "";
+    if (item.matchedDirectMats && item.matchedDirectMats.length > 0) {
+      const matStr = item.matchedDirectMats.map(m => {
+        const src = m.boss && m.boss !== "조합템" ? ` (${m.boss.includes("채광") ? "⛏️" : "👹"} ${m.boss})` : "";
+        return `<strong>${m.name}</strong> x${m.qty || 1}${src}`;
+      }).join(", ");
+      matchedBannerHtml = `
+        <div class="matched-material-banner">
+          <span>🧩 필요 재료: ${matStr} 사용</span>
+        </div>
+      `;
+    } else if (item.matchedTreeMats && item.matchedTreeMats.length > 0) {
+      const treeStr = item.matchedTreeMats.map(tm => tm.path ? `<strong>${tm.name}</strong> (${tm.path})` : `<strong>${tm.name}</strong>`).join("<br>");
+      matchedBannerHtml = `
+        <div class="matched-material-banner sub">
+          <span>🌿 하위 조합 재료: ${treeStr}</span>
+        </div>
+      `;
+    } else if (item.isDropMatch && item.recipe.drop_boss) {
+      matchedBannerHtml = `
+        <div class="matched-material-banner">
+          <span>👹 드랍 보스: <strong>${item.recipe.drop_boss}</strong> (${item.recipe.drop_location || '위치'})</span>
+        </div>
+      `;
+    }
+
+    let matsHtml = "";
+    if (item.recipe.is_drop) {
+      matsHtml = `
+        <div style="margin-top: 10px; padding: 8px 12px; background: rgba(15, 23, 42, 0.6); border: 1px solid rgba(255, 255, 255, 0.08); border-radius: 6px;">
+          <div style="font-size: 12px; font-weight: 700; color: #f1f5f9; display: flex; align-items: center; gap: 6px;">
+            <span>👹 드랍 보스: <strong>${item.recipe.drop_boss || "보스"}</strong></span>
+          </div>
+          ${item.recipe.drop_location ? `<div style="font-size: 11.5px; color: var(--accent-gold); margin-top: 4px;">🗺️ 지역: ${item.recipe.drop_location}</div>` : ""}
+        </div>
+      `;
+    } else if (item.recipe.materials && item.recipe.materials.length > 0) {
+      matsHtml = `
+        <div class="gear-codex-mats-section">
+          <div class="gear-codex-mats-title">🧩 조합 재료 (${item.recipe.materials.length}종류):</div>
+          <div class="gear-codex-mats-grid">
+            ${item.recipe.materials.map(m => {
+              const mSrc = m.boss && m.boss !== "조합템" ? (m.boss.includes("채광") ? `⛏️ ${m.boss}` : `👹 ${m.boss}`) : "🛠️ 조합";
+              const isHighlight = item.matchedDirectMats && item.matchedDirectMats.some(dm => dm.name === m.name);
+              return `
+                <div class="gear-codex-mat-chip ${isHighlight ? 'highlighted' : ''}" title="${m.name} (${mSrc})">
+                  <div class="gear-codex-mat-info">
+                    <span class="gear-codex-mat-name">${m.name}</span>
+                    <span class="gear-codex-mat-source">${mSrc}</span>
+                  </div>
+                  <span class="gear-codex-mat-qty">x${m.qty || 1}</span>
+                </div>
+              `;
+            }).join("")}
+          </div>
+        </div>
+      `;
+    }
+
+    const codexSynergy = item.recipe.synergy || item.recipe.special_effect || "";
+    const subTag = (item.slot === "무기" && item.recipe.sub_cat) ? item.recipe.sub_cat : item.slot;
+    const subTypePill = (item.recipe.sub_type && item.recipe.sub_type !== subTag)
+      ? `<span class="sub-type-pill">${item.recipe.sub_type}</span>`
+      : "";
+    const gradeBadge = item.recipe._gradeBadgeHtml !== undefined
+      ? item.recipe._gradeBadgeHtml
+      : (item.recipe._gradeBadgeHtml = getGradeBadgeHtml(item.recipe.grade));
+    const optionsHtml = item.recipe._optionsHtml !== undefined
+      ? item.recipe._optionsHtml
+      : (item.recipe._optionsHtml = formatGearOptions(item.recipe.options));
+    const skillHtml = item.recipe._skillHtml !== undefined
+      ? item.recipe._skillHtml
+      : (item.recipe._skillHtml = formatGearSkill(item.recipe.active_passive));
+
+    card.innerHTML = `
+      <div class="gear-codex-card-top">
+        <div class="gear-codex-card-meta-row">
+          ${gradeBadge}
+          <span class="slot-tag ${subTag}">${subTag}</span>
+          ${subTypePill}
+          ${item.recipe.level_str || item.recipe.level ? `<span class="badge-level">${item.recipe.level_str || 'Lv.' + item.recipe.level}</span>` : ""}
+          ${item.recipe.is_drop ? `<span class="badge-drop-item" style="font-size: 11px;">완제품 드랍</span>` : ""}
+          ${item.hasSynergy ? `<span class="badge-synergy active">⭐ ${currentJob} 추천 [${codexSynergy}]</span>` : (codexSynergy ? `<span class="badge-synergy other">✨ 시너지: ${codexSynergy}</span>` : "")}
+        </div>
+        <div class="gear-codex-card-title-row">
+          <h4 class="gear-codex-card-name">${item.name}</h4>
+        </div>
+        ${matchedBannerHtml}
+        ${codexSynergy ? `<div class="synergy-effect-box">✨ <strong>[특수직업효과]</strong> ${codexSynergy}</div>` : ""}
+        ${optionsHtml}
+        ${skillHtml}
+        ${matsHtml}
+      </div>
+      <button class="btn-equip-loadout" data-slot="${item.slot}" data-item="${item.name}">
+        ${isEquipped ? `✓ 파밍 목록에 등록됨 (${currentItems.indexOf(item.name) + 1}/3)` : (currentItems.length < 3 ? `[${item.slot}] 파밍 목록에 추가 (${currentItems.length}/3)` : `[${item.slot}] 1번 장비와 교체`)}
+      </button>
+    `;
+
+    return card;
+  }
+
   function renderGearCodexTab() {
     if (!gearCodexGrid || !gameData || !gameData.category_gear) return;
+
+    // Attach delegated click listener once to avoid individual card closures
+    if (!gearCodexGrid._delegatedBound) {
+      gearCodexGrid._delegatedBound = true;
+      gearCodexGrid.addEventListener("click", (e) => {
+        const btn = e.target.closest(".btn-equip-loadout");
+        if (!btn) return;
+        const slot = btn.dataset.slot;
+        const itemName = btn.dataset.item;
+        if (!slot || !itemName) return;
+        if (!currentLoadout[slot]) currentLoadout[slot] = [];
+
+        if (currentLoadout[slot].includes(itemName)) {
+          showToast(`ℹ️ '${itemName}'은(는) 이미 [${slot}] 파밍 목록에 등록되어 있습니다.`);
+        } else if (currentLoadout[slot].length < 3) {
+          currentLoadout[slot].push(itemName);
+          saveActiveLoadout();
+          showToast(`✅ [${slot}] 파밍 목록에 '${itemName}'이(가) 추가되었습니다. (${currentLoadout[slot].length}/3)`);
+        } else {
+          const replaced = currentLoadout[slot][0];
+          currentLoadout[slot][0] = itemName;
+          saveActiveLoadout();
+          showToast(`🔄 [${slot}]의 '${replaced}' 장비를 '${itemName}'(으)로 교체하였습니다.`);
+        }
+
+        currentTab = "tree";
+        currentSlot = slot;
+        try { localStorage.setItem("dream_selected_tab", currentTab); } catch (err) {}
+        try { localStorage.setItem("dream_selected_slot", currentSlot); } catch (err) {}
+        restoreUIState();
+        renderAll();
+      });
+    }
+
     gearCodexGrid.innerHTML = "";
 
     const weaponSubFilterBar = document.getElementById("weaponSubFilterBar");
@@ -1980,6 +3124,62 @@
       }
     }
 
+    const queryClean = stripSeparators(gearCodexSearchQuery || "");
+
+    // Memoized relevance calculation for this render cycle (avoids duplicate calculation across loops)
+    const relCache = new Map();
+    function checkRelevance(itemName, cat) {
+      const key = `${itemName}__${cat}`;
+      if (relCache.has(key)) return relCache.get(key);
+      const rel = queryClean ? getItemSearchRelevance(itemName, cat, queryClean) : { match: true, score: 0 };
+      relCache.set(key, rel);
+      return rel;
+    }
+
+    // Calculate match counts per category for badges
+    const catCounts = {};
+    let totalMatchCount = 0;
+    CATEGORIES.forEach(cat => {
+      const topList = (gameData.category_gear[cat] && gameData.category_gear[cat].top_gear) || [];
+      let count = 0;
+      topList.forEach(itemName => {
+        if (gearCodexSynergyOnly) {
+          const rec = getRecipe(itemName);
+          if (!rec || !rec.synergy_jobs || !rec.synergy_jobs.includes(currentJob)) return;
+        }
+        if (!queryClean) {
+          count++;
+        } else {
+          const rel = checkRelevance(itemName, cat);
+          if (rel.match) count++;
+        }
+      });
+      catCounts[cat] = count;
+      totalMatchCount += count;
+    });
+
+    // Update Category Button Badges
+    gearCatButtons.forEach(btn => {
+      const cat = btn.dataset.cat;
+      const icons = {
+        "전체": "🌐 전체 부위",
+        "무기": "⚔️ 무기",
+        "갑옷": "🛡️ 갑옷",
+        "투구": "👑 투구",
+        "장신구": "💍 장신구",
+        "보조장비": "📜 보조장비",
+        "마나석": "💎 마나석"
+      };
+      const baseLabel = icons[cat] || cat;
+      if (queryClean) {
+        const c = (cat === "전체") ? totalMatchCount : (catCounts[cat] || 0);
+        btn.innerHTML = `${baseLabel} <span class="gear-cat-badge-count">${c}</span>`;
+      } else {
+        btn.textContent = baseLabel;
+      }
+      btn.classList.toggle("active", btn.dataset.cat === gearCodexCat);
+    });
+
     const categories = (gearCodexCat === "전체") ? CATEGORIES : [gearCodexCat];
     const cardsToRender = [];
 
@@ -1996,112 +3196,113 @@
         const hasSynergy = recipe.synergy_jobs && recipe.synergy_jobs.includes(currentJob);
         if (gearCodexSynergyOnly && !hasSynergy) return;
 
-        if (gearCodexSearchQuery) {
-          const matchName = itemName.toLowerCase().includes(gearCodexSearchQuery);
-          const matchEffect = (recipe.special_effect || "").toLowerCase().includes(gearCodexSearchQuery);
-          if (!matchName && !matchEffect) return;
-        }
+        const searchRelevance = checkRelevance(itemName, cat);
+        if (queryClean && !searchRelevance.match) return;
 
         cardsToRender.push({
           slot: cat,
           name: itemName,
           recipe: recipe,
-          hasSynergy: hasSynergy
+          hasSynergy: hasSynergy,
+          score: searchRelevance.score || 0,
+          matchedDirectMats: searchRelevance.matchedDirectMats || [],
+          matchedTreeMats: searchRelevance.matchedTreeMats || [],
+          isDropMatch: !!searchRelevance.isDropMatch
         });
       });
     });
 
-    // Sort: Synergy items for current job first, then level descending, then name
+    // Smart Sorting:
+    // When searching: Primary score descending, then item level descending, then synergy, then name.
+    // When not searching: Synergy first, then level descending, then name.
     cardsToRender.sort((a, b) => {
-      if (a.hasSynergy && !b.hasSynergy) return -1;
-      if (!a.hasSynergy && b.hasSynergy) return 1;
+      if (queryClean) {
+        if (b.score !== a.score) return b.score - a.score;
+      } else {
+        if (a.hasSynergy && !b.hasSynergy) return -1;
+        if (!a.hasSynergy && b.hasSynergy) return 1;
+      }
       const lvlA = (a.recipe && a.recipe.level) || 0;
       const lvlB = (b.recipe && b.recipe.level) || 0;
       if (lvlA !== lvlB) return lvlB - lvlA;
+      if (a.hasSynergy && !b.hasSynergy) return -1;
+      if (!a.hasSynergy && b.hasSynergy) return 1;
       return a.name.localeCompare(b.name);
     });
 
     if (cardsToRender.length === 0) {
-      gearCodexGrid.innerHTML = `<div class="empty-msg" style="grid-column: 1/-1;">조건에 맞는 장비가 없습니다.</div>`;
-      return;
-    }
-
-    cardsToRender.forEach(item => {
-      const card = document.createElement("div");
-      card.className = `gear-codex-card ${item.hasSynergy ? 'has-synergy' : ''}`;
-
-      const isEquipped = (currentLoadout[item.slot] === item.name);
-
-      let matsHtml = "";
-      if (item.recipe.is_drop) {
-        matsHtml = `
-          <div style="margin-top: 10px; padding: 8px 12px; background: rgba(15, 23, 42, 0.6); border: 1px solid rgba(255, 255, 255, 0.08); border-radius: 6px;">
-            <div style="font-size: 12px; font-weight: 700; color: #f1f5f9; display: flex; align-items: center; gap: 6px;">
-              <span>👹 드랍 보스: <strong>${item.recipe.drop_boss || "보스"}</strong></span>
-            </div>
-            ${item.recipe.drop_location ? `<div style="font-size: 11.5px; color: var(--accent-gold); margin-top: 4px;">🗺️ 지역: ${item.recipe.drop_location}</div>` : ""}
-          </div>
-        `;
-      } else if (item.recipe.materials && item.recipe.materials.length > 0) {
-        matsHtml = `
-          <div class="gear-codex-mats-section">
-            <div class="gear-codex-mats-title">🧩 조합 재료 (${item.recipe.materials.length}종류):</div>
-            <div class="gear-codex-mats-grid">
-              ${item.recipe.materials.map(m => {
-                const mSrc = m.boss && m.boss !== "조합템" ? (m.boss.includes("채광") ? `⛏️ ${m.boss}` : `👹 ${m.boss}`) : "🛠️ 조합";
-                return `
-                  <div class="gear-codex-mat-chip" title="${m.name} (${mSrc})">
-                    <div class="gear-codex-mat-info">
-                      <span class="gear-codex-mat-name">${m.name}</span>
-                      <span class="gear-codex-mat-source">${mSrc}</span>
-                    </div>
-                    <span class="gear-codex-mat-qty">x${m.qty || 1}</span>
-                  </div>
-                `;
-              }).join("")}
-            </div>
+      let emptyHtml = `<div class="empty-msg" style="grid-column: 1/-1; padding: 40px 10px; text-align: center;">조건에 맞는 장비가 없습니다.</div>`;
+      if (queryClean && gearCodexCat !== "전체" && totalMatchCount > 0) {
+        emptyHtml = `
+          <div class="empty-msg" style="grid-column: 1/-1; padding: 40px 10px; text-align: center;">
+            <p style="font-size: 14px; margin-bottom: 8px;">현재 [${gearCodexCat}] 부위에는 '<strong>${gearCodexSearchQuery}</strong>' 관련 장비가 없습니다.</p>
+            <p style="font-size: 12px; color: var(--text-muted); margin-bottom: 14px;">다른 부위에서 총 <strong>${totalMatchCount}개</strong>의 결과가 발견되었습니다.</p>
+            <button class="btn btn-primary" id="btnSwitchToAllCodex" style="font-size: 13px; padding: 8px 18px;">
+              🌐 전체 부위에서 검색 결과 (${totalMatchCount}개) 보기
+            </button>
           </div>
         `;
       }
+      gearCodexGrid.innerHTML = emptyHtml;
+      const btnSwitch = document.getElementById("btnSwitchToAllCodex");
+      if (btnSwitch) {
+        btnSwitch.onclick = () => {
+          gearCodexCat = "전체";
+          renderGearCodexTab();
+        };
+      }
+      return;
+    }
 
-      const codexSynergy = item.recipe.synergy || item.recipe.special_effect || "";
-      const subTag = (item.slot === "무기" && item.recipe.sub_cat) ? item.recipe.sub_cat : item.slot;
+    // Chunked / Progressive Rendering to prevent massive DOM allocations
+    const CHUNK_SIZE = 36;
+    let displayedCount = 0;
 
-      card.innerHTML = `
-        <div class="gear-codex-card-top">
-          <!-- Row 1: Badges (Subcategory, Level, Drop, Synergy) -->
-          <div class="gear-codex-card-meta-row">
-            <span class="slot-tag ${subTag}">${subTag}</span>
-            ${item.recipe.level_str || item.recipe.level ? `<span class="badge-level">${item.recipe.level_str || 'Lv.' + item.recipe.level}</span>` : ""}
-            ${item.recipe.is_drop ? `<span class="badge-drop-item" style="font-size: 11px;">완제품 드랍</span>` : ""}
-            ${item.hasSynergy ? `<span class="badge-synergy active">⭐ ${currentJob} 추천 [${codexSynergy}]</span>` : (codexSynergy ? `<span class="badge-synergy other">✨ 시너지: ${codexSynergy}</span>` : "")}
-          </div>
-          <!-- Row 2: Item Name -->
-          <div class="gear-codex-card-title-row">
-            <h4 class="gear-codex-card-name">${item.name}</h4>
-          </div>
-          ${codexSynergy ? `<div class="synergy-effect-box">✨ <strong>[특수직업효과]</strong> ${codexSynergy}</div>` : ""}
-          ${matsHtml}
-        </div>
-        <button class="btn-equip-loadout" data-slot="${item.slot}" data-item="${item.name}">
-          ${isEquipped ? '✓ 현재 빌드에 착용 중' : `[${item.slot}] 이 장비 빌드에 적용`}
-        </button>
-      `;
+    function renderCardBatch(startIndex, count) {
+      const fragment = document.createDocumentFragment();
+      const endIndex = Math.min(startIndex + count, cardsToRender.length);
 
-      const btnEquip = card.querySelector(".btn-equip-loadout");
-      btnEquip.addEventListener("click", () => {
-        currentLoadout[item.slot] = item.name;
-        saveActiveLoadout();
-        alert(`[${item.slot}] 부위에 '${item.name}' 장비가 적용되었습니다!`);
-        // Switch to tree tab to view updated tree
-        currentTab = "tree";
-        try { localStorage.setItem("dream_selected_tab", currentTab); } catch (e) {}
-        restoreUIState();
-        renderAll();
-      });
+      for (let i = startIndex; i < endIndex; i++) {
+        const item = cardsToRender[i];
+        const card = createGearCodexCardElement(item);
+        fragment.appendChild(card);
+      }
 
-      gearCodexGrid.appendChild(card);
-    });
+      const oldLoadMore = gearCodexGrid.querySelector(".load-more-container");
+      if (oldLoadMore) oldLoadMore.remove();
+
+      gearCodexGrid.appendChild(fragment);
+      displayedCount = endIndex;
+
+      if (displayedCount < cardsToRender.length) {
+        const remaining = cardsToRender.length - displayedCount;
+        const loadMoreDiv = document.createElement("div");
+        loadMoreDiv.className = "load-more-container";
+        loadMoreDiv.style.cssText = "grid-column: 1/-1; text-align: center; padding: 24px 0;";
+        loadMoreDiv.innerHTML = `
+          <button class="btn btn-secondary btn-load-more" style="padding: 10px 28px; font-size: 13.5px; font-weight: 700; border-radius: 8px; cursor: pointer; box-shadow: 0 4px 14px rgba(0,0,0,0.3); background: #1e293b; border: 1px solid var(--border-focus); color: #fff;">
+            ➕ 장비 더 보기 (${remaining}개 남음)
+          </button>
+        `;
+        const btnMore = loadMoreDiv.querySelector(".btn-load-more");
+        btnMore.onclick = () => {
+          renderCardBatch(displayedCount, CHUNK_SIZE);
+        };
+        gearCodexGrid.appendChild(loadMoreDiv);
+      }
+    }
+
+    if (queryClean && /[a-zA-Z]/.test(gearCodexSearchQuery)) {
+      const korConverted = engToKor(gearCodexSearchQuery);
+      if (korConverted && korConverted !== gearCodexSearchQuery) {
+        const notice = document.createElement("div");
+        notice.style.cssText = "grid-column: 1/-1; background: rgba(59, 130, 246, 0.15); border: 1px solid rgba(96, 165, 250, 0.3); border-radius: 8px; padding: 8px 14px; font-size: 12px; color: #93c5fd; display: flex; align-items: center; justify-content: space-between;";
+        notice.innerHTML = `<span>🌐 영문 자판 입력 감지: <strong>'${korConverted}'</strong> (으)로 자동 변환하여 검색했습니다.</span>`;
+        gearCodexGrid.appendChild(notice);
+      }
+    }
+
+    renderCardBatch(0, CHUNK_SIZE);
   }
 
   // =========================================================================
@@ -2109,13 +3310,19 @@
   // =========================================================================
   function handleGlobalSearch(query) {
     if (!globalSearchResults) return;
-    const q = query.trim().toLowerCase();
+    const qClean = stripSeparators(query);
 
-    if (!q) {
+    if (!qClean) {
       globalSearchResults.style.display = "none";
       if (btnClearSearch) btnClearSearch.style.display = "none";
       return;
     }
+
+    const qConverted = /[a-zA-Z]/.test(query) ? stripSeparators(engToKor(query)) : "";
+    const matchQuery = (text) => {
+      const clean = stripSeparators(text);
+      return clean.includes(qClean) || (qConverted && clean.includes(qConverted));
+    };
 
     if (btnClearSearch) btnClearSearch.style.display = "block";
 
@@ -2126,7 +3333,7 @@
       CATEGORIES.forEach(cat => {
         const topList = (gameData.category_gear[cat] && gameData.category_gear[cat].top_gear) || [];
         topList.forEach(name => {
-          if (name.toLowerCase().includes(q)) {
+          if (matchQuery(name)) {
             const recipe = getRecipe(name);
             const hasSyn = recipe && recipe.synergy_jobs && recipe.synergy_jobs.includes(currentJob);
             const synText = recipe ? (recipe.synergy || recipe.special_effect || "") : "";
@@ -2141,10 +3348,24 @@
               badge: cat,
               badgeClass: `slot-tag ${cat}`,
               action: () => {
-                currentLoadout[cat] = name;
+                if (!currentLoadout[cat]) currentLoadout[cat] = [];
+                if (!currentLoadout[cat].includes(name)) {
+                  if (currentLoadout[cat].length < 3) {
+                    currentLoadout[cat].push(name);
+                    showToast(`✅ [${cat}] 파밍 목록에 '${name}'이(가) 추가되었습니다. (${currentLoadout[cat].length}/3)`);
+                  } else {
+                    const replaced = currentLoadout[cat][0];
+                    currentLoadout[cat][0] = name;
+                    showToast(`🔄 [${cat}]의 '${replaced}' 장비를 '${name}'(으)로 교체하였습니다.`);
+                  }
+                } else {
+                  showToast(`ℹ️ [${cat}]에 '${name}'이(가) 이미 등록되어 있습니다.`);
+                }
                 saveActiveLoadout();
                 currentTab = "tree";
                 currentSlot = cat;
+                try { localStorage.setItem("dream_selected_tab", currentTab); } catch (err) {}
+                try { localStorage.setItem("dream_selected_slot", currentSlot); } catch (err) {}
                 restoreUIState();
                 renderAll();
               }
@@ -2157,7 +3378,7 @@
     // 2. Search Materials & Sub-recipes
     if (gameData && gameData.global_recipe_map) {
       Object.keys(gameData.global_recipe_map).forEach(rName => {
-        if (rName.toLowerCase().includes(q)) {
+        if (matchQuery(rName)) {
           const rec = gameData.global_recipe_map[rName];
           if (!results.some(r => r.name === rName)) {
             const subSyn = rec ? (rec.synergy || rec.special_effect || "") : "";
@@ -2166,7 +3387,7 @@
               type: "subrecipe",
               slot: rec.category || "조합템",
               name: rName,
-              sub: `조합 아이템 (${rec.materials.length}개 재료 필요)${subSynBadge}`,
+              sub: `조합 아이템 (${(rec.materials && rec.materials.length) || 0}개 재료 필요)${subSynBadge}`,
               badge: "조합템",
               badgeClass: "badge-craft",
               action: () => {
@@ -2183,7 +3404,7 @@
     // 3. Search Bosses & Locations
     if (gameData && gameData.bosses) {
       gameData.bosses.forEach(b => {
-        if (b.name.toLowerCase().includes(q) || (b.location && b.location.toLowerCase().includes(q))) {
+        if (matchQuery(b.name) || (b.location && matchQuery(b.location))) {
           results.push({
             type: "boss",
             name: b.name,
@@ -2278,10 +3499,10 @@
     // Slot Buttons (Tab 1)
     slotButtons.forEach(btn => {
       btn.addEventListener("click", () => {
-        slotButtons.forEach(b => b.classList.remove("active"));
-        btn.classList.add("active");
         currentSlot = btn.dataset.slot;
         try { localStorage.setItem("dream_selected_slot", currentSlot); } catch (err) {}
+        restoreUIState();
+        updateProgressStats();
         renderTreeTab();
         if (sideSlotSync) renderSideLevelList();
       });
@@ -2299,16 +3520,18 @@
     });
 
     // Global Search Events
+    let globalSearchController = setupDebouncedInput(globalSearchInput, (val) => {
+      handleGlobalSearch(val);
+    }, 200);
+
     if (globalSearchInput) {
-      globalSearchInput.addEventListener("input", (e) => {
-        handleGlobalSearch(e.target.value);
-      });
       globalSearchInput.addEventListener("focus", (e) => {
         if (e.target.value.trim()) handleGlobalSearch(e.target.value);
       });
     }
     if (btnClearSearch) {
       btnClearSearch.addEventListener("click", () => {
+        if (globalSearchController) globalSearchController.cancel();
         if (globalSearchInput) globalSearchInput.value = "";
         btnClearSearch.style.display = "none";
         if (globalSearchResults) globalSearchResults.style.display = "none";
@@ -2361,24 +3584,27 @@
         const qty = parseInt(invItemQty.value) || 1;
         if (!name) return;
 
-        // Smart match: if not exact, try to match by clean name (ignore spaces/casing)
-        const cleanName = name.replace(/\s+/g, "").toLowerCase();
+        const cleanName = stripSeparators(name);
+        const convertedName = /[a-zA-Z]/.test(name) ? stripSeparators(engToKor(name)) : "";
         const allItems = getAllGameItems();
-        const exact = allItems.find(i => i.name === name);
-        if (!exact) {
-          const cleanExact = allItems.find(i => i.name.replace(/\s+/g, "").toLowerCase() === cleanName);
-          if (cleanExact) {
-            name = cleanExact.name;
-          } else {
-            const partial = allItems.find(i => i.name.replace(/\s+/g, "").toLowerCase().includes(cleanName));
-            if (partial) {
-              name = partial.name;
-            }
-          }
+        let matchedItem = allItems.find(i => i.name === name);
+        if (!matchedItem) {
+          matchedItem = allItems.find(i => stripSeparators(i.name) === cleanName)
+            || (convertedName && allItems.find(i => stripSeparators(i.name) === convertedName))
+            || allItems.find(i => stripSeparators(i.name).includes(cleanName))
+            || (convertedName && allItems.find(i => stripSeparators(i.name).includes(convertedName)));
+        }
+        if (matchedItem) {
+          name = matchedItem.name;
+        } else if (convertedName) {
+          name = normalizeName(engToKor(name));
+        } else {
+          name = normalizeName(name);
         }
 
         userInventory[name] = (userInventory[name] || 0) + qty;
         saveInventory();
+        if (invSearchController) invSearchController.cancel();
         invItemSearch.value = "";
         invItemQty.value = "1";
         if (invSearchSuggestions) invSearchSuggestions.style.display = "none";
@@ -2391,22 +3617,21 @@
       });
 
       // Autocomplete suggestions for inventory search across ALL items in game
-      invItemSearch.addEventListener("input", (e) => {
-        const rawVal = e.target.value;
-        const val = rawVal.trim().toLowerCase();
-        if (!val || !invSearchSuggestions) {
+      let invSearchController = setupDebouncedInput(invItemSearch, (rawVal) => {
+        const cleanVal = stripSeparators(rawVal);
+        if (!cleanVal || !invSearchSuggestions) {
           if (invSearchSuggestions) invSearchSuggestions.style.display = "none";
           return;
         }
 
-        const cleanVal = val.replace(/\s+/g, "");
+        const convertedVal = /[a-zA-Z]/.test(rawVal) ? stripSeparators(engToKor(rawVal)) : "";
         const allItems = getAllGameItems();
         const allLeaves = getAllCurrentLeaves();
         const currentReqNames = new Set(allLeaves.map(l => l.name));
 
         const matched = allItems.filter(item => {
-          const cleanName = item.name.replace(/\s+/g, "").toLowerCase();
-          return cleanName.includes(cleanVal);
+          const cleanName = stripSeparators(item.name);
+          return cleanName.includes(cleanVal) || (convertedVal && cleanName.includes(convertedVal));
         });
 
         // Sort: items in current build first, then exact clean match, then by level desc, then alphabetical
@@ -2415,8 +3640,8 @@
           const bInBuild = currentReqNames.has(b.name) ? 1 : 0;
           if (aInBuild !== bInBuild) return bInBuild - aInBuild;
 
-          const aClean = a.name.replace(/\s+/g, "").toLowerCase();
-          const bClean = b.name.replace(/\s+/g, "").toLowerCase();
+          const aClean = stripSeparators(a.name);
+          const bClean = stripSeparators(b.name);
           const aExact = (aClean === cleanVal) ? 1 : 0;
           const bExact = (bClean === cleanVal) ? 1 : 0;
           if (aExact !== bExact) return bExact - aExact;
@@ -2451,6 +3676,7 @@
               </div>
             `;
             div.addEventListener("click", () => {
+              if (invSearchController) invSearchController.cancel();
               invItemSearch.value = item.name;
               invSearchSuggestions.style.display = "none";
               invItemQty.focus();
@@ -2461,7 +3687,7 @@
         } else {
           invSearchSuggestions.style.display = "none";
         }
-      });
+      }, 150);
 
       // Close suggestions when clicking outside
       document.addEventListener("click", (e) => {
@@ -2525,10 +3751,10 @@
     });
 
     if (sideSearchInput) {
-      sideSearchInput.addEventListener("input", (e) => {
-        sideSearchQuery = e.target.value.trim().toLowerCase();
+      setupDebouncedInput(sideSearchInput, (val) => {
+        sideSearchQuery = val.trim().toLowerCase();
         renderSideLevelList();
-      });
+      }, 150);
     }
 
     // Gear Modal Events
@@ -2538,10 +3764,10 @@
       });
     }
     if (gearModalSearch) {
-      gearModalSearch.addEventListener("input", (e) => {
-        modalSearchQuery = e.target.value.trim();
+      setupDebouncedInput(gearModalSearch, (val) => {
+        modalSearchQuery = val.trim();
         renderGearModalList();
-      });
+      }, 150);
     }
     window.addEventListener("click", (e) => {
       if (e.target === gearSelectModal) {
@@ -2552,7 +3778,9 @@
     // Tab 3 Codex Search & Level Filter
     const codexSearch = document.getElementById("codexSearch");
     if (codexSearch) {
-      codexSearch.addEventListener("input", () => renderCodexTab());
+      setupDebouncedInput(codexSearch, () => {
+        renderCodexTab();
+      }, 150);
     }
     const codexLevelFilter = document.getElementById("codexLevelFilter");
     if (codexLevelFilter) {
@@ -2572,9 +3800,25 @@
       });
     });
 
+    let gearCodexSearchController = setupDebouncedInput(gearCodexSearch, (val) => {
+      gearCodexSearchQuery = val.trim().toLowerCase();
+      renderGearCodexTab();
+    }, 220);
+
     if (gearCodexSearch) {
       gearCodexSearch.addEventListener("input", (e) => {
-        gearCodexSearchQuery = e.target.value.trim().toLowerCase();
+        if (btnClearGearSearch) {
+          btnClearGearSearch.style.display = e.target.value ? "block" : "none";
+        }
+      });
+    }
+
+    if (btnClearGearSearch) {
+      btnClearGearSearch.addEventListener("click", () => {
+        if (gearCodexSearchController) gearCodexSearchController.cancel();
+        if (gearCodexSearch) gearCodexSearch.value = "";
+        gearCodexSearchQuery = "";
+        btnClearGearSearch.style.display = "none";
         renderGearCodexTab();
       });
     }
@@ -2628,6 +3872,25 @@
         }
       });
     }
+
+    // Ensure Korean input mode is retained when returning to search inputs
+    const searchInputs = [globalSearchInput, invItemSearch, sideSearchInput, codexSearch, gearCodexSearch, gearModalSearch];
+    searchInputs.forEach(input => {
+      if (input) {
+        input.addEventListener("focus", () => {
+          input.setAttribute("lang", "ko");
+          input.setAttribute("inputmode", "text");
+        });
+      }
+    });
+
+    window.addEventListener("focus", () => {
+      searchInputs.forEach(input => {
+        if (input && document.activeElement === input) {
+          input.setAttribute("lang", "ko");
+        }
+      });
+    });
   }
 
   // =========================================================================
@@ -2645,6 +3908,7 @@
         const data = new Uint8Array(e.target.result);
         const workbook = window.XLSX.read(data, { type: 'array' });
         const parsed = parseWorkbookData(workbook);
+        normalizeGameData(parsed);
 
         gameData = parsed;
         localStorage.setItem("dream_custom_data", JSON.stringify(parsed));
@@ -2684,7 +3948,7 @@
     return colMap;
   }
 
-  function parseWorkbookData(wb) {
+  function parseBaseWorkbookData(wb) {
     const result = {
       jobs: {},
       job_list: [],
@@ -2958,6 +4222,397 @@
     });
 
     return result;
+  }
+
+  const DEFAULT_BOSS_LOCATIONS = {
+    "TitonX-4060": "파문항구-위쪽-우사로 옆 계단",
+    "아즈샤라 여왕": "어인해변-위쪽포탈-왼쪽포탈",
+    "제5마왕 아노시스": "전초기지-오른쪽 성-위",
+    "역병의 근원 마이어스": "암흑도시-왼쪽 밑",
+    "암흑 망령": "사막-오른쪽 끝"
+  };
+
+  function mapCategory(rawCat) {
+    if (!rawCat) return { cat: "기타", sub: "" };
+    const c = String(rawCat).trim();
+    if (["갑옷", "경갑", "중갑", "천 갑옷", "천", "세트"].includes(c)) {
+      const sub = c.includes("중갑") ? "중갑" : (c.includes("경갑") ? "경갑" : (c.includes("천") ? "천" : "갑옷"));
+      return { cat: "갑옷", sub: sub };
+    } else if (c === "근접 무기" || c === "근접무기") {
+      return { cat: "무기", sub: "근접무기" };
+    } else if (c === "원거리 무기" || c === "원거리무기") {
+      return { cat: "무기", sub: "원거리무기" };
+    } else if (c === "마법 무기" || c === "마법무기" || c === "지팡이") {
+      return { cat: "무기", sub: "지팡이" };
+    } else if (c === "무기") {
+      return { cat: "무기", sub: "무기" };
+    } else if (c === "투구" || c === "머리장식") {
+      return { cat: "투구", sub: c.includes("머리장식") ? "머리장식" : "투구" };
+    } else if (c === "장신구") {
+      return { cat: "장신구", sub: "장신구" };
+    } else if (["보조 장비", "보조장비", "배지"].includes(c)) {
+      return { cat: "보조장비", sub: c.includes("배지") ? "배지" : "보조장비" };
+    } else if (c === "마나석") {
+      return { cat: "마나석", sub: "마나석" };
+    }
+    return { cat: c, sub: c };
+  }
+
+  function mergeInfoTableData(wb, baseData) {
+    if (!baseData) return baseData;
+    if (!baseData.category_gear) baseData.category_gear = {};
+    if (!baseData.global_recipe_map) baseData.global_recipe_map = {};
+    if (!baseData.bosses) baseData.bosses = [];
+
+    const bossMap = {};
+    baseData.bosses.forEach(b => { bossMap[b.name] = b; });
+    const global_recipe_map = baseData.global_recipe_map;
+    const category_gear = baseData.category_gear;
+
+    // Ensure all 6 categories exist in category_gear
+    CATEGORIES.forEach(cat => {
+      if (!category_gear[cat]) {
+        category_gear[cat] = { top_gear: [], recipes: [] };
+      }
+    });
+
+    // Build drop lookup from existing bosses
+    const dropLookup = {};
+    baseData.bosses.forEach(b => {
+      if (b.drops) {
+        b.drops.forEach(d => {
+          dropLookup[d.name] = {
+            boss: b.name,
+            level: d.level || b.level || 0,
+            level_str: d.level_str || b.level_str || "",
+            location: b.location || "",
+            type: d.type || "아이템",
+            grade: d.grade || ""
+          };
+        });
+      }
+    });
+
+    // 1. Parse 보스드랍
+    const sBoss = wb.Sheets["보스드랍"];
+    if (sBoss) {
+      const bRows = window.XLSX.utils.sheet_to_json(sBoss, { header: 1, defval: "" });
+      for (let i = 1; i < bRows.length; i++) {
+        const r = bRows[i];
+        if (!r || r.length === 0 || !r[0]) continue;
+        const bname = normalizeName(r[0]);
+        const iname = normalizeName(r[1]);
+        const itype = String(r[2] || "").trim();
+        const igrade = String(r[3] || "").trim();
+
+        if (!bname || !iname) continue;
+
+        if (!bossMap[bname]) {
+          const loc = DEFAULT_BOSS_LOCATIONS[bname] || "";
+          bossMap[bname] = {
+            name: bname,
+            level: 0,
+            level_str: "",
+            location: loc,
+            drops: []
+          };
+        } else if (!bossMap[bname].location && DEFAULT_BOSS_LOCATIONS[bname]) {
+          bossMap[bname].location = DEFAULT_BOSS_LOCATIONS[bname];
+        }
+
+        const existingDrops = bossMap[bname].drops || [];
+        const dropEntry = existingDrops.find(d => d.name === iname);
+        if (dropEntry) {
+          if (itype && !dropEntry.type) dropEntry.type = itype;
+          if (igrade && !dropEntry.grade) dropEntry.grade = igrade;
+        } else {
+          bossMap[bname].drops.push({
+            name: iname,
+            type: itype || "아이템",
+            grade: igrade || "",
+            level: bossMap[bname].level,
+            level_str: bossMap[bname].level_str
+          });
+        }
+
+        dropLookup[iname] = {
+          boss: bname,
+          level: bossMap[bname].level,
+          level_str: bossMap[bname].level_str,
+          location: bossMap[bname].location || "",
+          type: itype || "아이템",
+          grade: igrade || ""
+        };
+
+        if (global_recipe_map[iname]) {
+          const rc = global_recipe_map[iname];
+          if (!rc.drop_boss) {
+            rc.drop_boss = bname;
+            rc.drop_location = bossMap[bname].location || "";
+          }
+          if (igrade && !rc.grade) rc.grade = igrade;
+        }
+      }
+    }
+
+    // 2. Parse 장비아이템
+    const gearSpecs = {};
+    const sGear = wb.Sheets["장비아이템"];
+    if (sGear) {
+      const gRows = window.XLSX.utils.sheet_to_json(sGear, { header: 1, defval: "" });
+      for (let i = 1; i < gRows.length; i++) {
+        const r = gRows[i];
+        if (!r || r.length === 0 || !r[0]) continue;
+        const iname = normalizeName(r[0]);
+        const mapped = mapCategory(r[1]);
+        const grade = String(r[2] || "").trim();
+        const lvlNum = parseInt(String(r[3] || "").replace(/\D/g, "")) || 0;
+        const opt = String(r[4] || "").trim();
+        const actPass = String(r[5] || "").trim();
+
+        gearSpecs[iname] = {
+          name: iname,
+          category: mapped.cat,
+          sub_type: mapped.sub,
+          grade: grade,
+          level: lvlNum,
+          level_str: lvlNum > 0 ? `Lv.${lvlNum}` : "",
+          options: opt,
+          active_passive: actPass
+        };
+
+        // If drop item belongs to a boss with level 0, update boss level
+        if (dropLookup[iname] && dropLookup[iname].boss) {
+          const b = bossMap[dropLookup[iname].boss];
+          if (b && b.level === 0 && lvlNum > 0) {
+            b.level = lvlNum;
+            b.level_str = `Lv.${lvlNum}`;
+            dropLookup[iname].level = lvlNum;
+            dropLookup[iname].level_str = `Lv.${lvlNum}`;
+            b.drops.forEach(d => {
+              if (d.level === 0) {
+                d.level = lvlNum;
+                d.level_str = `Lv.${lvlNum}`;
+              }
+            });
+          }
+        }
+      }
+    }
+
+    // 3. Parse 조합법
+    const sRec = wb.Sheets["조합법"];
+    const recGroups = {};
+    if (sRec) {
+      const rRows = window.XLSX.utils.sheet_to_json(sRec, { header: 1, defval: "" });
+      for (let i = 1; i < rRows.length; i++) {
+        const r = rRows[i];
+        if (!r || r.length === 0 || !r[0]) continue;
+        const iname = normalizeName(r[0]);
+        const mapped = mapCategory(r[1]);
+        const grade = String(r[2] || "").trim();
+        const mat = normalizeName(r[3]);
+        const qty = parseInt(r[4]) || 1;
+
+        if (!recGroups[iname]) {
+          recGroups[iname] = {
+            name: iname,
+            category: mapped.cat,
+            sub_type: mapped.sub,
+            grade: grade,
+            materials: []
+          };
+        }
+        if (mat) {
+          let matBoss = "조합템";
+          let matLvl = 0;
+          let matLvlStr = "";
+          let isDrop = false;
+
+          if (dropLookup[mat]) {
+            matBoss = dropLookup[mat].boss;
+            matLvl = dropLookup[mat].level;
+            matLvlStr = dropLookup[mat].level_str;
+            isDrop = true;
+          } else if (global_recipe_map[mat]) {
+            const subR = global_recipe_map[mat];
+            if (subR.drop_boss) {
+              matBoss = subR.drop_boss;
+              matLvl = subR.drop_level || subR.level || 0;
+              matLvlStr = subR.level_str || (matLvl ? `Lv.${matLvl}` : "");
+              isDrop = true;
+            }
+          }
+
+          recGroups[iname].materials.push({
+            name: mat,
+            qty: qty,
+            boss: matBoss,
+            level: matLvl,
+            level_str: matLvlStr,
+            is_drop: isDrop
+          });
+        }
+      }
+    }
+
+    // Merge recGroups into global_recipe_map & category_gear
+    Object.keys(recGroups).forEach(iname => {
+      const rinfo = recGroups[iname];
+      const gspec = gearSpecs[iname] || {};
+      const cat = gspec.category || rinfo.category;
+      const subType = gspec.sub_type || rinfo.sub_type;
+      const grade = gspec.grade || rinfo.grade;
+      const lvl = gspec.level || 0;
+      const lvlStr = gspec.level_str || (lvl ? `Lv.${lvl}` : "");
+      const opt = gspec.options || "";
+      const actPass = gspec.active_passive || "";
+
+      if (global_recipe_map[iname]) {
+        const rc = global_recipe_map[iname];
+        if (grade) rc.grade = grade;
+        if (opt) rc.options = opt;
+        if (actPass) rc.active_passive = actPass;
+        if (lvl && !rc.level) {
+          rc.level = lvl;
+          rc.level_str = lvlStr;
+        }
+        if (subType && !rc.sub_cat) rc.sub_cat = subType;
+        if (subType) rc.sub_type = subType;
+        if ((!rc.materials || rc.materials.length === 0) && rinfo.materials.length > 0) {
+          rc.materials = rinfo.materials;
+        }
+      } else {
+        const newRc = {
+          name: iname,
+          category: cat,
+          sub_cat: subType,
+          sub_type: subType,
+          grade: grade,
+          level: lvl,
+          level_str: lvlStr,
+          synergy: "",
+          synergy_jobs: [],
+          special_effect: "",
+          options: opt,
+          active_passive: actPass,
+          materials: rinfo.materials,
+          is_drop: false,
+          drop_boss: "",
+          drop_level: 0,
+          drop_location: "",
+          drop_type: "아이템"
+        };
+        global_recipe_map[iname] = newRc;
+
+        if (category_gear[cat]) {
+          if (!category_gear[cat].top_gear.includes(iname)) {
+            category_gear[cat].top_gear.push(iname);
+          }
+          category_gear[cat].recipes.push(newRc);
+        }
+      }
+    });
+
+    // 4. Enrich remaining items from gearSpecs
+    Object.keys(gearSpecs).forEach(iname => {
+      const gspec = gearSpecs[iname];
+      if (global_recipe_map[iname]) {
+        const rc = global_recipe_map[iname];
+        if (gspec.grade && !rc.grade) rc.grade = gspec.grade;
+        if (gspec.options && !rc.options) rc.options = gspec.options;
+        if (gspec.active_passive && !rc.active_passive) rc.active_passive = gspec.active_passive;
+        if (gspec.level && !rc.level) {
+          rc.level = gspec.level;
+          rc.level_str = gspec.level_str;
+        }
+        if (gspec.sub_type && !rc.sub_cat) rc.sub_cat = gspec.sub_type;
+        if (gspec.sub_type) rc.sub_type = gspec.sub_type;
+      } else {
+        const cat = gspec.category;
+        if (category_gear[cat]) {
+          const dropInfo = dropLookup[iname] || {};
+          const newDrop = {
+            name: iname,
+            category: cat,
+            sub_cat: gspec.sub_type,
+            sub_type: gspec.sub_type,
+            grade: gspec.grade,
+            level: gspec.level,
+            level_str: gspec.level_str,
+            synergy: "",
+            synergy_jobs: [],
+            special_effect: "",
+            options: gspec.options,
+            active_passive: gspec.active_passive,
+            materials: [],
+            is_drop: true,
+            drop_boss: dropInfo.boss || "",
+            drop_level: gspec.level || dropInfo.level || 0,
+            drop_location: dropInfo.location || "",
+            drop_type: dropInfo.type || "아이템"
+          };
+          global_recipe_map[iname] = newDrop;
+          if (!category_gear[cat].top_gear.includes(iname)) {
+            category_gear[cat].top_gear.push(iname);
+          }
+          category_gear[cat].recipes.push(newDrop);
+        }
+      }
+    });
+
+    baseData.bosses = Object.values(bossMap).sort((a, b) => (a.level - b.level) || a.name.localeCompare(b.name));
+    baseData._info_table_merged = true;
+    return baseData;
+  }
+
+  function parseWorkbookData(wb) {
+    const hasInfoSheets = !!(wb.Sheets["보스드랍"] || wb.Sheets["장비아이템"] || wb.Sheets["조합법"]);
+    const hasCategorySheets = CATEGORIES.some(cat => !!wb.Sheets[cat]) || !!wb.Sheets["보스"];
+
+    let result;
+    if (hasCategorySheets) {
+      result = parseBaseWorkbookData(wb);
+    } else {
+      result = JSON.parse(JSON.stringify(gameData || window.PRELOADED_GAME_DATA || {}));
+    }
+
+    if (hasInfoSheets) {
+      result = mergeInfoTableData(wb, result);
+    }
+
+    return result;
+  }
+
+  function autoSyncInfoTable() {
+    if (!gameData) return;
+    const hasOptions = gameData.global_recipe_map && Object.values(gameData.global_recipe_map).some(r => r.options || r.grade);
+    if (hasOptions && gameData._info_table_merged) return;
+
+    const targetUrl = encodeURIComponent("정보Table.xlsx");
+    fetch(targetUrl)
+      .then(res => {
+        if (!res.ok) throw new Error(`HTTP ${res.status}`);
+        return res.arrayBuffer();
+      })
+      .then(buffer => {
+        if (!window.XLSX) return;
+        const wb = window.XLSX.read(new Uint8Array(buffer), { type: "array" });
+        mergeInfoTableData(wb, gameData);
+        normalizeGameData(gameData);
+        try {
+          localStorage.setItem("dream_custom_data", JSON.stringify(gameData));
+        } catch (e) {
+          console.warn("localStorage quota exceeded, retaining in memory:", e);
+        }
+        console.log("정보Table.xlsx 자동 동기화 성공! 등록 보스:", gameData.bosses.length, "장비 수:", Object.keys(gameData.global_recipe_map).length);
+        loadActiveLoadout();
+        renderJobSelector();
+        renderAll();
+      })
+      .catch(err => {
+        console.warn("정보Table.xlsx 자동 동기화 건너뜀:", err.message);
+      });
   }
 
   // Auto-init on page load

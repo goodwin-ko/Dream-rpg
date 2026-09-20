@@ -16,3 +16,6 @@ Thumbs.db
 
 # Local backups
 _backup*/
+
+# Tool temporary outputs
+tools/*.txt

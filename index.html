@@ -30,7 +30,7 @@
           <div class="global-search-container">
             <div class="search-input-wrapper">
               <span class="search-icon">🔍</span>
-              <input type="text" id="globalSearchInput" placeholder="아이템 / 보스 검색..." autocomplete="off">
+              <input type="text" id="globalSearchInput" lang="ko" inputmode="text" placeholder="아이템 / 보스 검색..." autocomplete="off" autocorrect="off" autocapitalize="none" spellcheck="false">
               <button id="btnClearSearch" class="btn-clear-search" style="display: none;">&times;</button>
             </div>
             <div id="globalSearchResults" class="search-results-dropdown" style="display: none;"></div>
@@ -104,7 +104,7 @@
 
             <div class="inv-header-center">
               <div class="inv-add-row">
-                <input type="text" id="invItemSearch" placeholder="보유 아이템/재료 이름 검색 등록..." autocomplete="off">
+                <input type="text" id="invItemSearch" lang="ko" inputmode="text" placeholder="보유 아이템/재료 이름 검색 등록..." autocomplete="off" autocorrect="off" autocapitalize="none" spellcheck="false">
                 <input type="number" id="invItemQty" min="1" max="999" value="1" title="수량">
                 <button id="btnAddInvItem" class="btn-inv-add">+ 등록</button>
               </div>
@@ -157,6 +157,7 @@
               <button class="slot-btn" data-slot="마나석">
                 💎 마나석 <span class="slot-badge-count">0%</span>
               </button>
+              <span id="slotSelectionCounter" class="slot-selection-counter">전체 부위 표시 중 (부위 클릭 시 해당 부위 최대 3종류 파밍)</span>
             </div>
 
             <div class="view-modes">
@@ -205,7 +206,7 @@
             </div>
 
             <div class="side-search-box">
-              <input type="text" id="sideSearchInput" class="side-search-input" placeholder="재료 또는 보스 이름 검색..." />
+              <input type="text" id="sideSearchInput" lang="ko" inputmode="text" class="side-search-input" placeholder="재료 또는 보스 이름 검색..." autocomplete="off" autocorrect="off" autocapitalize="none" spellcheck="false" />
             </div>
 
             <div id="sideLevelList" class="side-level-list">
@@ -231,7 +232,7 @@
     <section id="tabCodexContent" class="tab-content" style="display: none;">
       <div class="codex-sticky-header">
         <div class="codex-filter-bar">
-          <input type="text" id="codexSearch" class="codex-search-input" placeholder="보스 이름, 지역 또는 드랍 아이템 검색...">
+          <input type="text" id="codexSearch" lang="ko" inputmode="text" class="codex-search-input" placeholder="보스 이름, 지역 또는 드랍 아이템 검색..." autocomplete="off" autocorrect="off" autocapitalize="none" spellcheck="false">
           <div style="display: flex; align-items: center; gap: 8px;">
             <label for="codexLevelFilter" style="font-size: 13px; color: var(--text-muted);">레벨 필터:</label>
             <select id="codexLevelFilter" class="job-select" style="background: var(--bg-card); border: 1px solid var(--border); padding: 6px 12px; border-radius: var(--radius-md);">
@@ -251,7 +252,21 @@
     <!-- Tab 4: Gear Codex & Job Synergy -->
     <section id="tabGearCodexContent" class="tab-content" style="display: none;">
       <div class="gear-codex-sticky-header">
+        <!-- Top Search Bar & Synergy Controls -->
+        <div class="gear-codex-filter-controls">
+          <div style="position: relative; flex: 1; min-width: 260px; display: flex; align-items: center;">
+            <input type="text" id="gearCodexSearch" lang="ko" inputmode="text" placeholder="장비 이름 또는 조합 재료 검색 (예: 지옥석, 현빙, 악몽)..." class="gear-search-input" style="width: 100%; padding-right: 28px;" autocomplete="off" autocorrect="off" autocapitalize="none" spellcheck="false">
+            <button id="btnClearGearSearch" style="position: absolute; right: 10px; background: none; border: none; color: #94a3b8; font-size: 16px; cursor: pointer; display: none; line-height: 1;">&times;</button>
+          </div>
+          <label class="synergy-filter-checkbox">
+            <input type="checkbox" id="chkSynergyOnly">
+            <span>현재 직업(<strong id="currentJobSynergyLabel">프리스트</strong>) 시너지 장비만 보기</span>
+          </label>
+        </div>
+
+        <!-- Category Tabs -->
         <div class="gear-codex-tabs">
+          <button class="gear-cat-btn" data-cat="전체">🌐 전체 부위</button>
           <button class="gear-cat-btn active" data-cat="무기">⚔️ 무기</button>
           <button class="gear-cat-btn" data-cat="갑옷">🛡️ 갑옷</button>
           <button class="gear-cat-btn" data-cat="투구">👑 투구</button>
@@ -267,14 +282,6 @@
           <button class="weapon-sub-btn" data-sub="근접무기">⚔️ 근접무기 (69)</button>
           <button class="weapon-sub-btn" data-sub="원거리무기">🏹 원거리무기 (45)</button>
           <button class="weapon-sub-btn" data-sub="지팡이">🪄 지팡이 (47)</button>
-        </div>
-
-        <div class="gear-codex-filter-controls">
-          <input type="text" id="gearCodexSearch" placeholder="장비 이름 또는 시너지 효과 검색..." class="gear-search-input">
-          <label class="synergy-filter-checkbox">
-            <input type="checkbox" id="chkSynergyOnly">
-            <span>현재 직업(<strong id="currentJobSynergyLabel">프리스트</strong>) 시너지 장비만 보기</span>
-          </label>
         </div>
       </div>
       <div id="gearCodexGrid" class="gear-codex-grid"></div>
@@ -293,7 +300,8 @@
         <button id="btnCloseGearModal" class="modal-close">&times;</button>
       </div>
       <div class="gear-modal-toolbar">
-        <input type="text" id="gearModalSearch" placeholder="장비 검색..." class="gear-modal-search">
+        <div id="modalEquippedSummary" class="modal-equipped-summary"></div>
+        <input type="text" id="gearModalSearch" lang="ko" inputmode="text" placeholder="장비 검색..." class="gear-modal-search" autocomplete="off" autocorrect="off" autocapitalize="none" spellcheck="false">
         <div id="modalWeaponSubFilterBar" class="weapon-sub-filter-bar modal-sub-bar" style="display: none;">
           <span class="sub-filter-label">분류:</span>
           <button class="weapon-sub-btn active" data-sub="ALL">전체</button>
@@ -340,6 +348,9 @@
       </div>
     </div>
   </footer>
+ 
+  <!-- Floating Toast Notification -->
+  <div id="appToast" class="app-toast"></div>
 
   <!-- Scripts -->
   <script src="js/xlsx.full.min.js"></script>
