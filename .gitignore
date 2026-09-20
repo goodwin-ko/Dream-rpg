@@ -1,4 +1,4 @@
-﻿# Temporary excel lock files
+# Temporary excel lock files
 ~$*.xlsx
 ~$*
 
@@ -13,3 +13,6 @@ __pycache__/
 .idea/
 .DS_Store
 Thumbs.db
+
+# Local backups
+_backup*/

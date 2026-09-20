@@ -9,72 +9,131 @@
 </head>
 <body>
 
-  <!-- App Header -->
-  <header class="app-header">
-    <div class="header-container">
-      <div class="logo-group">
-        <div class="logo-icon">⚔️</div>
-        <div class="logo-text">
-          <div class="logo-title-row">
-            <h1>DREAM RPG 아이템 조합기 & 파밍 도우미</h1>
-            <span class="creator-badge"><span class="sparkle">✨</span> Created by <strong>goodwin</strong></span>
+  <!-- Sticky Header & Navigation Group -->
+  <div class="sticky-header-group">
+    <!-- Top Header Bar -->
+    <header class="app-header">
+      <div class="header-container">
+        <div class="logo-group">
+          <span class="logo-icon">⚔️</span>
+          <div class="logo-text">
+            <div class="logo-title-row">
+              <h1>DREAM RPG 아이템 조합기 & 파밍 도우미</h1>
+              <span class="creator-badge"><span class="sparkle">✨</span> Created by <strong>goodwin</strong></span>
+            </div>
+            <p>자유로운 6부위 장비 빌드 · 직업별 시너지 추천 · 보스 위치 & 채광 도감</p>
           </div>
-          <p>6개 부위 아이템 트리 · 보스별 파밍 체크리스트 · 드랍 도감</p>
-        </div>
-      </div>
-
-      <div class="header-controls">
-        <div class="job-select-wrapper">
-          <label for="jobSelect">직업 선택</label>
-          <select id="jobSelect" class="job-select">
-            <option value="프리스트">프리스트</option>
-          </select>
         </div>
 
-        <button id="btnOpenUpload" class="btn btn-upload" title="새로운 직업 탭이 포함된 엑셀 파일 업로드">
-          📁 엑셀 파일 열기
-        </button>
+        <div class="header-controls">
+          <!-- Global Search Bar -->
+          <div class="global-search-container">
+            <div class="search-input-wrapper">
+              <span class="search-icon">🔍</span>
+              <input type="text" id="globalSearchInput" placeholder="아이템 / 보스 검색..." autocomplete="off">
+              <button id="btnClearSearch" class="btn-clear-search" style="display: none;">&times;</button>
+            </div>
+            <div id="globalSearchResults" class="search-results-dropdown" style="display: none;"></div>
+          </div>
 
-        <button id="btnResetChecks" class="btn btn-danger" title="현재 직업의 체크한 재료 초기화">
-          🔄 체크 초기화
+          <div class="job-select-wrapper">
+            <label for="jobSelect">직업 선택</label>
+            <select id="jobSelect" class="job-select">
+              <option value="프리스트">프리스트</option>
+            </select>
+          </div>
+
+          <button id="btnOpenUpload" class="btn btn-upload" title="새로운 직업 탭이 포함된 엑셀 파일 업로드">
+            📁 엑셀 파일 열기
+          </button>
+
+          <button id="btnResetChecks" class="btn btn-danger" title="현재 장비의 체크한 재료 초기화">
+            🔄 체크 초기화
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Sticky Navigation Tabs -->
+    <nav class="nav-tabs-wrapper">
+      <div class="nav-tabs">
+        <button class="tab-btn active" data-tab="tree">
+          🌟 장비 조합 & 파밍
+        </button>
+        <button class="tab-btn" data-tab="boss-route">
+          🎯 보스별 파밍 경로
+        </button>
+        <button class="tab-btn" data-tab="codex">
+          📖 보스 드랍 도감
+        </button>
+        <button class="tab-btn" data-tab="gear-codex">
+          🛡️ 부위별 장비 도감 & 시너지
         </button>
       </div>
-    </div>
-  </header>
-
-  <!-- Navigation Tabs -->
-  <nav class="nav-tabs-wrapper">
-    <div class="nav-tabs">
-      <button class="tab-btn active" data-tab="tree">
-        🌟 조합 트리 & 체크리스트
-      </button>
-      <button class="tab-btn" data-tab="boss-route">
-        🎯 보스별 파밍 경로 리포트
-      </button>
-      <button class="tab-btn" data-tab="codex">
-        📖 보스 드랍 도감
-      </button>
-    </div>
-  </nav>
+    </nav>
+  </div>
 
   <!-- Main Container -->
   <main class="main-container">
 
-    <!-- Overall Progress Banner -->
-    <section class="progress-banner">
-      <div class="progress-header">
-        <div class="progress-title">
-          <span>📊</span>
-          <span id="overallProgressText">전체 파밍 진행률: <strong>0%</strong> (보유 재료: 0 / 필요 재료: 0)</span>
-        </div>
-      </div>
-      <div class="progress-bar-bg">
-        <div id="overallProgressFill" class="progress-bar-fill" style="width: 0%;"></div>
-      </div>
-    </section>
-
     <!-- Tab 1: Crafting Tree & Checklist with Right-Side Level Panel -->
     <section id="tabTreeContent" class="tab-content">
+      
+      <!-- Tab 1 Sticky Top Group (Progress Banner + Inventory Card) -->
+      <div class="tab1-sticky-top" id="tab1StickyTop">
+        <!-- Overall Progress Banner -->
+        <section class="progress-banner">
+          <div class="progress-header">
+            <div class="progress-title">
+              <span>📊</span>
+              <span id="overallProgressText">전체 파밍 진행률: <strong>0%</strong> (보유 재료: 0 / 필요 재료: 0)</span>
+            </div>
+            <div class="loadout-summary-pill" id="loadoutSummaryPill">
+              현재 세팅: <span id="loadoutJobName">프리스트</span> 추천 빌드
+            </div>
+          </div>
+          <div class="progress-bar-bg">
+            <div id="overallProgressFill" class="progress-bar-fill" style="width: 0%;"></div>
+          </div>
+        </section>
+
+        <!-- Wide Sticky Inventory / Owned Items Card -->
+        <div class="inventory-card inventory-card-wide" id="inventoryCardWide">
+          <div class="inventory-header">
+            <div class="inv-title-group">
+              <span class="inv-icon">🎒</span>
+              <h4>내 보유 아이템 (가방)</h4>
+              <span id="invCountBadge" class="inv-badge">0종류</span>
+            </div>
+
+            <div class="inv-header-center">
+              <div class="inv-add-row">
+                <input type="text" id="invItemSearch" placeholder="보유 아이템/재료 이름 검색 등록..." autocomplete="off">
+                <input type="number" id="invItemQty" min="1" max="999" value="1" title="수량">
+                <button id="btnAddInvItem" class="btn-inv-add">+ 등록</button>
+              </div>
+              <div id="invSearchSuggestions" class="inv-suggestions" style="display: none;"></div>
+            </div>
+
+            <div class="inv-header-actions">
+              <button id="btnAutoCheckFromInv" class="btn-inv-action" title="보유 아이템 수량만큼 체크박스를 자동 체크">
+                ⚡ 자동 체크 적용
+              </button>
+              <button id="btnToggleInvCollapse" class="btn-inv-toggle" title="가방 접기/펼치기">접기</button>
+            </div>
+          </div>
+          <div id="invBody" class="inventory-body">
+            <div class="inv-quick-add-chips">
+              <span class="quick-chip-label">현재 세팅 필요 재료 원클릭 등록:</span>
+              <div id="invQuickChips" class="quick-chips-list"></div>
+            </div>
+            <div id="invItemsList" class="inv-items-list-grid">
+              <!-- Dynamically populated items with status comparison -->
+            </div>
+          </div>
+        </div>
+      </div>
+
       <div class="app-layout-grid">
         
         <!-- Left Main Column: Equipment Crafting Trees & Controls -->
@@ -116,6 +175,8 @@
 
         <!-- Right Side Column: Sticky Level-Based Farming Checklist -->
         <aside class="layout-side-col">
+          
+          <!-- Sticky Level-Based Farming Checklist -->
           <div class="side-panel-sticky">
             <div class="side-panel-header">
               <div class="side-title-group">
@@ -162,32 +223,95 @@
 
     <!-- Tab 2: Boss Farming Route Report -->
     <section id="tabBossRouteContent" class="tab-content" style="display: none;">
-      <div style="margin-bottom: 20px; color: var(--text-muted); font-size: 14px;">
-        💡 현재 직업의 6개 부위 장비에 필요한 <strong>보스 드랍 재료</strong>들을 보스 및 권장 레벨 순서대로 정렬했습니다. 체크박스를 누르면 조합 트리와 실시간 연동됩니다.
+      <div class="boss-route-sticky-header">
+        <div class="boss-route-info-box">
+          💡 현재 선택된 6개 부위 장비에 필요한 <strong>보스 드랍 재료 및 이동 지역</strong>입니다. 체크박스를 누르면 조합 트리와 실시간 연동됩니다.
+        </div>
       </div>
       <div id="bossRouteGrid" class="boss-route-container"></div>
     </section>
 
     <!-- Tab 3: Boss Codex -->
     <section id="tabCodexContent" class="tab-content" style="display: none;">
-      <div class="codex-filter-bar">
-        <input type="text" id="codexSearch" class="codex-search-input" placeholder="보스 이름 또는 드랍 아이템 검색...">
-        <div style="display: flex; align-items: center; gap: 8px;">
-          <label for="codexLevelFilter" style="font-size: 13px; color: var(--text-muted);">레벨 필터:</label>
-          <select id="codexLevelFilter" class="job-select" style="background: var(--bg-card); border: 1px solid var(--border); padding: 6px 12px; border-radius: var(--radius-md);">
-            <option value="ALL">모든 레벨</option>
-            <option value="1-260">Lv.1 ~ 260</option>
-            <option value="280-320">Lv.280 ~ 320</option>
-            <option value="340-340">Lv.340</option>
-            <option value="360-360">Lv.360</option>
-            <option value="380-400">Lv.380 ~ 400</option>
-          </select>
+      <div class="codex-sticky-header">
+        <div class="codex-filter-bar">
+          <input type="text" id="codexSearch" class="codex-search-input" placeholder="보스 이름, 지역 또는 드랍 아이템 검색...">
+          <div style="display: flex; align-items: center; gap: 8px;">
+            <label for="codexLevelFilter" style="font-size: 13px; color: var(--text-muted);">레벨 필터:</label>
+            <select id="codexLevelFilter" class="job-select" style="background: var(--bg-card); border: 1px solid var(--border); padding: 6px 12px; border-radius: var(--radius-md);">
+              <option value="ALL">모든 레벨</option>
+              <option value="1-260">Lv.1 ~ 260</option>
+              <option value="280-320">Lv.280 ~ 320</option>
+              <option value="340-340">Lv.340</option>
+              <option value="360-360">Lv.360</option>
+              <option value="380-400">Lv.380 ~ 400</option>
+            </select>
+          </div>
         </div>
       </div>
       <div id="bossCodexGrid" class="boss-codex-grid"></div>
     </section>
 
+    <!-- Tab 4: Gear Codex & Job Synergy -->
+    <section id="tabGearCodexContent" class="tab-content" style="display: none;">
+      <div class="gear-codex-sticky-header">
+        <div class="gear-codex-tabs">
+          <button class="gear-cat-btn active" data-cat="무기">⚔️ 무기</button>
+          <button class="gear-cat-btn" data-cat="갑옷">🛡️ 갑옷</button>
+          <button class="gear-cat-btn" data-cat="투구">👑 투구</button>
+          <button class="gear-cat-btn" data-cat="장신구">💍 장신구</button>
+          <button class="gear-cat-btn" data-cat="보조장비">📜 보조장비</button>
+          <button class="gear-cat-btn" data-cat="마나석">💎 마나석</button>
+        </div>
+
+        <!-- Weapon Subcategory Filter (shown when 무기 tab is active) -->
+        <div id="weaponSubFilterBar" class="weapon-sub-filter-bar">
+          <span class="sub-filter-label">무기 종류:</span>
+          <button class="weapon-sub-btn active" data-sub="ALL">전체 무기 (161)</button>
+          <button class="weapon-sub-btn" data-sub="근접무기">⚔️ 근접무기 (69)</button>
+          <button class="weapon-sub-btn" data-sub="원거리무기">🏹 원거리무기 (45)</button>
+          <button class="weapon-sub-btn" data-sub="지팡이">🪄 지팡이 (47)</button>
+        </div>
+
+        <div class="gear-codex-filter-controls">
+          <input type="text" id="gearCodexSearch" placeholder="장비 이름 또는 시너지 효과 검색..." class="gear-search-input">
+          <label class="synergy-filter-checkbox">
+            <input type="checkbox" id="chkSynergyOnly">
+            <span>현재 직업(<strong id="currentJobSynergyLabel">프리스트</strong>) 시너지 장비만 보기</span>
+          </label>
+        </div>
+      </div>
+      <div id="gearCodexGrid" class="gear-codex-grid"></div>
+    </section>
+
   </main>
+
+  <!-- Gear Selection Modal for Loadout Slot -->
+  <div id="gearSelectModal" class="modal-overlay" style="display: none;">
+    <div class="modal-box modal-lg">
+      <div class="modal-header">
+        <div class="modal-title-group">
+          <h3 id="gearSelectModalTitle" class="modal-title">장비 변경</h3>
+          <span id="gearModalSlotBadge" class="slot-tag">무기</span>
+        </div>
+        <button id="btnCloseGearModal" class="modal-close">&times;</button>
+      </div>
+      <div class="gear-modal-toolbar">
+        <input type="text" id="gearModalSearch" placeholder="장비 검색..." class="gear-modal-search">
+        <div id="modalWeaponSubFilterBar" class="weapon-sub-filter-bar modal-sub-bar" style="display: none;">
+          <span class="sub-filter-label">분류:</span>
+          <button class="weapon-sub-btn active" data-sub="ALL">전체</button>
+          <button class="weapon-sub-btn" data-sub="근접무기">근접무기</button>
+          <button class="weapon-sub-btn" data-sub="원거리무기">원거리무기</button>
+          <button class="weapon-sub-btn" data-sub="지팡이">지팡이</button>
+        </div>
+        <div id="gearModalSynergyNote" class="gear-modal-synergy-note"></div>
+      </div>
+      <div id="gearSelectList" class="gear-select-grid">
+        <!-- Dynamically rendered gear choices -->
+      </div>
+    </div>
+  </div>
 
   <!-- Excel Upload Modal -->
   <div id="uploadModal" class="modal-overlay">
@@ -203,8 +327,8 @@
         <input type="file" id="excelFileInput" accept=".xlsx, .xls" style="display: none;">
       </div>
       <div style="margin-top: 16px; font-size: 12px; color: var(--text-muted); line-height: 1.5;">
-        * 엑셀 파일 안에 추가된 새로운 직업 탭(예: 버서커, 팔라딘 등)이 있으면 자동으로 인식하여 선택 메뉴에 추가됩니다.<br>
-        * '보스' 탭은 보스별 드랍 정보로 동기화됩니다.
+        * 엑셀 파일 안에 추가된 새로운 직업 탭이나 장비 시트가 있으면 자동으로 동기화됩니다.<br>
+        * '보스' 탭은 보스 위치 및 드랍 정보로 동기화됩니다.
       </div>
     </div>
   </div>
