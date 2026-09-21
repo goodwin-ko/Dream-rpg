@@ -76,6 +76,12 @@ ALIAS_MAP = {
     "파문항구-위쪽-우사로옆계단": "파문항구-위쪽-우사로 옆 계단",
     "파문항고-위쪽-우사로 옆 계단": "파문항구-위쪽-우사로 옆 계단",
     "파문항고-위쪽-우사로옆 계단": "파문항구-위쪽-우사로 옆 계단",
+    "용살자(근접)": "용살자 (근접)",
+    "용살자 [근접]": "용살자 (근접)",
+    "용살자[근접]": "용살자 (근접)",
+    "용살자(원거리)": "용살자 (원거리)",
+    "용살자 [원거리]": "용살자 (원거리)",
+    "용살자[원거리]": "용살자 (원거리)",
 }
 
 def clean_str(s):
@@ -246,6 +252,18 @@ def parse_excel(file_path):
             lvl = clean_lvl(r[4]) if len(r) > 4 else ""
             synergy = clean_str(r[5]) if len(r) > 5 else ""
             
+            if it_name == "용살자":
+                if curr_sub_cat == "근접무기" or lvl == "360" or "광전사" in synergy:
+                    it_name = "용살자 (근접)"
+                elif curr_sub_cat == "원거리무기" or lvl == "320":
+                    it_name = "용살자 (원거리)"
+
+            if mat_name == "용살자":
+                if curr_item == "황룡언월도" or it_name == "황룡언월도" or curr_sub_cat == "근접무기":
+                    mat_name = "용살자 (근접)"
+                elif curr_item == "파괴자" or it_name == "파괴자" or curr_sub_cat == "원거리무기":
+                    mat_name = "용살자 (원거리)"
+
             if it_name and it_name != curr_item:
                 curr_item = it_name
                 synergy_jobs = []
@@ -420,6 +438,17 @@ def parse_excel(file_path):
             
             if cat:
                 curr_cat = cat
+            MELEE_JOBS = ["광전사", "검사", "살육자", "검혼", "검성", "마검사", "죽음의기사", "가디언", "권법가", "격투가", "싸움꾼", "블레이드 스피릿"]
+            if item == "용살자":
+                if curr_cat == "근접무기" or lvl == "360" or jname in MELEE_JOBS:
+                    item = "용살자 (근접)"
+                elif curr_cat == "원거리무기" or lvl == "320":
+                    item = "용살자 (원거리)"
+            if mat == "용살자":
+                if curr_item == "황룡언월도" or item == "황룡언월도" or curr_cat == "근접무기" or jname in MELEE_JOBS:
+                    mat = "용살자 (근접)"
+                elif curr_item == "파괴자" or item == "파괴자" or curr_cat == "원거리무기":
+                    mat = "용살자 (원거리)"
             if item and item != curr_item:
                 curr_item = item
                 base_rc = global_recipe_map.get(curr_item) or global_recipe_map.get(clean_str(curr_item))

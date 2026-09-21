@@ -60,13 +60,24 @@
     "검은 쌍둥이 반지·성광 파편": "검은 쌍둥이 반지·섬광 파편",
     "붉은 화염 전투 세트": "붉은 화염 전투 셋트",
     "격노한 화염의 전쟁신 도끼": "격노한 화염의 전생신 도끼",
-    "청공의 분노 뇌전홀": "천공의 분노 뇌전홀"
+    "청공의 분노 뇌전홀": "천공의 분노 뇌전홀",
+    "용살자(근접)": "용살자 (근접)",
+    "용살자 [근접]": "용살자 (근접)",
+    "용살자[근접]": "용살자 (근접)",
+    "용살자(원거리)": "용살자 (원거리)",
+    "용살자 [원거리]": "용살자 (원거리)",
+    "용살자[원거리]": "용살자 (원거리)",
+    "신아의 핵": "신앙의 핵"
   };
 
   const CATEGORIES = ["무기", "갑옷", "투구", "장신구", "보조장비", "마나석"];
 
   function normalizeName(name) {
     if (!name) return "";
+    if (typeof name === "object" && name) {
+      if (name.name) name = name.name;
+      else return "";
+    }
     let s = String(name).trim();
     if (ALIAS_MAP[s]) s = ALIAS_MAP[s];
 
@@ -84,6 +95,17 @@
 
     if (ALIAS_MAP[s]) s = ALIAS_MAP[s];
     return s;
+  }
+
+  function pathContainsItem(path, targetName) {
+    if (!path || !targetName) return false;
+    const targetNorm = normalizeName(targetName);
+    const segments = path.split(">").map(s => {
+      let clean = s.trim();
+      if (clean.includes(":")) clean = clean.split(":")[1].trim();
+      return normalizeName(clean);
+    });
+    return segments.includes(targetNorm);
   }
 
   function stripSeparators(s) {
@@ -199,7 +221,10 @@
   let bossRouteSyncWithSlots = true; // Tab 2 boss route sync with selected slot
   let currentViewMode = "tree"; // "tree" or "flow"
   let checkedNodes = new Set();
+  let autoCheckedNodes = new Set();
+  let lastAutoCheckBackup = null;
   let userInventory = {}; // { [itemName: string]: number }
+  let invRows = "2";
 
   // Filter States
   let showOnlyRemaining = true;
@@ -331,12 +356,24 @@
       const newMap = {};
       Object.keys(targetData.global_recipe_map).forEach(key => {
         const oldRecipe = targetData.global_recipe_map[key];
-        const canonName = normalizeName(key);
+        let canonName = normalizeName(key);
+        if (canonName === "용살자") {
+          if (oldRecipe.sub_cat === "근접무기" || oldRecipe.level === 360 || (oldRecipe.synergy_jobs && oldRecipe.synergy_jobs.includes("광전사"))) {
+            canonName = "용살자 (근접)";
+          } else if (oldRecipe.sub_cat === "원거리무기" || oldRecipe.level === 320) {
+            canonName = "용살자 (원거리)";
+          }
+        }
         oldRecipe.name = canonName;
 
         if (oldRecipe.materials) {
           oldRecipe.materials.forEach(m => {
             m.name = normalizeName(m.name);
+            if ((canonName === "황룡언월도" || oldRecipe.sub_cat === "근접무기") && m.name === "용살자") {
+              m.name = "용살자 (근접)";
+            } else if ((canonName === "파괴자" || oldRecipe.sub_cat === "원거리무기") && m.name === "용살자") {
+              m.name = "용살자 (원거리)";
+            }
             if (m.boss && !/^tit[ao]nx-4060$/i.test(m.boss)) {
               m.boss = normalizeName(m.boss);
             }
@@ -350,7 +387,7 @@
           newMap[canonName] = oldRecipe;
         } else {
           const existing = newMap[canonName];
-          if ((!existing.materials || existing.materials.length === 0) && oldRecipe.materials && oldRecipe.materials.length > 0) {
+          if ((!existing.materials || existing.materials.length === 0 || canonName === "용살자 (근접)") && oldRecipe.materials && oldRecipe.materials.length > 0) {
             existing.materials = oldRecipe.materials;
           }
           if (!existing.options && oldRecipe.options) existing.options = oldRecipe.options;
@@ -374,6 +411,108 @@
           }
         }
       });
+
+      // Ensure 용살자 (근접) has complete 7 materials and stats
+      if (!newMap["용살자 (근접)"]) {
+        newMap["용살자 (근접)"] = {
+          name: "용살자 (근접)",
+          category: "무기",
+          sub_cat: "근접무기",
+          grade: "전설",
+          level: 360,
+          level_str: "Lv.360",
+          synergy: "광전사",
+          synergy_jobs: ["광전사"],
+          special_effect: "광전사",
+          materials: [
+            { name: "홍마룡의 칼날", qty: 1, boss: "조합템", level: 340, level_str: "Lv.340" },
+            { name: "혼돈의 혈정", qty: 1, boss: "혼돈의 군주 발록", level: 360, level_str: "Lv.360", location: "지옥 성채-오른쪽 끝", is_drop: true },
+            { name: "타락한 마나핵", qty: 1, boss: "타락한 마나 수호자", level: 360, level_str: "Lv.360", location: "지옥 성채-중앙 포탈", is_drop: true },
+            { name: "멸세의 화염깃", qty: 1, boss: "멸세의 불새", level: 340, level_str: "Lv.340", location: "용암 화산-오른쪽포탈-위", is_drop: true },
+            { name: "은하의 모래", qty: 1, boss: "별의정령 알갈론", level: 340, level_str: "Lv.340", location: "파문 항구-오른쪽포탈-밑", is_drop: true },
+            { name: "망자의 육신", qty: 1, boss: "망령 메르켈", level: 340, level_str: "Lv.340", location: "흐린 설산-오른쪽 포탈", is_drop: true },
+            { name: "마충의 유해", qty: 1, boss: "심연의 마충", level: 360, level_str: "Lv.360", location: "심연-오른쪽", is_drop: true }
+          ],
+          options: "공격력 23500 증가\n힘 1090 증가\n스킬 피해 8% 증가\n공격 시 일정 확률로 ‘용 칼날’ 발동\n클릭하여 사용: ‘용의 격노’ 발동\n광전사 - 전용 효과 -\n살육의 칼날(Q) 피해 15% 증가\n데스 슬로터 피해 30% 증가\n불사의 의지 지속시간 +5초",
+          active_passive: "패시브 효과-용 칼날-\n공격 시 15% 확률로 전방을 베어 길이 600, 너비 150 범위 내의 적에게 힘×25만큼 피해를 줍니다.\n\n액티브 효과-용의 격노-\n사용 시 자신이 받는 피해가 +45% 증가합니다.\n1초마다 힘이 50, 공격력이 750 증가합니다(최대 10회 중첩)(공격력 증가는 유형 1 장비의 공격 효과입니다).\n30초 동안 지속됩니다.\n재사용 대기시간 80초",
+          is_drop: false
+        };
+      } else {
+        const rMelee = newMap["용살자 (근접)"];
+        rMelee.category = "무기";
+        rMelee.sub_cat = "근접무기";
+        rMelee.grade = rMelee.grade || "전설";
+        rMelee.level = 360;
+        rMelee.level_str = "Lv.360";
+        rMelee.synergy = "광전사";
+        rMelee.synergy_jobs = ["광전사"];
+        if (!rMelee.materials || rMelee.materials.length < 7) {
+          rMelee.materials = [
+            { name: "홍마룡의 칼날", qty: 1, boss: "조합템", level: 340, level_str: "Lv.340" },
+            { name: "혼돈의 혈정", qty: 1, boss: "혼돈의 군주 발록", level: 360, level_str: "Lv.360", location: "지옥 성채-오른쪽 끝", is_drop: true },
+            { name: "타락한 마나핵", qty: 1, boss: "타락한 마나 수호자", level: 360, level_str: "Lv.360", location: "지옥 성채-중앙 포탈", is_drop: true },
+            { name: "멸세의 화염깃", qty: 1, boss: "멸세의 불새", level: 340, level_str: "Lv.340", location: "용암 화산-오른쪽포탈-위", is_drop: true },
+            { name: "은하의 모래", qty: 1, boss: "별의정령 알갈론", level: 340, level_str: "Lv.340", location: "파문 항구-오른쪽포탈-밑", is_drop: true },
+            { name: "망자의 육신", qty: 1, boss: "망령 메르켈", level: 340, level_str: "Lv.340", location: "흐린 설산-오른쪽 포탈", is_drop: true },
+            { name: "마충의 유해", qty: 1, boss: "심연의 마충", level: 360, level_str: "Lv.360", location: "심연-오른쪽", is_drop: true }
+          ];
+        }
+      }
+
+      // Ensure 용살자 (원거리) has complete 5 materials and stats
+      if (!newMap["용살자 (원거리)"]) {
+        newMap["용살자 (원거리)"] = {
+          name: "용살자 (원거리)",
+          category: "무기",
+          sub_cat: "원거리무기",
+          grade: "에픽",
+          level: 320,
+          level_str: "Lv.320",
+          synergy: "",
+          synergy_jobs: [],
+          special_effect: "",
+          materials: [
+            { name: "빙하 죽음 총", qty: 1, boss: "빙하의 죽음 벌레", level: 320, level_str: "Lv.320", location: "흐린 설산-왼쪽 포탈", is_drop: true },
+            { name: "진 · 블래스터", qty: 1, boss: "조합템", level: 280, level_str: "Lv.280" },
+            { name: "폭염 결정의 정수", qty: 1, boss: "광염의 만샤", level: 300, level_str: "Lv.300", location: "용암 화산-오른쪽포탈-밑", is_drop: true },
+            { name: "빙옥의 결정", qty: 1, boss: "흐린설산-설괴", level: 260, level_str: "Lv.260", location: "흐린 설산-중앙", is_drop: true },
+            { name: "아다만타이트", qty: 1, boss: "타락한 강철 골렘", level: 260, level_str: "Lv.260", location: "광산-지하", is_drop: true }
+          ],
+          options: "공격력 15600 증가\n힘 125 증가\n민첩 775 증가\n공격 속도 25% 증가\n적에게 어떤 피해든 입히면 일정 확률로 추가 피해 발생",
+          active_passive: "패시브 효과-추가 피해-\n적에게 어떤 피해든 줄 때 50% 확률로 민첩×2.5만큼 추가 피해를 줍니다.\n내부 재사용 대기시간: 0.5초",
+          is_drop: false
+        };
+      }
+
+      // Connect 황룡언월도 -> 용살자 (근접)
+      if (newMap["황룡언월도"] && newMap["황룡언월도"].materials) {
+        newMap["황룡언월도"].materials.forEach(m => {
+          if (m.name === "용살자" || m.name === "용살자 (원거리)") {
+            m.name = "용살자 (근접)";
+            m.level = 360;
+            m.level_str = "Lv.360";
+          }
+        });
+      }
+
+      // Connect 파괴자 -> 용살자 (원거리)
+      if (newMap["파괴자"] && newMap["파괴자"].materials) {
+        newMap["파괴자"].materials.forEach(m => {
+          if (m.name === "용살자" || m.name === "용살자 (근접)") {
+            m.name = "용살자 (원거리)";
+            m.level = 320;
+            m.level_str = "Lv.320";
+          }
+        });
+      }  // ← if (newMap["파괴자"]) 블록 닫기
+
+      // Ensure 격동하는 정세 has synergy for 권법가, 격투가
+      if (newMap["격동하는 정세"]) {
+        newMap["격동하는 정세"].synergy = "권법가, 격투가";
+        newMap["격동하는 정세"].synergy_jobs = ["권법가", "격투가"];
+        newMap["격동하는 정세"].special_effect = "권법가, 격투가";
+      }
+
       targetData.global_recipe_map = newMap;
     }
 
@@ -385,22 +524,59 @@
           const seen = new Set();
           const newTopGear = [];
           cg.top_gear.forEach(name => {
-            const canon = normalizeName(name);
+            let canon = normalizeName(name);
+            if (canon === "용살자") {
+              if (!seen.has("용살자 (근접)")) {
+                seen.add("용살자 (근접)");
+                newTopGear.push("용살자 (근접)");
+              }
+              if (!seen.has("용살자 (원거리)")) {
+                seen.add("용살자 (원거리)");
+                newTopGear.push("용살자 (원거리)");
+              }
+              return;
+            }
             if (!seen.has(canon)) {
               seen.add(canon);
               newTopGear.push(canon);
             }
           });
+          if (cat === "무기") {
+            if (!seen.has("용살자 (근접)")) {
+              seen.add("용살자 (근접)");
+              newTopGear.push("용살자 (근접)");
+            }
+            if (!seen.has("용살자 (원거리)")) {
+              seen.add("용살자 (원거리)");
+              newTopGear.push("용살자 (원거리)");
+            }
+          }
           cg.top_gear = newTopGear;
         }
         if (cg.recipes) {
           const recipeMap = new Map();
           cg.recipes.forEach(rc => {
-            const canon = normalizeName(rc.name);
+            let canon = normalizeName(rc.name);
+            if (canon === "용살자") {
+              if (rc.sub_cat === "근접무기" || rc.level === 360 || (rc.synergy_jobs && rc.synergy_jobs.includes("광전사"))) {
+                canon = "용살자 (근접)";
+              } else if (rc.sub_cat === "원거리무기" || rc.level === 320) {
+                canon = "용살자 (원거리)";
+              }
+            }
             rc.name = canon;
             if (rc.materials) {
               rc.materials.forEach(m => {
                 m.name = normalizeName(m.name);
+                if (canon === "황룡언월도" && m.name === "용살자") {
+                  m.name = "용살자 (근접)";
+                  m.level = 360;
+                  m.level_str = "Lv.360";
+                } else if (canon === "파괴자" && m.name === "용살자") {
+                  m.name = "용살자 (원거리)";
+                  m.level = 320;
+                  m.level_str = "Lv.320";
+                }
                 if (m.boss && !/^tit[ao]nx-4060$/i.test(m.boss)) {
                   m.boss = normalizeName(m.boss);
                 }
@@ -410,7 +586,7 @@
               recipeMap.set(canon, rc);
             } else {
               const ex = recipeMap.get(canon);
-              if ((!ex.materials || ex.materials.length === 0) && rc.materials && rc.materials.length > 0) {
+              if ((!ex.materials || ex.materials.length === 0 || canon === "용살자 (근접)") && rc.materials && rc.materials.length > 0) {
                 ex.materials = rc.materials;
               }
               if (!ex.options && rc.options) ex.options = rc.options;
@@ -418,6 +594,14 @@
               if (!ex.grade && rc.grade) ex.grade = rc.grade;
             }
           });
+          if (cat === "무기" && targetData.global_recipe_map) {
+            if (!recipeMap.has("용살자 (근접)") && targetData.global_recipe_map["용살자 (근접)"]) {
+              recipeMap.set("용살자 (근접)", targetData.global_recipe_map["용살자 (근접)"]);
+            }
+            if (!recipeMap.has("용살자 (원거리)") && targetData.global_recipe_map["용살자 (원거리)"]) {
+              recipeMap.set("용살자 (원거리)", targetData.global_recipe_map["용살자 (원거리)"]);
+            }
+          }
           cg.recipes = Array.from(recipeMap.values());
         }
       });
@@ -471,19 +655,86 @@
         if (j.recommendations) {
           Object.keys(j.recommendations).forEach(slot => {
             if (Array.isArray(j.recommendations[slot])) {
-              j.recommendations[slot] = Array.from(new Set(j.recommendations[slot].map(x => normalizeName(x))));
+              j.recommendations[slot] = Array.from(new Set(j.recommendations[slot].map(x => {
+                const itName = (typeof x === "object" && x) ? (x.name || "") : x;
+                return normalizeName(itName);
+              }).filter(Boolean)));
             }
           });
         }
+        const MELEE_JOBS = ["광전사", "검사", "살육자", "검혼", "검성", "마검사", "죽음의기사", "가디언", "권법가", "격투가", "싸움꾼", "블레이드 스피릿"];
         if (j.recipes) {
           j.recipes.forEach(rc => {
-            rc.name = normalizeName(rc.name);
+            let canon = normalizeName(rc.name);
+            if (canon === "용살자") {
+              canon = (MELEE_JOBS.includes(jobName) || rc.sub_cat === "근접무기" || rc.level === 360) ? "용살자 (근접)" : "용살자 (원거리)";
+            }
+            rc.name = canon;
             if (rc.materials) {
               rc.materials.forEach(m => {
                 m.name = normalizeName(m.name);
+                if (m.name === "용살자") {
+                  if (canon === "황룡언월도" || MELEE_JOBS.includes(jobName) || rc.sub_cat === "근접무기") {
+                    m.name = "용살자 (근접)";
+                    m.level = 360;
+                    m.level_str = "Lv.360";
+                  } else {
+                    m.name = "용살자 (원거리)";
+                    m.level = 320;
+                    m.level_str = "Lv.320";
+                  }
+                }
               });
             }
           });
+        }
+        if (j.recipe_map) {
+          const newJMap = {};
+          Object.keys(j.recipe_map).forEach(rk => {
+            let canon = normalizeName(rk);
+            const rc = j.recipe_map[rk];
+            if (canon === "용살자") {
+              canon = (MELEE_JOBS.includes(jobName) || rc.sub_cat === "근접무기" || rc.level === 360) ? "용살자 (근접)" : "용살자 (원거리)";
+            }
+            rc.name = canon;
+            if (rc.materials) {
+              rc.materials.forEach(m => {
+                m.name = normalizeName(m.name);
+                if (m.name === "용살자") {
+                  if (canon === "황룡언월도" || MELEE_JOBS.includes(jobName) || rc.sub_cat === "근접무기") {
+                    m.name = "용살자 (근접)";
+                    m.level = 360;
+                    m.level_str = "Lv.360";
+                  } else {
+                    m.name = "용살자 (원거리)";
+                    m.level = 320;
+                    m.level_str = "Lv.320";
+                  }
+                }
+              });
+            }
+            newJMap[canon] = rc;
+          });
+          j.recipe_map = newJMap;
+        }
+      });
+
+      // Ensure 권법가 and 격투가 armor slots and recommendations use 격동하는 정세
+      ["권법가", "격투가"].forEach(jName => {
+        const jObj = targetData.jobs[jName];
+        if (jObj) {
+          if (!jObj.recommendations) jObj.recommendations = {};
+          if (!jObj.recommendations["갑옷"] || jObj.recommendations["갑옷"].length === 0) {
+            jObj.recommendations["갑옷"] = ["격동하는 정세"];
+          } else if (!jObj.recommendations["갑옷"].includes("격동하는 정세")) {
+            jObj.recommendations["갑옷"].unshift("격동하는 정세");
+          }
+          if (jObj.gear_slots && (jObj.gear_slots["갑옷"] || []).includes("숭고-신앙의 갑옷")) {
+            jObj.gear_slots["갑옷"] = ["격동하는 정세"];
+          }
+          if (jObj.default_loadout && jObj.default_loadout["갑옷"] === "숭고-신앙의 갑옷") {
+            jObj.default_loadout["갑옷"] = "격동하는 정세";
+          }
         }
       });
     }
@@ -685,6 +936,8 @@
       console.error("Failed to load checked nodes:", e);
       checkedNodes = new Set();
     }
+    loadAutoCheckedNodes();
+    updateUndoButtonVisibility();
   }
 
   function saveCheckedNodes() {
@@ -694,6 +947,38 @@
     } catch (e) {
       console.error("Failed to save checked nodes:", e);
     }
+    saveAutoCheckedNodes();
+  }
+
+  function loadAutoCheckedNodes() {
+    try {
+      const key = "dream_v2_auto_checked_nodes_" + currentJob;
+      const saved = localStorage.getItem(key);
+      const rawList = saved ? JSON.parse(saved) : [];
+      autoCheckedNodes = new Set(rawList);
+    } catch (e) {
+      autoCheckedNodes = new Set();
+    }
+  }
+
+  function saveAutoCheckedNodes() {
+    try {
+      const key = "dream_v2_auto_checked_nodes_" + currentJob;
+      localStorage.setItem(key, JSON.stringify(Array.from(autoCheckedNodes)));
+    } catch (e) {}
+  }
+
+  function updateUndoButtonVisibility() {
+    const btnUndo = document.getElementById("btnUndoAutoCheck");
+    if (!btnUndo) return;
+    const backupKey = "dream_v2_autocheck_backup_" + currentJob;
+    let hasBackup = !!lastAutoCheckBackup;
+    if (!hasBackup) {
+      try {
+        hasBackup = !!localStorage.getItem(backupKey);
+      } catch (e) {}
+    }
+    btnUndo.style.display = hasBackup ? "inline-flex" : "none";
   }
 
   function loadInventory() {
@@ -726,13 +1011,28 @@
 
   function getRecipe(name) {
     if (!gameData) return null;
-    const clean = normalizeName(name);
+    let clean = normalizeName(name);
+    if (clean === "용살자") {
+      const meleeJobs = ["광전사", "검사", "살육자", "검혼", "검성", "마검사", "죽음의기사", "가디언", "권법가", "격투가", "싸움꾼", "블레이드 스피릿"];
+      clean = (meleeJobs.includes(currentJob)) ? "용살자 (근접)" : "용살자 (원거리)";
+    }
     if (gameData.global_recipe_map && gameData.global_recipe_map[clean]) {
       return gameData.global_recipe_map[clean];
     }
     const jobData = getJobData();
     if (jobData && jobData.recipe_map && jobData.recipe_map[clean]) {
       return jobData.recipe_map[clean];
+    }
+    // Fallback if recipe was stored under original name with matching sub_cat
+    if (gameData.global_recipe_map) {
+      if (clean === "용살자 (근접)" && gameData.global_recipe_map["용살자"]) {
+        const r = gameData.global_recipe_map["용살자"];
+        if (r.sub_cat === "근접무기" || r.level === 360) return r;
+      }
+      if (clean === "용살자 (원거리)" && gameData.global_recipe_map["용살자"]) {
+        const r = gameData.global_recipe_map["용살자"];
+        if (r.sub_cat === "원거리무기" || r.level === 320) return r;
+      }
     }
     return null;
   }
@@ -789,6 +1089,20 @@
       btn.classList.toggle("active", btn.dataset.range === sideLevelFilter);
     });
 
+    try {
+      invRows = localStorage.getItem("dream_inv_rows") || "2";
+    } catch (e) {
+      invRows = "2";
+    }
+    if (invBody) invBody.setAttribute("data-rows", invRows);
+    const invRowSelector = document.getElementById("invRowSelector");
+    if (invRowSelector) {
+      invRowSelector.querySelectorAll(".btn-inv-row-opt").forEach(b => {
+        b.classList.toggle("active", b.dataset.rows === invRows);
+      });
+    }
+    updateUndoButtonVisibility();
+
     if (invBody && btnToggleInvCollapse) {
       invBody.classList.toggle("collapsed", invCollapsed);
       btnToggleInvCollapse.textContent = invCollapsed ? "펼치기" : "접기";
@@ -804,10 +1118,13 @@
     if (el && el.offsetHeight > 0) {
       document.documentElement.style.setProperty("--tab1-top-height", `${el.offsetHeight}px`);
     } else {
-      const tab1H = invCollapsed ? "96px" : "200px";
-      document.documentElement.style.setProperty("--tab1-top-height", tab1H);
+      let defaultH = "200px";
+      if (invCollapsed) defaultH = "96px";
+      else if (invRows === "4") defaultH = "330px";
+      else if (invRows === "6") defaultH = "460px";
+      document.documentElement.style.setProperty("--tab1-top-height", defaultH);
     }
-    const h = invCollapsed ? "44px" : "145px";
+    const h = invCollapsed ? "44px" : (invRows === "4" ? "275px" : (invRows === "6" ? "410px" : "145px"));
     document.documentElement.style.setProperty("--inv-bar-height", h);
   }
 
@@ -1461,7 +1778,9 @@
       const itemBox = document.createElement("div");
       itemBox.className = "tree-item-box";
       const isChecked = checkedNodes.has(nodeId);
+      const isAutoChecked = isChecked && autoCheckedNodes.has(nodeId);
       if (isChecked) itemBox.classList.add("completed");
+      if (isAutoChecked) itemBox.classList.add("auto-checked");
 
       const checkbox = document.createElement("input");
       checkbox.type = "checkbox";
@@ -1478,7 +1797,8 @@
 
       const nameSpan = document.createElement("span");
       nameSpan.className = "item-name";
-      nameSpan.textContent = `${mat.name} x${mat.qty || 1}`;
+      const autoBadge = isAutoChecked ? `<span class="badge-auto-check" title="가방 아이템으로 자동 체크됨">⚡가방</span>` : "";
+      nameSpan.innerHTML = `${mat.name} x${mat.qty || 1}${autoBadge}`;
 
       itemBox.appendChild(checkbox);
       itemBox.appendChild(nameSpan);
@@ -1927,10 +2247,15 @@
       const row = document.createElement("div");
       row.className = "inv-item-row";
 
+      const isFulfilled = req > 0 && qty >= req;
+      if (isFulfilled) {
+        row.classList.add("is-complete");
+      }
+
       let statusBadge = "";
       if (req > 0) {
         if (qty >= req) {
-          statusBadge = `<span class="badge-status-sufficient">충분 (${qty}/${req})</span>`;
+          statusBadge = `<span class="badge-status-complete">✓ 파밍 완료 (${qty}/${req})</span>`;
         } else {
           statusBadge = `<span class="badge-status-shortage">${req - qty}개 부족 (${qty}/${req})</span>`;
         }
@@ -1985,6 +2310,43 @@
     });
   }
 
+  // Save undo snapshot before auto check
+  function saveAutoCheckBackup() {
+    lastAutoCheckBackup = {
+      checkedNodes: Array.from(checkedNodes),
+      autoCheckedNodes: Array.from(autoCheckedNodes)
+    };
+    try {
+      localStorage.setItem("dream_v2_autocheck_backup_" + currentJob, JSON.stringify(lastAutoCheckBackup));
+    } catch (e) {}
+    updateUndoButtonVisibility();
+  }
+
+  // Restore undo snapshot
+  function undoAutoCheck() {
+    if (!lastAutoCheckBackup) {
+      try {
+        const saved = localStorage.getItem("dream_v2_autocheck_backup_" + currentJob);
+        if (saved) lastAutoCheckBackup = JSON.parse(saved);
+      } catch (e) {}
+    }
+    if (!lastAutoCheckBackup) {
+      alert("되돌릴 수 있는 이전 자동 체크 기록이 없습니다.");
+      return;
+    }
+    checkedNodes = new Set(lastAutoCheckBackup.checkedNodes || []);
+    autoCheckedNodes = new Set(lastAutoCheckBackup.autoCheckedNodes || []);
+    saveCheckedNodes();
+    saveAutoCheckedNodes();
+    lastAutoCheckBackup = null;
+    try {
+      localStorage.removeItem("dream_v2_autocheck_backup_" + currentJob);
+    } catch (e) {}
+    updateUndoButtonVisibility();
+    renderAll();
+    alert("↩️ 자동 체크 이전 상태로 되돌렸습니다.");
+  }
+
   // One-click Auto Check from Inventory
   function autoCheckFromInventory() {
     const allLeaves = getAllCurrentLeaves();
@@ -1993,40 +2355,82 @@
       return;
     }
 
-    const countsUsed = {};
+    // Save undo state before making any changes
+    saveAutoCheckBackup();
+
     let newlyChecked = 0;
 
-    // 1. Direct leaf materials matching
-    allLeaves.forEach(leaf => {
-      const owned = userInventory[leaf.name] || 0;
-      const used = countsUsed[leaf.name] || 0;
+    // STEP 1: Process intermediate / composite crafted items in inventory FIRST!
+    // An item is an intermediate composite item ONLY if it has a recipe with materials and is not a drop item.
+    // e.g. "악몽 투구[에픽]" or "심연의 악몽 갑옷".
+    // Each owned intermediate item satisfies ONE distinct branch of that intermediate craft.
+    const compositeItems = Object.keys(userInventory).filter(name => {
+      const qty = userInventory[name] || 0;
+      if (qty <= 0) return false;
+      const rec = getRecipe(name);
+      return rec && rec.materials && rec.materials.length > 0 && !rec.is_drop;
+    });
 
-      if (used < owned) {
-        if (!checkedNodes.has(leaf.id)) newlyChecked++;
-        checkedNodes.add(leaf.id);
-        countsUsed[leaf.name] = used + 1;
+    compositeItems.forEach(compName => {
+      const ownedQty = userInventory[compName] || 0;
+      const relevantLeaves = allLeaves.filter(l => pathContainsItem(l.path, compName));
+      if (relevantLeaves.length === 0) return;
+
+      // Group leaves by their specific intermediate instance key
+      const branchMap = new Map();
+      relevantLeaves.forEach(leaf => {
+        const parts = leaf.id.split("__");
+        let branchKey = leaf.slot;
+        for (let i = 0; i < parts.length; i++) {
+          const rawPart = parts[i].split("#")[0];
+          if (normalizeName(rawPart) === normalizeName(compName)) {
+            branchKey = parts.slice(0, i + 1).join("__");
+            break;
+          }
+        }
+        if (!branchMap.has(branchKey)) branchMap.set(branchKey, []);
+        branchMap.get(branchKey).push(leaf);
+      });
+
+      // Check up to ownedQty branches
+      let branchesUsed = 0;
+      for (const [branchKey, branchLeaves] of branchMap.entries()) {
+        if (branchesUsed >= ownedQty) break;
+        branchLeaves.forEach(leaf => {
+          if (!checkedNodes.has(leaf.id)) {
+            checkedNodes.add(leaf.id);
+            autoCheckedNodes.add(leaf.id);
+            newlyChecked++;
+          }
+        });
+        branchesUsed++;
       }
     });
 
-    // 2. Intermediate / composite crafted items in inventory
-    // e.g. If user owns "악몽 투구[에픽]" or "용융된 불꽃 갑옷",
-    // check all leaves belonging to that item's subtree!
-    Object.keys(userInventory).forEach(invItem => {
-      const ownedQty = userInventory[invItem] || 0;
-      if (ownedQty <= 0) return;
+    // STEP 2: Process direct basic / leaf materials matching
+    // Count how many leaves of each material name are already checked
+    const countsAlreadyChecked = {};
+    allLeaves.forEach(leaf => {
+      if (checkedNodes.has(leaf.id)) {
+        countsAlreadyChecked[leaf.name] = (countsAlreadyChecked[leaf.name] || 0) + 1;
+      }
+    });
 
-      const subLeaves = allLeaves.filter(l => l.path && l.path.includes(invItem));
-      if (subLeaves.length > 0) {
-        subLeaves.forEach(leaf => {
-          if (!checkedNodes.has(leaf.id)) {
-            newlyChecked++;
-            checkedNodes.add(leaf.id);
-          }
-        });
+    allLeaves.forEach(leaf => {
+      const owned = userInventory[leaf.name] || 0;
+      const currentCheckedCount = countsAlreadyChecked[leaf.name] || 0;
+
+      if (!checkedNodes.has(leaf.id) && currentCheckedCount < owned) {
+        checkedNodes.add(leaf.id);
+        autoCheckedNodes.add(leaf.id);
+        countsAlreadyChecked[leaf.name] = currentCheckedCount + 1;
+        newlyChecked++;
       }
     });
 
     saveCheckedNodes();
+    saveAutoCheckedNodes();
+    updateUndoButtonVisibility();
     renderAll();
 
     alert(`⚡ 가방에 등록된 재료 및 장비를 바탕으로 총 ${newlyChecked}개 재료가 새롭게 체크 반영되었습니다!`);
@@ -2194,11 +2598,13 @@
 
         m.nodes.forEach((node, nodeIdx) => {
           const isNodeChecked = checkedNodes.has(node.id);
+          const isNodeAutoChecked = isNodeChecked && autoCheckedNodes.has(node.id);
           const chip = document.createElement("span");
-          chip.className = `side-slot-chip ${isNodeChecked ? "checked" : ""}`;
-          chip.title = `${node.path}\n(상위 조합: ${node.parentRecipe})\n클릭하여 획득/취소 토글`;
+          chip.className = `side-slot-chip ${isNodeChecked ? "checked" : ""} ${isNodeAutoChecked ? "auto-checked" : ""}`;
+          chip.title = `${node.path}\n(상위 조합: ${node.parentRecipe})\n${isNodeAutoChecked ? '⚡ 가방 자동 체크됨\n' : ''}클릭하여 획득/취소 토글`;
           const label = m.nodes.length > 1 ? `[${node.slot} ${nodeIdx + 1}]` : `[${node.slot}]`;
-          chip.innerHTML = `${isNodeChecked ? "✓ " : ""}${label}`;
+          const prefix = isNodeAutoChecked ? "⚡ " : (isNodeChecked ? "✓ " : "");
+          chip.innerHTML = `${prefix}${label}`;
 
           chip.addEventListener("click", (e) => {
             e.stopPropagation();
@@ -2238,8 +2644,10 @@
       checkedNodes.add(nodeId);
     } else {
       checkedNodes.delete(nodeId);
+      autoCheckedNodes.delete(nodeId);
     }
     saveCheckedNodes();
+    saveAutoCheckedNodes();
     renderAll();
   }
 
@@ -2980,7 +3388,10 @@
         </div>
       `;
     } else if (item.matchedTreeMats && item.matchedTreeMats.length > 0) {
-      const treeStr = item.matchedTreeMats.map(tm => tm.path ? `<strong>${tm.name}</strong> (${tm.path})` : `<strong>${tm.name}</strong>`).join("<br>");
+      const treeStr = item.matchedTreeMats.map(tm => {
+        const safePath = tm.path ? tm.path.replace(/>/g, '&gt;') : '';
+        return safePath ? `<strong>${tm.name}</strong> (${safePath})` : `<strong>${tm.name}</strong>`;
+      }).join("<br>");
       matchedBannerHtml = `
         <div class="matched-material-banner sub">
           <span>🌿 하위 조합 재료: ${treeStr}</span>
@@ -3561,6 +3972,28 @@
       });
     }
 
+    const btnUndoAutoCheck = document.getElementById("btnUndoAutoCheck");
+    if (btnUndoAutoCheck) {
+      btnUndoAutoCheck.addEventListener("click", () => {
+        undoAutoCheck();
+      });
+    }
+
+    const invRowSelector = document.getElementById("invRowSelector");
+    if (invRowSelector) {
+      const rowBtns = invRowSelector.querySelectorAll(".btn-inv-row-opt");
+      rowBtns.forEach(btn => {
+        btn.addEventListener("click", () => {
+          const rows = btn.dataset.rows || "2";
+          invRows = rows;
+          try { localStorage.setItem("dream_inv_rows", rows); } catch (e) {}
+          if (invBody) invBody.setAttribute("data-rows", rows);
+          rowBtns.forEach(b => b.classList.toggle("active", b.dataset.rows === rows));
+          updateInvBarHeight();
+        });
+      });
+    }
+
     if (btnToggleInvCollapse) {
       btnToggleInvCollapse.addEventListener("click", () => {
         invCollapsed = !invCollapsed;
@@ -4092,12 +4525,28 @@
       for (let i = hIdx + 1; i < rows.length; i++) {
         const r = rows[i];
         if (!r || r.length === 0) continue;
-        const it = normalizeName(r[cItem]);
-        const mat = normalizeName(r[cMat]);
+        let it = normalizeName(r[cItem]);
+        let mat = normalizeName(r[cMat]);
         const qty = String(r[cQty] || "").trim();
         const boss = normalizeName(r[cBoss]);
         let lvl = String(r[cLvl] || "").replace(/\D/g, "");
         const syn = String(r[cSyn] || "").trim();
+        const rawSubCat = String(r[cCat] || "").trim();
+
+        if (it === "용살자") {
+          if (rawSubCat.includes("근접") || lvl === "360" || syn.includes("광전사")) {
+            it = "용살자 (근접)";
+          } else if (rawSubCat.includes("원거리") || lvl === "320") {
+            it = "용살자 (원거리)";
+          }
+        }
+        if (mat === "용살자") {
+          if (currentItem === "황룡언월도" || it === "황룡언월도" || rawSubCat.includes("근접")) {
+            mat = "용살자 (근접)";
+          } else if (currentItem === "파괴자" || it === "파괴자" || rawSubCat.includes("원거리")) {
+            mat = "용살자 (원거리)";
+          }
+        }
 
         if (it && it !== currentItem) {
           currentItem = it;
@@ -4301,7 +4750,10 @@
         const r = bRows[i];
         if (!r || r.length === 0 || !r[0]) continue;
         const bname = normalizeName(r[0]);
-        const iname = normalizeName(r[1]);
+        let iname = normalizeName(r[1]);
+        if (iname === "용살자") {
+          iname = "용살자 (원거리)";
+        }
         const itype = String(r[2] || "").trim();
         const igrade = String(r[3] || "").trim();
 
@@ -4363,12 +4815,20 @@
       for (let i = 1; i < gRows.length; i++) {
         const r = gRows[i];
         if (!r || r.length === 0 || !r[0]) continue;
-        const iname = normalizeName(r[0]);
+        let iname = normalizeName(r[0]);
         const mapped = mapCategory(r[1]);
         const grade = String(r[2] || "").trim();
         const lvlNum = parseInt(String(r[3] || "").replace(/\D/g, "")) || 0;
         const opt = String(r[4] || "").trim();
         const actPass = String(r[5] || "").trim();
+
+        if (iname === "용살자") {
+          if (mapped.sub === "근접무기" || lvlNum === 360) {
+            iname = "용살자 (근접)";
+          } else if (mapped.sub === "원거리무기" || lvlNum === 320) {
+            iname = "용살자 (원거리)";
+          }
+        }
 
         gearSpecs[iname] = {
           name: iname,
@@ -4408,11 +4868,26 @@
       for (let i = 1; i < rRows.length; i++) {
         const r = rRows[i];
         if (!r || r.length === 0 || !r[0]) continue;
-        const iname = normalizeName(r[0]);
+        let iname = normalizeName(r[0]);
         const mapped = mapCategory(r[1]);
         const grade = String(r[2] || "").trim();
-        const mat = normalizeName(r[3]);
+        let mat = normalizeName(r[3]);
         const qty = parseInt(r[4]) || 1;
+
+        if (iname === "용살자") {
+          if (mapped.sub === "근접무기") {
+            iname = "용살자 (근접)";
+          } else if (mapped.sub === "원거리무기") {
+            iname = "용살자 (원거리)";
+          }
+        }
+        if (mat === "용살자") {
+          if (iname === "황룡언월도" || mapped.sub === "근접무기") {
+            mat = "용살자 (근접)";
+          } else if (iname === "파괴자" || mapped.sub === "원거리무기") {
+            mat = "용살자 (원거리)";
+          }
+        }
 
         if (!recGroups[iname]) {
           recGroups[iname] = {
@@ -4479,7 +4954,7 @@
         }
         if (subType && !rc.sub_cat) rc.sub_cat = subType;
         if (subType) rc.sub_type = subType;
-        if ((!rc.materials || rc.materials.length === 0) && rinfo.materials.length > 0) {
+        if ((!rc.materials || rc.materials.length === 0 || iname === "용살자 (근접)") && rinfo.materials.length > 0) {
           rc.materials = rinfo.materials;
         }
       } else {

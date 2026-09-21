@@ -14261,7 +14261,7 @@ window.PRELOADED_GAME_DATA = {
               "is_drop": true
             },
             {
-              "name": "신아의 핵",
+              "name": "신앙의 핵",
               "qty": 1,
               "boss": "조합템",
               "level": 0,
@@ -16196,7 +16196,7 @@ window.PRELOADED_GAME_DATA = {
               "is_drop": true
             },
             {
-              "name": "신아의 핵",
+              "name": "신앙의 핵",
               "qty": 1,
               "boss": "조합템",
               "level": 0,
@@ -33241,7 +33241,7 @@ window.PRELOADED_GAME_DATA = {
               "is_drop": true
             },
             {
-              "name": "신아의 핵",
+              "name": "신앙의 핵",
               "qty": 1,
               "boss": "조합템",
               "level": 0,
@@ -35171,7 +35171,7 @@ window.PRELOADED_GAME_DATA = {
               "is_drop": true
             },
             {
-              "name": "신아의 핵",
+              "name": "신앙의 핵",
               "qty": 1,
               "boss": "조합템",
               "level": 0,
@@ -69962,7 +69962,7 @@ window.PRELOADED_GAME_DATA = {
               "is_drop": true
             },
             {
-              "name": "신아의 핵",
+              "name": "신앙의 핵",
               "qty": 1,
               "boss": "조합템",
               "level": 0,
@@ -71730,7 +71730,7 @@ window.PRELOADED_GAME_DATA = {
               "is_drop": true
             },
             {
-              "name": "신아의 핵",
+              "name": "신앙의 핵",
               "qty": 1,
               "boss": "조합템",
               "level": 0,
@@ -80705,7 +80705,7 @@ window.PRELOADED_GAME_DATA = {
           "난류"
         ],
         "갑옷": [
-          "숭고-신앙의 갑옷"
+          "격동하는 정세"
         ],
         "투구": [
           "열반-불사조 화염관"
@@ -80722,7 +80722,7 @@ window.PRELOADED_GAME_DATA = {
       },
       "default_loadout": {
         "무기": "난류",
-        "갑옷": "숭고-신앙의 갑옷",
+        "갑옷": "격동하는 정세",
         "투구": "열반-불사조 화염관",
         "장신구": "종말의 처형자",
         "보조장비": "지고의 화염-이프리트",
@@ -80749,7 +80749,14 @@ window.PRELOADED_GAME_DATA = {
             "sub_cat": "근접무기"
           }
         ],
-        "갑옷": [],
+        "갑옷": [
+          {
+            "name": "격동하는 정세",
+            "level": 380,
+            "synergy": "권법가, 격투가",
+            "sub_cat": "갑옷"
+          }
+        ],
         "투구": [],
         "장신구": [],
         "보조장비": [],
@@ -81033,7 +81040,7 @@ window.PRELOADED_GAME_DATA = {
               "is_drop": true
             },
             {
-              "name": "신아의 핵",
+              "name": "신앙의 핵",
               "qty": 1,
               "boss": "조합템",
               "level": 0,
@@ -82874,7 +82881,7 @@ window.PRELOADED_GAME_DATA = {
               "is_drop": true
             },
             {
-              "name": "신아의 핵",
+              "name": "신앙의 핵",
               "qty": 1,
               "boss": "조합템",
               "level": 0,
@@ -84445,7 +84452,7 @@ window.PRELOADED_GAME_DATA = {
           "영겁의 빙결과 죽음-망자의 발톱"
         ],
         "갑옷": [
-          "숭고-신앙의 갑옷"
+          "격동하는 정세"
         ],
         "투구": [
           "열반-불사조 화염관"
@@ -84462,7 +84469,7 @@ window.PRELOADED_GAME_DATA = {
       },
       "default_loadout": {
         "무기": "영겁의 빙결과 죽음-망자의 발톱",
-        "갑옷": "숭고-신앙의 갑옷",
+        "갑옷": "격동하는 정세",
         "투구": "열반-불사조 화염관",
         "장신구": "종말의 처형자",
         "보조장비": "지고의 화염-이프리트",
@@ -84513,7 +84520,14 @@ window.PRELOADED_GAME_DATA = {
             "sub_cat": "근접무기"
           }
         ],
-        "갑옷": [],
+        "갑옷": [
+          {
+            "name": "격동하는 정세",
+            "level": 380,
+            "synergy": "권법가, 격투가",
+            "sub_cat": "갑옷"
+          }
+        ],
         "투구": [],
         "장신구": [],
         "보조장비": [],
@@ -86341,7 +86355,7 @@ window.PRELOADED_GAME_DATA = {
               "is_drop": true
             },
             {
-              "name": "신아의 핵",
+              "name": "신앙의 핵",
               "qty": 1,
               "boss": "조합템",
               "level": 0,
@@ -88435,7 +88449,7 @@ window.PRELOADED_GAME_DATA = {
               "is_drop": true
             },
             {
-              "name": "신아의 핵",
+              "name": "신앙의 핵",
               "qty": 1,
               "boss": "조합템",
               "level": 0,
@@ -100778,12 +100792,12 @@ window.PRELOADED_GAME_DATA = {
           "special_effect": "광전사",
           "materials": [
             {
-              "name": "용살자",
+              "name": "용살자 (근접)",
               "qty": 1,
               "boss": "조합템",
-              "level": 320,
+              "level": 360,
               "location": "",
-              "level_str": "Lv.320"
+              "level_str": "Lv.360"
             },
             {
               "name": "광기의 용 검-이그닐",
@@ -100837,57 +100851,77 @@ window.PRELOADED_GAME_DATA = {
           "drop_type": "아이템"
         },
         {
-          "name": "용살자",
+          "name": "용살자 (근접)",
           "category": "무기",
-          "sub_cat": "원거리무기",
-          "level": 320,
-          "level_str": "Lv.320",
-          "synergy": "",
-          "synergy_jobs": [],
-          "special_effect": "",
+          "sub_cat": "근접무기",
+          "level": 360,
+          "level_str": "Lv.360",
+          "synergy": "광전사",
+          "synergy_jobs": [
+            "광전사"
+          ],
+          "special_effect": "광전사",
           "materials": [
             {
-              "name": "빙하 죽음 총",
-              "qty": 1,
-              "boss": "빙하의 죽음 벌레",
-              "level": 320,
-              "location": "흐린 설산-왼쪽 포탈",
-              "level_str": "Lv.320",
-              "is_drop": true
-            },
-            {
-              "name": "진-블래스터",
+              "name": "홍마룡의 칼날",
               "qty": 1,
               "boss": "조합템",
-              "level": 280,
+              "level": 340,
               "location": "",
-              "level_str": "Lv.280"
+              "level_str": "Lv.340"
             },
             {
-              "name": "폭염 결정의 정수",
+              "name": "혼돈의 혈정",
               "qty": 1,
-              "boss": "용암 화염수",
-              "level": 320,
-              "location": "용암 화산-오른쪽 끝",
-              "level_str": "Lv.320",
+              "boss": "제5마왕 아노시스",
+              "level": 360,
+              "location": "전초기지-오른쪽 성-위",
+              "level_str": "Lv.360",
               "is_drop": true
             },
             {
-              "name": "빙옥의 결정",
+              "name": "타락한 마나핵",
+              "qty": 1,
+              "boss": "역병의 근원 마이어스",
+              "level": 360,
+              "location": "암흑도시-왼쪽 밑",
+              "level_str": "Lv.360",
+              "is_drop": true
+            },
+            {
+              "name": "멸세의 화염깃",
+              "qty": 1,
+              "boss": "작열하는 용 이그니르",
+              "level": 340,
+              "location": "용암 화산-왼쪽포탈-오른쪽",
+              "level_str": "Lv.340",
+              "is_drop": true
+            },
+            {
+              "name": "은하의 모래",
+              "qty": 1,
+              "boss": "별의정령 알갈론",
+              "level": 340,
+              "location": "파문항구-오른쪽 위",
+              "level_str": "Lv.340",
+              "is_drop": true
+            },
+            {
+              "name": "망자의 육신",
+              "qty": 1,
+              "boss": "어둠의 백작 데셀록",
+              "level": 300,
+              "location": "암흑 도시-오른쪽 포탈",
+              "level_str": "Lv.300",
+              "is_drop": true
+            },
+            {
+              "name": "마충의 유해",
               "qty": 1,
               "boss": "빙하의 죽음 벌레",
               "level": 320,
               "location": "흐린 설산-왼쪽 포탈",
               "level_str": "Lv.320",
-              "is_drop": true
-            },
-            {
-              "name": "아다만타이트",
-              "qty": 1,
-              "boss": "나가 왕실 장군",
-              "level": 280,
-              "location": "리플 항구-오른쪽 위",
-              "level_str": "Lv.280",
               "is_drop": true
             }
           ],
@@ -100898,9 +100932,143 @@ window.PRELOADED_GAME_DATA = {
           "drop_type": "아이템"
         },
         {
-          "name": "빙하 죽음 총",
+          "name": "홍마룡의 칼날",
           "category": "무기",
-          "sub_cat": "원거리무기",
+          "sub_cat": "근접무기",
+          "level": 340,
+          "level_str": "Lv.340",
+          "synergy": "광전사",
+          "synergy_jobs": [
+            "광전사"
+          ],
+          "special_effect": "광전사",
+          "materials": [
+            {
+              "name": "용 검",
+              "qty": 1,
+              "boss": "조합템",
+              "level": 320,
+              "location": "",
+              "level_str": "Lv.320"
+            },
+            {
+              "name": "멸세의 화염깃",
+              "qty": 1,
+              "boss": "작열하는 용 이그니르",
+              "level": 340,
+              "location": "용암 화산-왼쪽포탈-오른쪽",
+              "level_str": "Lv.340",
+              "is_drop": true
+            },
+            {
+              "name": "명계의 녹",
+              "qty": 1,
+              "boss": "제9마왕 아즈모단",
+              "level": 320,
+              "location": "전초기지-오른쪽성 안-포탈",
+              "level_str": "Lv.320",
+              "is_drop": true
+            },
+            {
+              "name": "자비의 성광 조각",
+              "qty": 1,
+              "boss": "전쟁의 천사 임페리우스",
+              "level": 340,
+              "location": "전초기지-왼쪽성 안",
+              "level_str": "Lv.340",
+              "is_drop": true
+            },
+            {
+              "name": "고대 혈정",
+              "qty": 1,
+              "boss": "어둠의 백작 데셀록",
+              "level": 300,
+              "location": "암흑 도시-오른쪽 포탈",
+              "level_str": "Lv.300",
+              "is_drop": true
+            },
+            {
+              "name": "어둠의 마혈",
+              "qty": 1,
+              "boss": "피의 시체",
+              "level": 320,
+              "location": "암흑도시-왼쪽 위",
+              "level_str": "Lv.320",
+              "is_drop": true
+            }
+          ],
+          "is_drop": false,
+          "drop_boss": "",
+          "drop_level": 0,
+          "drop_location": "",
+          "drop_type": "아이템"
+        },
+        {
+          "name": "용 검",
+          "category": "무기",
+          "sub_cat": "근접무기",
+          "level": 320,
+          "level_str": "Lv.320",
+          "synergy": "",
+          "synergy_jobs": [],
+          "special_effect": "",
+          "materials": [
+            {
+              "name": "빙하 죽음 검",
+              "qty": 1,
+              "boss": "빙하의 죽음 벌레",
+              "level": 320,
+              "location": "흐린 설산-왼쪽 포탈",
+              "level_str": "Lv.320",
+              "is_drop": true
+            },
+            {
+              "name": "어둠의 마혈",
+              "qty": 1,
+              "boss": "피의 시체",
+              "level": 320,
+              "location": "암흑도시-왼쪽 위",
+              "level_str": "Lv.320",
+              "is_drop": true
+            },
+            {
+              "name": "고대의 비전",
+              "qty": 1,
+              "boss": "용암 화염수",
+              "level": 320,
+              "location": "용암 화산-오른쪽 끝",
+              "level_str": "Lv.320",
+              "is_drop": true
+            },
+            {
+              "name": "암흑별 철",
+              "qty": 1,
+              "boss": "지옥 악마",
+              "level": 320,
+              "location": "전초기지-오른쪽성 앞",
+              "level_str": "Lv.320",
+              "is_drop": true
+            },
+            {
+              "name": "암흑의 회한",
+              "qty": 1,
+              "boss": "저주받은 인형 마리안느",
+              "level": 300,
+              "location": "파문항구-옆",
+              "level_str": "Lv.300",
+              "is_drop": true
+            }
+          ],
+          "is_drop": false,
+          "drop_boss": "",
+          "drop_level": 0,
+          "drop_location": "",
+          "drop_type": "아이템"
+        },
+        {
+          "name": "빙하 죽음 검",
+          "category": "무기",
+          "sub_cat": "근접무기",
           "level": 320,
           "level_str": "Lv.320",
           "synergy": "",
@@ -100911,75 +101079,6 @@ window.PRELOADED_GAME_DATA = {
           "drop_boss": "빙하의 죽음 벌레",
           "drop_level": 320,
           "drop_location": "흐린 설산-왼쪽 포탈",
-          "drop_type": "아이템"
-        },
-        {
-          "name": "진-블래스터",
-          "category": "무기",
-          "sub_cat": "원거리무기",
-          "level": 280,
-          "level_str": "Lv.280",
-          "synergy": "",
-          "synergy_jobs": [],
-          "special_effect": "",
-          "materials": [
-            {
-              "name": "폭파자",
-              "qty": 1,
-              "boss": "암흑 망령",
-              "level": 280,
-              "location": "사막-오른쪽 끝",
-              "level_str": "Lv.280",
-              "is_drop": true
-            },
-            {
-              "name": "암흑의 원한",
-              "qty": 1,
-              "boss": "암흑 망령",
-              "level": 280,
-              "location": "사막-오른쪽 끝",
-              "level_str": "Lv.280",
-              "is_drop": true
-            },
-            {
-              "name": "강철 조각",
-              "qty": 1,
-              "boss": "훈련 교관 우사로",
-              "level": 160,
-              "location": "파문항구-위",
-              "level_str": "Lv.160",
-              "is_drop": true
-            },
-            {
-              "name": "금광석",
-              "qty": 12,
-              "boss": "광산-채광",
-              "level": 0,
-              "location": "광산",
-              "level_str": "채광",
-              "is_drop": true
-            }
-          ],
-          "is_drop": false,
-          "drop_boss": "",
-          "drop_level": 0,
-          "drop_location": "",
-          "drop_type": "아이템"
-        },
-        {
-          "name": "폭파자",
-          "category": "무기",
-          "sub_cat": "원거리무기",
-          "level": 280,
-          "level_str": "Lv.280",
-          "synergy": "",
-          "synergy_jobs": [],
-          "special_effect": "",
-          "materials": [],
-          "is_drop": true,
-          "drop_boss": "암흑 망령",
-          "drop_level": 280,
-          "drop_location": "사막-오른쪽 끝",
           "drop_type": "아이템"
         },
         {
@@ -102583,12 +102682,12 @@ window.PRELOADED_GAME_DATA = {
           "special_effect": "광전사",
           "materials": [
             {
-              "name": "용살자",
+              "name": "용살자 (근접)",
               "qty": 1,
               "boss": "조합템",
-              "level": 320,
+              "level": 360,
               "location": "",
-              "level_str": "Lv.320"
+              "level_str": "Lv.360"
             },
             {
               "name": "광기의 용 검-이그닐",
@@ -102641,58 +102740,78 @@ window.PRELOADED_GAME_DATA = {
           "drop_location": "",
           "drop_type": "아이템"
         },
-        "용살자": {
-          "name": "용살자",
+        "용살자 (근접)": {
+          "name": "용살자 (근접)",
           "category": "무기",
-          "sub_cat": "원거리무기",
-          "level": 320,
-          "level_str": "Lv.320",
-          "synergy": "",
-          "synergy_jobs": [],
-          "special_effect": "",
+          "sub_cat": "근접무기",
+          "level": 360,
+          "level_str": "Lv.360",
+          "synergy": "광전사",
+          "synergy_jobs": [
+            "광전사"
+          ],
+          "special_effect": "광전사",
           "materials": [
             {
-              "name": "빙하 죽음 총",
-              "qty": 1,
-              "boss": "빙하의 죽음 벌레",
-              "level": 320,
-              "location": "흐린 설산-왼쪽 포탈",
-              "level_str": "Lv.320",
-              "is_drop": true
-            },
-            {
-              "name": "진-블래스터",
+              "name": "홍마룡의 칼날",
               "qty": 1,
               "boss": "조합템",
-              "level": 280,
+              "level": 340,
               "location": "",
-              "level_str": "Lv.280"
+              "level_str": "Lv.340"
             },
             {
-              "name": "폭염 결정의 정수",
+              "name": "혼돈의 혈정",
               "qty": 1,
-              "boss": "용암 화염수",
-              "level": 320,
-              "location": "용암 화산-오른쪽 끝",
-              "level_str": "Lv.320",
+              "boss": "제5마왕 아노시스",
+              "level": 360,
+              "location": "전초기지-오른쪽 성-위",
+              "level_str": "Lv.360",
               "is_drop": true
             },
             {
-              "name": "빙옥의 결정",
+              "name": "타락한 마나핵",
+              "qty": 1,
+              "boss": "역병의 근원 마이어스",
+              "level": 360,
+              "location": "암흑도시-왼쪽 밑",
+              "level_str": "Lv.360",
+              "is_drop": true
+            },
+            {
+              "name": "멸세의 화염깃",
+              "qty": 1,
+              "boss": "작열하는 용 이그니르",
+              "level": 340,
+              "location": "용암 화산-왼쪽포탈-오른쪽",
+              "level_str": "Lv.340",
+              "is_drop": true
+            },
+            {
+              "name": "은하의 모래",
+              "qty": 1,
+              "boss": "별의정령 알갈론",
+              "level": 340,
+              "location": "파문항구-오른쪽 위",
+              "level_str": "Lv.340",
+              "is_drop": true
+            },
+            {
+              "name": "망자의 육신",
+              "qty": 1,
+              "boss": "어둠의 백작 데셀록",
+              "level": 300,
+              "location": "암흑 도시-오른쪽 포탈",
+              "level_str": "Lv.300",
+              "is_drop": true
+            },
+            {
+              "name": "마충의 유해",
               "qty": 1,
               "boss": "빙하의 죽음 벌레",
               "level": 320,
               "location": "흐린 설산-왼쪽 포탈",
               "level_str": "Lv.320",
-              "is_drop": true
-            },
-            {
-              "name": "아다만타이트",
-              "qty": 1,
-              "boss": "나가 왕실 장군",
-              "level": 280,
-              "location": "리플 항구-오른쪽 위",
-              "level_str": "Lv.280",
               "is_drop": true
             }
           ],
@@ -102702,10 +102821,144 @@ window.PRELOADED_GAME_DATA = {
           "drop_location": "",
           "drop_type": "아이템"
         },
-        "빙하 죽음 총": {
-          "name": "빙하 죽음 총",
+        "홍마룡의 칼날": {
+          "name": "홍마룡의 칼날",
           "category": "무기",
-          "sub_cat": "원거리무기",
+          "sub_cat": "근접무기",
+          "level": 340,
+          "level_str": "Lv.340",
+          "synergy": "광전사",
+          "synergy_jobs": [
+            "광전사"
+          ],
+          "special_effect": "광전사",
+          "materials": [
+            {
+              "name": "용 검",
+              "qty": 1,
+              "boss": "조합템",
+              "level": 320,
+              "location": "",
+              "level_str": "Lv.320"
+            },
+            {
+              "name": "멸세의 화염깃",
+              "qty": 1,
+              "boss": "작열하는 용 이그니르",
+              "level": 340,
+              "location": "용암 화산-왼쪽포탈-오른쪽",
+              "level_str": "Lv.340",
+              "is_drop": true
+            },
+            {
+              "name": "명계의 녹",
+              "qty": 1,
+              "boss": "제9마왕 아즈모단",
+              "level": 320,
+              "location": "전초기지-오른쪽성 안-포탈",
+              "level_str": "Lv.320",
+              "is_drop": true
+            },
+            {
+              "name": "자비의 성광 조각",
+              "qty": 1,
+              "boss": "전쟁의 천사 임페리우스",
+              "level": 340,
+              "location": "전초기지-왼쪽성 안",
+              "level_str": "Lv.340",
+              "is_drop": true
+            },
+            {
+              "name": "고대 혈정",
+              "qty": 1,
+              "boss": "어둠의 백작 데셀록",
+              "level": 300,
+              "location": "암흑 도시-오른쪽 포탈",
+              "level_str": "Lv.300",
+              "is_drop": true
+            },
+            {
+              "name": "어둠의 마혈",
+              "qty": 1,
+              "boss": "피의 시체",
+              "level": 320,
+              "location": "암흑도시-왼쪽 위",
+              "level_str": "Lv.320",
+              "is_drop": true
+            }
+          ],
+          "is_drop": false,
+          "drop_boss": "",
+          "drop_level": 0,
+          "drop_location": "",
+          "drop_type": "아이템"
+        },
+        "용 검": {
+          "name": "용 검",
+          "category": "무기",
+          "sub_cat": "근접무기",
+          "level": 320,
+          "level_str": "Lv.320",
+          "synergy": "",
+          "synergy_jobs": [],
+          "special_effect": "",
+          "materials": [
+            {
+              "name": "빙하 죽음 검",
+              "qty": 1,
+              "boss": "빙하의 죽음 벌레",
+              "level": 320,
+              "location": "흐린 설산-왼쪽 포탈",
+              "level_str": "Lv.320",
+              "is_drop": true
+            },
+            {
+              "name": "어둠의 마혈",
+              "qty": 1,
+              "boss": "피의 시체",
+              "level": 320,
+              "location": "암흑도시-왼쪽 위",
+              "level_str": "Lv.320",
+              "is_drop": true
+            },
+            {
+              "name": "고대의 비전",
+              "qty": 1,
+              "boss": "용암 화염수",
+              "level": 320,
+              "location": "용암 화산-오른쪽 끝",
+              "level_str": "Lv.320",
+              "is_drop": true
+            },
+            {
+              "name": "암흑별 철",
+              "qty": 1,
+              "boss": "지옥 악마",
+              "level": 320,
+              "location": "전초기지-오른쪽성 앞",
+              "level_str": "Lv.320",
+              "is_drop": true
+            },
+            {
+              "name": "암흑의 회한",
+              "qty": 1,
+              "boss": "저주받은 인형 마리안느",
+              "level": 300,
+              "location": "파문항구-옆",
+              "level_str": "Lv.300",
+              "is_drop": true
+            }
+          ],
+          "is_drop": false,
+          "drop_boss": "",
+          "drop_level": 0,
+          "drop_location": "",
+          "drop_type": "아이템"
+        },
+        "빙하 죽음 검": {
+          "name": "빙하 죽음 검",
+          "category": "무기",
+          "sub_cat": "근접무기",
           "level": 320,
           "level_str": "Lv.320",
           "synergy": "",
@@ -102716,75 +102969,6 @@ window.PRELOADED_GAME_DATA = {
           "drop_boss": "빙하의 죽음 벌레",
           "drop_level": 320,
           "drop_location": "흐린 설산-왼쪽 포탈",
-          "drop_type": "아이템"
-        },
-        "진-블래스터": {
-          "name": "진-블래스터",
-          "category": "무기",
-          "sub_cat": "원거리무기",
-          "level": 280,
-          "level_str": "Lv.280",
-          "synergy": "",
-          "synergy_jobs": [],
-          "special_effect": "",
-          "materials": [
-            {
-              "name": "폭파자",
-              "qty": 1,
-              "boss": "암흑 망령",
-              "level": 280,
-              "location": "사막-오른쪽 끝",
-              "level_str": "Lv.280",
-              "is_drop": true
-            },
-            {
-              "name": "암흑의 원한",
-              "qty": 1,
-              "boss": "암흑 망령",
-              "level": 280,
-              "location": "사막-오른쪽 끝",
-              "level_str": "Lv.280",
-              "is_drop": true
-            },
-            {
-              "name": "강철 조각",
-              "qty": 1,
-              "boss": "훈련 교관 우사로",
-              "level": 160,
-              "location": "파문항구-위",
-              "level_str": "Lv.160",
-              "is_drop": true
-            },
-            {
-              "name": "금광석",
-              "qty": 12,
-              "boss": "광산-채광",
-              "level": 0,
-              "location": "광산",
-              "level_str": "채광",
-              "is_drop": true
-            }
-          ],
-          "is_drop": false,
-          "drop_boss": "",
-          "drop_level": 0,
-          "drop_location": "",
-          "drop_type": "아이템"
-        },
-        "폭파자": {
-          "name": "폭파자",
-          "category": "무기",
-          "sub_cat": "원거리무기",
-          "level": 280,
-          "level_str": "Lv.280",
-          "synergy": "",
-          "synergy_jobs": [],
-          "special_effect": "",
-          "materials": [],
-          "is_drop": true,
-          "drop_boss": "암흑 망령",
-          "drop_level": 280,
-          "drop_location": "사막-오른쪽 끝",
           "drop_type": "아이템"
         },
         "광기의 용 검-이그닐": {
@@ -104411,7 +104595,7 @@ window.PRELOADED_GAME_DATA = {
             "sub_cat": "근접무기"
           },
           {
-            "name": "용살자",
+            "name": "용살자 (근접)",
             "level": 360,
             "synergy": "광전사",
             "sub_cat": "근접무기"
@@ -119347,7 +119531,7 @@ window.PRELOADED_GAME_DATA = {
         "망자의 장송곡",
         "심연의 연옥-망자의 발톱",
         "진홍의 살육",
-        "용살자",
+        "용살자 (근접)",
         "토르의 칼날",
         "명계의 단혼검",
         "격노한 화염의 전생신 도끼",
@@ -119429,7 +119613,7 @@ window.PRELOADED_GAME_DATA = {
         "분쇄 권갑",
         "악마의 바다 심연-격노의 활",
         "폭풍 활",
-        "용살자",
+        "용살자 (원거리)",
         "피를 갈구하는 환영궁",
         "겨울 사냥꾼",
         "빙하 죽음 총",
@@ -120273,12 +120457,12 @@ window.PRELOADED_GAME_DATA = {
           "special_effect": "광전사",
           "materials": [
             {
-              "name": "용살자",
+              "name": "용살자 (근접)",
               "qty": 1,
               "boss": "조합템",
-              "level": 320,
+              "level": 360,
               "location": "",
-              "level_str": "Lv.320"
+              "level_str": "Lv.360"
             },
             {
               "name": "광기의 용 검-이그닐",
@@ -120655,7 +120839,7 @@ window.PRELOADED_GAME_DATA = {
           "drop_type": "아이템"
         },
         {
-          "name": "용살자",
+          "name": "용살자 (근접)",
           "category": "무기",
           "sub_cat": "근접무기",
           "level": 360,
@@ -122353,7 +122537,7 @@ window.PRELOADED_GAME_DATA = {
               "is_drop": true
             },
             {
-              "name": "신아의 핵",
+              "name": "신앙의 핵",
               "qty": 1,
               "boss": "조합템",
               "level": 0,
@@ -124684,7 +124868,7 @@ window.PRELOADED_GAME_DATA = {
           "special_effect": "",
           "materials": [
             {
-              "name": "용살자",
+              "name": "용살자 (원거리)",
               "qty": 1,
               "boss": "조합템",
               "level": 320,
@@ -124908,7 +125092,7 @@ window.PRELOADED_GAME_DATA = {
           "drop_type": "아이템"
         },
         {
-          "name": "용살자",
+          "name": "용살자 (원거리)",
           "category": "무기",
           "sub_cat": "원거리무기",
           "level": 320,
@@ -128349,9 +128533,12 @@ window.PRELOADED_GAME_DATA = {
           "sub_cat": "갑옷",
           "level": 380,
           "level_str": "Lv.380",
-          "synergy": "",
-          "synergy_jobs": [],
-          "special_effect": "",
+          "synergy": "권법가, 격투가",
+          "synergy_jobs": [
+            "권법가",
+            "격투가"
+          ],
+          "special_effect": "권법가, 격투가",
           "materials": [
             {
               "name": "심연의 악몽 갑옷",
@@ -142419,7 +142606,7 @@ window.PRELOADED_GAME_DATA = {
               "is_drop": true
             },
             {
-              "name": "신아의 핵",
+              "name": "신앙의 핵",
               "qty": 1,
               "boss": "조합템",
               "level": 0,
@@ -144628,12 +144815,12 @@ window.PRELOADED_GAME_DATA = {
       "special_effect": "광전사",
       "materials": [
         {
-          "name": "용살자",
+          "name": "용살자 (근접)",
           "qty": 1,
           "boss": "조합템",
-          "level": 320,
+          "level": 360,
           "location": "",
-          "level_str": "Lv.320"
+          "level_str": "Lv.360"
         },
         {
           "name": "광기의 용 검-이그닐",
@@ -145009,15 +145196,102 @@ window.PRELOADED_GAME_DATA = {
       "drop_location": "",
       "drop_type": "아이템"
     },
-    "용살자": {
-      "name": "용살자",
+    "용살자 (근접)": {
+      "name": "용살자 (근접)",
+      "category": "무기",
+      "sub_cat": "근접무기",
+      "grade": "전설",
+      "level": 360,
+      "level_str": "Lv.360",
+      "synergy": "광전사",
+      "synergy_jobs": [
+        "광전사"
+      ],
+      "special_effect": "광전사",
+      "options": "공격력 23500 증가\n힘 1090 증가\n스킬 피해 8% 증가\n공격 시 일정 확률로 ‘용 칼날’ 발동\n클릭하여 사용: ‘용의 격노’ 발동\n광전사 - 전용 효과 -\n살육의 칼날(Q) 피해 15% 증가\n데스 슬로터 피해 30% 증가\n불사의 의지 지속시간 +5초",
+      "active_passive": "패시브 효과-용 칼날-\n공격 시 15% 확률로 전방을 베어 길이 600, 너비 150 범위 내의 적에게 힘×25만큼 피해를 줍니다.\n\n액티브 효과-용의 격노-\n사용 시 자신이 받는 피해가 +45% 증가합니다.\n1초마다 힘이 50, 공격력이 750 증가합니다(최대 10회 중첩)(공격력 증가는 유형 1 장비의 공격 효과입니다).\n30초 동안 지속됩니다.\n재사용 대기시간 80초",
+      "materials": [
+        {
+          "name": "홍마룡의 칼날",
+          "qty": 1,
+          "boss": "조합템",
+          "level": 340,
+          "location": "",
+          "level_str": "Lv.340"
+        },
+        {
+          "name": "혼돈의 혈정",
+          "qty": 1,
+          "boss": "제5마왕 아노시스",
+          "level": 360,
+          "location": "전초기지-오른쪽 성-위",
+          "level_str": "Lv.360",
+          "is_drop": true
+        },
+        {
+          "name": "타락한 마나핵",
+          "qty": 1,
+          "boss": "역병의 근원 마이어스",
+          "level": 360,
+          "location": "암흑도시-왼쪽 밑",
+          "level_str": "Lv.360",
+          "is_drop": true
+        },
+        {
+          "name": "멸세의 화염깃",
+          "qty": 1,
+          "boss": "작열하는 용 이그니르",
+          "level": 340,
+          "location": "용암 화산-왼쪽포탈-오른쪽",
+          "level_str": "Lv.340",
+          "is_drop": true
+        },
+        {
+          "name": "은하의 모래",
+          "qty": 1,
+          "boss": "별의정령 알갈론",
+          "level": 340,
+          "location": "파문항구-오른쪽 위",
+          "level_str": "Lv.340",
+          "is_drop": true
+        },
+        {
+          "name": "망자의 육신",
+          "qty": 1,
+          "boss": "망령 메르켈",
+          "level": 340,
+          "location": "흐린 설산-오른쪽 포탈",
+          "level_str": "Lv.340",
+          "is_drop": true
+        },
+        {
+          "name": "마충의 유해",
+          "qty": 1,
+          "boss": "심연의 마충",
+          "level": 360,
+          "location": "심연-오른쪽",
+          "level_str": "Lv.360",
+          "is_drop": true
+        }
+      ],
+      "is_drop": false,
+      "drop_boss": "",
+      "drop_level": 0,
+      "drop_location": "",
+      "drop_type": "아이템"
+    },
+    "용살자 (원거리)": {
+      "name": "용살자 (원거리)",
       "category": "무기",
       "sub_cat": "원거리무기",
+      "grade": "에픽",
       "level": 320,
       "level_str": "Lv.320",
       "synergy": "",
       "synergy_jobs": [],
       "special_effect": "",
+      "options": "공격력 15600 증가\n힘 125 증가\n민첩 775 증가\n공격 속도 25% 증가\n적에게 어떤 피해든 입히면 일정 확률로 추가 피해 발생",
+      "active_passive": "패시브 효과-추가 피해-\n적에게 어떤 피해든 줄 때 50% 확률로 민첩×2.5만큼 추가 피해를 줍니다.\n내부 재사용 대기시간: 0.5초",
       "materials": [
         {
           "name": "빙하 죽음 총",
@@ -145039,10 +145313,10 @@ window.PRELOADED_GAME_DATA = {
         {
           "name": "폭염 결정의 정수",
           "qty": 1,
-          "boss": "용암 화염수",
-          "level": 320,
-          "location": "용암 화산-오른쪽 끝",
-          "level_str": "Lv.320",
+          "boss": "광염의 만샤",
+          "level": 300,
+          "location": "용암 화산-오른쪽포탈-밑",
+          "level_str": "Lv.300",
           "is_drop": true
         },
         {
@@ -146688,7 +146962,7 @@ window.PRELOADED_GAME_DATA = {
           "is_drop": true
         },
         {
-          "name": "신아의 핵",
+          "name": "신앙의 핵",
           "qty": 1,
           "boss": "조합템",
           "level": 0,
@@ -149019,7 +149293,7 @@ window.PRELOADED_GAME_DATA = {
       "special_effect": "",
       "materials": [
         {
-          "name": "용살자",
+          "name": "용살자 (원거리)",
           "qty": 1,
           "boss": "조합템",
           "level": 320,
@@ -152546,9 +152820,12 @@ window.PRELOADED_GAME_DATA = {
       "sub_cat": "갑옷",
       "level": 380,
       "level_str": "Lv.380",
-      "synergy": "",
-      "synergy_jobs": [],
-      "special_effect": "",
+      "synergy": "권법가, 격투가",
+      "synergy_jobs": [
+        "권법가",
+        "격투가"
+      ],
+      "special_effect": "권법가, 격투가",
       "materials": [
         {
           "name": "심연의 악몽 갑옷",
@@ -166376,7 +166653,7 @@ window.PRELOADED_GAME_DATA = {
           "is_drop": true
         },
         {
-          "name": "신아의 핵",
+          "name": "신앙의 핵",
           "qty": 1,
           "boss": "조합템",
           "level": 0,

@@ -68,7 +68,13 @@ ALIAS_MAP = {
     "격노한 화염의 전쟁신 도끼": "격노한 화염의 전생신 도끼",
     "청공의 분노 뇌전홀": "천공의 분노 뇌전홀",
     "TitanX-4060": "TitonX-4060",
-    "성역의 대주교": "성역의 대사제"
+    "성역의 대주교": "성역의 대사제",
+    "용살자(근접)": "용살자 (근접)",
+    "용살자 [근접]": "용살자 (근접)",
+    "용살자[근접]": "용살자 (근접)",
+    "용살자(원거리)": "용살자 (원거리)",
+    "용살자 [원거리]": "용살자 (원거리)",
+    "용살자[원거리]": "용살자 (원거리)"
 }
 
 def clean_str(s):
@@ -157,6 +163,12 @@ for r in list(s_gear.iter_rows(values_only=True))[1:]:
     cat, sub_type = map_category(raw_cat)
     lvl_num = int(lvl) if str(lvl).isdigit() else 0
     
+    if iname == "용살자":
+        if sub_type == "근접무기" or lvl_num == 360:
+            iname = "용살자 (근접)"
+        elif sub_type == "원거리무기" or lvl_num == 320:
+            iname = "용살자 (원거리)"
+
     gear_specs[iname] = {
         "name": iname,
         "category": cat,
@@ -184,6 +196,19 @@ for r in list(s_rec.iter_rows(values_only=True))[1:]:
     
     if not iname: continue
     cat, sub_type = map_category(raw_cat)
+    
+    if iname == "용살자":
+        if sub_type == "근접무기":
+            iname = "용살자 (근접)"
+        elif sub_type == "원거리무기":
+            iname = "용살자 (원거리)"
+
+    if mat_name == "용살자":
+        if iname == "황룡언월도" or sub_type == "근접무기":
+            mat_name = "용살자 (근접)"
+        elif iname == "파괴자" or sub_type == "원거리무기":
+            mat_name = "용살자 (원거리)"
+
     if iname not in rec_groups:
         rec_groups[iname] = {
             "name": iname,
@@ -225,8 +250,8 @@ for iname, rinfo in rec_groups.items():
             rc["level_str"] = lvl_str
         if sub_type and not rc.get("sub_cat"):
             rc["sub_cat"] = sub_type
-        # If existing materials was empty, use new materials
-        if not rc.get("materials") and rinfo["materials"]:
+        # If existing materials was empty, or for key items to ensure complete materials, use new materials
+        if (not rc.get("materials") or iname in ["용살자 (근접)", "용살자 (원거리)", "황룡언월도", "파괴자"]) and rinfo["materials"]:
             rc["materials"] = rinfo["materials"]
     else:
         # New recipe!
@@ -308,6 +333,9 @@ for r in list(s_boss.iter_rows(values_only=True))[1:]:
     
     if not bname or not iname: continue
     
+    if iname == "용살자":
+        iname = "용살자 (원거리)"
+    
     # If boss not in boss_map, add
     if bname not in boss_map:
         boss_map[bname] = {
@@ -345,6 +373,195 @@ for r in list(s_boss.iter_rows(values_only=True))[1:]:
             rc["drop_location"] = boss_map[bname].get("location", "")
         if igrade and not rc.get("grade"):
             rc["grade"] = igrade
+
+# Ensure 용살자 disambiguation in global_recipe_map and category_gear
+if "용살자 (근접)" in global_recipe_map:
+    r_melee = global_recipe_map["용살자 (근접)"]
+    r_melee["category"] = "무기"
+    r_melee["sub_cat"] = "근접무기"
+    r_melee["grade"] = r_melee.get("grade") or "전설"
+    r_melee["level"] = 360
+    r_melee["level_str"] = "Lv.360"
+    r_melee["synergy"] = "광전사"
+    r_melee["synergy_jobs"] = ["광전사"]
+    r_melee["special_effect"] = "광전사"
+    if "용살자 (근접)" in rec_groups and rec_groups["용살자 (근접)"]["materials"]:
+        r_melee["materials"] = rec_groups["용살자 (근접)"]["materials"]
+
+if "용살자 (원거리)" in global_recipe_map:
+    r_ranged = global_recipe_map["용살자 (원거리)"]
+    r_ranged["category"] = "무기"
+    r_ranged["sub_cat"] = "원거리무기"
+    r_ranged["grade"] = r_ranged.get("grade") or "에픽"
+    r_ranged["level"] = 320
+    r_ranged["level_str"] = "Lv.320"
+    if "용살자 (원거리)" in rec_groups and rec_groups["용살자 (원거리)"]["materials"]:
+        r_ranged["materials"] = rec_groups["용살자 (원거리)"]["materials"]
+
+if "황룡언월도" in global_recipe_map:
+    for m in global_recipe_map["황룡언월도"].get("materials", []):
+        if m["name"] in ["용살자", "용살자 (원거리)"]:
+            m["name"] = "용살자 (근접)"
+            m["level"] = 360
+            m["level_str"] = "Lv.360"
+
+if "파괴자" in global_recipe_map:
+    for m in global_recipe_map["파괴자"].get("materials", []):
+        if m["name"] in ["용살자", "용살자 (근접)"]:
+            m["name"] = "용살자 (원거리)"
+            m["level"] = 320
+            m["level_str"] = "Lv.320"
+
+global_recipe_map.pop("용살자", None)
+
+for cat, cg in category_gear.items():
+    if "top_gear" in cg:
+        new_top = []
+        seen = set()
+        for x in cg["top_gear"]:
+            x_clean = ALIAS_MAP.get(x, x)
+            if x_clean == "용살자":
+                if "용살자 (근접)" not in seen:
+                    seen.add("용살자 (근접)")
+                    new_top.append("용살자 (근접)")
+                if "용살자 (원거리)" not in seen:
+                    seen.add("용살자 (원거리)")
+                    new_top.append("용살자 (원거리)")
+            else:
+                if x_clean not in seen:
+                    seen.add(x_clean)
+                    new_top.append(x_clean)
+        if cat == "무기":
+            if "용살자 (근접)" not in seen:
+                new_top.append("용살자 (근접)")
+            if "용살자 (원거리)" not in seen:
+                new_top.append("용살자 (원거리)")
+        cg["top_gear"] = new_top
+
+    if "recipes" in cg:
+        rec_map = {}
+        for rc in cg["recipes"]:
+            rname = ALIAS_MAP.get(rc["name"], rc["name"])
+            if rname == "용살자":
+                continue
+            rec_map[rname] = rc
+        if cat == "무기":
+            if "용살자 (근접)" in global_recipe_map:
+                rec_map["용살자 (근접)"] = global_recipe_map["용살자 (근접)"]
+            if "용살자 (원거리)" in global_recipe_map:
+                rec_map["용살자 (원거리)"] = global_recipe_map["용살자 (원거리)"]
+        cg["recipes"] = list(rec_map.values())
+
+# 2-4. Resolve material attributes (boss, level, location, is_drop)
+drop_lookup = {}
+for b in boss_map.values():
+    for d in b.get("drops", []):
+        drop_lookup[d["name"]] = {
+            "boss": b["name"],
+            "level": d.get("level") or b.get("level") or 0,
+            "level_str": d.get("level_str") or b.get("level_str") or "",
+            "location": b.get("location", ""),
+            "type": d.get("type", "아이템")
+        }
+
+for rc in global_recipe_map.values():
+    for m in rc.get("materials", []):
+        mname = m.get("name")
+        if not mname: continue
+        if not m.get("boss") or m.get("boss") == "조합템" or not m.get("level"):
+            if mname in drop_lookup:
+                dinfo = drop_lookup[mname]
+                m["boss"] = dinfo["boss"]
+                m["level"] = dinfo["level"]
+                m["level_str"] = dinfo["level_str"]
+                m["location"] = dinfo["location"]
+                m["is_drop"] = True
+            elif mname in global_recipe_map:
+                sub_r = global_recipe_map[mname]
+                if sub_r.get("is_drop") and sub_r.get("drop_boss"):
+                    m["boss"] = sub_r["drop_boss"]
+                    m["level"] = sub_r.get("drop_level") or sub_r.get("level") or 0
+                    m["level_str"] = sub_r.get("level_str") or (f"Lv.{m['level']}" if m["level"] else "")
+                    m["location"] = sub_r.get("drop_location", "")
+                    m["is_drop"] = True
+                else:
+                    m["boss"] = "조합템"
+                    m["level"] = sub_r.get("level") or 0
+                    m["level_str"] = sub_r.get("level_str") or (f"Lv.{m['level']}" if m["level"] else "")
+
+# 2-5. Rebuild 31 jobs using merged data
+print("6. Rebuilding jobs with merged recipes...")
+categories = ["무기", "갑옷", "투구", "장신구", "보조장비", "마나석"]
+ALL_31_JOBS = data["all_job_list"]
+jobs = {}
+legacy_jobs = data.get("jobs", {})
+
+for job_name in ALL_31_JOBS:
+    recomms = {cat: [] for cat in categories}
+    for cat in categories:
+        for rc in category_gear[cat]["recipes"]:
+            if job_name in rc.get("synergy_jobs", []):
+                recomms[cat].append({
+                    "name": rc["name"],
+                    "level": rc["level"],
+                    "synergy": rc["synergy"],
+                    "sub_cat": rc["sub_cat"]
+                })
+                
+    default_loadout = {}
+    if job_name in legacy_jobs:
+        for cat in categories:
+            top_items = legacy_jobs[job_name]["gear_slots"].get(cat, [])
+            if isinstance(top_items, list) and top_items:
+                default_loadout[cat] = top_items[0]
+            elif isinstance(top_items, str) and top_items:
+                default_loadout[cat] = top_items
+            elif category_gear[cat]["top_gear"]:
+                default_loadout[cat] = category_gear[cat]["top_gear"][0]
+            else:
+                default_loadout[cat] = ""
+    else:
+        for cat in categories:
+            cat_top = category_gear[cat]["top_gear"]
+            job_recs = [r["name"] for r in recomms[cat] if r["name"] in cat_top]
+            if job_recs:
+                default_loadout[cat] = job_recs[0]
+            elif cat_top:
+                default_loadout[cat] = cat_top[0]
+            else:
+                default_loadout[cat] = ""
+                
+    gear_slots = {cat: [default_loadout[cat]] if default_loadout.get(cat) else [] for cat in categories}
+    
+    active_recipes = []
+    visited = set()
+    def collect_recipes(item_name):
+        if not item_name or item_name in visited:
+            return
+        visited.add(item_name)
+        rc = global_recipe_map.get(item_name)
+        if rc:
+            active_recipes.append(rc)
+            for m in rc.get("materials", []):
+                m_name = m.get("name")
+                if m_name in global_recipe_map:
+                    collect_recipes(m_name)
+                    
+    for slot_item in default_loadout.values():
+        if slot_item:
+            collect_recipes(slot_item)
+            
+    active_recipe_map = {r["name"]: r for r in active_recipes}
+    
+    jobs[job_name] = {
+        "name": job_name,
+        "recipes": active_recipes,
+        "recipe_map": active_recipe_map,
+        "gear_slots": gear_slots,
+        "default_loadout": default_loadout,
+        "recommendations": recomms
+    }
+data["jobs"] = jobs
 
 # Re-sort bosses by level, name
 sorted_bosses = sorted(list(boss_map.values()), key=lambda x: (x["level"], x["name"]))
