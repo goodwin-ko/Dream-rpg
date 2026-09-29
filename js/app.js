@@ -15,7 +15,9 @@
     "속세의및·우키요에 두루마리": "속세의 빛·우키요에 두루마리",
     "피의문양": "피의 문양",
     "영혼정화의 성목": "영혼 정화의 성목",
-    "암흑의 회환": "암흑의 회한",
+    "암흑의 회환": "어둠에 물든 원한",
+    "암흑의 회한": "어둠에 물든 원한",
+    "암흑의 원한": "어둠에 물든 원한",
     "별의정령 알갈론": "별의정령 알갈론",
     "별의 정령 알갈론": "별의정령 알갈론",
     "빛의 정령 알갈론": "별의정령 알갈론",
@@ -240,6 +242,9 @@
   let gearCodexSynergyOnly = false;
   let gearCodexSearchQuery = "";
   let weaponSubFilter = "ALL"; // "ALL" | "근접무기" | "원거리무기" | "지팡이"
+
+  // Boss Route Search State
+  let bossRouteSearchQuery = "";
 
   // Modal State
   let modalSlot = "무기";
@@ -785,6 +790,29 @@
 
     if (!gameData) {
       alert("게임 데이터를 불러올 수 없습니다. dream01.xlsx 파일을 업로드해주세요.");
+    }
+
+    // Ensure misc_recipes exists even if loaded from old savedData
+    if (!gameData.misc_recipes && window.PRELOADED_GAME_DATA && window.PRELOADED_GAME_DATA.misc_recipes) {
+      gameData.misc_recipes = window.PRELOADED_GAME_DATA.misc_recipes;
+    }
+
+    // Add misc recipes to global_recipe_map for tree rendering
+    if (gameData.misc_recipes && gameData.global_recipe_map) {
+      Object.keys(gameData.misc_recipes).forEach(catName => {
+        gameData.misc_recipes[catName].forEach(item => {
+          if (!gameData.global_recipe_map[item.name]) {
+            gameData.global_recipe_map[item.name] = {
+              name: item.name,
+              category: "기타조합",
+              sub_cat: item.sub_type || catName,
+              grade: item.grade || "일반",
+              materials: item.materials,
+              is_drop: false
+            };
+          }
+        });
+      });
     }
 
     // Deduplicate and normalize all item names to middle dot '·'
@@ -1503,7 +1531,8 @@
     if (!container) return;
     container.innerHTML = "";
 
-    const slotsToShow = currentSlot === "ALL" ? CATEGORIES : [currentSlot];
+    const ALL_SLOTS_INCLUDING_MISC = [...CATEGORIES, "기타조합"];
+    const slotsToShow = currentSlot === "ALL" ? ALL_SLOTS_INCLUDING_MISC : [currentSlot];
 
     slotsToShow.forEach(slot => {
       const items = currentLoadout[slot] || [];
@@ -2766,7 +2795,14 @@
     }
 
     const catData = gameData && gameData.category_gear && gameData.category_gear[modalSlot];
-    const topGearList = (catData && catData.top_gear) || [];
+    let topGearList = (catData && catData.top_gear) || [];
+
+    if (modalSlot === "기타조합" && gameData && gameData.misc_recipes) {
+      topGearList = [];
+      Object.values(gameData.misc_recipes).forEach(items => {
+        items.forEach(item => topGearList.push(item.name));
+      });
+    }
 
     const filtered = topGearList.filter(name => {
       const recipe = getRecipe(name);
@@ -2968,12 +3004,23 @@
 
     const sortedBosses = Object.values(bossMap).sort((a, b) => a.level - b.level);
 
-    if (sortedBosses.length === 0) {
+    // Boss route search filtering
+    let filteredBosses = sortedBosses;
+    if (bossRouteSearchQuery) {
+      const q = bossRouteSearchQuery.trim().toLowerCase();
+      filteredBosses = sortedBosses.filter(bData => {
+        if (bData.boss_name.toLowerCase().includes(q)) return true;
+        if (bData.location && bData.location.toLowerCase().includes(q)) return true;
+        return Object.keys(bData.materials).some(matName => matName.toLowerCase().includes(q));
+      });
+    }
+
+    if (filteredBosses.length === 0) {
       container.innerHTML = `<div class="empty-msg">선택한 장비에 필요한 보스 드랍 재료가 없습니다.</div>`;
       return;
     }
 
-    sortedBosses.forEach(bData => {
+    filteredBosses.forEach(bData => {
       const card = document.createElement("div");
       card.className = "boss-route-card";
       card.id = `boss-route-${bData.boss_name.replace(/\s+/g, '_')}`;
@@ -3480,6 +3527,105 @@
     return card;
   }
 
+  // ── 기타 조합 렌더링 함수 ──────────────────────────────────────────────────
+  function renderMiscRecipesSection(container, searchQuery) {
+    if (!gameData || !gameData.misc_recipes) {
+      container.innerHTML = `<div class="empty-msg" style="grid-column:1/-1;padding:40px;text-align:center;">기타 조합 데이터가 없습니다.</div>`;
+      return;
+    }
+
+    const qClean = searchQuery ? searchQuery.trim().toLowerCase() : "";
+    const miscData = gameData.misc_recipes;
+    const MISC_CATS = ["배지", "곡괭이", "낚시대", "물약"];
+    const MISC_ICONS = { "배지": "🏅", "곡괭이": "⛏️", "낚시대": "🎣", "물약": "🧪" };
+
+    // Grade color mapping (matching existing grade styling)
+    const GRADE_COLORS = {
+      "일반": "#94a3b8",
+      "우수": "#4ade80",
+      "희귀": "#60a5fa",
+      "극한": "#f59e0b",
+      "전설": "#f97316",
+      "에픽": "#c084fc",
+      "고대": "#fb923c",
+      "신화": "#e11d48",
+      "영원·영구": "#a78bfa"
+    };
+
+    let totalRendered = 0;
+
+    MISC_CATS.forEach(catName => {
+      const items = miscData[catName] || [];
+      const filtered = items.filter(item => {
+        if (!qClean) return true;
+        if (item.name.toLowerCase().includes(qClean)) return true;
+        if (item.grade && item.grade.toLowerCase().includes(qClean)) return true;
+        return item.materials && item.materials.some(m => m.name.toLowerCase().includes(qClean));
+      });
+
+      if (filtered.length === 0) return;
+
+      // Section header
+      const sectionHeader = document.createElement("div");
+      sectionHeader.style.cssText = "grid-column: 1/-1; margin-top: 20px; margin-bottom: 4px; display: flex; align-items: center; gap: 8px;";
+      sectionHeader.innerHTML = `
+        <span style="font-size: 18px;">${MISC_ICONS[catName] || "📦"}</span>
+        <span style="font-size: 15px; font-weight: 700; color: var(--text-main);">${catName}</span>
+        <span style="font-size: 12px; color: var(--text-muted); background: var(--bg-card); border: 1px solid var(--border); padding: 2px 8px; border-radius: 10px;">${filtered.length}개</span>
+      `;
+      container.appendChild(sectionHeader);
+
+      // Item cards
+      filtered.forEach(item => {
+        const gradeColor = GRADE_COLORS[item.grade] || "#94a3b8";
+        const gradeHtml = item.grade
+          ? `<span style="font-size: 11px; padding: 2px 7px; border-radius: 8px; border: 1px solid ${gradeColor}; color: ${gradeColor}; background: ${gradeColor}18; font-weight: 600;">${item.grade}</span>`
+          : "";
+
+        const matsHtml = (item.materials || []).map(m => {
+          const isHighlighted = qClean && m.name.toLowerCase().includes(qClean);
+          return `<li style="display:flex;justify-content:space-between;align-items:center;padding:3px 0;border-bottom:1px solid var(--border);">
+            <span style="${isHighlighted ? "color:#fbbf24;font-weight:700;" : "color:var(--text-main);"}">${m.name}</span>
+            <span style="font-size:12px;color:var(--text-muted);white-space:nowrap;margin-left:8px;">× ${m.qty}</span>
+          </li>`;
+        }).join("");
+
+        const nameHighlighted = qClean && item.name.toLowerCase().includes(qClean)
+          ? `<span style="color:#fbbf24;font-weight:700;">${item.name}</span>`
+          : `<span>${item.name}</span>`;
+
+        const currentItems = currentLoadout["기타조합"] || [];
+        const isEquipped = currentItems.includes(item.name);
+
+        const card = document.createElement("div");
+        card.className = "gear-codex-card";
+        card.style.cssText = "display:flex;flex-direction:column;gap:8px;";
+        card.innerHTML = `
+          <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:6px;flex-wrap:wrap;">
+            <div style="font-size:13.5px;font-weight:700;color:var(--text-main);line-height:1.3;">${nameHighlighted}</div>
+            ${gradeHtml}
+          </div>
+          <div style="font-size:11px;color:var(--text-muted);">📋 조합 재료 (${(item.materials||[]).length}개)</div>
+          <ul style="list-style:none;margin:0;padding:0;font-size:12.5px;">${matsHtml}</ul>
+          <button class="btn-equip-loadout" data-slot="기타조합" data-item="${item.name}">
+            ${isEquipped ? '✓ 파밍 목록에 등록됨 (' + (currentItems.indexOf(item.name) + 1) + '/3)' : (currentItems.length < 3 ? '[기타조합] 파밍 목록에 추가 (' + currentItems.length + '/3)' : '[기타조합] 1번 장비와 교체')}
+          </button>
+        `;
+        container.appendChild(card);
+        totalRendered++;
+      });
+    });
+
+    if (totalRendered === 0) {
+      const empty = document.createElement("div");
+      empty.style.cssText = "grid-column:1/-1;padding:40px;text-align:center;color:var(--text-muted);";
+      empty.innerHTML = qClean
+        ? `<p>🔍 '<strong>${searchQuery}</strong>' 에 해당하는 기타 조합 아이템이 없습니다.</p>`
+        : `<p>기타 조합 데이터가 없습니다.</p>`;
+      container.appendChild(empty);
+    }
+  }
+
   function renderGearCodexTab() {
     if (!gearCodexGrid || !gameData || !gameData.category_gear) return;
 
@@ -3517,6 +3663,20 @@
     }
 
     gearCodexGrid.innerHTML = "";
+
+    // Update active button state for all category buttons including 기타조합
+    gearCatButtons.forEach(btn => {
+      btn.classList.toggle("active", btn.dataset.cat === gearCodexCat);
+    });
+
+    // 기타조합 category: render misc recipes separately
+    if (gearCodexCat === "기타조합") {
+      // Hide weapon sub-filter bar
+      const weaponSubFilterBarMisc = document.getElementById("weaponSubFilterBar");
+      if (weaponSubFilterBarMisc) weaponSubFilterBarMisc.style.display = "none";
+      renderMiscRecipesSection(gearCodexGrid, gearCodexSearchQuery);
+      return;
+    }
 
     const weaponSubFilterBar = document.getElementById("weaponSubFilterBar");
     if (weaponSubFilterBar) {
@@ -3773,10 +3933,9 @@
                   showToast(`ℹ️ [${cat}]에 '${name}'이(가) 이미 등록되어 있습니다.`);
                 }
                 saveActiveLoadout();
-                currentTab = "tree";
-                currentSlot = cat;
+                currentTab = "gear-codex";
+                gearCodexCat = cat;
                 try { localStorage.setItem("dream_selected_tab", currentTab); } catch (err) {}
-                try { localStorage.setItem("dream_selected_slot", currentSlot); } catch (err) {}
                 restoreUIState();
                 renderAll();
               }
@@ -3802,7 +3961,7 @@
               badge: "조합템",
               badgeClass: "badge-craft",
               action: () => {
-                currentTab = "tree";
+                currentTab = "gear-codex";
                 restoreUIState();
                 renderAll();
               }
@@ -4218,6 +4377,15 @@
     const codexLevelFilter = document.getElementById("codexLevelFilter");
     if (codexLevelFilter) {
       codexLevelFilter.addEventListener("change", () => renderCodexTab());
+    }
+
+    // Tab 2 Boss Route Search
+    const bossRouteSearchInput = document.getElementById("bossRouteSearch");
+    if (bossRouteSearchInput) {
+      setupDebouncedInput(bossRouteSearchInput, (val) => {
+        bossRouteSearchQuery = val.trim();
+        renderBossRouteTab();
+      }, 200);
     }
 
     // Tab 4 Gear Codex Events

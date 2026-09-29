@@ -165,6 +165,9 @@
               <button class="slot-btn" data-slot="마나석">
                 💎 마나석 <span class="slot-badge-count">0%</span>
               </button>
+              <button class="slot-btn" data-slot="기타조합">
+                🎒 기타 조합 <span class="slot-badge-count">0%</span>
+              </button>
               <span id="slotSelectionCounter" class="slot-selection-counter">전체 부위 표시 중 (부위 클릭 시 해당 부위 최대 3종류 파밍)</span>
             </div>
 
@@ -226,11 +229,13 @@
       </div>
     </section>
 
-    <!-- Tab 2: Boss Farming Route Report -->
     <section id="tabBossRouteContent" class="tab-content" style="display: none;">
       <div class="boss-route-sticky-header">
         <div class="boss-route-info-box">
           💡 현재 선택된 6개 부위 장비에 필요한 <strong>보스 드랍 재료 및 이동 지역</strong>입니다. 체크박스를 누르면 조합 트리와 실시간 연동됩니다.
+        </div>
+        <div style="padding: 8px 16px 4px;">
+          <input type="text" id="bossRouteSearch" lang="ko" inputmode="text" placeholder="보스 이름 또는 재료 검색..." style="width: 100%; padding: 8px 12px; background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius-md); color: var(--text-main); font-size: 13px; outline: none; box-sizing: border-box;" autocomplete="off" autocorrect="off" autocapitalize="none" spellcheck="false">
         </div>
       </div>
       <div id="bossRouteGrid" class="boss-route-container"></div>
@@ -281,6 +286,7 @@
           <button class="gear-cat-btn" data-cat="장신구">💍 장신구</button>
           <button class="gear-cat-btn" data-cat="보조장비">📜 보조장비</button>
           <button class="gear-cat-btn" data-cat="마나석">💎 마나석</button>
+          <button class="gear-cat-btn" data-cat="기타조합">🎒 기타 조합</button>
         </div>
 
         <!-- Weapon Subcategory Filter (shown when 무기 tab is active) -->
