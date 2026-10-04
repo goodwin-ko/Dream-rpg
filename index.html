@@ -115,7 +115,7 @@
             <div class="inv-header-center">
               <div class="inv-add-row">
                 <input type="text" id="invItemSearch" lang="ko" inputmode="text" placeholder="보유 아이템/재료 이름 검색 등록..." autocomplete="off" autocorrect="off" autocapitalize="none" spellcheck="false">
-                <input type="number" id="invItemQty" min="1" max="999" value="1" title="수량">
+                <input type="text" id="invItemQty" inputmode="numeric" pattern="[0-9]*" min="1" max="999" value="1" title="수량">
                 <button id="btnAddInvItem" class="btn-inv-add">+ 등록</button>
               </div>
               <div id="invSearchSuggestions" class="inv-suggestions" style="display: none;"></div>

@@ -29,10 +29,11 @@
     "푸른 얼음 결정": "푸른 얼음 결정",
     "지옥의 마안": "지옥 악마의 눈",
     "지옥의마안": "지옥 악마의 눈",
-    "지옥 악마의 눈": "지옥 악마의 눈",
-    "명계의 녹": "검은 악몽의 부산물",
-    "명계의녹": "검은 악몽의 부산물",
+    "암흑 악몽의 타액": "검은 악몽의 부산물",
+    "암흑악몽의타액": "검은 악몽의 부산물",
     "검은 악몽의 부산물": "검은 악몽의 부산물",
+    "명계의 녹": "명계의 녹",
+    "명계의녹": "명계의 녹",
     "복음의 조각": "성스러운 기록의 조각",
     "복음의조각": "성스러운 기록의 조각",
     "성스러운 기록의 조각": "성스러운 기록의 조각",
@@ -86,8 +87,9 @@
     "꺼지지 않는 심연의 불꽃": "꺼지지 않는 심연의 불꽃",
     "암흑의 회환": "어둠에 물든 원한",
     "암흑의 회한": "어둠에 물든 원한",
-    "암흑의 원한": "어둠에 물든 원한",
     "어둠에 물든 원한": "어둠에 물든 원한",
+    "암흑의 원한": "암흑의 원한",
+    "암흑의원한": "암흑의 원한",
 
     // Boss name aliases
     "화염거인": "화염 거인",
@@ -299,6 +301,40 @@
     }
 
     return result;
+  }
+
+  // Korean characters to QWERTY English keystrokes converter (역변환)
+  function korToEng(src) {
+    if (!src || typeof src !== 'string') return '';
+    const CHO_ENG = ["r","R","s","e","E","f","a","q","Q","t","T","d","w","W","c","z","x","v","g"];
+    const JUNG_ENG = ["k","o","i","O","j","p","u","P","h","hk","ho","hl","y","n","nj","np","nl","b","m","ml","l"];
+    const JONG_ENG = ["","r","R","rt","s","sw","sg","e","f","fr","fa","fq","ft","fx","fv","fg","a","q","qt","t","T","d","w","c","z","x","v","g"];
+    const CHAR_MAP = {
+      'ㄱ':'r', 'ㄲ':'R', 'ㄳ':'rt', 'ㄴ':'s', 'ㄵ':'sw', 'ㄶ':'sg', 'ㄷ':'e', 'ㄸ':'E',
+      'ㄹ':'f', 'ㄺ':'fr', 'ㄻ':'fa', 'ㄼ':'fq', 'ㄽ':'ft', 'ㄾ':'fx', 'ㄿ':'fv', 'ㅀ':'fg',
+      'ㅁ':'a', 'ㅂ':'q', 'ㅃ':'Q', 'ㅅ':'t', 'ㅆ':'T', 'ㅇ':'d', 'ㅈ':'w', 'ㅉ':'W',
+      'ㅊ':'c', 'ㅋ':'z', 'ㅌ':'x', 'ㅍ':'v', 'ㅎ':'g',
+      'ㅏ':'k', 'ㅐ':'o', 'ㅑ':'i', 'ㅒ':'O', 'ㅓ':'j', 'ㅔ':'p', 'ㅕ':'u', 'ㅖ':'P',
+      'ㅗ':'h', 'ㅘ':'hk', 'ㅙ':'ho', 'ㅚ':'hl', 'ㅛ':'y', 'ㅜ':'n', 'ㅝ':'nj', 'ㅞ':'np',
+      'ㅟ':'nl', 'ㅠ':'b', 'ㅡ':'m', 'ㅢ':'ml', 'ㅣ':'l'
+    };
+
+    let res = '';
+    for (let i = 0; i < src.length; i++) {
+      const code = src.charCodeAt(i);
+      if (code >= 0xAC00 && code <= 0xD7A3) {
+        const syl = code - 0xAC00;
+        const cho = Math.floor(syl / 588);
+        const jung = Math.floor((syl % 588) / 28);
+        const jong = syl % 28;
+        res += CHO_ENG[cho] + JUNG_ENG[jung] + JONG_ENG[jong];
+      } else if (CHAR_MAP[src[i]]) {
+        res += CHAR_MAP[src[i]];
+      } else {
+        res += src[i];
+      }
+    }
+    return res;
   }
 
   // App State
@@ -1367,23 +1403,45 @@
     return recipe._searchIndex;
   }
 
-  // IME-safe debounce helper (handles compositionend and delayed triggers)
+  // IME-safe debounce helper with smart real-time Korean typing converter
   function setupDebouncedInput(inputEl, callback, delay = 200) {
     if (!inputEl) return null;
     let timer = null;
+    let isComposing = false;
 
-    const schedule = () => {
+    const schedule = (valToUse) => {
       if (timer) clearTimeout(timer);
       timer = setTimeout(() => {
-        callback(inputEl.value);
+        callback(valToUse !== undefined ? valToUse : inputEl.value);
       }, delay);
     };
 
+    inputEl.addEventListener("compositionstart", () => {
+      isComposing = true;
+    });
+
     inputEl.addEventListener("compositionend", () => {
+      isComposing = false;
       schedule();
     });
 
     inputEl.addEventListener("input", () => {
+      // If user typed in English QWERTY mode without Korean IME, auto-convert to Korean in real-time
+      if (!isComposing && inputEl.value && /[a-zA-Z]/.test(inputEl.value)) {
+        const original = inputEl.value;
+        const converted = engToKor(korToEng(original));
+        if (converted && converted !== original) {
+          const selStart = inputEl.selectionStart;
+          const lenDiff = converted.length - original.length;
+          inputEl.value = converted;
+          const newPos = Math.max(0, (selStart !== null ? selStart : converted.length) + lenDiff);
+          try {
+            inputEl.setSelectionRange(newPos, newPos);
+          } catch (_) {}
+          schedule(converted);
+          return;
+        }
+      }
       schedule();
     });
 
@@ -2806,7 +2864,12 @@
     }
 
     renderGearModalList();
-    if (gearSelectModal) gearSelectModal.style.display = "flex";
+    if (gearSelectModal) {
+      gearSelectModal.style.display = "flex";
+      setTimeout(() => {
+        if (gearModalSearch) gearModalSearch.focus();
+      }, 50);
+    }
   }
 
   function renderGearModalList() {
@@ -4195,7 +4258,10 @@
     if (btnClearSearch) {
       btnClearSearch.addEventListener("click", () => {
         if (globalSearchController) globalSearchController.cancel();
-        if (globalSearchInput) globalSearchInput.value = "";
+        if (globalSearchInput) {
+          globalSearchInput.value = "";
+          globalSearchInput.focus();
+        }
         btnClearSearch.style.display = "none";
         if (globalSearchResults) globalSearchResults.style.display = "none";
       });
@@ -4294,7 +4360,18 @@
         invItemQty.value = "1";
         if (invSearchSuggestions) invSearchSuggestions.style.display = "none";
         renderInventory();
+
+        // 아이템 추가 후 계속해서 다음 아이템을 검색할 수 있도록 검색창 포커스 복원
+        setTimeout(() => {
+          if (invItemSearch) invItemSearch.focus();
+        }, 30);
       };
+
+      if (invItemQty) {
+        invItemQty.addEventListener("input", () => {
+          invItemQty.value = invItemQty.value.replace(/[^0-9]/g, "");
+        });
+      }
 
       btnAddInvItem.addEventListener("click", addItemAction);
       invItemSearch.addEventListener("keydown", (e) => {
@@ -4364,7 +4441,7 @@
               if (invSearchController) invSearchController.cancel();
               invItemSearch.value = item.name;
               invSearchSuggestions.style.display = "none";
-              invItemQty.focus();
+              invItemSearch.focus();
             });
             invSearchSuggestions.appendChild(div);
           });
@@ -4510,7 +4587,10 @@
     if (btnClearGearSearch) {
       btnClearGearSearch.addEventListener("click", () => {
         if (gearCodexSearchController) gearCodexSearchController.cancel();
-        if (gearCodexSearch) gearCodexSearch.value = "";
+        if (gearCodexSearch) {
+          gearCodexSearch.value = "";
+          gearCodexSearch.focus();
+        }
         gearCodexSearchQuery = "";
         btnClearGearSearch.style.display = "none";
         renderGearCodexTab();
@@ -4568,9 +4648,20 @@
     }
 
     // Ensure Korean input mode is retained when returning to search inputs
-    const searchInputs = [globalSearchInput, invItemSearch, sideSearchInput, codexSearch, gearCodexSearch, gearModalSearch];
+    const bossRouteSearchInput = document.getElementById("bossRouteSearch");
+    const searchInputs = [
+      globalSearchInput,
+      invItemSearch,
+      sideSearchInput,
+      codexSearch,
+      gearCodexSearch,
+      gearModalSearch,
+      bossRouteSearchInput
+    ];
     searchInputs.forEach(input => {
       if (input) {
+        input.setAttribute("lang", "ko");
+        input.setAttribute("inputmode", "text");
         input.addEventListener("focus", () => {
           input.setAttribute("lang", "ko");
           input.setAttribute("inputmode", "text");
@@ -4582,6 +4673,7 @@
       searchInputs.forEach(input => {
         if (input && document.activeElement === input) {
           input.setAttribute("lang", "ko");
+          input.setAttribute("inputmode", "text");
         }
       });
     });
