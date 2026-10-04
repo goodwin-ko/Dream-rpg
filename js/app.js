@@ -759,6 +759,22 @@
           });
           b.drops = newDrops;
         }
+
+        // Specific boss drops integrity guarantee
+        if (b.name === "암흑 망령") {
+          if (!b.drops) b.drops = [];
+          const hasDarkResentment = b.drops.some(d => d.name === "암흑의 원한");
+          if (!hasDarkResentment) {
+            b.drops.push({ name: "암흑의 원한", type: "재료", level: 280, level_str: "Lv.280" });
+          }
+        }
+        if (b.name === "제9마왕 아즈모단") {
+          if (!b.drops) b.drops = [];
+          const hasRust = b.drops.some(d => d.name === "명계의 녹");
+          if (!hasRust) {
+            b.drops.push({ name: "명계의 녹", type: "재료", level: 380, level_str: "Lv.380" });
+          }
+        }
       });
     }
 
@@ -883,14 +899,24 @@
     return targetData;
   }
 
+  const CURRENT_DATA_VERSION = "20261004_v4";
+
   function loadGameData() {
     let savedData = null;
-    const saved = localStorage.getItem("dream_custom_data");
-    if (saved) {
-      try {
-        savedData = JSON.parse(saved);
-      } catch (e) {
-        console.error("Failed to parse saved game data:", e);
+    const savedVersion = localStorage.getItem("dream_data_version");
+    
+    // Invalidate old cache if version mismatch (forces latest game_data.js)
+    if (savedVersion !== CURRENT_DATA_VERSION) {
+      localStorage.removeItem("dream_custom_data");
+      localStorage.setItem("dream_data_version", CURRENT_DATA_VERSION);
+    } else {
+      const saved = localStorage.getItem("dream_custom_data");
+      if (saved) {
+        try {
+          savedData = JSON.parse(saved);
+        } catch (e) {
+          console.error("Failed to parse saved game data:", e);
+        }
       }
     }
 
@@ -904,7 +930,7 @@
           }
         });
       }
-      if (savedData && savedData._info_table_merged) {
+      if (savedData && savedData._user_custom_upload) {
         gameData = savedData;
       }
     } else if (savedData) {
@@ -940,12 +966,6 @@
 
     // Deduplicate and normalize all item names to middle dot '·'
     normalizeGameData(gameData);
-
-    if (saved) {
-      try {
-        localStorage.setItem("dream_custom_data", JSON.stringify(gameData));
-      } catch (e) {}
-    }
 
     // Automatically synchronize 정보Table.xlsx if available
     autoSyncInfoTable();
@@ -4126,6 +4146,48 @@
         }
       });
     }
+
+    // 2-2. Search Materials & Boss Drops (재료/드랍 아이템 검색 지원)
+    const allGameItems = getAllGameItems();
+    allGameItems.forEach(item => {
+      if (item.category === "장비") return;
+      if (matchQuery(item.name)) {
+        if (!results.some(r => r.name === item.name)) {
+          const bossInfo = item.boss ? ` · 👹 ${item.boss}` : "";
+          const locInfo = item.location ? ` (${item.location})` : "";
+          const lvlInfo = item.level_str ? ` · ${item.level_str}` : "";
+          results.push({
+            type: "material",
+            name: item.name,
+            sub: `${item.category || "재료"}${lvlInfo}${bossInfo}${locInfo}`,
+            badge: item.category || "재료",
+            badgeClass: "badge-craft",
+            action: () => {
+              if (item.boss && item.boss !== "조합템") {
+                currentTab = "codex";
+                restoreUIState();
+                renderAll();
+                setTimeout(() => {
+                  const targetEl = document.getElementById(`boss-card-${item.boss.replace(/\s+/g, '_')}`);
+                  if (targetEl) {
+                    targetEl.scrollIntoView({ behavior: "smooth", block: "center" });
+                    targetEl.style.boxShadow = "0 0 20px #f59e0b";
+                    setTimeout(() => { targetEl.style.boxShadow = ""; }, 2500);
+                  }
+                }, 100);
+              } else {
+                currentTab = "gear-codex";
+                gearCodexSearchQuery = item.name;
+                const gInput = document.getElementById("gearCodexSearch");
+                if (gInput) gInput.value = item.name;
+                restoreUIState();
+                renderAll();
+              }
+            }
+          });
+        }
+      }
+    });
 
     // 3. Search Bosses & Locations
     if (gameData && gameData.bosses) {
