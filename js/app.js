@@ -4648,7 +4648,6 @@
     }
 
     // Ensure Korean input mode is retained when returning to search inputs
-    const bossRouteSearchInput = document.getElementById("bossRouteSearch");
     const searchInputs = [
       globalSearchInput,
       invItemSearch,
