@@ -228,7 +228,7 @@
     };
     const JONG_MAP = {
       'r': 1, 'R': 2, 's': 4, 'e': 7, 'f': 8, 'a': 16, 'q': 17,
-      't': 19, 'T': 20, 'd': 21, 'c': 22, 'z': 23, 'x': 24, 'v': 25, 'g': 26
+      't': 19, 'T': 20, 'd': 21, 'w': 22, 'c': 23, 'z': 24, 'x': 25, 'v': 26, 'g': 27
     };
     const COMP_JONG = {
       'rt': 3, 'sw': 5, 'sg': 6,
@@ -1423,45 +1423,23 @@
     return recipe._searchIndex;
   }
 
-  // IME-safe debounce helper with smart real-time Korean typing converter
+  // IME-safe debounce helper (leaves input DOM intact so native Korean IME works flawlessly)
   function setupDebouncedInput(inputEl, callback, delay = 200) {
     if (!inputEl) return null;
     let timer = null;
-    let isComposing = false;
 
-    const schedule = (valToUse) => {
+    const schedule = () => {
       if (timer) clearTimeout(timer);
       timer = setTimeout(() => {
-        callback(valToUse !== undefined ? valToUse : inputEl.value);
+        callback(inputEl.value);
       }, delay);
     };
 
-    inputEl.addEventListener("compositionstart", () => {
-      isComposing = true;
-    });
-
     inputEl.addEventListener("compositionend", () => {
-      isComposing = false;
       schedule();
     });
 
     inputEl.addEventListener("input", () => {
-      // If user typed in English QWERTY mode without Korean IME, auto-convert to Korean in real-time
-      if (!isComposing && inputEl.value && /[a-zA-Z]/.test(inputEl.value)) {
-        const original = inputEl.value;
-        const converted = engToKor(korToEng(original));
-        if (converted && converted !== original) {
-          const selStart = inputEl.selectionStart;
-          const lenDiff = converted.length - original.length;
-          inputEl.value = converted;
-          const newPos = Math.max(0, (selStart !== null ? selStart : converted.length) + lenDiff);
-          try {
-            inputEl.setSelectionRange(newPos, newPos);
-          } catch (_) {}
-          schedule(converted);
-          return;
-        }
-      }
       schedule();
     });
 
