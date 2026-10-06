@@ -1971,6 +1971,15 @@
           "display": "마력이 응축된 결정 - 고대의 빙마 그린워스",
           "level": 400,
           "level_str": "Lv.400"
+        },
+        {
+          "name": "혹한 - 빙하기의 왕관",
+          "type": "아이템",
+          "grade": "신화",
+          "location": "미상",
+          "display": "혹한 - 빙하기의 왕관 - 고대의 빙마 그린워스",
+          "level": 400,
+          "level_str": "Lv.400"
         }
       ]
     },
@@ -142961,9 +142970,9 @@
           "special_effect": "",
           "materials": [],
           "is_drop": true,
-          "drop_boss": "",
+          "drop_boss": "고대의 빙마 그린워스",
           "drop_level": 400,
-          "drop_location": "",
+          "drop_location": "미상",
           "drop_type": "아이템"
         },
         {
@@ -142989,11 +142998,11 @@
             {
               "name": "혹한 - 빙하기의 왕관",
               "qty": 1,
-              "boss": "조합템",
+              "boss": "고대의 빙마 그린워스",
               "level": 400,
-              "location": "",
+              "location": "미상",
               "level_str": "Lv.400",
-              "is_drop": false
+              "is_drop": true
             },
             {
               "name": "명계의 마나 결정",
@@ -143223,11 +143232,11 @@
             {
               "name": "혹한 - 빙하기의 왕관",
               "qty": 1,
-              "boss": "조합템",
+              "boss": "고대의 빙마 그린워스",
               "level": 400,
-              "location": "",
+              "location": "미상",
               "level_str": "Lv.400",
-              "is_drop": false
+              "is_drop": true
             },
             {
               "name": "순백의 얼음 결정",
@@ -143547,11 +143556,11 @@
             {
               "name": "혹한 - 빙하기의 왕관",
               "qty": 1,
-              "boss": "조합템",
+              "boss": "고대의 빙마 그린워스",
               "level": 400,
-              "location": "",
+              "location": "미상",
               "level_str": "Lv.400",
-              "is_drop": false
+              "is_drop": true
             },
             {
               "name": "마력이 응축된 결정",
@@ -170636,11 +170645,11 @@
         {
           "name": "혹한 - 빙하기의 왕관",
           "qty": 1,
-          "boss": "조합템",
+          "boss": "고대의 빙마 그린워스",
           "level": 400,
-          "location": "",
+          "location": "미상",
           "level_str": "Lv.400",
-          "is_drop": false
+          "is_drop": true
         },
         {
           "name": "마력이 응축된 결정",
@@ -170960,11 +170969,11 @@
         {
           "name": "혹한 - 빙하기의 왕관",
           "qty": 1,
-          "boss": "조합템",
+          "boss": "고대의 빙마 그린워스",
           "level": 400,
-          "location": "",
+          "location": "미상",
           "level_str": "Lv.400",
-          "is_drop": false
+          "is_drop": true
         },
         {
           "name": "순백의 얼음 결정",
@@ -171203,11 +171212,11 @@
         {
           "name": "혹한 - 빙하기의 왕관",
           "qty": 1,
-          "boss": "조합템",
+          "boss": "고대의 빙마 그린워스",
           "level": 400,
-          "location": "",
+          "location": "미상",
           "level_str": "Lv.400",
-          "is_drop": false
+          "is_drop": true
         },
         {
           "name": "명계의 마나 결정",
@@ -171264,9 +171273,9 @@
       "special_effect": "",
       "materials": [],
       "is_drop": true,
-      "drop_boss": "",
+      "drop_boss": "고대의 빙마 그린워스",
       "drop_level": 400,
-      "drop_location": "",
+      "drop_location": "미상",
       "drop_type": "아이템"
     },
     "차원의 경계 - 시공의 방랑자": {

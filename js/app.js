@@ -925,7 +925,7 @@
     return targetData;
   }
 
-  const CURRENT_DATA_VERSION = "20261007_v1";
+  const CURRENT_DATA_VERSION = "20261007_v2";
 
   function loadGameData() {
     let savedData = null;
@@ -5166,7 +5166,8 @@
     "아즈샤라 여왕": "어인해변-위쪽포탈-왼쪽포탈",
     "제5마왕 아노시스": "전초기지-오른쪽 성-위",
     "역병의 근원 마이어스": "암흑도시-왼쪽 밑",
-    "암흑 망령": "사막-오른쪽 끝"
+    "암흑 망령": "사막-오른쪽 끝",
+    "고대의 빙마 그린워스": "미상"
   };
 
   function mapCategory(rawCat) {
