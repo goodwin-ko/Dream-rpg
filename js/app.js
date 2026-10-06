@@ -925,7 +925,7 @@
     return targetData;
   }
 
-  const CURRENT_DATA_VERSION = "20261007_v2";
+  const CURRENT_DATA_VERSION = "20261007_v3";
 
   function loadGameData() {
     let savedData = null;
@@ -1239,6 +1239,24 @@
         if (r.sub_cat === "원거리무기" || r.level === 320) return r;
       }
     }
+
+    // Fallback if recipe was stored in misc_recipes
+    if (gameData.misc_recipes) {
+      for (const cat of Object.keys(gameData.misc_recipes)) {
+        const item = gameData.misc_recipes[cat].find(it => normalizeName(it.name) === clean || it.name === name);
+        if (item) {
+          return {
+            name: item.name,
+            category: "기타조합",
+            sub_cat: item.sub_type || cat,
+            sub_type: item.sub_type || cat,
+            grade: item.grade || "일반",
+            materials: item.materials || [],
+            is_drop: false
+          };
+        }
+      }
+    }
     return null;
   }
 
@@ -1399,13 +1417,20 @@
     const cleanOptions = stripSeparators(recipe.options || "");
     const cleanSkill = stripSeparators(recipe.active_passive || "");
 
-    const directMats = (recipe.materials || []).map(m => ({
-      name: m.name,
-      cleanName: stripSeparators(m.name),
-      cleanBoss: stripSeparators(m.boss || ""),
-      qty: m.qty || 1,
-      boss: m.boss
-    }));
+    const directMats = (recipe.materials || []).map(m => {
+      let bName = m.boss && m.boss !== "조합템" ? m.boss : "";
+      if (!bName) {
+        const bInfo = getBossInfoForItem(m.name);
+        if (bInfo) bName = bInfo.boss;
+      }
+      return {
+        name: m.name,
+        cleanName: stripSeparators(m.name),
+        cleanBoss: stripSeparators(bName || m.boss || ""),
+        qty: m.qty || 1,
+        boss: bName || m.boss
+      };
+    });
 
     // Precompute recursive tree materials (names & hierarchy paths)
     const treeMatMap = new Map();
@@ -1419,12 +1444,17 @@
       r.materials.forEach(m => {
         const cName = stripSeparators(m.name);
         const subDisp = `${pathDisplay} > ${m.name}`;
+        let mBoss = m.boss;
+        if (!mBoss || mBoss === "조합템") {
+          const bInfo = getBossInfoForItem(m.name);
+          if (bInfo) mBoss = bInfo.boss;
+        }
         if (!treeMatMap.has(cName)) {
           treeMatMap.set(cName, {
             cleanName: cName,
             rawName: m.name,
             path: subDisp,
-            cleanBoss: stripSeparators(m.boss || "")
+            cleanBoss: stripSeparators(mBoss || "")
           });
         }
         const sub = getRecipe(m.name);
@@ -3919,15 +3949,6 @@
       btn.classList.toggle("active", btn.dataset.cat === gearCodexCat);
     });
 
-    // 기타조합 category: render misc recipes separately
-    if (gearCodexCat === "기타조합") {
-      // Hide weapon sub-filter bar
-      const weaponSubFilterBarMisc = document.getElementById("weaponSubFilterBar");
-      if (weaponSubFilterBarMisc) weaponSubFilterBarMisc.style.display = "none";
-      renderMiscRecipesSection(gearCodexGrid, gearCodexSearchQuery);
-      return;
-    }
-
     const weaponSubFilterBar = document.getElementById("weaponSubFilterBar");
     if (weaponSubFilterBar) {
       if (gearCodexCat === "무기") {
@@ -3957,11 +3978,29 @@
       return rel;
     }
 
+    // Helper to retrieve equipment item names per category including misc recipes
+    function getCodexItemList(cat) {
+      if (cat === "기타조합") {
+        const list = [];
+        if (gameData && gameData.misc_recipes) {
+          const MISC_CATS = ["배지", "곡괭이", "낚시대", "물약"];
+          MISC_CATS.forEach(c => {
+            const items = gameData.misc_recipes[c] || [];
+            items.forEach(it => list.push(it.name));
+          });
+        }
+        return list;
+      }
+      return (gameData.category_gear[cat] && gameData.category_gear[cat].top_gear) || [];
+    }
+
+    const CODEX_CATS = [...CATEGORIES, "기타조합"];
+
     // Calculate match counts per category for badges
     const catCounts = {};
     let totalMatchCount = 0;
-    CATEGORIES.forEach(cat => {
-      const topList = (gameData.category_gear[cat] && gameData.category_gear[cat].top_gear) || [];
+    CODEX_CATS.forEach(cat => {
+      const topList = getCodexItemList(cat);
       let count = 0;
       topList.forEach(itemName => {
         if (gearCodexSynergyOnly) {
@@ -3989,7 +4028,8 @@
         "투구": "👑 투구",
         "장신구": "💍 장신구",
         "보조장비": "📜 보조장비",
-        "마나석": "💎 마나석"
+        "마나석": "💎 마나석",
+        "기타조합": "🎒 기타 조합"
       };
       const baseLabel = icons[cat] || cat;
       if (queryClean) {
@@ -4001,11 +4041,20 @@
       btn.classList.toggle("active", btn.dataset.cat === gearCodexCat);
     });
 
-    const categories = (gearCodexCat === "전체") ? CATEGORIES : [gearCodexCat];
+    // 기타조합 category: render misc recipes separately when specifically clicked
+    if (gearCodexCat === "기타조합") {
+      // Hide weapon sub-filter bar
+      const weaponSubFilterBarMisc = document.getElementById("weaponSubFilterBar");
+      if (weaponSubFilterBarMisc) weaponSubFilterBarMisc.style.display = "none";
+      renderMiscRecipesSection(gearCodexGrid, gearCodexSearchQuery);
+      return;
+    }
+
+    const categories = (gearCodexCat === "전체") ? CODEX_CATS : [gearCodexCat];
     const cardsToRender = [];
 
     categories.forEach(cat => {
-      const topList = (gameData.category_gear[cat] && gameData.category_gear[cat].top_gear) || [];
+      const topList = getCodexItemList(cat);
       topList.forEach(itemName => {
         const recipe = getRecipe(itemName);
         if (!recipe) return;

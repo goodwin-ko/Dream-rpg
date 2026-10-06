@@ -172892,6 +172892,1151 @@ window.PRELOADED_GAME_DATA = {
       "drop_level": 0,
       "drop_location": "",
       "drop_type": "아이템"
+    },
+    "흑철 등급 모험가 배지": {
+      "name": "흑철 등급 모험가 배지",
+      "category": "기타조합",
+      "sub_cat": "배지",
+      "sub_type": "배지",
+      "grade": "일반",
+      "materials": [
+        {
+          "name": "강철 조각",
+          "qty": 1,
+          "boss": "훈련 교관 우사로",
+          "level": 160,
+          "level_str": "Lv.160",
+          "location": "파문항구-위",
+          "is_drop": true
+        },
+        {
+          "name": "서리 보석",
+          "qty": 1,
+          "boss": "설원 엘프",
+          "level": 200,
+          "level_str": "Lv.200",
+          "location": "운설산-왼쪽 중앙",
+          "is_drop": true
+        },
+        {
+          "name": "성광의 천",
+          "qty": 1,
+          "boss": "산타클로스",
+          "level": 240,
+          "level_str": "Lv.240",
+          "location": "운설산-옆",
+          "is_drop": true
+        },
+        {
+          "name": "성스러운 조각",
+          "qty": 1,
+          "boss": "산타클로스",
+          "level": 240,
+          "level_str": "Lv.240",
+          "location": "운설산-옆",
+          "is_drop": true
+        }
+      ],
+      "is_drop": false,
+      "drop_boss": "",
+      "drop_level": 0,
+      "drop_location": "",
+      "drop_type": "아이템"
+    },
+    "청동 등급 모험가 배지": {
+      "name": "청동 등급 모험가 배지",
+      "category": "기타조합",
+      "sub_cat": "배지",
+      "sub_type": "배지",
+      "grade": "우수",
+      "materials": [
+        {
+          "name": "흑철 등급 모험가 배지",
+          "qty": 1,
+          "boss": "조합템",
+          "level": 0,
+          "level_str": "",
+          "location": "",
+          "is_drop": false
+        },
+        {
+          "name": "대지의 파편",
+          "qty": 1,
+          "boss": "대지 수호자 로샨",
+          "level": 260,
+          "level_str": "Lv.260",
+          "location": "사막-아래",
+          "is_drop": true
+        },
+        {
+          "name": "고대 마나석",
+          "qty": 1,
+          "boss": "대지 수호자 로샨",
+          "level": 260,
+          "level_str": "Lv.260",
+          "location": "사막-아래",
+          "is_drop": true
+        },
+        {
+          "name": "암흑의 원한",
+          "qty": 1,
+          "boss": "암흑 망령",
+          "level": 280,
+          "level_str": "Lv.280",
+          "location": "사막-오른쪽 끝",
+          "is_drop": true
+        },
+        {
+          "name": "어둠에 물든 원한",
+          "qty": 1,
+          "boss": "저주받은 인형 마리안느",
+          "level": 300,
+          "level_str": "Lv.300",
+          "location": "파문항구-옆",
+          "is_drop": true
+        }
+      ],
+      "is_drop": false,
+      "drop_boss": "",
+      "drop_level": 0,
+      "drop_location": "",
+      "drop_type": "아이템"
+    },
+    "은 등급 모험가 배지": {
+      "name": "은 등급 모험가 배지",
+      "category": "기타조합",
+      "sub_cat": "배지",
+      "sub_type": "배지",
+      "grade": "우수",
+      "materials": [
+        {
+          "name": "청동 등급 모험가 배지",
+          "qty": 1,
+          "boss": "조합템",
+          "level": 0,
+          "level_str": "",
+          "location": "",
+          "is_drop": false
+        },
+        {
+          "name": "마도서",
+          "qty": 1,
+          "boss": "저주받은 인형 마리안느",
+          "level": 300,
+          "level_str": "Lv.300",
+          "location": "파문항구-옆",
+          "is_drop": true
+        },
+        {
+          "name": "사령의 빛가루",
+          "qty": 1,
+          "boss": "죽음의 리치",
+          "level": 320,
+          "level_str": "Lv.320",
+          "location": "암흑도시-중간",
+          "is_drop": true
+        },
+        {
+          "name": "망자의 향나무 조각",
+          "qty": 1,
+          "boss": "죽음의 리치",
+          "level": 320,
+          "level_str": "Lv.320",
+          "location": "암흑도시-중간",
+          "is_drop": true
+        },
+        {
+          "name": "영혼 결정",
+          "qty": 1,
+          "boss": "죽음의 리치",
+          "level": 320,
+          "level_str": "Lv.320",
+          "location": "암흑도시-중간",
+          "is_drop": true
+        },
+        {
+          "name": "검은 마수의 피",
+          "qty": 1,
+          "boss": "피의 시체",
+          "level": 320,
+          "level_str": "Lv.320",
+          "location": "암흑도시-왼쪽 위",
+          "is_drop": true
+        }
+      ],
+      "is_drop": false,
+      "drop_boss": "",
+      "drop_level": 0,
+      "drop_location": "",
+      "drop_type": "아이템"
+    },
+    "금 등급 모험가 배지": {
+      "name": "금 등급 모험가 배지",
+      "category": "기타조합",
+      "sub_cat": "배지",
+      "sub_type": "배지",
+      "grade": "희귀",
+      "materials": [
+        {
+          "name": "은 등급 모험가 배지",
+          "qty": 1,
+          "boss": "조합템",
+          "level": 0,
+          "level_str": "",
+          "location": "",
+          "is_drop": false
+        },
+        {
+          "name": "뒤틀린 피의 깃털",
+          "qty": 1,
+          "boss": "피의 시체",
+          "level": 320,
+          "level_str": "Lv.320",
+          "location": "암흑도시-왼쪽 위",
+          "is_drop": true
+        },
+        {
+          "name": "빛의 문장 조각",
+          "qty": 1,
+          "boss": "성역의 대사제",
+          "level": 320,
+          "level_str": "Lv.320",
+          "location": "전초기지-왼쪽성 안",
+          "is_drop": true
+        },
+        {
+          "name": "신앙의 핵",
+          "qty": 1,
+          "boss": "성역의 대사제",
+          "level": 320,
+          "level_str": "Lv.320",
+          "location": "전초기지-왼쪽성 안",
+          "is_drop": true
+        },
+        {
+          "name": "세라프의 깃털",
+          "qty": 1,
+          "boss": "성역의 대사제",
+          "level": 320,
+          "level_str": "Lv.320",
+          "location": "전초기지-왼쪽성 안",
+          "is_drop": true
+        },
+        {
+          "name": "고대의 비전",
+          "qty": 1,
+          "boss": "용암 화염수",
+          "level": 320,
+          "level_str": "Lv.320",
+          "location": "용암 화산-오른쪽 끝",
+          "is_drop": true
+        },
+        {
+          "name": "마나의 뿔",
+          "qty": 1,
+          "boss": "눈사람",
+          "level": 320,
+          "level_str": "Lv.320",
+          "location": "운설산-중간",
+          "is_drop": true
+        }
+      ],
+      "is_drop": false,
+      "drop_boss": "",
+      "drop_level": 0,
+      "drop_location": "",
+      "drop_type": "아이템"
+    },
+    "미스릴 등급 모험가 배지": {
+      "name": "미스릴 등급 모험가 배지",
+      "category": "기타조합",
+      "sub_cat": "배지",
+      "sub_type": "배지",
+      "grade": "극한",
+      "materials": [
+        {
+          "name": "금 등급 모험가 배지",
+          "qty": 1,
+          "boss": "조합템",
+          "level": 0,
+          "level_str": "",
+          "location": "",
+          "is_drop": false
+        },
+        {
+          "name": "설인 가죽",
+          "qty": 1,
+          "boss": "눈사람",
+          "level": 320,
+          "level_str": "Lv.320",
+          "location": "운설산-중간",
+          "is_drop": true
+        },
+        {
+          "name": "불꽃이 깃든 수정 가루",
+          "qty": 1,
+          "boss": "화염 거인",
+          "level": 320,
+          "level_str": "Lv.320",
+          "location": "용암 화산-아래",
+          "is_drop": true
+        },
+        {
+          "name": "화염의 심장",
+          "qty": 1,
+          "boss": "화염 거인",
+          "level": 320,
+          "level_str": "Lv.320",
+          "location": "용암 화산-아래",
+          "is_drop": true
+        },
+        {
+          "name": "얼어붙은 벌레 잔해",
+          "qty": 1,
+          "boss": "빙하의 죽음 벌레",
+          "level": 320,
+          "level_str": "Lv.320",
+          "location": "흐린 설산-왼쪽 포탈",
+          "is_drop": true
+        },
+        {
+          "name": "푸른 얼음 결정",
+          "qty": 1,
+          "boss": "빙하의 죽음 벌레",
+          "level": 320,
+          "level_str": "Lv.320",
+          "location": "흐린 설산-왼쪽 포탈",
+          "is_drop": true
+        },
+        {
+          "name": "망자의 육신",
+          "qty": 1,
+          "boss": "어둠의 백작 데셀록",
+          "level": 300,
+          "level_str": "Lv.300",
+          "location": "암흑 도시-오른쪽 포탈",
+          "is_drop": true
+        }
+      ],
+      "is_drop": false,
+      "drop_boss": "",
+      "drop_level": 0,
+      "drop_location": "",
+      "drop_type": "아이템"
+    },
+    "오리할콘 등급 모험가 배지": {
+      "name": "오리할콘 등급 모험가 배지",
+      "category": "기타조합",
+      "sub_cat": "배지",
+      "sub_type": "배지",
+      "grade": "전설",
+      "materials": [
+        {
+          "name": "미스릴 등급 모험가 배지",
+          "qty": 1,
+          "boss": "조합템",
+          "level": 0,
+          "level_str": "",
+          "location": "",
+          "is_drop": false
+        },
+        {
+          "name": "망자의 촉수",
+          "qty": 1,
+          "boss": "영혼의 수확자 타나토스",
+          "level": 340,
+          "level_str": "Lv.340",
+          "location": "암흑도시-왼쪽포탈",
+          "is_drop": true
+        },
+        {
+          "name": "정화의 모래",
+          "qty": 1,
+          "boss": "심해의 마녀 바쉬",
+          "level": 320,
+          "level_str": "Lv.320",
+          "location": "어인 해변-위쪽 포탈",
+          "is_drop": true
+        },
+        {
+          "name": "푸른 바람의 호박",
+          "qty": 1,
+          "boss": "심해의 마녀 바쉬",
+          "level": 320,
+          "level_str": "Lv.320",
+          "location": "어인 해변-위쪽 포탈",
+          "is_drop": true
+        },
+        {
+          "name": "폭풍의 문장",
+          "qty": 1,
+          "boss": "심해의 마녀 바쉬",
+          "level": 320,
+          "level_str": "Lv.320",
+          "location": "어인 해변-위쪽 포탈",
+          "is_drop": true
+        },
+        {
+          "name": "회오리의 핵",
+          "qty": 1,
+          "boss": "광풍의 실프",
+          "level": 320,
+          "level_str": "Lv.320",
+          "location": "어인 해변-옆",
+          "is_drop": true
+        },
+        {
+          "name": "뇌전의 문양",
+          "qty": 1,
+          "boss": "광풍의 실프",
+          "level": 320,
+          "level_str": "Lv.320",
+          "location": "어인 해변-옆",
+          "is_drop": true
+        }
+      ],
+      "is_drop": false,
+      "drop_boss": "",
+      "drop_level": 0,
+      "drop_location": "",
+      "drop_type": "아이템"
+    },
+    "강철 등급 모험가 배지": {
+      "name": "강철 등급 모험가 배지",
+      "category": "기타조합",
+      "sub_cat": "배지",
+      "sub_type": "배지",
+      "grade": "에픽",
+      "materials": [
+        {
+          "name": "오리할콘 등급 모험가 배지",
+          "qty": 1,
+          "boss": "조합템",
+          "level": 0,
+          "level_str": "",
+          "location": "",
+          "is_drop": false
+        },
+        {
+          "name": "고대 혈정",
+          "qty": 1,
+          "boss": "어둠의 백작 데셀록",
+          "level": 300,
+          "level_str": "Lv.300",
+          "location": "암흑 도시-오른쪽 포탈",
+          "is_drop": true
+        },
+        {
+          "name": "멸망의 불꽃 깃털",
+          "qty": 1,
+          "boss": "작열하는 용 이그니르",
+          "level": 340,
+          "level_str": "Lv.340",
+          "location": "용암 화산-왼쪽포탈-오른쪽",
+          "is_drop": true
+        },
+        {
+          "name": "용숨결 호박",
+          "qty": 1,
+          "boss": "작열하는 용 이그니르",
+          "level": 340,
+          "level_str": "Lv.340",
+          "location": "용암 화산-왼쪽포탈-오른쪽",
+          "is_drop": true
+        },
+        {
+          "name": "별의 파편",
+          "qty": 1,
+          "boss": "별의정령 알갈론",
+          "level": 340,
+          "level_str": "Lv.340",
+          "location": "파문항구-오른쪽 위",
+          "is_drop": true
+        },
+        {
+          "name": "은하의 모래",
+          "qty": 1,
+          "boss": "별의정령 알갈론",
+          "level": 340,
+          "level_str": "Lv.340",
+          "location": "파문항구-오른쪽 위",
+          "is_drop": true
+        },
+        {
+          "name": "부서진 원혼의 뼈",
+          "qty": 1,
+          "boss": "영혼의 수확자 타나토스",
+          "level": 340,
+          "level_str": "Lv.340",
+          "location": "암흑도시-왼쪽포탈",
+          "is_drop": true
+        }
+      ],
+      "is_drop": false,
+      "drop_boss": "",
+      "drop_level": 0,
+      "drop_location": "",
+      "drop_type": "아이템"
+    },
+    "전설 플레이어 배지": {
+      "name": "전설 플레이어 배지",
+      "category": "기타조합",
+      "sub_cat": "배지",
+      "sub_type": "배지",
+      "grade": "전설",
+      "materials": [
+        {
+          "name": "강철 등급 모험가 배지",
+          "qty": 1,
+          "boss": "조합템",
+          "level": 0,
+          "level_str": "",
+          "location": "",
+          "is_drop": false
+        },
+        {
+          "name": "생명의 싹",
+          "qty": 1,
+          "boss": "수호자 노렌",
+          "level": 340,
+          "level_str": "Lv.340",
+          "location": "원소전당-아래포탈-왼쪽",
+          "is_drop": true
+        },
+        {
+          "name": "자연의 씨앗",
+          "qty": 1,
+          "boss": "수호자 노렌",
+          "level": 340,
+          "level_str": "Lv.340",
+          "location": "원소전당-아래포탈-왼쪽",
+          "is_drop": true
+        },
+        {
+          "name": "성스러운 결정",
+          "qty": 1,
+          "boss": "전쟁의 천사 임페리우스",
+          "level": 340,
+          "level_str": "Lv.340",
+          "location": "전초기지-왼쪽성 안",
+          "is_drop": true
+        },
+        {
+          "name": "성스러운 기록의 조각",
+          "qty": 1,
+          "boss": "전쟁의 천사 임페리우스",
+          "level": 340,
+          "level_str": "Lv.340",
+          "location": "전초기지-왼쪽성 안",
+          "is_drop": true
+        },
+        {
+          "name": "자비의 성광 조각",
+          "qty": 1,
+          "boss": "전쟁의 천사 임페리우스",
+          "level": 340,
+          "level_str": "Lv.340",
+          "location": "전초기지-왼쪽성 안",
+          "is_drop": true
+        },
+        {
+          "name": "불타는 마수의 피",
+          "qty": 1,
+          "boss": "화염의 폭군 갈라무드",
+          "level": 340,
+          "level_str": "Lv.340",
+          "location": "용암 화산-왼쪽포탈-왼쪽",
+          "is_drop": true
+        }
+      ],
+      "is_drop": false,
+      "drop_boss": "",
+      "drop_level": 0,
+      "drop_location": "",
+      "drop_type": "아이템"
+    },
+    "하드코어 플레이어 배지": {
+      "name": "하드코어 플레이어 배지",
+      "category": "기타조합",
+      "sub_cat": "배지",
+      "sub_type": "배지",
+      "grade": "고대",
+      "materials": [
+        {
+          "name": "전설 플레이어 배지",
+          "qty": 1,
+          "boss": "조합템",
+          "level": 0,
+          "level_str": "",
+          "location": "",
+          "is_drop": false
+        },
+        {
+          "name": "지옥불의 핵",
+          "qty": 1,
+          "boss": "화염의 폭군 갈라무드",
+          "level": 340,
+          "level_str": "Lv.340",
+          "location": "용암 화산-왼쪽포탈-왼쪽",
+          "is_drop": true
+        },
+        {
+          "name": "뒤틀린 결정",
+          "qty": 1,
+          "boss": "제7마왕 모르페우스",
+          "level": 340,
+          "level_str": "Lv.340",
+          "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
+          "is_drop": true
+        },
+        {
+          "name": "영혼 포식의 피",
+          "qty": 1,
+          "boss": "제7마왕 모르페우스",
+          "level": 340,
+          "level_str": "Lv.340",
+          "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
+          "is_drop": true
+        },
+        {
+          "name": "지옥의 정수",
+          "qty": 1,
+          "boss": "제7마왕 모르페우스",
+          "level": 340,
+          "level_str": "Lv.340",
+          "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
+          "is_drop": true
+        },
+        {
+          "name": "암흑의 핵",
+          "qty": 1,
+          "boss": "제5마왕 아노시스",
+          "level": 360,
+          "level_str": "Lv.360",
+          "location": "전초기지-오른쪽 성-위",
+          "is_drop": true
+        },
+        {
+          "name": "심해의 수정 가지",
+          "qty": 1,
+          "boss": "아즈샤라 여왕",
+          "level": 360,
+          "level_str": "Lv.360",
+          "location": "어인해변-위쪽포탈-왼쪽포탈",
+          "is_drop": true
+        }
+      ],
+      "is_drop": false,
+      "drop_boss": "",
+      "drop_level": 0,
+      "drop_location": "",
+      "drop_type": "아이템"
+    },
+    "신화 플레이어 배지": {
+      "name": "신화 플레이어 배지",
+      "category": "기타조합",
+      "sub_cat": "배지",
+      "sub_type": "배지",
+      "grade": "신화",
+      "materials": [
+        {
+          "name": "하드코어 플레이어 배지",
+          "qty": 1,
+          "boss": "조합템",
+          "level": 0,
+          "level_str": "",
+          "location": "",
+          "is_drop": false
+        },
+        {
+          "name": "암흑 결정",
+          "qty": 1,
+          "boss": "언데드 군주",
+          "level": 360,
+          "level_str": "Lv.360",
+          "location": "암흑도시-위",
+          "is_drop": true
+        },
+        {
+          "name": "혼돈의 족쇄",
+          "qty": 1,
+          "boss": "봉인된 파멸의 힘 카시아르",
+          "level": 380,
+          "level_str": "Lv.380",
+          "location": "봉인된땅-위쪽",
+          "is_drop": true
+        },
+        {
+          "name": "파멸의 재",
+          "qty": 1,
+          "boss": "봉인된 파멸의 힘 카시아르",
+          "level": 380,
+          "level_str": "Lv.380",
+          "location": "봉인된땅-위쪽",
+          "is_drop": true
+        },
+        {
+          "name": "영혼 정수",
+          "qty": 1,
+          "boss": "봉인된 영혼의 족쇄",
+          "level": 380,
+          "level_str": "Lv.380",
+          "location": "봉인된땅-오른쪽",
+          "is_drop": true
+        },
+        {
+          "name": "그림자의 핵",
+          "qty": 1,
+          "boss": "봉인된 영혼의 족쇄",
+          "level": 380,
+          "level_str": "Lv.380",
+          "location": "봉인된땅-오른쪽",
+          "is_drop": true
+        },
+        {
+          "name": "잊힌 고대 마나석",
+          "qty": 1,
+          "boss": "봉인된 파멸의 힘 카시아르",
+          "level": 380,
+          "level_str": "Lv.380",
+          "location": "봉인된땅-위쪽",
+          "is_drop": true
+        }
+      ],
+      "is_drop": false,
+      "drop_boss": "",
+      "drop_level": 0,
+      "drop_location": "",
+      "drop_type": "아이템"
+    },
+    "영원 플레이어 배지": {
+      "name": "영원 플레이어 배지",
+      "category": "기타조합",
+      "sub_cat": "배지",
+      "sub_type": "배지",
+      "grade": "영원·영구",
+      "materials": [
+        {
+          "name": "신화 플레이어 배지",
+          "qty": 1,
+          "boss": "조합템",
+          "level": 0,
+          "level_str": "",
+          "location": "",
+          "is_drop": false
+        },
+        {
+          "name": "타락한 피의 발톱",
+          "qty": 1,
+          "boss": "봉인된 피의 선조 스토릭",
+          "level": 380,
+          "level_str": "Lv.380",
+          "location": "봉인된땅-왼쪽",
+          "is_drop": true
+        },
+        {
+          "name": "신비한 핏빛 호박석",
+          "qty": 1,
+          "boss": "봉인된 피의 선조 스토릭",
+          "level": 380,
+          "level_str": "Lv.380",
+          "location": "봉인된땅-왼쪽",
+          "is_drop": true
+        },
+        {
+          "name": "마기의 결정",
+          "qty": 1
+        },
+        {
+          "name": "명계의 마나 결정",
+          "qty": 1,
+          "boss": "고대의 빙마 그린워스",
+          "level": 400,
+          "level_str": "Lv.400",
+          "location": "미상",
+          "is_drop": true
+        },
+        {
+          "name": "혼돈의 핵",
+          "qty": 1,
+          "boss": "화염계의 군주 이프리트",
+          "level": 400,
+          "level_str": "Lv.400",
+          "location": "용암화산-가운데",
+          "is_drop": true
+        },
+        {
+          "name": "화염 영역의 근원",
+          "qty": 1,
+          "boss": "화염계의 군주 이프리트",
+          "level": 400,
+          "level_str": "Lv.400",
+          "location": "용암화산-가운데",
+          "is_drop": true
+        }
+      ],
+      "is_drop": false,
+      "drop_boss": "",
+      "drop_level": 0,
+      "drop_location": "",
+      "drop_type": "아이템"
+    },
+    "철 광석 곡괭이": {
+      "name": "철 광석 곡괭이",
+      "category": "기타조합",
+      "sub_cat": "보조 직업",
+      "sub_type": "보조 직업",
+      "grade": "우수",
+      "materials": [
+        {
+          "name": "녹슨 곡괭이",
+          "qty": 1
+        },
+        {
+          "name": "구리 광석",
+          "qty": 5,
+          "boss": "채광",
+          "level": 0,
+          "level_str": "채광",
+          "location": "광산",
+          "is_drop": true
+        },
+        {
+          "name": "철광석",
+          "qty": 10,
+          "boss": "채광",
+          "level": 0,
+          "level_str": "채광",
+          "location": "광산",
+          "is_drop": true
+        }
+      ],
+      "is_drop": false,
+      "drop_boss": "",
+      "drop_level": 0,
+      "drop_location": "",
+      "drop_type": "아이템"
+    },
+    "구리 채광 곡괭이": {
+      "name": "구리 채광 곡괭이",
+      "category": "기타조합",
+      "sub_cat": "보조 직업",
+      "sub_type": "보조 직업",
+      "grade": "우수",
+      "materials": [
+        {
+          "name": "철 광석 곡괭이",
+          "qty": 1,
+          "boss": "조합템",
+          "level": 0,
+          "level_str": "",
+          "location": "",
+          "is_drop": false
+        },
+        {
+          "name": "은 광석",
+          "qty": 5,
+          "boss": "채광",
+          "level": 0,
+          "level_str": "채광",
+          "location": "광산",
+          "is_drop": true
+        },
+        {
+          "name": "구리 광석",
+          "qty": 10,
+          "boss": "채광",
+          "level": 0,
+          "level_str": "채광",
+          "location": "광산",
+          "is_drop": true
+        },
+        {
+          "name": "철광석",
+          "qty": 20,
+          "boss": "채광",
+          "level": 0,
+          "level_str": "채광",
+          "location": "광산",
+          "is_drop": true
+        }
+      ],
+      "is_drop": false,
+      "drop_boss": "",
+      "drop_level": 0,
+      "drop_location": "",
+      "drop_type": "아이템"
+    },
+    "악마 암석 곡괭이": {
+      "name": "악마 암석 곡괭이",
+      "category": "기타조합",
+      "sub_cat": "보조 직업",
+      "sub_type": "보조 직업",
+      "grade": "희귀",
+      "materials": [
+        {
+          "name": "구리 채광 곡괭이",
+          "qty": 1,
+          "boss": "조합템",
+          "level": 0,
+          "level_str": "",
+          "location": "",
+          "is_drop": false
+        },
+        {
+          "name": "영혼 결정",
+          "qty": 1,
+          "boss": "죽음의 리치",
+          "level": 320,
+          "level_str": "Lv.320",
+          "location": "암흑도시-중간",
+          "is_drop": true
+        },
+        {
+          "name": "신앙의 핵",
+          "qty": 1,
+          "boss": "성역의 대사제",
+          "level": 320,
+          "level_str": "Lv.320",
+          "location": "전초기지-왼쪽성 안",
+          "is_drop": true
+        }
+      ],
+      "is_drop": false,
+      "drop_boss": "",
+      "drop_level": 0,
+      "drop_location": "",
+      "drop_type": "아이템"
+    },
+    "튼튼한 낚싯대": {
+      "name": "튼튼한 낚싯대",
+      "category": "기타조합",
+      "sub_cat": "보조 직업",
+      "sub_type": "보조 직업",
+      "grade": "우수",
+      "materials": [
+        {
+          "name": "썩은 나무 낚싯대",
+          "qty": 1
+        },
+        {
+          "name": "구리 광석",
+          "qty": 5,
+          "boss": "채광",
+          "level": 0,
+          "level_str": "채광",
+          "location": "광산",
+          "is_drop": true
+        },
+        {
+          "name": "철광석",
+          "qty": 10,
+          "boss": "채광",
+          "level": 0,
+          "level_str": "채광",
+          "location": "광산",
+          "is_drop": true
+        }
+      ],
+      "is_drop": false,
+      "drop_boss": "",
+      "drop_level": 0,
+      "drop_location": "",
+      "drop_type": "아이템"
+    },
+    "합금 낚싯대": {
+      "name": "합금 낚싯대",
+      "category": "기타조합",
+      "sub_cat": "보조 직업",
+      "sub_type": "보조 직업",
+      "grade": "우수",
+      "materials": [
+        {
+          "name": "튼튼한 낚싯대",
+          "qty": 1,
+          "boss": "조합템",
+          "level": 0,
+          "level_str": "",
+          "location": "",
+          "is_drop": false
+        },
+        {
+          "name": "은 광석",
+          "qty": 5,
+          "boss": "채광",
+          "level": 0,
+          "level_str": "채광",
+          "location": "광산",
+          "is_drop": true
+        },
+        {
+          "name": "구리 광석",
+          "qty": 10,
+          "boss": "채광",
+          "level": 0,
+          "level_str": "채광",
+          "location": "광산",
+          "is_drop": true
+        },
+        {
+          "name": "철광석",
+          "qty": 20,
+          "boss": "채광",
+          "level": 0,
+          "level_str": "채광",
+          "location": "광산",
+          "is_drop": true
+        }
+      ],
+      "is_drop": false,
+      "drop_boss": "",
+      "drop_level": 0,
+      "drop_location": "",
+      "drop_type": "아이템"
+    },
+    "낙원 낚싯대": {
+      "name": "낙원 낚싯대",
+      "category": "기타조합",
+      "sub_cat": "보조 직업",
+      "sub_type": "보조 직업",
+      "grade": "희귀",
+      "materials": [
+        {
+          "name": "합금 낚싯대",
+          "qty": 1,
+          "boss": "조합템",
+          "level": 0,
+          "level_str": "",
+          "location": "",
+          "is_drop": false
+        },
+        {
+          "name": "신앙의 핵",
+          "qty": 1,
+          "boss": "성역의 대사제",
+          "level": 320,
+          "level_str": "Lv.320",
+          "location": "전초기지-왼쪽성 안",
+          "is_drop": true
+        },
+        {
+          "name": "서리 보석",
+          "qty": 1,
+          "boss": "설원 엘프",
+          "level": 200,
+          "level_str": "Lv.200",
+          "location": "운설산-왼쪽 중앙",
+          "is_drop": true
+        }
+      ],
+      "is_drop": false,
+      "drop_boss": "",
+      "drop_level": 0,
+      "drop_location": "",
+      "drop_type": "아이템"
+    },
+    "초보자 물약 Lv.2": {
+      "name": "초보자 물약 Lv.2",
+      "category": "기타조합",
+      "sub_cat": "물약",
+      "sub_type": "물약",
+      "grade": "",
+      "materials": [
+        {
+          "name": "초보자 물약 Lv.1",
+          "qty": 1
+        },
+        {
+          "name": "희미한 결정",
+          "qty": 10
+        }
+      ],
+      "is_drop": false,
+      "drop_boss": "",
+      "drop_level": 0,
+      "drop_location": "",
+      "drop_type": "아이템"
+    },
+    "초보자 물약 Lv.3": {
+      "name": "초보자 물약 Lv.3",
+      "category": "기타조합",
+      "sub_cat": "물약",
+      "sub_type": "물약",
+      "grade": "",
+      "materials": [
+        {
+          "name": "초보자 물약 Lv.2",
+          "qty": 1,
+          "boss": "조합템",
+          "level": 0,
+          "level_str": "",
+          "location": "",
+          "is_drop": false
+        },
+        {
+          "name": "희미한 결정",
+          "qty": 25
+        }
+      ],
+      "is_drop": false,
+      "drop_boss": "",
+      "drop_level": 0,
+      "drop_location": "",
+      "drop_type": "아이템"
+    },
+    "초보자 물약 Lv.4": {
+      "name": "초보자 물약 Lv.4",
+      "category": "기타조합",
+      "sub_cat": "물약",
+      "sub_type": "물약",
+      "grade": "",
+      "materials": [
+        {
+          "name": "초보자 물약 Lv.3",
+          "qty": 1,
+          "boss": "조합템",
+          "level": 0,
+          "level_str": "",
+          "location": "",
+          "is_drop": false
+        },
+        {
+          "name": "희미한 결정",
+          "qty": 50
+        }
+      ],
+      "is_drop": false,
+      "drop_boss": "",
+      "drop_level": 0,
+      "drop_location": "",
+      "drop_type": "아이템"
+    },
+    "초보자 물약 MAX": {
+      "name": "초보자 물약 MAX",
+      "category": "기타조합",
+      "sub_cat": "물약",
+      "sub_type": "물약",
+      "grade": "",
+      "materials": [
+        {
+          "name": "초보자 물약 Lv.4",
+          "qty": 1,
+          "boss": "조합템",
+          "level": 0,
+          "level_str": "",
+          "location": "",
+          "is_drop": false
+        },
+        {
+          "name": "희미한 결정",
+          "qty": 100
+        }
+      ],
+      "is_drop": false,
+      "drop_boss": "",
+      "drop_level": 0,
+      "drop_location": "",
+      "drop_type": "아이템"
     }
   },
   "legacy_jobs": {
