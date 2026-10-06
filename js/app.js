@@ -135,20 +135,46 @@
     "얼음 환상 바닞": "얼음 환상 반지",
     "결울 빙모": "겨울 빙모",
     "만샤의 영혼 햇불": "만샤의 영혼 횃불",
-    "혼돈의 결정": "혼돈의 혈정",
+    "혼돈의 결정": "혼돈의 혈석",
     "성령의 조각": "성령석 조각",
     "지옥볼의 핵": "지옥불의 핵",
     "끝없는 어룸의 로브": "끝없는 어둠의 로브",
     "프로토스 왕관": "프로스트 왕관",
     "지옥투구": "지옥 투구",
-    "혼동의 혈정": "혼돈의 혈정",
+    "혼동의 혈정": "혼돈의 혈석",
+    "혼돈의 혈정": "혼돈의 혈석",
+    "혼돈의혈정": "혼돈의 혈석",
+    "혼돈의혈석": "혼돈의 혈석",
     "성스러운 및의 수호석": "성스러운 빛의 수호석",
     "영혼 구술의 족쇄": "영혼 구슬의 족쇄",
     "용의 격노-용혼갑옷": "용의 격노·용혼 갑옷",
     "용의 격노·용혼갑옷": "용의 격노·용혼 갑옷",
     "잊힌 고대의 마나석": "잊힌 고대 마나석",
-    "검은 쌍둥이 반지-성광 파편": "검은 쌍둥이 반지·섬광 파편",
-    "검은 쌍둥이 반지·성광 파편": "검은 쌍둥이 반지·섬광 파편",
+    "검은 쌍둥이 반지-성광 파편": "검은 쌍둥이 반지",
+    "검은 쌍둥이 반지·성광 파편": "검은 쌍둥이 반지",
+    "검은 쌍둥이 반지 - 성광 파편": "검은 쌍둥이 반지",
+    "검은 쌍둥이 반지-섬광 파편": "검은 쌍둥이 반지",
+    "검은 쌍둥이 반지·섬광 파편": "검은 쌍둥이 반지",
+    "검은 쌍둥이 반지 - 섬광 파편": "검은 쌍둥이 반지",
+    "검은 쌍둥이 반지-얼음 파편": "검은 쌍둥이 반지",
+    "검은 쌍둥이 반지·얼음 파편": "검은 쌍둥이 반지",
+    "검은 쌍둥이 반지 - 얼음 파편": "검은 쌍둥이 반지",
+    "검은 쌍둥이 반지-둔화 파편": "검은 쌍둥이 반지",
+    "검은 쌍둥이 반지·둔화 파편": "검은 쌍둥이 반지",
+    "검은 쌍둥이 반지 - 둔화 파편": "검은 쌍둥이 반지",
+    "검은 쌍둥이 반지-혈기 파편": "검은 쌍둥이 반지",
+    "검은 쌍둥이 반지·혈기 파편": "검은 쌍둥이 반지",
+    "검은 쌍둥이 반지 - 혈기 파편": "검은 쌍둥이 반지",
+    "지고의 화염": "지고의 불꽃·이프리트",
+    "지고의 화염 - 이프리트": "지고의 불꽃·이프리트",
+    "지고의 화염·이프리트": "지고의 불꽃·이프리트",
+    "지고의 화염-이프리트": "지고의 불꽃·이프리트",
+    "지고의 불꽃 - 이프리트": "지고의 불꽃·이프리트",
+    "지고의 불꽃-이프리트": "지고의 불꽃·이프리트",
+    "불시의 핵": "불씨의 핵",
+    "불사조의 화염관": "열반·불사조 화염관",
+    "핏빛 윤회의 결정": "혈해윤회·심천의 붉은 결정",
+    "영혼 붕괴의 반지": "영혼 엔트로피의 반지",
     "붉은 화염 전투 세트": "붉은 화염 전투 셋트",
     "격노한 화염의 전쟁신 도끼": "격노한 화염의 전생신 도끼",
     "청공의 분노 뇌전홀": "천공의 분노 뇌전홀",
@@ -554,7 +580,7 @@
           special_effect: "광전사",
           materials: [
             { name: "홍마룡의 칼날", qty: 1, boss: "조합템", level: 340, level_str: "Lv.340" },
-            { name: "혼돈의 혈정", qty: 1, boss: "혼돈의 군주 발록", level: 360, level_str: "Lv.360", location: "지옥 성채-오른쪽 끝", is_drop: true },
+            { name: "혼돈의 혈석", qty: 1, boss: "혼돈의 군주 발록", level: 360, level_str: "Lv.360", location: "지옥 성채-오른쪽 끝", is_drop: true },
             { name: "타락한 마나핵", qty: 1, boss: "타락한 마나 수호자", level: 360, level_str: "Lv.360", location: "지옥 성채-중앙 포탈", is_drop: true },
             { name: "멸망의 불꽃 깃털", qty: 1, boss: "멸세의 불새", level: 340, level_str: "Lv.340", location: "용암 화산-오른쪽포탈-위", is_drop: true },
             { name: "은하의 모래", qty: 1, boss: "별의정령 알갈론", level: 340, level_str: "Lv.340", location: "파문 항구-오른쪽포탈-밑", is_drop: true },
@@ -577,7 +603,7 @@
         if (!rMelee.materials || rMelee.materials.length < 7) {
           rMelee.materials = [
             { name: "홍마룡의 칼날", qty: 1, boss: "조합템", level: 340, level_str: "Lv.340" },
-            { name: "혼돈의 혈정", qty: 1, boss: "혼돈의 군주 발록", level: 360, level_str: "Lv.360", location: "지옥 성채-오른쪽 끝", is_drop: true },
+            { name: "혼돈의 혈석", qty: 1, boss: "혼돈의 군주 발록", level: 360, level_str: "Lv.360", location: "지옥 성채-오른쪽 끝", is_drop: true },
             { name: "타락한 마나핵", qty: 1, boss: "타락한 마나 수호자", level: 360, level_str: "Lv.360", location: "지옥 성채-중앙 포탈", is_drop: true },
             { name: "멸망의 불꽃 깃털", qty: 1, boss: "멸세의 불새", level: 340, level_str: "Lv.340", location: "용암 화산-오른쪽포탈-위", is_drop: true },
             { name: "은하의 모래", qty: 1, boss: "별의정령 알갈론", level: 340, level_str: "Lv.340", location: "파문 항구-오른쪽포탈-밑", is_drop: true },
@@ -899,7 +925,7 @@
     return targetData;
   }
 
-  const CURRENT_DATA_VERSION = "20261004_v4";
+  const CURRENT_DATA_VERSION = "20261007_v1";
 
   function loadGameData() {
     let savedData = null;
@@ -959,6 +985,8 @@
               materials: item.materials,
               is_drop: false
             };
+          } else if (item.materials && (!gameData.global_recipe_map[item.name].materials || gameData.global_recipe_map[item.name].materials.length === 0)) {
+            gameData.global_recipe_map[item.name].materials = item.materials;
           }
         });
       });
@@ -1454,6 +1482,27 @@
     };
   }
 
+  function getBossInfoForItem(itemName) {
+    if (!itemName || !gameData || !gameData.bosses) return null;
+    const clean = normalizeName(itemName);
+    for (const b of gameData.bosses) {
+      if (!b.drops) continue;
+      for (const d of b.drops) {
+        const dName = normalizeName(d.name || d);
+        if (dName === clean) {
+          return {
+            boss: b.name,
+            level: d.level || b.level || 0,
+            level_str: d.level_str || b.level_str || (b.level ? `Lv.${b.level}` : ""),
+            location: d.location || b.location || "",
+            is_drop: true
+          };
+        }
+      }
+    }
+    return null;
+  }
+
   // Get leaf materials for an item
   function getLeafMaterials(rootItemName, slot) {
     if (!rootItemName) return [];
@@ -1509,10 +1558,20 @@
           traverse(mat.name, nextCurrentPath, nextPathDisplay);
         } else {
           const nodeId = nextCurrentPath.join("__");
-          const boss = (mat.boss && mat.boss !== "조합템") ? mat.boss : (subRecipe && subRecipe.drop_boss ? subRecipe.drop_boss : (mat.boss || "조합템"));
-          const lvl = mat.level || (subRecipe ? (subRecipe.drop_level || subRecipe.level) : 0);
-          const lvlStr = mat.level_str || (subRecipe ? subRecipe.level_str : (lvl ? `Lv.${lvl}` : ""));
-          const loc = mat.location || (subRecipe ? subRecipe.drop_location : "");
+          let boss = (mat.boss && mat.boss !== "조합템") ? mat.boss : (subRecipe && subRecipe.drop_boss ? subRecipe.drop_boss : (mat.boss || "조합템"));
+          let lvl = mat.level || (subRecipe ? (subRecipe.drop_level || subRecipe.level) : 0);
+          let lvlStr = mat.level_str || (subRecipe ? subRecipe.level_str : (lvl ? `Lv.${lvl}` : ""));
+          let loc = mat.location || (subRecipe ? subRecipe.drop_location : "");
+
+          if (!boss || boss === "조합템") {
+            const bInfo = getBossInfoForItem(mat.name);
+            if (bInfo) {
+              boss = bInfo.boss;
+              if (!lvl) lvl = bInfo.level;
+              if (!lvlStr) lvlStr = bInfo.level_str;
+              if (!loc) loc = bInfo.location;
+            }
+          }
 
           leaves.push({
             id: nodeId,
@@ -1981,18 +2040,26 @@
       itemBox.appendChild(checkbox);
       itemBox.appendChild(nameSpan);
 
-      const bossName = (mat.boss && mat.boss !== "조합템") ? mat.boss : (subRecipe && subRecipe.drop_boss ? subRecipe.drop_boss : "");
-      if (bossName) {
+      let bossName = (mat.boss && mat.boss !== "조합템") ? mat.boss : (subRecipe && subRecipe.drop_boss ? subRecipe.drop_boss : "");
+      let loc = mat.location || (subRecipe && subRecipe.drop_location);
+      let lvlStr = mat.level_str || (subRecipe ? subRecipe.level_str : (mat.level ? `Lv.${mat.level}` : (subRecipe && subRecipe.level ? `Lv.${subRecipe.level}` : "")));
+      if (!bossName || bossName === "조합템") {
+        const bInfo = getBossInfoForItem(mat.name);
+        if (bInfo) {
+          bossName = bInfo.boss;
+          if (!loc) loc = bInfo.location;
+          if (!lvlStr) lvlStr = bInfo.level_str;
+        }
+      }
+      if (bossName && bossName !== "조합템") {
         const bossBadge = document.createElement("span");
         bossBadge.className = "badge-boss";
         const icon = (bossName.includes("채광") || bossName.includes("채굴")) ? "⛏️ " : "👹 ";
         bossBadge.textContent = `${icon}${bossName}`;
-        const loc = mat.location || (subRecipe && subRecipe.drop_location);
         if (loc) bossBadge.title = `지역: ${loc}`;
         itemBox.appendChild(bossBadge);
       }
 
-      const lvlStr = mat.level_str || (subRecipe ? subRecipe.level_str : (mat.level ? `Lv.${mat.level}` : (subRecipe && subRecipe.level ? `Lv.${subRecipe.level}` : "")));
       if (lvlStr) {
         const lvlBadge = document.createElement("span");
         lvlBadge.className = "badge-level";
@@ -2132,7 +2199,11 @@
             const isChecked = matchingLeaves.length > 0 && matchingLeaves.every(l => checkedNodes.has(l.id));
             if (isChecked) matItem.classList.add("checked");
 
-            const bossName = (m.boss && m.boss !== "조합템") ? m.boss : (sub ? sub.drop_boss : "");
+            let bossName = (m.boss && m.boss !== "조합템") ? m.boss : (sub ? sub.drop_boss : "");
+            if (!bossName || bossName === "조합템") {
+              const bInfo = getBossInfoForItem(m.name);
+              if (bInfo) bossName = bInfo.boss;
+            }
             const mLevelStr = m.level_str || (sub ? sub.level_str : (m.level ? `Lv.${m.level}` : ""));
 
             matItem.innerHTML = `
@@ -2951,10 +3022,17 @@
     const catData = gameData && gameData.category_gear && gameData.category_gear[modalSlot];
     let topGearList = (catData && catData.top_gear) || [];
 
+    const miscOrderMap = new Map();
     if (modalSlot === "기타조합" && gameData && gameData.misc_recipes) {
       topGearList = [];
-      Object.values(gameData.misc_recipes).forEach(items => {
-        items.forEach(item => topGearList.push(item.name));
+      const MISC_CATS = ["배지", "곡괭이", "낚시대", "물약"];
+      let miscIdx = 0;
+      MISC_CATS.forEach(cat => {
+        const items = (gameData.misc_recipes && gameData.misc_recipes[cat]) || [];
+        items.forEach(item => {
+          topGearList.push(item.name);
+          miscOrderMap.set(item.name, miscIdx++);
+        });
       });
     }
 
@@ -2968,27 +3046,36 @@
       return stripSeparators(name).includes(modalQClean);
     });
 
-    // Sort: Synergy items for current job first, then equipped, then level descending, then alphabetical
-    filtered.sort((a, b) => {
-      const recA = getRecipe(a);
-      const recB = getRecipe(b);
-      const synA = recA && recA.synergy_jobs && recA.synergy_jobs.includes(currentJob);
-      const synB = recB && recB.synergy_jobs && recB.synergy_jobs.includes(currentJob);
+    if (modalSlot === "기타조합") {
+      // Keep exact sequential order as displayed in 기타조합리스트
+      filtered.sort((a, b) => {
+        const ordA = miscOrderMap.has(a) ? miscOrderMap.get(a) : 9999;
+        const ordB = miscOrderMap.has(b) ? miscOrderMap.get(b) : 9999;
+        return ordA - ordB;
+      });
+    } else {
+      // Sort: Synergy items for current job first, then equipped, then level descending, then alphabetical
+      filtered.sort((a, b) => {
+        const recA = getRecipe(a);
+        const recB = getRecipe(b);
+        const synA = recA && recA.synergy_jobs && recA.synergy_jobs.includes(currentJob);
+        const synB = recB && recB.synergy_jobs && recB.synergy_jobs.includes(currentJob);
 
-      if (synA && !synB) return -1;
-      if (!synA && synB) return 1;
+        if (synA && !synB) return -1;
+        if (!synA && synB) return 1;
 
-      const aEq = currentlyEquippedList.includes(a);
-      const bEq = currentlyEquippedList.includes(b);
-      if (aEq && !bEq) return -1;
-      if (!aEq && bEq) return 1;
+        const aEq = currentlyEquippedList.includes(a);
+        const bEq = currentlyEquippedList.includes(b);
+        if (aEq && !bEq) return -1;
+        if (!aEq && bEq) return 1;
 
-      const lvlA = (recA && recA.level) || 0;
-      const lvlB = (recB && recB.level) || 0;
-      if (lvlA !== lvlB) return lvlB - lvlA;
+        const lvlA = (recA && recA.level) || 0;
+        const lvlB = (recB && recB.level) || 0;
+        if (lvlA !== lvlB) return lvlB - lvlA;
 
-      return a.localeCompare(b);
-    });
+        return a.localeCompare(b);
+      });
+    }
 
     if (filtered.length === 0) {
       gearSelectList.innerHTML = `<div style="grid-column: 1/-1; text-align: center; color: var(--text-muted); padding: 30px;">검색된 장비가 없습니다.</div>`;
@@ -3738,8 +3825,17 @@
 
         const matsHtml = (item.materials || []).map(m => {
           const isHighlighted = qClean && m.name.toLowerCase().includes(qClean);
+          let bName = m.boss && m.boss !== "조합템" ? m.boss : "";
+          if (!bName) {
+            const bInfo = getBossInfoForItem(m.name);
+            if (bInfo) bName = bInfo.boss;
+          }
+          const bossBadge = bName ? `<span class="badge-boss" style="font-size:10.5px;padding:1px 6px;margin-left:6px;">${(bName.includes("채광") || bName.includes("채굴")) ? "⛏️" : "👹"} ${bName}</span>` : "";
           return `<li style="display:flex;justify-content:space-between;align-items:center;padding:3px 0;border-bottom:1px solid var(--border);">
-            <span style="${isHighlighted ? "color:#fbbf24;font-weight:700;" : "color:var(--text-main);"}">${m.name}</span>
+            <div style="display:flex;align-items:center;flex-wrap:wrap;gap:4px;">
+              <span style="${isHighlighted ? "color:#fbbf24;font-weight:700;" : "color:var(--text-main);"}">${m.name}</span>
+              ${bossBadge}
+            </div>
             <span style="font-size:12px;color:var(--text-muted);white-space:nowrap;margin-left:8px;">× ${m.qty}</span>
           </li>`;
         }).join("");
@@ -5148,8 +5244,8 @@
         }
         const itype = String(r[2] || "").trim();
         const igrade = String(r[3] || "").trim();
-
         if (!bname || !iname) continue;
+        if (bname.includes("데셀록") && iname === "암흑 결정") continue;
 
         if (!bossMap[bname]) {
           const loc = DEFAULT_BOSS_LOCATIONS[bname] || "";
