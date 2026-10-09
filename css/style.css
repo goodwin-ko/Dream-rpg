@@ -1192,6 +1192,15 @@ input[type="search"],
   color: #fff;
   border-color: var(--text-muted);
 }
+.btn-toggle-tree.is-collapsed {
+  background: rgba(59, 130, 246, 0.15);
+  border-color: rgba(59, 130, 246, 0.45);
+  color: #93c5fd;
+}
+.btn-toggle-tree.is-collapsed:hover {
+  background: rgba(59, 130, 246, 0.25);
+  color: #fff;
+}
 
 .gear-card-body {
   padding: 18px;

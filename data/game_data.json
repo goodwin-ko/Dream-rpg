@@ -17468,12 +17468,12 @@
           "special_effect": "",
           "materials": [
             {
-              "name": "악몽 투구[전설]",
+              "name": "악몽 투구",
               "qty": 1,
               "boss": "조합템",
-              "level": 340,
+              "level": 320,
               "location": "",
-              "level_str": "Lv.340"
+              "level_str": "Lv.320"
             },
             {
               "name": "암흑 결정",
@@ -17537,77 +17537,7 @@
           "drop_type": "아이템"
         },
         {
-          "name": "악몽 투구[전설]",
-          "category": "투구",
-          "sub_cat": "투구",
-          "level": 340,
-          "level_str": "Lv.340",
-          "synergy": "",
-          "synergy_jobs": [],
-          "special_effect": "",
-          "materials": [
-            {
-              "name": "악몽 투구[에픽]",
-              "qty": 1,
-              "boss": "조합템",
-              "level": 320,
-              "location": "",
-              "level_str": "Lv.320"
-            },
-            {
-              "name": "망자의 촉수",
-              "qty": 1,
-              "boss": "영혼의 수확자 타나토스",
-              "level": 340,
-              "location": "암흑도시-왼쪽포탈",
-              "level_str": "Lv.340",
-              "is_drop": true
-            },
-            {
-              "name": "지옥의 정수",
-              "qty": 1,
-              "boss": "제7마왕 모르페우스",
-              "level": 340,
-              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
-              "level_str": "Lv.340",
-              "is_drop": true
-            },
-            {
-              "name": "회오리의 핵",
-              "qty": 1,
-              "boss": "광풍의 실프",
-              "level": 320,
-              "location": "어인 해변-옆",
-              "level_str": "Lv.320",
-              "is_drop": true
-            },
-            {
-              "name": "사령의 빛가루",
-              "qty": 1,
-              "boss": "죽음의 리치",
-              "level": 320,
-              "location": "암흑도시-중간",
-              "level_str": "Lv.320",
-              "is_drop": true
-            },
-            {
-              "name": "화염의 심장",
-              "qty": 1,
-              "boss": "화염 거인",
-              "level": 320,
-              "location": "용암 화산-아래",
-              "level_str": "Lv.320",
-              "is_drop": true
-            }
-          ],
-          "is_drop": false,
-          "drop_boss": "",
-          "drop_level": 0,
-          "drop_location": "",
-          "drop_type": "아이템"
-        },
-        {
-          "name": "악몽 투구[에픽]",
+          "name": "악몽 투구",
           "category": "투구",
           "sub_cat": "투구",
           "level": 320,
@@ -58984,12 +58914,12 @@
           "special_effect": "",
           "materials": [
             {
-              "name": "악몽 투구[전설]",
+              "name": "악몽 투구",
               "qty": 1,
               "boss": "조합템",
-              "level": 340,
+              "level": 320,
               "location": "",
-              "level_str": "Lv.340"
+              "level_str": "Lv.320"
             },
             {
               "name": "암흑 결정",
@@ -59053,77 +58983,7 @@
           "drop_type": "아이템"
         },
         {
-          "name": "악몽 투구[전설]",
-          "category": "투구",
-          "sub_cat": "투구",
-          "level": 340,
-          "level_str": "Lv.340",
-          "synergy": "",
-          "synergy_jobs": [],
-          "special_effect": "",
-          "materials": [
-            {
-              "name": "악몽 투구[에픽]",
-              "qty": 1,
-              "boss": "조합템",
-              "level": 320,
-              "location": "",
-              "level_str": "Lv.320"
-            },
-            {
-              "name": "망자의 촉수",
-              "qty": 1,
-              "boss": "영혼의 수확자 타나토스",
-              "level": 340,
-              "location": "암흑도시-왼쪽포탈",
-              "level_str": "Lv.340",
-              "is_drop": true
-            },
-            {
-              "name": "지옥의 정수",
-              "qty": 1,
-              "boss": "제7마왕 모르페우스",
-              "level": 340,
-              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
-              "level_str": "Lv.340",
-              "is_drop": true
-            },
-            {
-              "name": "회오리의 핵",
-              "qty": 1,
-              "boss": "광풍의 실프",
-              "level": 320,
-              "location": "어인 해변-옆",
-              "level_str": "Lv.320",
-              "is_drop": true
-            },
-            {
-              "name": "사령의 빛가루",
-              "qty": 1,
-              "boss": "죽음의 리치",
-              "level": 320,
-              "location": "암흑도시-중간",
-              "level_str": "Lv.320",
-              "is_drop": true
-            },
-            {
-              "name": "화염의 심장",
-              "qty": 1,
-              "boss": "화염 거인",
-              "level": 320,
-              "location": "용암 화산-아래",
-              "level_str": "Lv.320",
-              "is_drop": true
-            }
-          ],
-          "is_drop": false,
-          "drop_boss": "",
-          "drop_level": 0,
-          "drop_location": "",
-          "drop_type": "아이템"
-        },
-        {
-          "name": "악몽 투구[에픽]",
+          "name": "악몽 투구",
           "category": "투구",
           "sub_cat": "투구",
           "level": 320,
@@ -97013,12 +96873,12 @@
           "special_effect": "",
           "materials": [
             {
-              "name": "악몽 투구[전설]",
+              "name": "악몽 투구",
               "qty": 1,
               "boss": "조합템",
-              "level": 340,
+              "level": 320,
               "location": "",
-              "level_str": "Lv.340"
+              "level_str": "Lv.320"
             },
             {
               "name": "암흑 결정",
@@ -97082,77 +96942,7 @@
           "drop_type": "아이템"
         },
         {
-          "name": "악몽 투구[전설]",
-          "category": "투구",
-          "sub_cat": "투구",
-          "level": 340,
-          "level_str": "Lv.340",
-          "synergy": "",
-          "synergy_jobs": [],
-          "special_effect": "",
-          "materials": [
-            {
-              "name": "악몽 투구[에픽]",
-              "qty": 1,
-              "boss": "조합템",
-              "level": 320,
-              "location": "",
-              "level_str": "Lv.320"
-            },
-            {
-              "name": "망자의 촉수",
-              "qty": 1,
-              "boss": "영혼의 수확자 타나토스",
-              "level": 340,
-              "location": "암흑도시-왼쪽포탈",
-              "level_str": "Lv.340",
-              "is_drop": true
-            },
-            {
-              "name": "지옥의 정수",
-              "qty": 1,
-              "boss": "제7마왕 모르페우스",
-              "level": 340,
-              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
-              "level_str": "Lv.340",
-              "is_drop": true
-            },
-            {
-              "name": "회오리의 핵",
-              "qty": 1,
-              "boss": "광풍의 실프",
-              "level": 320,
-              "location": "어인 해변-옆",
-              "level_str": "Lv.320",
-              "is_drop": true
-            },
-            {
-              "name": "사령의 빛가루",
-              "qty": 1,
-              "boss": "죽음의 리치",
-              "level": 320,
-              "location": "암흑도시-중간",
-              "level_str": "Lv.320",
-              "is_drop": true
-            },
-            {
-              "name": "화염의 심장",
-              "qty": 1,
-              "boss": "화염 거인",
-              "level": 320,
-              "location": "용암 화산-아래",
-              "level_str": "Lv.320",
-              "is_drop": true
-            }
-          ],
-          "is_drop": false,
-          "drop_boss": "",
-          "drop_level": 0,
-          "drop_location": "",
-          "drop_type": "아이템"
-        },
-        {
-          "name": "악몽 투구[에픽]",
+          "name": "악몽 투구",
           "category": "투구",
           "sub_cat": "투구",
           "level": 320,
@@ -132034,7 +131824,6 @@
         "여명의 빛-아침의 광휘",
         "끝없는 공허-지배의 눈",
         "죽음의 공포 뿔피리",
-        "악몽 투구[전설]",
         "성스러운 용 투구",
         "왕의 전쟁 투구",
         "성스러운 영광 악마 학살자 투구",
@@ -132043,7 +131832,7 @@
         "천상의 투구",
         "파도소환사의 뿔피리",
         "마법사의 두건",
-        "악몽 투구[에픽]",
+        "악몽 투구",
         "감시자의 눈",
         "망자의 두건",
         "겨울 빙모",
@@ -134060,12 +133849,12 @@
           "special_effect": "",
           "materials": [
             {
-              "name": "악몽 투구[전설]",
+              "name": "악몽 투구",
               "qty": 1,
               "boss": "조합템",
-              "level": 340,
+              "level": 320,
               "location": "",
-              "level_str": "Lv.340"
+              "level_str": "Lv.320"
             },
             {
               "name": "암흑 결정",
@@ -134680,76 +134469,6 @@
           "drop_type": "아이템"
         },
         {
-          "name": "악몽 투구[전설]",
-          "category": "투구",
-          "sub_cat": "투구",
-          "level": 340,
-          "level_str": "Lv.340",
-          "synergy": "",
-          "synergy_jobs": [],
-          "special_effect": "",
-          "materials": [
-            {
-              "name": "악몽 투구[에픽]",
-              "qty": 1,
-              "boss": "조합템",
-              "level": 320,
-              "location": "",
-              "level_str": "Lv.320"
-            },
-            {
-              "name": "망자의 촉수",
-              "qty": 1,
-              "boss": "영혼의 수확자 타나토스",
-              "level": 340,
-              "location": "암흑도시-왼쪽포탈",
-              "level_str": "Lv.340",
-              "is_drop": true
-            },
-            {
-              "name": "지옥의 정수",
-              "qty": 1,
-              "boss": "제7마왕 모르페우스",
-              "level": 340,
-              "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
-              "level_str": "Lv.340",
-              "is_drop": true
-            },
-            {
-              "name": "회오리의 핵",
-              "qty": 1,
-              "boss": "광풍의 실프",
-              "level": 320,
-              "location": "어인 해변-옆",
-              "level_str": "Lv.320",
-              "is_drop": true
-            },
-            {
-              "name": "사령의 빛가루",
-              "qty": 1,
-              "boss": "죽음의 리치",
-              "level": 320,
-              "location": "암흑도시-중간",
-              "level_str": "Lv.320",
-              "is_drop": true
-            },
-            {
-              "name": "화염의 심장",
-              "qty": 1,
-              "boss": "화염 거인",
-              "level": 320,
-              "location": "용암 화산-아래",
-              "level_str": "Lv.320",
-              "is_drop": true
-            }
-          ],
-          "is_drop": false,
-          "drop_boss": "",
-          "drop_level": 0,
-          "drop_location": "",
-          "drop_type": "아이템"
-        },
-        {
           "name": "성스러운 용 투구",
           "category": "투구",
           "sub_cat": "투구",
@@ -135111,7 +134830,7 @@
           "drop_type": "아이템"
         },
         {
-          "name": "악몽 투구[에픽]",
+          "name": "악몽 투구",
           "category": "투구",
           "sub_cat": "투구",
           "level": 320,
@@ -159940,12 +159659,12 @@
       "special_effect": "",
       "materials": [
         {
-          "name": "악몽 투구[전설]",
+          "name": "악몽 투구",
           "qty": 1,
           "boss": "조합템",
-          "level": 340,
+          "level": 320,
           "location": "",
-          "level_str": "Lv.340"
+          "level_str": "Lv.320"
         },
         {
           "name": "암흑 결정",
@@ -160559,76 +160278,6 @@
       "drop_location": "",
       "drop_type": "아이템"
     },
-    "악몽 투구[전설]": {
-      "name": "악몽 투구[전설]",
-      "category": "투구",
-      "sub_cat": "투구",
-      "level": 340,
-      "level_str": "Lv.340",
-      "synergy": "",
-      "synergy_jobs": [],
-      "special_effect": "",
-      "materials": [
-        {
-          "name": "악몽 투구[에픽]",
-          "qty": 1,
-          "boss": "조합템",
-          "level": 320,
-          "location": "",
-          "level_str": "Lv.320"
-        },
-        {
-          "name": "망자의 촉수",
-          "qty": 1,
-          "boss": "영혼의 수확자 타나토스",
-          "level": 340,
-          "location": "암흑도시-왼쪽포탈",
-          "level_str": "Lv.340",
-          "is_drop": true
-        },
-        {
-          "name": "지옥의 정수",
-          "qty": 1,
-          "boss": "제7마왕 모르페우스",
-          "level": 340,
-          "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
-          "level_str": "Lv.340",
-          "is_drop": true
-        },
-        {
-          "name": "회오리의 핵",
-          "qty": 1,
-          "boss": "광풍의 실프",
-          "level": 320,
-          "location": "어인 해변-옆",
-          "level_str": "Lv.320",
-          "is_drop": true
-        },
-        {
-          "name": "사령의 빛가루",
-          "qty": 1,
-          "boss": "죽음의 리치",
-          "level": 320,
-          "location": "암흑도시-중간",
-          "level_str": "Lv.320",
-          "is_drop": true
-        },
-        {
-          "name": "화염의 심장",
-          "qty": 1,
-          "boss": "화염 거인",
-          "level": 320,
-          "location": "용암 화산-아래",
-          "level_str": "Lv.320",
-          "is_drop": true
-        }
-      ],
-      "is_drop": false,
-      "drop_boss": "",
-      "drop_level": 0,
-      "drop_location": "",
-      "drop_type": "아이템"
-    },
     "성스러운 용 투구": {
       "name": "성스러운 용 투구",
       "category": "투구",
@@ -160981,68 +160630,6 @@
           "level": 300,
           "location": "파문항구-옆",
           "level_str": "Lv.300",
-          "is_drop": true
-        }
-      ],
-      "is_drop": false,
-      "drop_boss": "",
-      "drop_level": 0,
-      "drop_location": "",
-      "drop_type": "아이템"
-    },
-    "악몽 투구[에픽]": {
-      "name": "악몽 투구[에픽]",
-      "category": "투구",
-      "sub_cat": "투구",
-      "level": 320,
-      "level_str": "Lv.320",
-      "synergy": "",
-      "synergy_jobs": [],
-      "special_effect": "",
-      "materials": [
-        {
-          "name": "지옥 투구",
-          "qty": 1,
-          "boss": "지옥의 문지기",
-          "level": 320,
-          "location": "전초기지-오른쪽성안",
-          "level_str": "Lv.320",
-          "is_drop": true
-        },
-        {
-          "name": "겨울 빙모",
-          "qty": 1,
-          "boss": "눈사람",
-          "level": 320,
-          "location": "운설산-중간",
-          "level_str": "Lv.320",
-          "is_drop": true
-        },
-        {
-          "name": "살육 두건",
-          "qty": 1,
-          "boss": "영혼 포식자",
-          "level": 300,
-          "location": "암흑 도시-묘지",
-          "level_str": "Lv.300",
-          "is_drop": true
-        },
-        {
-          "name": "사령의 빛가루",
-          "qty": 1,
-          "boss": "죽음의 리치",
-          "level": 320,
-          "location": "암흑도시-중간",
-          "level_str": "Lv.320",
-          "is_drop": true
-        },
-        {
-          "name": "화염의 심장",
-          "qty": 1,
-          "boss": "화염 거인",
-          "level": 320,
-          "location": "용암 화산-아래",
-          "level_str": "Lv.320",
           "is_drop": true
         }
       ],
@@ -174030,6 +173617,68 @@
         {
           "name": "희미한 결정",
           "qty": 100
+        }
+      ],
+      "is_drop": false,
+      "drop_boss": "",
+      "drop_level": 0,
+      "drop_location": "",
+      "drop_type": "아이템"
+    },
+    "악몽 투구": {
+      "name": "악몽 투구",
+      "category": "투구",
+      "sub_cat": "투구",
+      "level": 320,
+      "level_str": "Lv.320",
+      "synergy": "",
+      "synergy_jobs": [],
+      "special_effect": "",
+      "materials": [
+        {
+          "name": "지옥 투구",
+          "qty": 1,
+          "boss": "지옥의 문지기",
+          "level": 320,
+          "location": "전초기지-오른쪽성안",
+          "level_str": "Lv.320",
+          "is_drop": true
+        },
+        {
+          "name": "겨울 빙모",
+          "qty": 1,
+          "boss": "눈사람",
+          "level": 320,
+          "location": "운설산-중간",
+          "level_str": "Lv.320",
+          "is_drop": true
+        },
+        {
+          "name": "살육 두건",
+          "qty": 1,
+          "boss": "영혼 포식자",
+          "level": 300,
+          "location": "암흑 도시-묘지",
+          "level_str": "Lv.300",
+          "is_drop": true
+        },
+        {
+          "name": "사령의 빛가루",
+          "qty": 1,
+          "boss": "죽음의 리치",
+          "level": 320,
+          "location": "암흑도시-중간",
+          "level_str": "Lv.320",
+          "is_drop": true
+        },
+        {
+          "name": "화염의 심장",
+          "qty": 1,
+          "boss": "화염 거인",
+          "level": 320,
+          "location": "용암 화산-아래",
+          "level_str": "Lv.320",
+          "is_drop": true
         }
       ],
       "is_drop": false,

@@ -90,6 +90,11 @@
     "어둠에 물든 원한": "어둠에 물든 원한",
     "암흑의 원한": "암흑의 원한",
     "암흑의원한": "암흑의 원한",
+    "악몽 투구[전설]": "악몽 투구",
+    "악몽 투구[에픽]": "악몽 투구",
+    "악몽투구[전설]": "악몽 투구",
+    "악몽투구[에픽]": "악몽 투구",
+    "악몽투구": "악몽 투구",
 
     // Boss name aliases
     "화염거인": "화염 거인",
@@ -390,6 +395,23 @@
   let sidePanelMode = "sticky";
   let isAllCollapsed = false;
   let invCollapsed = false;
+
+  // Persistent Collapsed Gear Cards
+  let collapsedGearCards = new Set();
+  try {
+    const savedCollapsed = localStorage.getItem("dream_collapsed_gear_cards");
+    if (savedCollapsed) {
+      collapsedGearCards = new Set(JSON.parse(savedCollapsed));
+    }
+  } catch (e) {
+    collapsedGearCards = new Set();
+  }
+
+  function saveCollapsedGearCards() {
+    try {
+      localStorage.setItem("dream_collapsed_gear_cards", JSON.stringify(Array.from(collapsedGearCards)));
+    } catch (e) {}
+  }
 
   // Gear Codex Tab States
   let gearCodexCat = "무기";
@@ -1955,6 +1977,10 @@
 
     const slotLabel = totalItemsInSlot > 1 ? `${slot} #${itemIdx + 1}` : slot;
 
+    const safeItemName = sanitizeDomId(itemName);
+    const cardCollapseKey = `${slot}#${itemIdx}#${normalizeName(itemName)}`;
+    const isCollapsed = collapsedGearCards.has(cardCollapseKey);
+
     const header = document.createElement("div");
     header.className = "gear-card-header";
     header.innerHTML = `
@@ -1976,13 +2002,16 @@
       </div>
       <div class="gear-card-actions">
         <span class="gear-progress-text">${leaves.length > 0 ? `달성률: <strong>${pct}%</strong> (${checkedInCard}/${leaves.length})` : `<span style="color: var(--text-muted); font-size: 0.85rem;">조합 정보 준비 중</span>`}</span>
-        <button class="btn-toggle-tree" data-target="body-${slot}-${itemIdx}-${sanitizeDomId(itemName)}">펼치기/접기</button>
+        <button class="btn-toggle-tree ${isCollapsed ? 'is-collapsed' : ''}" data-target="body-${slot}-${itemIdx}-${safeItemName}">${isCollapsed ? '펼치기' : '접기'}</button>
       </div>
     `;
 
     const body = document.createElement("div");
     body.className = "gear-card-body";
-    body.id = `body-${slot}-${itemIdx}-${sanitizeDomId(itemName)}`;
+    body.id = `body-${slot}-${itemIdx}-${safeItemName}`;
+    if (isCollapsed) {
+      body.style.display = "none";
+    }
 
     if (isDropItem) {
       const dropLeaf = leaves[0];
@@ -2060,7 +2089,19 @@
 
     const toggleBtn = header.querySelector(".btn-toggle-tree");
     toggleBtn.addEventListener("click", () => {
-      body.style.display = body.style.display === "none" ? "block" : "none";
+      const willCollapse = (body.style.display !== "none");
+      if (willCollapse) {
+        body.style.display = "none";
+        collapsedGearCards.add(cardCollapseKey);
+        toggleBtn.textContent = "펼치기";
+        toggleBtn.classList.add("is-collapsed");
+      } else {
+        body.style.display = "block";
+        collapsedGearCards.delete(cardCollapseKey);
+        toggleBtn.textContent = "접기";
+        toggleBtn.classList.remove("is-collapsed");
+      }
+      saveCollapsedGearCards();
     });
 
     const changeBtn = header.querySelector(".btn-change-gear");
