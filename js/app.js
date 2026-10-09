@@ -230,6 +230,11 @@
     return String(s).toLowerCase().replace(/[\s\-\–—•ㆍ・\.\/\\·]+/g, "");
   }
 
+  function sanitizeDomId(s) {
+    if (!s) return "";
+    return String(s).replace(/[^a-zA-Z0-9_\uAC00-\uD7A3]/g, "_");
+  }
+
   // English QWERTY 2-set to Korean converter (영타 -> 한타 자동 변환)
   function engToKor(src) {
     if (!src || typeof src !== 'string') return '';
@@ -467,6 +472,15 @@
   const currentJobSynergyLabel = document.getElementById("currentJobSynergyLabel");
   const gearCodexGrid = document.getElementById("gearCodexGrid");
 
+  // Patch Notes Elements
+  const btnPatchNotes = document.getElementById("btnPatchNotes");
+  const headerPatchVersion = document.getElementById("headerPatchVersion");
+  const patchNotesModal = document.getElementById("patchNotesModal");
+  const btnClosePatchNotesModal = document.getElementById("btnClosePatchNotesModal");
+  const btnConfirmPatchNotes = document.getElementById("btnConfirmPatchNotes");
+  const patchNotesContent = document.getElementById("patchNotesContent");
+  const modalCurrentPatchBadge = document.getElementById("modalCurrentPatchBadge");
+
   // Initialize
   function init() {
     loadGameData();
@@ -477,8 +491,78 @@
     renderJobSelector();
     bindEvents();
     initStickyHeaderObserver();
+    initPatchNotesModal();
     restoreUIState();
     renderAll();
+  }
+
+  function initPatchNotesModal() {
+    const currentVer = (window.APP_VERSION) || "v2026.10.09";
+    if (headerPatchVersion) headerPatchVersion.textContent = currentVer;
+    if (modalCurrentPatchBadge) modalCurrentPatchBadge.textContent = `최신 버전: ${currentVer}`;
+
+    function renderPatchNotes() {
+      if (!patchNotesContent) return;
+      const notes = window.PATCH_NOTES || [];
+      if (notes.length === 0) {
+        patchNotesContent.innerHTML = `<div style="text-align: center; color: var(--text-muted); padding: 30px;">등록된 패치 내역이 없습니다.</div>`;
+        return;
+      }
+
+      patchNotesContent.innerHTML = notes.map((p, idx) => {
+        const isLatest = p.isLatest || (idx === 0);
+        const highlightsHtml = (p.highlights || []).map(h => {
+          const colorClass = h.color ? `tag-${h.color}` : "tag-blue";
+          return `
+            <div class="patch-item-row">
+              <span class="patch-tag ${colorClass}">${h.tag || "업데이트"}</span>
+              <span>${h.text}</span>
+            </div>
+          `;
+        }).join("");
+
+        return `
+          <div class="patch-version-card ${isLatest ? 'is-latest' : ''}">
+            <div class="patch-version-header">
+              <div class="patch-version-title-group">
+                <span class="patch-version-tag">${p.version}</span>
+                ${isLatest ? '<span class="patch-latest-tag">최신 적용</span>' : ''}
+              </div>
+              <span class="patch-date-tag">📅 ${p.date}</span>
+            </div>
+            <div class="patch-card-desc">📌 ${p.title}</div>
+            <div class="patch-items-list">
+              ${highlightsHtml}
+            </div>
+          </div>
+        `;
+      }).join("");
+    }
+
+    renderPatchNotes();
+
+    function openModal() {
+      if (patchNotesModal) patchNotesModal.style.display = "flex";
+    }
+
+    function closeModal() {
+      if (patchNotesModal) patchNotesModal.style.display = "none";
+    }
+
+    if (btnPatchNotes) btnPatchNotes.addEventListener("click", openModal);
+    if (btnClosePatchNotesModal) btnClosePatchNotesModal.addEventListener("click", closeModal);
+    if (btnConfirmPatchNotes) btnConfirmPatchNotes.addEventListener("click", closeModal);
+    if (patchNotesModal) {
+      patchNotesModal.addEventListener("click", (e) => {
+        if (e.target === patchNotesModal) closeModal();
+      });
+    }
+
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape" && patchNotesModal && patchNotesModal.style.display === "flex") {
+        closeModal();
+      }
+    });
   }
 
   function initStickyHeaderObserver() {
@@ -1642,7 +1726,8 @@
       return leaves;
     }
 
-    function traverse(name, path, disp) {
+    function traverse(name, path, disp, depth = 0) {
+      if (depth > 20) return;
       const rec = getRecipe(name);
       if (!rec || !rec.materials || rec.materials.length === 0) return;
 
@@ -1653,7 +1738,7 @@
         const nextDisp = `${disp} > ${m.name}`;
 
         if (isCombo) {
-          traverse(m.name, nextPath, nextDisp);
+          traverse(m.name, nextPath, nextDisp, depth + 1);
         } else {
           leaves.push({
             id: nextPath.join("__"),
@@ -1663,7 +1748,7 @@
       });
     }
 
-    traverse(itemName, currentPath, pathDisplay);
+    traverse(itemName, currentPath, pathDisplay, 0);
     return leaves;
   }
 
@@ -1684,18 +1769,18 @@
 
   // Master Render Function
   function renderAll() {
-    updateProgressStats();
-    renderInventory();
+    try { updateProgressStats(); } catch(e) { console.error("updateProgressStats failed:", e); }
+    try { renderInventory(); } catch(e) { console.error("renderInventory failed:", e); }
 
     if (currentTab === "tree") {
-      renderTreeTab();
-      renderSideLevelList();
+      try { renderTreeTab(); } catch(e) { console.error("renderTreeTab failed:", e); }
+      try { renderSideLevelList(); } catch(e) { console.error("renderSideLevelList failed:", e); }
     } else if (currentTab === "boss-route") {
-      renderBossRouteTab();
+      try { renderBossRouteTab(); } catch(e) { console.error("renderBossRouteTab failed:", e); }
     } else if (currentTab === "codex") {
-      renderCodexTab();
+      try { renderCodexTab(); } catch(e) { console.error("renderCodexTab failed:", e); }
     } else if (currentTab === "gear-codex") {
-      renderGearCodexTab();
+      try { renderGearCodexTab(); } catch(e) { console.error("renderGearCodexTab failed:", e); }
     }
   }
 
@@ -1809,8 +1894,26 @@
       // Render cards for each item in this slot
       items.forEach((topItemName, itemIdx) => {
         if (!topItemName) return;
-        const card = createGearCard(topItemName, slot, itemIdx, items.length);
-        sectionEl.appendChild(card);
+        try {
+          const card = createGearCard(topItemName, slot, itemIdx, items.length);
+          sectionEl.appendChild(card);
+        } catch (cardErr) {
+          console.error(`Error creating card for ${topItemName}:`, cardErr);
+          const errCard = document.createElement("div");
+          errCard.className = "gear-card error-fallback-card";
+          errCard.innerHTML = `
+            <div style="display: flex; align-items: center; justify-content: space-between;">
+              <strong>⚠️ [${slot}] '${topItemName}' 카드 로딩 중 오류가 발생했습니다.</strong>
+              <button class="btn-change-gear" data-slot="${slot}" data-idx="${itemIdx}" style="background: rgba(239, 68, 68, 0.2); border: 1px solid rgba(239, 68, 68, 0.4); color: #fca5a5; padding: 4px 10px; border-radius: 4px; font-size: 11px; cursor: pointer;">🔄 다른 장비로 변경</button>
+            </div>
+            <div style="font-size: 11px; margin-top: 6px; color: #fca5a5; opacity: 0.85;">상세 원인: ${cardErr.message || cardErr}</div>
+          `;
+          const changeBtn = errCard.querySelector(".btn-change-gear");
+          if (changeBtn) {
+            changeBtn.addEventListener("click", () => openGearModal(slot, itemIdx));
+          }
+          sectionEl.appendChild(errCard);
+        }
       });
 
       // If in single slot view and less than 3, also show an empty slot card / button
@@ -1873,13 +1976,13 @@
       </div>
       <div class="gear-card-actions">
         <span class="gear-progress-text">${leaves.length > 0 ? `달성률: <strong>${pct}%</strong> (${checkedInCard}/${leaves.length})` : `<span style="color: var(--text-muted); font-size: 0.85rem;">조합 정보 준비 중</span>`}</span>
-        <button class="btn-toggle-tree" data-target="body-${slot}-${itemIdx}-${itemName.replace(/\s+/g, '_')}">펼치기/접기</button>
+        <button class="btn-toggle-tree" data-target="body-${slot}-${itemIdx}-${sanitizeDomId(itemName)}">펼치기/접기</button>
       </div>
     `;
 
     const body = document.createElement("div");
     body.className = "gear-card-body";
-    body.id = `body-${slot}-${itemIdx}-${itemName.replace(/\s+/g, '_')}`;
+    body.id = `body-${slot}-${itemIdx}-${sanitizeDomId(itemName)}`;
 
     if (isDropItem) {
       const dropLeaf = leaves[0];
@@ -1922,26 +2025,38 @@
         restoreUIState();
         renderAll();
         setTimeout(() => {
-          const bossEl = document.getElementById(`boss-route-${dropBoss.replace(/\s+/g, '_')}`);
+          const bossEl = document.getElementById(`boss-route-${sanitizeDomId(dropBoss)}`);
           if (bossEl) bossEl.scrollIntoView({ behavior: "smooth", block: "center" });
         }, 100);
       });
 
       body.appendChild(dropBox);
     } else {
-      if (currentViewMode === "tree") {
-        const treeRoot = document.createElement("ul");
-        treeRoot.className = "tree-root";
-        renderTreeNode(itemName, slot, treeRoot, 0, [slot, itemName], `${slot}: ${itemName}`);
-        body.appendChild(treeRoot);
-      } else {
-        const flowContainer = createFlowView(itemName, slot, leaves);
-        body.appendChild(flowContainer);
+      try {
+        if (currentViewMode === "tree") {
+          const treeRoot = document.createElement("ul");
+          treeRoot.className = "tree-root";
+          renderTreeNode(itemName, slot, treeRoot, 0, [slot, itemName], `${slot}: ${itemName}`);
+          body.appendChild(treeRoot);
+        } else {
+          const flowContainer = createFlowView(itemName, slot, leaves);
+          body.appendChild(flowContainer);
+        }
+      } catch (treeErr) {
+        console.error(`Error rendering tree/flow for ${itemName}:`, treeErr);
+        const errBox = document.createElement("div");
+        errBox.className = "error-fallback-card";
+        errBox.innerHTML = `⚠️ [${itemName}] 세부 조합 트리 로딩 중 오류가 발생했습니다 (${treeErr.message}).`;
+        body.appendChild(errBox);
       }
     }
 
-    const remainingBox = createRemainingMaterialsBox(leaves);
-    body.appendChild(remainingBox);
+    try {
+      const remainingBox = createRemainingMaterialsBox(leaves);
+      if (remainingBox) body.appendChild(remainingBox);
+    } catch (remErr) {
+      console.error("Error creating remaining materials box:", remErr);
+    }
 
     const toggleBtn = header.querySelector(".btn-toggle-tree");
     toggleBtn.addEventListener("click", () => {
@@ -1972,6 +2087,7 @@
   }
 
   function renderTreeNode(itemName, slot, parentEl, depth, currentPath, pathDisplay) {
+    if (depth > 20) return;
     const recipe = getRecipe(itemName);
     const li = document.createElement("li");
     li.className = "tree-node";
