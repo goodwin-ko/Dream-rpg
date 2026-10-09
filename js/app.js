@@ -90,11 +90,12 @@
     "어둠에 물든 원한": "어둠에 물든 원한",
     "암흑의 원한": "암흑의 원한",
     "암흑의원한": "암흑의 원한",
-    "악몽 투구[전설]": "악몽 투구",
-    "악몽 투구[에픽]": "악몽 투구",
-    "악몽투구[전설]": "악몽 투구",
-    "악몽투구[에픽]": "악몽 투구",
-    "악몽투구": "악몽 투구",
+    "악몽투구[전설]": "악몽 투구[전설]",
+    "악몽투구[에픽]": "악몽 투구[에픽]",
+    "악몽 투구 (전설)": "악몽 투구[전설]",
+    "악몽 투구 (에픽)": "악몽 투구[에픽]",
+    "악몽 투구-전설": "악몽 투구[전설]",
+    "악몽 투구-에픽": "악몽 투구[에픽]",
 
     // Boss name aliases
     "화염거인": "화염 거인",
@@ -1329,6 +1330,10 @@
     }
     if (gameData.global_recipe_map && gameData.global_recipe_map[clean]) {
       return gameData.global_recipe_map[clean];
+    }
+    if (clean === "악몽 투구" && gameData.global_recipe_map) {
+      if (gameData.global_recipe_map["악몽 투구[전설]"]) return gameData.global_recipe_map["악몽 투구[전설]"];
+      if (gameData.global_recipe_map["악몽 투구[에픽]"]) return gameData.global_recipe_map["악몽 투구[에픽]"];
     }
     const jobData = getJobData();
     if (jobData && jobData.recipe_map && jobData.recipe_map[clean]) {
@@ -5524,6 +5529,13 @@
             iname = "용살자 (원거리)";
           }
         }
+        if (iname === "악몽 투구" || iname === "악몽 투구[에픽]" || iname === "악몽 투구[전설]") {
+          if (grade === "전설" || lvlNum === 340) {
+            iname = "악몽 투구[전설]";
+          } else if (grade === "에픽" || lvlNum === 320) {
+            iname = "악몽 투구[에픽]";
+          }
+        }
 
         gearSpecs[iname] = {
           name: iname,
@@ -5576,11 +5588,25 @@
             iname = "용살자 (원거리)";
           }
         }
+        if (iname === "악몽 투구" || iname === "악몽 투구[에픽]" || iname === "악몽 투구[전설]") {
+          if (grade === "전설") {
+            iname = "악몽 투구[전설]";
+          } else if (grade === "에픽") {
+            iname = "악몽 투구[에픽]";
+          }
+        }
         if (mat === "용살자") {
           if (iname === "황룡언월도" || mapped.sub === "근접무기") {
             mat = "용살자 (근접)";
           } else if (iname === "파괴자" || mapped.sub === "원거리무기") {
             mat = "용살자 (원거리)";
+          }
+        }
+        if (mat === "악몽 투구" || mat === "악몽 투구[에픽]" || mat === "악몽 투구[전설]") {
+          if (iname === "악몽 투구[전설]") {
+            mat = "악몽 투구[에픽]";
+          } else if (iname === "성스러운 악마 투구") {
+            mat = "악몽 투구[전설]";
           }
         }
 

@@ -17468,12 +17468,12 @@ window.PRELOADED_GAME_DATA = {
           "special_effect": "",
           "materials": [
             {
-              "name": "악몽 투구",
+              "name": "악몽 투구[전설]",
               "qty": 1,
               "boss": "조합템",
-              "level": 320,
+              "level": 340,
               "location": "",
-              "level_str": "Lv.320"
+              "level_str": "Lv.340"
             },
             {
               "name": "암흑 결정",
@@ -58914,12 +58914,12 @@ window.PRELOADED_GAME_DATA = {
           "special_effect": "",
           "materials": [
             {
-              "name": "악몽 투구",
+              "name": "악몽 투구[전설]",
               "qty": 1,
               "boss": "조합템",
-              "level": 320,
+              "level": 340,
               "location": "",
-              "level_str": "Lv.320"
+              "level_str": "Lv.340"
             },
             {
               "name": "암흑 결정",
@@ -96873,12 +96873,12 @@ window.PRELOADED_GAME_DATA = {
           "special_effect": "",
           "materials": [
             {
-              "name": "악몽 투구",
+              "name": "악몽 투구[전설]",
               "qty": 1,
               "boss": "조합템",
-              "level": 320,
+              "level": 340,
               "location": "",
-              "level_str": "Lv.320"
+              "level_str": "Lv.340"
             },
             {
               "name": "암흑 결정",
@@ -131807,6 +131807,7 @@ window.PRELOADED_GAME_DATA = {
         "빛-영광의 투구",
         "다가오는 겨울",
         "탐욕의 의지",
+        "악몽 투구[전설]",
         "폭풍의 눈",
         "드루이드 두건",
         "고대의 악몽-절망의 투구",
@@ -131832,12 +131833,12 @@ window.PRELOADED_GAME_DATA = {
         "천상의 투구",
         "파도소환사의 뿔피리",
         "마법사의 두건",
-        "악몽 투구",
         "감시자의 눈",
         "망자의 두건",
         "겨울 빙모",
         "성스러운 투구",
         "지옥 투구",
+        "악몽 투구[에픽]",
         "유령 투구",
         "살육 두건",
         "비전 두건",
@@ -159659,12 +159660,12 @@ window.PRELOADED_GAME_DATA = {
       "special_effect": "",
       "materials": [
         {
-          "name": "악몽 투구",
+          "name": "악몽 투구[전설]",
           "qty": 1,
           "boss": "조합템",
-          "level": 320,
+          "level": 340,
           "location": "",
-          "level_str": "Lv.320"
+          "level_str": "Lv.340"
         },
         {
           "name": "암흑 결정",
@@ -173625,15 +173626,18 @@ window.PRELOADED_GAME_DATA = {
       "drop_location": "",
       "drop_type": "아이템"
     },
-    "악몽 투구": {
-      "name": "악몽 투구",
+    "악몽 투구[에픽]": {
+      "name": "악몽 투구[에픽]",
       "category": "투구",
       "sub_cat": "투구",
+      "grade": "에픽",
       "level": 320,
       "level_str": "Lv.320",
       "synergy": "",
       "synergy_jobs": [],
       "special_effect": "",
+      "options": "방어력 210 증가\n힘 240 증가\n민첩 150 증가\n물리·마법 치명타 확률 5% 증가\n클릭하여 마법 면역 발동",
+      "active_passive": "액티브 효과-마법 면역-\n사용하면 5초 동안 지속되는 마법 면역 방패를 자신에게 부여합니다.\n재사용 대기시간: 240초",
       "materials": [
         {
           "name": "지옥 투구",
@@ -173660,6 +173664,79 @@ window.PRELOADED_GAME_DATA = {
           "level": 300,
           "location": "암흑 도시-묘지",
           "level_str": "Lv.300",
+          "is_drop": true
+        },
+        {
+          "name": "사령의 빛가루",
+          "qty": 1,
+          "boss": "죽음의 리치",
+          "level": 320,
+          "location": "암흑도시-중간",
+          "level_str": "Lv.320",
+          "is_drop": true
+        },
+        {
+          "name": "화염의 심장",
+          "qty": 1,
+          "boss": "화염 거인",
+          "level": 320,
+          "location": "용암 화산-아래",
+          "level_str": "Lv.320",
+          "is_drop": true
+        }
+      ],
+      "is_drop": false,
+      "drop_boss": "",
+      "drop_level": 0,
+      "drop_location": "",
+      "drop_type": "아이템"
+    },
+    "악몽 투구[전설]": {
+      "name": "악몽 투구[전설]",
+      "category": "투구",
+      "sub_cat": "투구",
+      "grade": "전설",
+      "level": 340,
+      "level_str": "Lv.340",
+      "synergy": "",
+      "synergy_jobs": [],
+      "special_effect": "",
+      "options": "방어력 310 증가\n힘 310 증가\n민첩 215 증가\n물리·마법 치명타 확률 8% 증가\n클릭하여 마법 면역 발동",
+      "active_passive": "액티브 효과-마법 면역-\n사용하면 플레이어가 5초 동안 마법에 면역이 됩니다.\n재사용 대기시간: 120초",
+      "materials": [
+        {
+          "name": "악몽 투구[에픽]",
+          "qty": 1,
+          "boss": "조합템",
+          "level": 320,
+          "location": "",
+          "level_str": "Lv.320"
+        },
+        {
+          "name": "망자의 촉수",
+          "qty": 1,
+          "boss": "영혼의 수확자 타나토스",
+          "level": 340,
+          "location": "암흑도시-왼쪽포탈",
+          "level_str": "Lv.340",
+          "is_drop": true
+        },
+        {
+          "name": "지옥의 정수",
+          "qty": 1,
+          "boss": "제7마왕 모르페우스",
+          "level": 340,
+          "location": "전초기지-오른쪽성-포탈-왼쪽포탈",
+          "level_str": "Lv.340",
+          "is_drop": true
+        },
+        {
+          "name": "회오리의 핵",
+          "qty": 1,
+          "boss": "광풍의 실프",
+          "level": 320,
+          "location": "어인 해변-옆",
+          "level_str": "Lv.320",
           "is_drop": true
         },
         {
